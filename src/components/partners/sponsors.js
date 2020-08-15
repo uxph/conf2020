@@ -30,14 +30,14 @@ const Sponsors = () => {
     <section className="sponsor-section">
       <ListSponsors
         list={gold}
-        className={"padding-y-128"}
+        className={"padding-y-48"}
         contentClassName={"sponsor"}
         heading={"Gold Sponsors"}
       />
 
       <ListSponsors
         list={silver}
-        className={"silver-sponsor padding-y-256"}
+        className={"silver-sponsor padding-y-192"}
         contentClassName={"sponsor"}
         heading={"Silver Sponsors"}
         style={{
@@ -47,7 +47,7 @@ const Sponsors = () => {
 
       <ListSponsors
         list={bronze}
-        className={"padding-y-128"}
+        className={"padding-y-48"}
         contentClassName={"sponsor"}
         heading={"Bronze Sponsors"}
       />

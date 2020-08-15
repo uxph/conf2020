@@ -8,10 +8,7 @@ const Hero = () => {
     <section className="padding-top-128 padding-bottom-256 text-center about-hero">
       <Container className="margin-x-64">
         <div className="margin-bottom-64">
-          <img
-            src={"/images/logos/growth_beyond_borders.png"}
-            alt="Growth Beyond Borders"
-          />
+          <img src={"/images/logos/headline.svg"} alt="Growth Beyond Borders" />
         </div>
         <h1 className="font-size-32 text-white margin-bottom-24">
           About the Conference

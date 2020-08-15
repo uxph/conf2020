@@ -1,10 +1,50 @@
 import React from "react";
 import Button from "../components/atoms/button";
 
-const Nav = (props) => {
-  let navClass = props.isHomePage ? "home-nav" : "";
+const Nav = ({ activeUrl }) => {
+  // let navClass = props.isHomePage ? "home-nav" : "";
+  const nav_items = [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "Schedule",
+      url: "/schedule",
+    },
+    {
+      name: "Sponsors",
+      url: "/sponsors",
+    },
+    {
+      name: "About",
+      url: "/about",
+    },
+    {
+      name: "FAQ",
+      url: "/faq",
+    },
+  ];
+  const navItems = nav_items.map((item, key) => {
+    return (
+      <li>
+        <a href={item.url} className={activeUrl === item.url ? "active" : null}>
+          {item.name}
+        </a>
+      </li>
+    );
+  });
+
   return (
-    <nav className={navClass}>
+    <nav
+      className="bg-white shadow-sm"
+      style={{
+        position: "fixed",
+        top: "0",
+        left: "0",
+        zIndex: "9999",
+      }}
+    >
       <div className="wrapper">
         <div className="d-flex justify-content-between align-items-center">
           <a href="/">
@@ -15,11 +55,7 @@ const Nav = (props) => {
             />
           </a>
           <ul>
-            <li>Home</li>
-            <li>Schedule</li>
-            <li>Sponsors</li>
-            <li>About</li>
-            <li>FAQ</li>
+            {navItems}
             <li>
               <Button
                 style={{

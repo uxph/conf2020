@@ -13,12 +13,11 @@ import "../assets/sass/main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Layout = (props) => {
+  document.getElementsByTagName("body")[0].style.marginTop = "73px";
   return (
     <>
       <Nav isHomePage={props.isHomePage} />
-        <main>
-          {props.children}  
-        </main>
+      <main>{props.children}</main>
       <Footer />
     </>
   );

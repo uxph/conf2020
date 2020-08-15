@@ -10,7 +10,24 @@ nav {
       padding: var(--value-8) var(--value-16);
       list-style-type: none;
       cursor: pointer;
-      transition: ease all 0.3s;
+
+      a {
+        color: inherit !important;
+        transition: ease all 0.3s;
+      }
+
+      a:hover {
+        text-decoration: none !important;
+      }
+
+      a.active {
+        font-weight: bold;
+        color: var(--red);
+      }
+
+      a.button {
+        color: white !important;
+      }
     }
 
     li:hover {
