@@ -33,6 +33,7 @@ const ComingSoon = () => {
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         title="UXPH teaser video"
         style={{
+          top: "0",
           left: "-390px",
           filter: "grayscale(100%)",
           zIndex: "1000",
@@ -40,7 +41,7 @@ const ComingSoon = () => {
       ></iframe>
       <div
         id="coming-soon-content"
-        className="margin-y-128 mx-auto"
+        className="margin-top-64 margin-bottom-96 mx-auto"
         style={{
           position: "relative",
           zIndex: "1300",
