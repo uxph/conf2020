@@ -1,0 +1,45 @@
+@import "./mixins.scss";
+
+.partner-hero {
+  @include hero;
+
+  p {
+    color: $primary-gray;
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: normal;
+    font-weight: normal;
+
+    span {
+      color: $secondary-blue;
+      font-weight: bold;
+    }
+  }
+}
+
+.sponsor-section {
+  color: #cacaca;
+  .sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+      height: 140px;
+      width: 180.4px;
+      margin-left: 12px;
+      margin-right: 12px;
+      .img-placeholder {
+        width: 90%;
+        height: 90%;
+        background-color: #000;
+      }
+    }
+  }
+}
+
+.silver-sponsor {
+  @include section-white;
+}

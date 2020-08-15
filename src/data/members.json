@@ -1,0 +1,304 @@
+{
+  "board_members": [
+    {
+      "id": "0",
+      "name": "Aldrich Tan",
+      "position": "Managing Director",
+      "department": "#",
+      "image_url": "assets/team/aldrich.png",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/aldricht/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/aldricht/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Aldrich is an Sr. Experience Architect who has worked with multiple companies and industries in the US, Canada, and Philippines.",
+        "He is a passionate advocate for mentoring designers and building stronger design cultures with companies and organizations through consultancy and UXPH.",
+        "He enjoys PC gaming, Korean BBQ, steaks, giant salads, and puns (or a \"punnoseur\")."
+      ]
+    },
+
+    {
+      "id": "1",
+      "name": "Jordan Deja",
+      "position": "Advisor",
+      "image_url": "assets/team/jordan.jpeg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/jrdndj/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/jrdndj/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Jordan became involved in UXPH when he was a speaker in the 2017 Conference. He moved behind the scenes as Volunteer Lead in the 2018 Conference and became the Over-all Lead with Aldrich Tan in 2019.",
+        "He is currently part of its Board of Directors, Lead for Speakers and Community Engagement. He is an HCI Researcher and a University Professor by profession. He is currently doing his PhD in Slovenia, Europe."
+      ]
+    },
+
+    {
+      "id": "2",
+      "name": "Ely Apao",
+      "position": "Advisor",
+      "image_url": "assets/team/ely.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/jozzua/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/jozzua/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "One of the original founders of the UX Philippines community. Currently the customer experience manager for the digital transformation office of one of the Philippine's biggest conglomerates - JG Summit."
+      ]
+    },
+
+    {
+      "id": "3",
+      "name": "VJ Francisco",
+      "position": "Advisor",
+      "image_url": "assets/team/vj.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/vjfrancisco/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "VJ spent the last 20 years immersed in the field of design, learning and developing his skills in its creative, technical, and functional aspects.  His experience with all these gives him a unique perspective of the field and prepared him to become a thought leader recognized in the country’s UX Design industry.",
+        "As a design leader he takes on the role of the contrarian who tenaciously challenges norms and popular opinions to push his team to think beyond conventions and go towards innovation."
+      ]
+    },
+
+    {
+      "id": "4",
+      "name": "Matthew Green",
+      "position": "Advisor",
+      "image_url": "assets/team/matt.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/matthewagreen/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Matt is currently works as a Service Design Research consultant  for the Asian Development Bank. Over 20 years, he has had a variety of roles from a head of design, to a researcher, and to interaction designer for private, government, and military clients from San Francisco to Sydney. He consults on innovation and research in the areas of data display, service design, and enterprise applications."
+      ]
+    },
+
+    {
+      "id": "5",
+      "name": "Tisha Ibasco",
+      "position": "Advisor",
+      "image_url": "assets/team/fish.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/tisha-ibasco-41463063/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Fish Ibasco is a self-taught designer who gradually became one of the Experience Design Leads at Accenture Philippines. Throughout her 6 year journey in design, she has helped shape and build the UX practice in organizations. Now focusing on operations, she is passionate about finding ways to serve and empower designers in their careers."
+      ]
+    },
+
+    {
+      "id": "6",
+      "name": "Chelle Obligacion-Gray",
+      "position": "Advisor",
+      "image_url": "assets/team/chelle.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/chelleogray/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Chelle Obligacion-Gray leads the Business Development, Product Development and Customer Experience of BLISS Insurance Digital Platform for Computer Professionals Inc. She also leads the AWS Partner Alliance for the organization helping companies with their Cloud Journey. Prior to joining CPI she was the Director of Growth at Thinking Machines Data Science (the leading Data Science and Machine Learning firm in the country).",
+        "She also lead Globe Telecom's Corporate Social Responsibility team with high-impact projects and initiatives on environment, education, volunteering and sustainability campaigns. She also worked in Google for 5 years managing developer communities and start-up ecosystems across Asia Pacific where she grew and nurtured the communities from 11 to over 50 chapters.",
+        "Chelle is a diversity and women empowerment advocate so she finds time to work and mentor girls and women. She loves tech, innovation, product dev, social good and data."
+      ]
+    },
+
+    {
+      "id": "7",
+      "name": "Jen Teves, PhD",
+      "position": "Advisor",
+      "image_url": "assets/team/jen.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/jenniferteves/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Jen is currently the Director for CX Research at Best Buy after her stints at other Fortune 100 companies in the US as a UX Researcher & Human Factors Scientist. She loves being in the company of learners that's why she also teaches graduate classes in UX Design at Kent State University's School of Information. Jen's not-so-secret passion is exploring the applications of design and psychology in nation-building, social programs, and counter-insurgency strategy."
+      ]
+    }
+  ],
+
+  "committee_leads": [
+    {
+      "id": "8",
+      "name": "Kringle Garcia",
+      "position": "Volunteers Lead",
+      "image_url": "assets/team/kringle.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/angelakristinegarcia/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Kringle is currently working to improve the B2B experience as a UX Architect at Globe Telecom. A nerd at heart, she loves playing D&D and RPGs during her downtime, and dreams of studying abroad to further her education."
+      ]
+    },
+
+    {
+      "id": "9",
+      "name": "Janyl Tamayo",
+      "position": "Events Lead",
+      "image_url": "assets/team/janyl.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/janyltamayo/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Janyl is an Experience Designer from Vancouver, currently crafting human-centric experiences at a Fintech startup to make payments simple for SMEs. Gets chatty when she's tea high and is a recovering skincare addict."
+      ]
+    },
+
+    {
+      "id": "10",
+      "name": "Chi Señires",
+      "position": "Marketing Lead",
+      "image_url": "assets/team/chi.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/chisenires/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/ChiSenires/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Chi is a UX Designer, Front-End Web Developer, and a Product Manager.",
+
+        "She's currently working as a Product Manager at Cignal TV. Aside from her day job, she helps organize tech communities like UXPH and Figma PH.",
+
+        "When Chi isn't working, she spends her time riding her bike, scrolling through social media, playing games on her computer or Switch."
+      ]
+    },
+
+    {
+      "id": "11",
+      "name": "MJ Yap",
+      "position": "Web Lead",
+      "image_url": "assets/team/mj.png",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/mjarenyap/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/mjarenyap/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "MJ is a Computer Science graduate who is the Co-Founder and former Chapter Head of User Experience Society-DLSU.",
+        "When it comes to learning new things and improving his skillsets, he is always eager especially if it means serving the community better.",
+        "He likes physical sports, gym workouts, guitars, cats and memes."
+      ]
+    },
+
+    {
+      "id": "11",
+      "name": "Reine Bantang",
+      "position": "Creative Lead",
+      "image_url": "assets/team/reine.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/reine-bantang/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/reinebantang/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Reine is a multimedia producer and occasional host who finds joy in film, theater, cats, and sushi. She is currently working with ABS-CBN Digital, and she is also affiliated with DLSU Radio: Green Giant FM and Juan Gadget."
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Din San Diego",
+      "position": "Research Lead",
+      "image_url": "assets/team/claudine.png",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/claudinesandiego/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Din is a content strategist specializing in content development and management. She is currently learning more about UX research within the organization and helping out in the events team!",
+        "An avid learner, she enjoys ideating alongside teams, presenting concepts through decks, pairing non-fiction + fiction books, and creating mixtapes for special occasions."
+      ]
+    }
+  ],
+
+  "coordinators": [
+    {
+      "id": "13",
+      "name": "Mars Quinay",
+      "position": "Bootcamps Coordinator",
+      "image_url": "assets/team/mars.jpeg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/mars-quinay-0658a317b/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://www.twitter.com/kdotMars/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Mars is a UX/UI designer and Graphic Designer. She’s also a Associate Creative Trainer at Creative Nation Academy and Community Volunteer at UXPH.",
+        "She maximizes her free time by learning. She loves reading and watching documentaries. She enjoys traveling with her peers to learn more about culture and arts. With all these side hustles, she also values work-life balance.",
+        "She’s online playing PUBG Mobile! Go play with her!"
+      ]
+    },
+
+    {
+      "id": "14",
+      "name": "Richard Parayno",
+      "position": "Technical Team",
+      "image_url": "assets/team/richard.PNG",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/richardparayno/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "I am a Filipino Conversation Designer and Product Design Consultant currently working as a Product Manager at Senti AI, where I work on AI/ML projects for the Philippines' biggest names in advertising, telecommunications, and real estate.",
+        "When I’m not working, I help out the local tech community as the Community Lead of PWDO and as an Events Manager at UXPH."
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Karllo Mayordomo",
+      "position": "Marketing Coordinator",
+      "image_url": "assets/team/karllo.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/km2018/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Karllo (yes, with a K and two L's) is a Filipino Digital Marketer currently leading online advertising and loans marketing for TrueMoney, a fintech startup. He has a decade of marketing experience in market-leading companies such as P&G, Unilab, LBC, and Globe Telecom.",
+        "Outside of work, Karllo supports the social media efforts of UXPH, plays PS4, and enjoys going to the gym."
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Gavin Raine Dizon",
+      "position": "Web Team",
+      "image_url": "assets/team/gavin.jpeg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/gavin-dizon-40b08b190/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Gavin is an undergraduate student at De La Salle University taking up Computer Science. He joined the community to learn more about UX and surround himself with passion-driven people who want to improve the community. He joined the web team to enhance his skills in web development.",
+        "In his free time, he plays video games with his friends, reads mangas/ comics, and watches his favorite series. "
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Tyrone Sta. Maria",
+      "position": "Web Team",
+      "image_url": "assets/team/tyrone.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/tyrone-sta-maria-243a69188/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Tyrone is a Computer Science student at De La Salle University. He joined the community to learn more about UX and the tech industry.",
+        "During his free time he reads manga and webtoons, watches anime or plays video games."
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Annika Pascasio",
+      "position": "Student Programs Coordinator",
+      "image_url": "assets/team/annika.jpeg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/annikapascasio/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
+      ],
+      "bio": [
+        "Annika is a student at De La Salle University taking up Business Management and AB Psychology. She is also an aspiring UX Researcher, the current President of User Experience Society DLSU, and a Community Volunteer at UXPH.",
+        "Outside work, Annika enjoys watching tv shows, cooking, reading books, and listening to music."
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Pierce Jason Jonota",
+      "position": "Technical Team",
+      "image_url": "assets/team/pierce.jpg",
+      "social_media": [
+        "<a href=\"https://www.linkedin.com/in/piercejonota/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
+        "<a href=\"https://twitter.com/piercetayo\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
+      ],
+      "bio": [
+        "Pierce is a Product Manager & Designer currently supporting as a Product Owner for a leading airline in the Philippines - managing delivery streams to improve airline experiences for everyJuan. Apart from the above mentioned, Pierce also works on initiatives on microcopy, accessible services, and clear understanding of a system's Information Architecture.",
+        "Outside work, Pierce spends time outdoors to the mountains, indoors playing video games, and helping communities through PWDO, UXPH, and WIAD. Noodles dishes are Pierce's comfort food and prefers Shio ramen of its different types."
+      ]
+    }
+  ]
+}

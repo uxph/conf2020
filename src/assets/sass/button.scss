@@ -1,0 +1,55 @@
+.button-outer-layer {
+  padding: 0.125rem;
+  border-radius: var(--value-4) !important;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(135deg, #c077fa, #00b6e0);
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.button-outer-layer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  display: inline-block;
+}
+
+// Standard button
+button,
+.button {
+  color: var(--white);
+  background-image: linear-gradient(135deg, #c077fa, #00b6e0);
+  border: none;
+  border-radius: var(--value-4) !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: bold;
+  text-transform: uppercase !important;
+  padding: var(--value-16) var(--value-24);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.button:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+button.outline,
+.button.outline {
+  background-color: var(--white);
+  background-image: none;
+  border-radius: 0.125rem !important;
+}
+
+button.outline > span,
+.button.outline > span {
+  background-image: linear-gradient(135deg, #c077fa, #00b6e0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

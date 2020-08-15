@@ -1,0 +1,36 @@
+footer {
+  background: url(/images/section-transition.svg), var(--black);
+  background-size: 100%;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+
+  a {
+    color: var(--white);
+  }
+
+  a:hover {
+    color: var(--light-gray);
+  }
+
+  ul.footer-nav {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      display: inline;
+    }
+
+    li.delimiter {
+      color: var(--gray);
+      margin: 0 var(--value-8);
+      font-size: var(--value-8);
+      display: inline-flex;
+      align-items: center;
+
+      span {
+        padding-bottom: var(--value-8) !important;
+      }
+    }
+  }
+}

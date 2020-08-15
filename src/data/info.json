@@ -1,0 +1,24 @@
+{
+  "site_name": "UX Philippines Conference 2020",
+  "organization": "User Experience Philippines",
+  "facebook_page": "https://www.facebook.com/uxphofficial/",
+  "facebook_group": "https://www.facebook.com/groups/uxphofficial/",
+  "instagram": "https://instagram.com/uxphofficial/",
+  "twitter": "https://twitter.com/uxphofficial/",
+  "linkedin": "https://www.linkedin.com/company/uxph/",
+
+  "theme_name": "Designing Across Borders",
+  "theme_blurb": "#",
+  "date": "October x - x, 2020",
+
+  "about_us": [
+    "UXPH (User Experience Philippines) is a Filipino non-profit organization that hosts the largest network of design professionals, enthusiasts, and students in the Philippines. Since 2012, we have been building towards a more mature, collaborative, and design-driven country through hosting online and offline community initiatives, conferences, and programs within local design and technology communities.",
+    "UXPH has become the country’s hub for sharing information, resources, and building networks in the design community. As of 2020, the UXPH community has over 4,000 local and international members from a wide range of industries related to technology and even traditional businesses."
+  ],
+
+  "uxph_website_url": "https://uxph.org/",
+  "merch_store_url": "#",
+  "video_teaser_url": "#",
+
+  "coming_soon": false
+}

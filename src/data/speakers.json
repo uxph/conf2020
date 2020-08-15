@@ -1,0 +1,112 @@
+[
+  {
+    "id": 0,
+    "name": "Michael Knowels",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#", "#", "#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 1,
+    "name": "Charlie Kirk",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 2,
+    "name": "Ben Shapiro",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 3,
+    "name": "Donald Trump",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 4,
+    "name": "Frank Sinatra",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 5,
+    "name": "Ravi Zacharias",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 6,
+    "name": "Steven Crowe",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 7,
+    "name": "Blaire White",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 8,
+    "name": "Mike Pence",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  },
+  {
+    "id": 9,
+    "name": "Candace Owens",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["#"],
+    "social_media": ["#"],
+    "position": "Product Designer",
+    "company": "Shopify",
+    "company_logo": "/images/placeholders/company.png",
+    "workshop_id": "#"
+  }
+]

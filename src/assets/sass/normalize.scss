@@ -1,0 +1,74 @@
+:root {
+  --dark-blue: #007bbf;
+  --blue: #00b6e0;
+  --dark-red: #be0145;
+  --red: #e8006f !important;
+  --dark-purple: #985ec7;
+  --purple: #c077fa;
+  --black: #182335;
+  --light-gray: #cacaca;
+  --gray: #777777;
+  --white: #ffffff;
+
+  --value-4: 0.25rem;
+  --value-8: 0.5rem;
+  --value-12: 0.75rem;
+  --value-16: 1rem;
+  --value-24: 1.5rem;
+  --value-32: 2rem;
+  --value-48: 3rem;
+  --value-64: 4rem;
+  --value-96: 6rem;
+  --value-128: 8rem;
+  --value-192: 12rem;
+  --value-256: 16rem;
+  --value-384: 24rem;
+  --value-512: 32rem;
+  --value-640: 40rem;
+  --value-768: 48rem;
+
+  color: var(--black);
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box !important;
+}
+
+div.wrapper {
+  width: 60rem;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+ul {
+  li {
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.red {
+  color: var(--red) !important;
+}
