@@ -61,7 +61,15 @@
   width: 166px;
   height: 166px;
   margin: 0 auto 10px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    height: 166px;
+    width: 166px;
+  }
 }
+
 .team-section {
   h3 {
     color: $primary-gray;

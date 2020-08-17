@@ -14,7 +14,9 @@ const ListTeam = ({ teamMembers }) => {
         className="member-card margin-bottom-64 text-center"
         key={index}
       >
-        <div className="avatar-placeholder"></div>
+        <div className="avatar-placeholder">
+          <img src={"/" + member.image_url} alt={member.name} />
+        </div>
         <h5>{member.name}</h5>
         <p>{member.position}</p>
         <div className="social-links">{/*{social_list}*/}</div>

@@ -1,80 +1,9 @@
 [
   {
+    "id": 0,
     "name": "Ateneo De Davao University",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_00.png",
     "website_url": "#",
     "social_media": ["#"],
     "tier": "gold"
@@ -83,88 +12,169 @@
     "id": 1,
     "name": "Ateneo De Davao University",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_01.png",
     "website_url": "#",
     "social_media": ["#"],
     "tier": "gold"
   },
   {
     "id": 2,
-    "name": "Ateneo De Davao University",
+    "name": "Symph",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_02.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "gold"
+    "tier": "silver"
   },
   {
     "id": 3,
-    "name": "Ateneo De Davao University",
+    "name": "CollaBox",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_03.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "silver"
+    "tier": "#"
   },
   {
     "id": 4,
-    "name": "Ateneo De Davao University",
+    "name": "NuWorks",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_04.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "silver"
+    "tier": "#"
   },
   {
     "id": 5,
-    "name": "Ateneo De Davao University",
+    "name": "Stylegenie",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_05.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "bronze"
+    "tier": "#"
   },
   {
     "id": 6,
-    "name": "Ateneo De Davao University",
+    "name": "Home Credit",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_06.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "bronze"
+    "tier": "#"
   },
   {
     "id": 7,
-    "name": "Ateneo De Davao University",
+    "name": "Canva",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_07.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "gold"
+    "tier": "#"
   },
   {
     "id": 8,
-    "name": "Ateneo De Davao University",
+    "name": "Developer Student Club Loyola",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_08.png",
     "website_url": "#",
     "social_media": ["#"],
-    "tier": "silver"
+    "tier": "#"
   },
   {
     "id": 9,
-    "name": "Ateneo De Davao University",
+    "name": "Interaction Designer Foundation",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_09.png",
     "website_url": "#",
     "social_media": ["#"],
     "tier": "gold"
   },
   {
     "id": 10,
+    "name": "DevCon Davao",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_10.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "gold"
+  },
+  {
+    "id": 11,
+    "name": "Art n' Nature",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_11.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "gold"
+  },
+  {
+    "id": 12,
+    "name": "IngKing",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_12.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "silver"
+  },
+  {
+    "id": 13,
+    "name": "Philippine Web Designers Organization",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_13.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "silver"
+  },
+  {
+    "id": 14,
+    "name": "Cebu Design Week",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_14.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "bronze"
+  },
+  {
+    "id": 15,
     "name": "Ateneo De Davao University",
     "description": ["#"],
-    "image_url": "/images/placeholders/company.png",
+    "image_url": "/images/sponsors/sponsor_14.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "bronze"
+  },
+  {
+    "id": 16,
+    "name": "Ateneo De Davao University",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_14.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "gold"
+  },
+  {
+    "id": 17,
+    "name": "Ateneo De Davao University",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_14.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "silver"
+  },
+  {
+    "id": 18,
+    "name": "Ateneo De Davao University",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_14.png",
+    "website_url": "#",
+    "social_media": ["#"],
+    "tier": "gold"
+  },
+  {
+    "id": 19,
+    "name": "Ateneo De Davao University",
+    "description": ["#"],
+    "image_url": "/images/sponsors/sponsor_14.png",
     "website_url": "#",
     "social_media": ["#"],
     "tier": "gold"

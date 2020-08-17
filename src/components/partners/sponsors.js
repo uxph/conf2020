@@ -10,7 +10,9 @@ const ListSponsors = ({ list, className, contentClassName, heading }) => {
   const listTier = list.map((item, index) => {
     return (
       <div className="sponsor-item margin-bottom-32" key={index}>
-        <div className="img-placeholder"></div>
+        <div className="img-container">
+          <img src={item.image_url} alt={item.name} />
+        </div>
       </div>
     );
   });
@@ -30,14 +32,14 @@ const Sponsors = () => {
     <section className="sponsor-section">
       <ListSponsors
         list={gold}
-        className={"padding-y-48"}
+        className={"padding-y-128"}
         contentClassName={"sponsor"}
         heading={"Gold Sponsors"}
       />
 
       <ListSponsors
         list={silver}
-        className={"silver-sponsor padding-y-192"}
+        className={"silver-sponsor padding-y-256"}
         contentClassName={"sponsor"}
         heading={"Silver Sponsors"}
         style={{
@@ -47,7 +49,7 @@ const Sponsors = () => {
 
       <ListSponsors
         list={bronze}
-        className={"padding-y-48"}
+        className={"padding-y-128"}
         contentClassName={"sponsor"}
         heading={"Bronze Sponsors"}
       />
