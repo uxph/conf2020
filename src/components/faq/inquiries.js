@@ -6,10 +6,6 @@ import {
   NavItem,
   NavLink,
   Container,
-  Card,
-  Button,
-  CardTitle,
-  CardText,
   Row,
   Col,
 } from "reactstrap";
