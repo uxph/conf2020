@@ -23,13 +23,15 @@ const Hero = ({ setCount }) => {
             >
               Day 1
             </button>
-            <button
-              style={{ width: "240px" }}
-              className="button outline button-outer-layer"
-              onClick={() => setCount(1)}
-            >
-              <span>Day 2</span>
-            </button>
+            <div className="button-outer-layer">
+              <button
+                style={{ width: "240px" }}
+                className="button outline"
+                onClick={() => setCount(1)}
+              >
+                <span>Day 2</span>
+              </button>
+            </div>
           </CardBody>
         </Card>
       </Container>
