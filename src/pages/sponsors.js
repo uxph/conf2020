@@ -14,7 +14,7 @@ const Partners = () => {
     return <ComingSoon />;
   } else {
     return (
-      <Layout>
+      <Layout activeUrl="/sponsors">
         <SEO title="Partners" />
         <Hero />
         <Sponsors />

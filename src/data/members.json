@@ -5,7 +5,7 @@
       "name": "Aldrich Tan",
       "position": "Managing Director",
       "department": "#",
-      "image_url": "assets/team/aldrich.png",
+      "image_url": "images/team/aldrich.png",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/aldricht/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/aldricht/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -21,7 +21,7 @@
       "id": "1",
       "name": "Jordan Deja",
       "position": "Advisor",
-      "image_url": "assets/team/jordan.jpeg",
+      "image_url": "images/team/jordan.jpeg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/jrdndj/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/jrdndj/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -36,7 +36,7 @@
       "id": "2",
       "name": "Ely Apao",
       "position": "Advisor",
-      "image_url": "assets/team/ely.jpg",
+      "image_url": "images/team/ely.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/jozzua/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/jozzua/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -50,7 +50,7 @@
       "id": "3",
       "name": "VJ Francisco",
       "position": "Advisor",
-      "image_url": "assets/team/vj.jpg",
+      "image_url": "images/team/vj.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/vjfrancisco/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -64,7 +64,7 @@
       "id": "4",
       "name": "Matthew Green",
       "position": "Advisor",
-      "image_url": "assets/team/matt.jpg",
+      "image_url": "images/team/matt.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/matthewagreen/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -77,7 +77,7 @@
       "id": "5",
       "name": "Tisha Ibasco",
       "position": "Advisor",
-      "image_url": "assets/team/fish.jpg",
+      "image_url": "images/team/fish.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/tisha-ibasco-41463063/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -90,7 +90,7 @@
       "id": "6",
       "name": "Chelle Obligacion-Gray",
       "position": "Advisor",
-      "image_url": "assets/team/chelle.jpg",
+      "image_url": "images/team/chelle.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/chelleogray/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -105,7 +105,7 @@
       "id": "7",
       "name": "Jen Teves, PhD",
       "position": "Advisor",
-      "image_url": "assets/team/jen.jpg",
+      "image_url": "images/team/jen.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/jenniferteves/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -120,7 +120,7 @@
       "id": "8",
       "name": "Kringle Garcia",
       "position": "Volunteers Lead",
-      "image_url": "assets/team/kringle.jpg",
+      "image_url": "images/team/kringle.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/angelakristinegarcia/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -133,7 +133,7 @@
       "id": "9",
       "name": "Janyl Tamayo",
       "position": "Events Lead",
-      "image_url": "assets/team/janyl.jpg",
+      "image_url": "images/team/janyl.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/janyltamayo/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -146,7 +146,7 @@
       "id": "10",
       "name": "Chi Señires",
       "position": "Marketing Lead",
-      "image_url": "assets/team/chi.jpg",
+      "image_url": "images/team/chi.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/chisenires/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/ChiSenires/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -164,7 +164,7 @@
       "id": "11",
       "name": "MJ Yap",
       "position": "Web Lead",
-      "image_url": "assets/team/mj.png",
+      "image_url": "images/team/mj.png",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/mjarenyap/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/mjarenyap/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -180,7 +180,7 @@
       "id": "11",
       "name": "Reine Bantang",
       "position": "Creative Lead",
-      "image_url": "assets/team/reine.jpg",
+      "image_url": "images/team/reine.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/reine-bantang/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/reinebantang/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -193,7 +193,7 @@
       "id": "12",
       "name": "Din San Diego",
       "position": "Research Lead",
-      "image_url": "assets/team/claudine.png",
+      "image_url": "images/team/claudine.png",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/claudinesandiego/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -209,7 +209,7 @@
       "id": "13",
       "name": "Mars Quinay",
       "position": "Bootcamps Coordinator",
-      "image_url": "assets/team/mars.jpeg",
+      "image_url": "images/team/mars.jpeg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/mars-quinay-0658a317b/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://www.twitter.com/kdotMars/\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"
@@ -225,7 +225,7 @@
       "id": "14",
       "name": "Richard Parayno",
       "position": "Technical Team",
-      "image_url": "assets/team/richard.PNG",
+      "image_url": "images/team/richard.PNG",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/richardparayno/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -238,7 +238,7 @@
       "id": "15",
       "name": "Karllo Mayordomo",
       "position": "Marketing Coordinator",
-      "image_url": "assets/team/karllo.jpg",
+      "image_url": "images/team/karllo.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/km2018/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -251,7 +251,7 @@
       "id": "16",
       "name": "Gavin Raine Dizon",
       "position": "Web Team",
-      "image_url": "assets/team/gavin.jpeg",
+      "image_url": "images/team/gavin.jpeg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/gavin-dizon-40b08b190/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -264,7 +264,7 @@
       "id": "17",
       "name": "Tyrone Sta. Maria",
       "position": "Web Team",
-      "image_url": "assets/team/tyrone.jpg",
+      "image_url": "images/team/tyrone.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/tyrone-sta-maria-243a69188/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -277,7 +277,7 @@
       "id": "18",
       "name": "Annika Pascasio",
       "position": "Student Programs Coordinator",
-      "image_url": "assets/team/annika.jpeg",
+      "image_url": "images/team/annika.jpeg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/annikapascasio/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>"
       ],
@@ -290,7 +290,7 @@
       "id": "19",
       "name": "Pierce Jason Jonota",
       "position": "Technical Team",
-      "image_url": "assets/team/pierce.jpg",
+      "image_url": "images/team/pierce.jpg",
       "social_media": [
         "<a href=\"https://www.linkedin.com/in/piercejonota/\" target=\"blank\"><i class=\"fab fa-linkedin\"></i></a>",
         "<a href=\"https://twitter.com/piercetayo\" target=\"blank\"><i class=\"fab fa-twitter\"></i></a>"

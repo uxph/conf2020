@@ -22,7 +22,7 @@ const IndexPage = () => {
     );
   } else {
     return (
-      <Layout isHomePage={true}>
+      <Layout isHomePage={true} activeUrl="/">
         <SEO title="Home" />
         <Hero />
         <AboutConference />

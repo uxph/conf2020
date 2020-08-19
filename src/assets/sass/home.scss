@@ -176,36 +176,11 @@ section {
   text-transform: unset;
 }
 
-// TO BE REMOVED
-.video-placeholder {
-  border: solid 10px #182335;
-  border-radius: 5px;
+.video-container {
   height: 360px;
-  background-color: #182335;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 96px;
-    width: 96px;
-    height: 96px;
-    border: solid 8px #fff;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-40%, -50%);
-    width: 36px;
-    height: 36px;
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    background-color: #fff;
-    cursor: pointer;
-    z-index: 2;
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }

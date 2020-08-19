@@ -1,0 +1,9 @@
+@import "./mixins.scss";
+
+.faq-hero {
+  @include hero;
+}
+
+.query-question {
+  text-transform: unset;
+}

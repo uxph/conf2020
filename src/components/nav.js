@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/atoms/button";
 
-const Nav = ({ activeUrl }) => {
+const Nav = ({ activeUrl = "/" }) => {
   // let navClass = props.isHomePage ? "home-nav" : "";
   const nav_items = [
     {
@@ -27,7 +27,7 @@ const Nav = ({ activeUrl }) => {
   ];
   const navItems = nav_items.map((item, key) => {
     return (
-      <li>
+      <li key={key}>
         <a href={item.url} className={activeUrl === item.url ? "active" : null}>
           {item.name}
         </a>
@@ -50,17 +50,16 @@ const Nav = ({ activeUrl }) => {
           <a href="/">
             <img
               src={"/images/logos/uxph_conf_logo.svg"}
-              className="width-64"
+              className="width-64 margin-y-8"
               alt="UXPH Conference 2020"
             />
           </a>
           <ul>
             {navItems}
-            <li>
+            <li className="margin-left-16">
               <Button
                 style={{
-                  paddingTop: "1rem",
-                  paddingBottom: "1rem",
+                  padding: "0.5rem 1.2rem",
                 }}
               >
                 Get Tickets

@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Layout = (props) => {
   return (
     <>
-      <Nav isHomePage={props.isHomePage} />
+      <Nav isHomePage={props.isHomePage} activeUrl={props.activeUrl} />
       <main>{props.children}</main>
       <Footer />
     </>

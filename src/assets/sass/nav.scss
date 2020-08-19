@@ -7,13 +7,13 @@ nav {
 
     li {
       display: inline-block;
-      padding: var(--value-8) var(--value-16);
       list-style-type: none;
       cursor: pointer;
 
       a {
         color: inherit !important;
         transition: ease all 0.3s;
+        padding: var(--value-16) var(--value-16);
       }
 
       a:hover {
@@ -22,7 +22,9 @@ nav {
 
       a.active {
         font-weight: bold;
-        color: var(--red);
+        color: var(--red) !important;
+        background-color: #f4f4f4 !important;
+        border-radius: var(--value-4);
       }
 
       a.button {

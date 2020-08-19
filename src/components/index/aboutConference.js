@@ -11,7 +11,16 @@ const AboutConference = () => {
       <Container>
         <Row>
           <Col xs={12} md={6} className="margin-bottom-32">
-            <div className="video-placeholder"></div>
+            <div className="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/EWZ5HRa2qf8"
+                frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                title="Last year's UXPH conference video"
+                className="border-radius-8"
+              ></iframe>
+            </div>
           </Col>
           <Col className="paragraph margin-bottom-32" xs={12} md={6}>
             <h2 className="margin-bottom-16">{home.about_conf["title"]}</h2>
