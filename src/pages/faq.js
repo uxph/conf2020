@@ -7,7 +7,7 @@ import Inquiries from "../components/faq/inquiries";
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout activeUrl="/faq">
       <SEO title="FAQ" />
       <Hero />
       <Inquiries />

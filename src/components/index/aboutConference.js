@@ -17,6 +17,8 @@ const AboutConference = () => {
                 frameborder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                title="Last year's UXPH conference video"
+                className="border-radius-8"
               ></iframe>
             </div>
           </Col>

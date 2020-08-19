@@ -31,11 +31,16 @@ function useWindowSize() {
 }
 
 const Categories = (props) => {
-  const [width, height] = useWindowSize();
+  const [width] = useWindowSize();
 
   const list = listCategs.map((categ, index) => {
     return (
-      <NavItem>
+      <NavItem
+        className="margin-bottom-12"
+        style={{
+          cursor: "pointer",
+        }}
+      >
         <NavLink
           className={classnames({
             active: props.activeTab === index + 1,
@@ -72,7 +77,7 @@ const QueryCateg = ({ categ }) => {
   //console.log(filterCateg);
   const list = filterCateg.map((query, index) => {
     return (
-      <div key={index}>
+      <div key={index} className="margin-bottom-48">
         <h5 className="query-question">{query.question}</h5>
         <p>{query.answer}</p>
       </div>
@@ -88,12 +93,12 @@ const Inquiries = () => {
   };
 
   return (
-    <Container className="margin-y-128">
+    <Container className="margin-y-96">
       <Row>
         <Col md={3} className="margin-bottom-32">
           <Categories toggle={toggle} activeTab={activeTab} />
         </Col>
-        <Col>
+        <Col md={8}>
           <TabContent activeTab={activeTab} className="margin-x-16">
             <TabPane tabId={1}>
               <QueryCateg categ="Ticketing System" />

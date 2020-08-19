@@ -16,7 +16,7 @@ const About = () => {
     return <ComingSoon />;
   } else {
     return (
-      <Layout>
+      <Layout activeUrl="/about">
         <SEO title="About" />
         <Hero />
         <Intro />
