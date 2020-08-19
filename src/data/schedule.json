@@ -1,0 +1,52 @@
+[
+  [
+    {
+      "time": "7:30am",
+      "type": "Keynote Speakers",
+      "speaker": [
+        {
+          "name": "Jordan Deja",
+          "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+          "link": "/",
+          "img": "/images/placeholders/avatar.png"
+        }
+      ]
+    },
+    {
+      "time": "11:00am",
+      "type": "Workshop",
+      "speaker": [
+        {
+          "name": "Colette Kolenda",
+          "title": "Combating Memory Limitations through Simultaneous Triangulations",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+          "link": "/",
+          "img": "/images/placeholders/avatar.png"
+        },
+        {
+          "name": "Colette Kolenda",
+          "title": "Combating Memory Limitations through Simultaneous Triangulations",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+          "link": "/",
+          "img": "/images/placeholders/avatar.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "time": "7:30am",
+      "type": "Keynote",
+      "speaker": [
+        {
+          "name": "Colette Kolenda",
+          "title": "Combating Memory Limitations through Simultaneous Triangulations",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+          "link": "/",
+          "img": "/images/placeholders/avatar.png"
+        }
+      ]
+    }
+  ]
+]
