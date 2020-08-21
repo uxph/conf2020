@@ -6,9 +6,11 @@ $primary-gray: #cacaca;
 $primary-white: #fff;
 
 @mixin hero {
-  background: url(/images/section-transition--main.svg), $primary-dark;
+  background: url(/images/section-transition--main.svg),
+    url(/images/backgrounds/dark-background.svg), $primary-dark;
   background-size: 100%;
-  background-position: bottom;
+  background-attachment: scroll, fixed;
+  background-position: bottom, top;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;

@@ -24,11 +24,11 @@ const Hero = () => {
           letterSpacing: "3px",
         }}
       >
-        OCTOBER 21 - 22, 2020
+        NOVEMBER 7-8, 2020
       </h2>
       <div className="text-center">
         <Button className="mr-3">Get Tickets</Button>
-        <Button variant="outline" bgColor="#182335">
+        <Button variant="outline" bgColor="#000000">
           See full program
         </Button>
       </div>
