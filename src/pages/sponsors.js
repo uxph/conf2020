@@ -9,7 +9,7 @@ import "../assets/sass/main.scss";
 import ComingSoon from "../components/comingSoon";
 import { coming_soon } from "../data/info.json";
 
-const Partners = () => {
+const PartnersPage = () => {
   if (coming_soon) {
     return <ComingSoon />;
   } else {
@@ -23,4 +23,4 @@ const Partners = () => {
   }
 };
 
-export default Partners;
+export default PartnersPage;

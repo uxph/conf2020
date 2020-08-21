@@ -21,7 +21,7 @@ const ComingSoon = () => {
           left: "0",
           top: "0",
           zIndex: "1100",
-          opacity: "0.9",
+          opacity: "0.8",
         }}
       ></div>
       <iframe
@@ -55,10 +55,15 @@ const ComingSoon = () => {
         <img
           src={"/images/logos/uxph_conf_logo.svg"}
           alt="UXPH Conference 2020"
-          className="width-128 d-block mx-auto margin-bottom-32"
+          className="width-128 d-block mx-auto margin-bottom-32 margin-top-96"
         />
-        <h1 className="text-center text-white margin-bottom-48 font-size-48">
-          Coming in October 2020
+        <h1
+          className="text-center text-white margin-bottom-48"
+          style={{
+            fontSize: "2.5rem",
+          }}
+        >
+          Coming in November 2020
         </h1>
         <p className="text-center text-white margin-bottom-32 font-size-24 font-weight-bold">
           UXPH CONF 2020: Designers as Navigators of Change
@@ -83,7 +88,7 @@ const ComingSoon = () => {
         <div className="text-center">
           <Button
             variant="outline"
-            bgColor="#182335"
+            bgColor="rgba(0, 0, 0, 0.9)"
             className="margin-left-8 margin-right-8 margin-bottom-16"
             href="/call-for-speakers"
             target="blank"
@@ -92,7 +97,7 @@ const ComingSoon = () => {
           </Button>
           <Button
             variant="outline"
-            bgColor="#182335"
+            bgColor="rgba(0, 0, 0, 0.9)"
             className="margin-left-8 margin-right-8 margin-bottom-16"
           >
             Sponsor Inquiries

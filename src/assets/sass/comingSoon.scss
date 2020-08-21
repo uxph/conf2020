@@ -1,11 +1,19 @@
+#coming-soon-overlay {
+  background: url(/images/backgrounds/dark-background.svg), #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 @media only screen and (max-width: 768px) {
   #form-wrapper {
     width: 90% !important;
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 414px) {
   #coming-soon-overlay {
+    background-position: center !important;
     opacity: 1 !important;
   }
   #coming-soon-video {
