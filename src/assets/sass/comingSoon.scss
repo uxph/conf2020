@@ -12,10 +12,15 @@
 }
 
 @media only screen and (max-width: 414px) {
+  #coming-soon-headline {
+    width: 100% !important;
+  }
+
   #coming-soon-overlay {
     background-position: center !important;
     opacity: 1 !important;
   }
+
   #coming-soon-video {
     display: none !important;
   }
@@ -26,7 +31,7 @@
     padding: 0 !important;
 
     h1 {
-      font-size: 2rem !important;
+      font-size: 1.2rem !important;
     }
 
     p {

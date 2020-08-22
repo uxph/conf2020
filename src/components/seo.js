@@ -64,11 +64,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://uxph.org/assets/images/og-cover.png`,
+          content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
         },
         {
           property: `og:image:secure_url`,
-          content: `https://uxph.org/assets/images/og-cover.png`,
+          content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
         },
         {
           property: `og:description`,
@@ -80,7 +80,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `https://uxph.org/assets/images/og-cover.png`,
+          content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
         },
         {
           name: `twitter:creator`,

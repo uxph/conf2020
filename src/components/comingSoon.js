@@ -41,7 +41,7 @@ const ComingSoon = () => {
       ></iframe>
       <div
         id="coming-soon-content"
-        className="margin-top-64 margin-bottom-96 mx-auto"
+        className="margin-top-32 mx-auto"
         style={{
           position: "relative",
           zIndex: "1300",
@@ -55,36 +55,25 @@ const ComingSoon = () => {
         <img
           src={"/images/logos/uxph_conf_logo.svg"}
           alt="UXPH Conference 2020"
-          className="width-128 d-block mx-auto margin-bottom-32 margin-top-96"
+          className="d-block mx-auto margin-top-96"
+          style={{
+            width: "9.5rem",
+          }}
+        />
+        <img
+          src={"/images/logos/headline.svg"}
+          alt="Designers as navigators of change"
+          className="width-450 d-block mx-auto"
+          id="coming-soon-headline"
         />
         <h1
-          className="text-center text-white margin-bottom-48"
+          className="text-center text-white margin-bottom-48 font-size-24"
           style={{
-            fontSize: "2.5rem",
+            letterSpacing: "0.5rem",
           }}
         >
-          Coming in November 2020
+          November 2020
         </h1>
-        <p className="text-center text-white margin-bottom-32 font-size-24 font-weight-bold">
-          UXPH CONF 2020: Designers as Navigators of Change
-        </p>
-        <p className="text-white text-center margin-bottom-32">
-          <strong>The UXPH CONF</strong>, now in its 5th year, will be an online
-          event filled with talks and workshops for Experience Designers,
-          enthusiasts, and creative problem-solvers.
-        </p>
-        <p className="text-white text-center margin-bottom-32">
-          This year, we look back at how designers adapted and thrived when the
-          way we work and enjoy our social freedoms was transformed. Looking to
-          the future, what can we learn from their experience? How can we help
-          our teams navigate the constant change in the world as we design
-          products and services that have lasting impact?
-        </p>
-        <p className="text-white text-center margin-bottom-32">
-          Join us in learning from leaders of the local and international UX
-          community, as we cover research methodologies, design management and
-          methods, and many other topics to further your design career.
-        </p>
         <div className="text-center">
           <Button
             variant="outline"
@@ -103,11 +92,11 @@ const ComingSoon = () => {
             Sponsor Inquiries
           </Button>
         </div>
-        <div className="d-flex justify-content-center margin-top-64">
-          <a href={info.twitter} target="blank">
+        <div className="d-flex justify-content-center margin-top-48">
+          <a href={info.facebook_page} target="blank">
             <img
-              src={"/images/icons/twitter.svg"}
-              alt="UXPH Twitter Page"
+              src={"/images/icons/facebook-square.svg"}
+              alt="UXPH Facebook Page"
               className="margin-right-24"
             />
           </a>
@@ -118,10 +107,10 @@ const ComingSoon = () => {
               className="margin-right-24"
             />
           </a>
-          <a href={info.facebook_page} target="blank">
+          <a href={info.twitter} target="blank">
             <img
-              src={"/images/icons/facebook-square.svg"}
-              alt="UXPH Facebook Page"
+              src={"/images/icons/twitter.svg"}
+              alt="UXPH Twitter Page"
               className="margin-right-24"
             />
           </a>
