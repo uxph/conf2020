@@ -1,22 +1,29 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Card, CardBody, Row, Col } from "reactstrap";
 import testimonies from "../../data/testimonies.json";
 
-const testimonials = testimonies.map((test, index) => {
-  return (
-    <Col md={4} xs={12} className="margin-bottom-32" key={index}>
-      <p className="testimonial text-center margin-bottom-16">{test.body}</p>
-      <p className="author text-center">{test.author}</p>
-    </Col>
+const testimonials = [[], [], []];
+testimonies.forEach((test, index) => {
+  testimonials[index % 3].push(
+    <Card className="border-0 shadow margin-bottom-32">
+      <CardBody>
+        <p className="testimonial margin-bottom-16">{test.body}</p>
+        <p className="author">{test.author}</p>
+      </CardBody>
+    </Card>
   );
 });
 
 const Testimonials = () => {
   return (
     <section className="testimonials-section padding-top-192 padding-bottom-128">
-      <Container>
-        <Row>{testimonials}</Row>
-      </Container>
+      <div className="wrapper">
+        <Row>
+          <Col>{testimonials[0]}</Col>
+          <Col>{testimonials[1]}</Col>
+          <Col>{testimonials[2]}</Col>
+        </Row>
+      </div>
     </section>
   );
 };

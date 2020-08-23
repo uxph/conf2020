@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Media } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import schedule from "../../data/schedule";
 import speakers from "../../data/speakers.json";
 import Button from "../atoms/button";
@@ -89,6 +89,7 @@ const DayOne = () => {
                   width: "10.25rem",
                   borderRadius: "100%",
                 }}
+                alt={target_speaker.name}
               />
             </div>
 
@@ -166,6 +167,7 @@ const DayTwo = () => {
                   width: "10.25rem",
                   borderRadius: "100%",
                 }}
+                alt={target_speaker.name}
               />
             </div>
 
