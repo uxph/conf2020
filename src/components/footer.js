@@ -12,10 +12,10 @@ const Footer = () => {
           alt="UXPH Conference 2020"
         />
         <div className="margin-bottom-24 d-flex justify-content-center">
-          <a href={info.twitter} target="blank">
+          <a href={info.facebook_page} target="blank">
             <img
-              src={"/images/icons/twitter.svg"}
-              alt="UXPH Twitter Page"
+              src={"/images/icons/facebook-square.svg"}
+              alt="UXPH Facebook Page"
               className="margin-right-24"
             />
           </a>
@@ -26,10 +26,10 @@ const Footer = () => {
               className="margin-right-24"
             />
           </a>
-          <a href={info.facebook_page} target="blank">
+          <a href={info.twitter} target="blank">
             <img
-              src={"/images/icons/facebook-square.svg"}
-              alt="UXPH Facebook Page"
+              src={"/images/icons/twitter.svg"}
+              alt="UXPH Twitter Page"
               className="margin-right-24"
             />
           </a>

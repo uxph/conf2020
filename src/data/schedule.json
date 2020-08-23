@@ -1,52 +1,55 @@
-[
-  [
+{
+  "day_1": [
     {
-      "time": "7:30am",
+      "id": 0,
+      "time": "9:30AM",
       "type": "Keynote Speakers",
-      "speaker": [
-        {
-          "name": "Jordan Deja",
-          "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-          "link": "/",
-          "img": "/images/placeholders/avatar.png"
-        }
-      ]
+      "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 0
     },
     {
-      "time": "11:00am",
-      "type": "Workshop",
-      "speaker": [
-        {
-          "name": "Colette Kolenda",
-          "title": "Combating Memory Limitations through Simultaneous Triangulations",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-          "link": "/",
-          "img": "/images/placeholders/avatar.png"
-        },
-        {
-          "name": "Colette Kolenda",
-          "title": "Combating Memory Limitations through Simultaneous Triangulations",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-          "link": "/",
-          "img": "/images/placeholders/avatar.png"
-        }
-      ]
+      "id": 1,
+      "time": "9:30AM",
+      "type": "Keynote Speakers",
+      "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 0
+    },
+    {
+      "id": 2,
+      "time": "1:00PM",
+      "type": "Keynote Speakers",
+      "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 0
     }
   ],
-  [
+
+  "day_2": [
     {
-      "time": "7:30am",
-      "type": "Keynote",
-      "speaker": [
-        {
-          "name": "Colette Kolenda",
-          "title": "Combating Memory Limitations through Simultaneous Triangulations",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-          "link": "/",
-          "img": "/images/placeholders/avatar.png"
-        }
-      ]
+      "id": 0,
+      "time": "9:30AM",
+      "type": "Keynote Speakers",
+      "title": "Combating Memory Limitations through Simultaneous Triangulation",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 1
+    },
+    {
+      "id": 1,
+      "time": "9:30AM",
+      "type": "Keynote Speakers",
+      "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 2
+    },
+    {
+      "id": 2,
+      "time": "1:00PM",
+      "type": "Keynote Speakers",
+      "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "speaker_id": 3
     }
   ]
-]
+}

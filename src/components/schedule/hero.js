@@ -1,39 +1,46 @@
 import React from "react";
 import { Container, Card, CardBody } from "reactstrap";
+import Button from "../atoms/button";
 
-const Hero = ({ setCount }) => {
+const Hero = ({ day, setDay }) => {
+  console.log(day);
   return (
     <section className="padding-top-128 padding-bottom-256 text-center faq-hero">
       <Container className="margin-x-64">
-        <h1 className="text-white margin-bottom-24">Conference Schedule</h1>
+        <h1 className="text-white margin-bottom-8">Conference Schedule</h1>
         <p className="text-white margin-bottom-96">
           Program details and speakers to be finalized closer to the event.
         </p>
-        <Card
+        <div
           style={{
-            width: "575px",
-            margin: "0 auto -200px",
+            marginBottom: "-230px",
           }}
         >
-          <CardBody className="card-container">
-            <button
-              style={{ width: "240px" }}
-              className="button button-outer-layer"
-              onClick={() => setCount(0)}
-            >
-              Day 1
-            </button>
-            <div className="button-outer-layer">
-              <button
-                style={{ width: "240px" }}
-                className="button outline"
-                onClick={() => setCount(1)}
+          <Card className="border-0 shadow d-inline-block">
+            <CardBody className="card-container">
+              <Button
+                className="margin-right-8"
+                style={{
+                  width: "150px",
+                }}
+                variant={day === 1 ? null : "outline"}
+                onClick={() => setDay(1)}
               >
-                <span>Day 2</span>
-              </button>
-            </div>
-          </CardBody>
-        </Card>
+                Day 1
+              </Button>
+              <Button
+                className="margin-left-8"
+                style={{
+                  width: "150px",
+                }}
+                variant={day === 2 ? null : "outline"}
+                onClick={() => setDay(2)}
+              >
+                Day 2
+              </Button>
+            </CardBody>
+          </Card>
+        </div>
       </Container>
     </section>
   );
