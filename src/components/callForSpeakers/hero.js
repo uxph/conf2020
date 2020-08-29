@@ -12,10 +12,6 @@ const Hero = () => {
           />
         </a>
         <h2 className="text-white margin-bottom-24">Call for speakers</h2>
-        <p className="margin-bottom-48">
-          We need people who are willing to talk or to facilitate workshops for
-          our upcoming online conference.
-        </p>
       </div>
     </header>
   );
