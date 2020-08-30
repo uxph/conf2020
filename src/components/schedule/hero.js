@@ -3,9 +3,13 @@ import { Container, Card, CardBody } from "reactstrap";
 import Button from "../atoms/button";
 
 const Hero = ({ day, setDay }) => {
-  console.log(day);
   return (
-    <section className="padding-top-128 padding-bottom-256 text-center faq-hero">
+    <section
+      className="padding-top-128 padding-bottom-256 text-center faq-hero"
+      data-aos="fade"
+      data-aos-duration={500}
+      data-aos-once={true}
+    >
       <Container className="margin-x-64">
         <h1 className="text-white margin-bottom-8">Conference Schedule</h1>
         <p className="text-white margin-bottom-96">
@@ -16,7 +20,7 @@ const Hero = ({ day, setDay }) => {
             marginBottom: "-230px",
           }}
         >
-          <Card className="border-0 shadow d-inline-block">
+          <Card className="border-0 shadow d-inline-block day-cards">
             <CardBody className="card-container">
               <Button
                 className="margin-right-8"

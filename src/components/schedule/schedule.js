@@ -74,17 +74,26 @@ const DayOne = () => {
   ];
 
   const schedule_list = times.map((time, key) => {
+    let aos_time = 100;
     const workshops = schedule["day_1"].map((workshop, index) => {
       if (workshop.time === time) {
         const target_speaker = speakers.filter(
           (x) => workshop["speaker_id"] === x.id
         )[0];
         return (
-          <div key={index} className="d-flex margin-bottom-96">
+          <div
+            key={index}
+            className="workshop-item margin-bottom-96"
+            data-aos="fade-down"
+            data-aos-delay={aos_time}
+            style={{
+              display: "flex",
+            }}
+          >
             <div>
               <img
                 src={target_speaker.image_url}
-                className="d-block margin-right-24"
+                className="d-block margin-right-24 featured-image"
                 style={{
                   width: "10.25rem",
                   borderRadius: "100%",
@@ -92,7 +101,6 @@ const DayOne = () => {
                 alt={target_speaker.name}
               />
             </div>
-
             <div>
               <h3 className="font-size-24">{workshop.title}</h3>
               <p className="red">
@@ -152,13 +160,22 @@ const DayTwo = () => {
   ];
 
   const schedule_list = times.map((time, key) => {
+    let aos_time = 100;
     const workshops = schedule["day_2"].map((workshop, index) => {
       if (workshop.time === time) {
         const target_speaker = speakers.filter(
           (x) => workshop["speaker_id"] === x.id
         )[0];
         return (
-          <div key={index} className="d-flex margin-bottom-96">
+          <div
+            key={index}
+            className="margin-bottom-96 workshop-item"
+            data-aos="fade-down"
+            data-aos-delay={aos_time}
+            style={{
+              display: "flex",
+            }}
+          >
             <div>
               <img
                 src={target_speaker.image_url}
@@ -194,7 +211,7 @@ const DayTwo = () => {
     });
     return (
       <Row key={key}>
-        <Col md={2}>
+        <Col sm={12} md={2}>
           <div
             style={{
               position: "sticky",

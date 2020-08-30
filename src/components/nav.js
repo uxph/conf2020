@@ -59,7 +59,7 @@ const Nav = ({ activeUrl = "/" }) => {
             <li className="margin-left-16">
               <Button
                 style={{
-                  padding: "0.5rem 1.2rem",
+                  padding: "0.75rem 1.2rem",
                 }}
               >
                 Get Tickets

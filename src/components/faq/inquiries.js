@@ -11,6 +11,7 @@ import React from "react";
 // } from "reactstrap";
 // import classnames from "classnames";
 import faq from "../../data/faq.json";
+import { Row, Col } from "reactstrap";
 
 // let listCategs = faq.map((query) => query.category);
 // listCategs = listCategs.filter(
@@ -115,14 +116,18 @@ import faq from "../../data/faq.json";
 
 const Inquiries = () => {
   const faq_items = faq.map((item, index) => (
-    <div key={index} className="margin-bottom-48">
-      <h3 className="font-size-24">{item.question}</h3>
-      <p className="gray">{item.answer}</p>
-    </div>
+    <Col sm={12} md={6} key={index}>
+      <div className="margin-bottom-64">
+        <h3 className="font-size-24">{item.question}</h3>
+        <p className="gray">{item.answer}</p>
+      </div>
+    </Col>
   ));
   return (
     <section className="padding-y-64">
-      <div className="wrapper">{faq_items}</div>
+      <div className="wrapper">
+        <Row>{faq_items}</Row>
+      </div>
     </section>
   );
 };

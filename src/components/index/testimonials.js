@@ -16,7 +16,12 @@ testimonies.forEach((test, index) => {
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section padding-top-192 padding-bottom-128">
+    <section
+      className="testimonials-section padding-top-192 padding-bottom-128"
+      data-aos="fade-up"
+      data-aos-offset={500}
+      data-aos-once={true}
+    >
       <div className="wrapper">
         <Row>
           <Col>{testimonials[0]}</Col>

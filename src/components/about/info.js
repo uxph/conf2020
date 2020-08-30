@@ -1,23 +1,22 @@
 import React from "react";
 import Button from "../atoms/button";
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 const Intro = () => {
   return (
-    <section className="padding-y-256 about-info">
-      <Container>
-        <Row>
+    <section className="padding-y-96">
+      <div className="wrapper">
+        <Row data-aos="fade-up">
           <Col md={6} xs={12} className="margin-bottom-24">
             <p className="font-size-16 line-height-32 margin-right-32 margin-bottom-32">
-              Despite the many challenges faced by the world this year, it has
-              become even smaller, more connected, and more resourceful than
-              ever. Being agents of change, we designers should continue to ask,
-              "How might we mindfully drive digital transformation and inspire
-              positive, lasting experiences?". As we continue to overcome
-              technological and geographical limitations that separate us,
-              human-centered design has become an emphasis for societal
-              progress, and it all starts with learning how we can apply it to
-              an everyday context.
+              This year we invite you to{" "}
+              <strong>The UXPH 2020 Conference: Growth Beyond</strong>
+              Borders, a fully online conference made to bring together hundreds
+              of experience designers, enthusiasts, and problem-solvers of all
+              levels, from all over the map. This 2-day event features keynotes,
+              panels, and workshops from local and international design leaders,
+              as well as social gatherings with the Filipino UX design
+              community.
             </p>
             <Button variant="outline">Get Tickets</Button>
           </Col>
@@ -29,7 +28,7 @@ const Intro = () => {
             />
           </Col>
         </Row>
-      </Container>
+      </div>
     </section>
   );
 };

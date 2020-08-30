@@ -3,16 +3,20 @@ import members from "../../data/members.json";
 import { Container } from "reactstrap";
 
 const ListTeam = ({ teamMembers }) => {
+  let time = 0;
   const list = teamMembers.map((member, index) => {
     // const social_list = member.social_media.map((social) => {
     //   return social;
     // });
+    time += 400;
     return (
       <div
         md={3}
         xs={6}
         className="member-card margin-bottom-64 text-center"
         key={index}
+        data-aos="fade-up"
+        data-aos-delay={time}
       >
         <div className="avatar-placeholder">
           <img src={"/" + member.image_url} alt={member.name} />

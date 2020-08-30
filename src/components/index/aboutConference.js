@@ -22,7 +22,13 @@ const AboutConference = () => {
               ></iframe>
             </div>
           </Col>
-          <Col className="paragraph margin-bottom-32" xs={12} md={6}>
+          <Col
+            className="paragraph margin-bottom-32"
+            xs={12}
+            md={6}
+            data-aos="fade-left"
+            data-aos-once={true}
+          >
             <h2 className="margin-bottom-16">{home.about_conf["title"]}</h2>
             <p className="margin-bottom-32">
               This year we invite you to{" "}

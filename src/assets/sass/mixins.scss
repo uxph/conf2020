@@ -8,8 +8,8 @@ $primary-white: #fff;
 @mixin hero {
   background: url(/images/section-transition--main.svg),
     url(/images/backgrounds/dark-background.svg), $primary-dark;
-  background-size: 100%;
-  background-attachment: scroll, fixed;
+  background-size: 100%, cover;
+  background-attachment: scroll, scroll;
   background-position: bottom, top;
   background-repeat: no-repeat;
   width: 100%;
@@ -20,9 +20,11 @@ $primary-white: #fff;
 @mixin section-blue {
   color: $primary-white;
   background: url(/images/section-transition.svg),
-    url(/images/section-transition--main.svg), $secondary-blue;
+    url(/images/section-transition--main.svg),
+    url(/images/backgrounds/dark-background.svg);
   background-size: 100%;
-  background-position: top, bottom;
+  background-position: top, bottom, top;
+  background-attachment: scroll, scroll, local;
   background-repeat: no-repeat;
 }
 
@@ -31,8 +33,9 @@ $primary-white: #fff;
   font-family: "Work Sans";
   font-size: 16px;
   background: url(/images/section-transition.svg),
-    url(/images/section-transition--main.svg), $primary-white;
+    url(/images/section-transition--main.svg),
+    url(/images/backgrounds/light-background.svg), $primary-white;
   background-size: 100%;
-  background-position: top, bottom;
+  background-position: top, bottom, top;
   background-repeat: no-repeat;
 }

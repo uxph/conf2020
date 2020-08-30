@@ -5,10 +5,19 @@ import { Container } from "reactstrap";
 
 const Hero = () => {
   return (
-    <section className="padding-top-128 padding-bottom-256 text-center about-hero">
+    <section
+      className="padding-top-128 padding-bottom-256 text-center about-hero"
+      data-aos="fade-down"
+      data-aos-duration={500}
+    >
       <Container className="margin-x-64">
-        <div className="margin-bottom-64">
-          <img src={"/images/logos/headline.svg"} alt="Growth Beyond Borders" />
+        <div>
+          <img
+            src={"/images/logos/headline.svg"}
+            alt="Growth Beyond Borders"
+            id="headline"
+            className="margin-bottom-64"
+          />
         </div>
         <h1 className="font-size-32 text-white margin-bottom-24">
           About the Conference
@@ -19,6 +28,7 @@ const Hero = () => {
         </p>
       </Container>
       <Card
+        id="about-cta"
         style={{
           width: "575px",
           marginBottom: "-300px",

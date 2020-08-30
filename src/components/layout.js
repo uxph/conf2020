@@ -5,14 +5,23 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import Nav from "./nav";
 import Footer from "./footer";
 import "../assets/sass/main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Layout = (props) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <>
       <Nav isHomePage={props.isHomePage} activeUrl={props.activeUrl} />

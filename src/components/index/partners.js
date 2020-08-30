@@ -12,7 +12,11 @@ const items = sponsors.map((sponsor) => {
 
 const Partners = () => {
   return (
-    <section className="padding-y-64 partners-section">
+    <section
+      className="padding-y-64 partners-section"
+      data-aos="fade-up"
+      data-aos-offset={500}
+    >
       <Container>
         <h2 className="text-center margin-bottom-64 font-size-24">
           OUR PARTNERS AND SPONSORS

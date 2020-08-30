@@ -3,7 +3,12 @@ import Button from "../atoms/button";
 
 const Hero = () => {
   return (
-    <section className="padding-top-128 padding-bottom-256 text-center main-header">
+    <section
+      className="padding-top-128 padding-bottom-256 text-center main-header"
+      data-aos="fade"
+      data-aos-duration={500}
+      data-aos-once={true}
+    >
       <div className="main-header--logo">
         <img
           src={"/images/logos/uxph_conf_logo.svg"}

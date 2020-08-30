@@ -3,7 +3,11 @@ import { Row, Col, Container } from "reactstrap";
 
 const Intro = () => {
   return (
-    <section className="padding-y-128 padding-top-192">
+    <section
+      className="padding-y-128 padding-top-192"
+      data-aos="fade-up"
+      data-aos-delay={300}
+    >
       <Container>
         <Row>
           <Col md={6} xs={12} className="margin-bottom-8 text-center">
