@@ -30,7 +30,7 @@ const ComingSoon = () => {
           top: 0,
         }}
       >
-        <video className="bg-video__content" autoPlay muted loop>
+        <video className="bg-video__content" playsinline autoplay muted loop>
           <source src="/videos/CONF20_BG_bnw.webm" type="video/webm" />
         </video>
       </div>
