@@ -24,21 +24,16 @@ const ComingSoon = () => {
           opacity: "0.8",
         }}
       ></div>
-      <iframe
-        width="150%"
-        height="100%"
-        className="position-fixed"
-        id="coming-soon-video"
-        src="https://www.youtube.com/embed/EWZ5HRa2qf8?controls=0&loop=1&autoplay=1&mute=1&start=11&end=209&showinfo=0&playlist=EWZ5HRa2qf8"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        title="UXPH teaser video"
+      <div
+        className="bg-video position-fixed"
         style={{
-          top: "0",
-          left: "-390px",
-          filter: "grayscale(100%)",
-          zIndex: "1000",
+          top: 0,
         }}
-      ></iframe>
+      >
+        <video className="bg-video__content" autoPlay muted loop>
+          <source src="/videos/CONF20_BG_bnw.webm" type="video/webm" />
+        </video>
+      </div>
       <div
         id="coming-soon-content"
         className="margin-top-32 mx-auto"

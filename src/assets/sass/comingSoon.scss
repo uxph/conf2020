@@ -5,6 +5,12 @@
   background-attachment: scroll;
 }
 
+@media only screen and (max-width: 1024px) {
+  .bg-video__content {
+    width: 250% !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #form-wrapper {
     width: 90% !important;
