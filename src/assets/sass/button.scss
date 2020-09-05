@@ -18,7 +18,6 @@
 }
 
 // Standard button
-button,
 .button {
   color: var(--white);
   background-image: linear-gradient(135deg, #c077fa, #00b6e0);
@@ -31,6 +30,7 @@ button,
   padding: var(--value-16) var(--value-24);
   letter-spacing: 2px;
   transition: all 0.3s ease;
+  outline: none !important;
 }
 
 button:hover,

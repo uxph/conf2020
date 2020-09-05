@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/atoms/button";
 import info from "../data/info.json";
+import { Modal, ModalHeader, ModalBody } from "reactstrap";
 
 const ComingSoon = () => {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
   return (
     <header
       style={{
@@ -10,6 +13,19 @@ const ComingSoon = () => {
         boxSizing: "border-box",
       }}
     >
+      <Modal
+        isOpen={modal}
+        toggle={toggle}
+        style={{
+          zIndex: 9999,
+        }}
+      >
+        <ModalHeader toggle={toggle}>Buy tickets now!</ModalHeader>
+        <ModalBody>
+          <script src="https://js.tito.io/v1" async></script>
+          <tito-widget event="ultimateconf/2013"></tito-widget>
+        </ModalBody>
+      </Modal>
       {/* Video overlay */}
       <div
         id="coming-soon-overlay"
@@ -20,7 +36,7 @@ const ComingSoon = () => {
           height: "100%",
           left: "0",
           top: "0",
-          zIndex: "1100",
+          zIndex: "400",
           opacity: "0.8",
         }}
       ></div>
@@ -30,16 +46,16 @@ const ComingSoon = () => {
           top: 0,
         }}
       >
-        <video className="bg-video__content" playsinline autoplay muted loop>
+        <video className="bg-video__content" playsInline autoPlay muted loop>
           <source src="/videos/CONF20_BG_bnw.webm" type="video/webm" />
         </video>
       </div>
       <div
         id="coming-soon-content"
-        className="margin-top-32 mx-auto"
+        className="margin-top-32 margin-bottom-64 mx-auto"
         style={{
           position: "relative",
-          zIndex: "1300",
+          zIndex: "500",
           width: "700px",
           boxSizing: "border-box",
           // top: "50%",
@@ -67,15 +83,25 @@ const ComingSoon = () => {
             letterSpacing: "0.5rem",
           }}
         >
-          November 2020
+          November 7-8, 2020
         </h1>
         <div className="text-center">
+          <Button innerClassName="w-100">Buy tickets</Button>
+          <hr
+            className="margin-top-32 margin-bottom-32 d-block"
+            style={{
+              width: "2rem",
+            }}
+          />
           <Button
             variant="outline"
             bgColor="rgba(0, 0, 0, 0.9)"
             className="margin-left-8 margin-right-8 margin-bottom-16"
             href="/call-for-speakers"
             target="blank"
+            style={{
+              padding: "12px 16px",
+            }}
           >
             Speaker inquiries
           </Button>
@@ -83,6 +109,11 @@ const ComingSoon = () => {
             variant="outline"
             bgColor="rgba(0, 0, 0, 0.9)"
             className="margin-left-8 margin-right-8 margin-bottom-16"
+            href="mailto:partnerships@uxph.org"
+            target="blank"
+            style={{
+              padding: "12px 16px",
+            }}
           >
             Sponsor Inquiries
           </Button>
