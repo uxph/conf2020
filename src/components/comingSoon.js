@@ -22,7 +22,6 @@ const ComingSoon = () => {
       >
         <ModalHeader toggle={toggle}>Buy tickets now!</ModalHeader>
         <ModalBody>
-          <script src="https://js.tito.io/v1" async></script>
           <tito-widget event="ultimateconf/2013"></tito-widget>
         </ModalBody>
       </Modal>
@@ -86,7 +85,9 @@ const ComingSoon = () => {
           November 7-8, 2020
         </h1>
         <div className="text-center">
-          <Button innerClassName="w-100">Buy tickets</Button>
+          <Button innerClassName="w-100" onClick={toggle}>
+            Buy tickets
+          </Button>
           <hr
             className="margin-top-32 margin-bottom-32 d-block"
             style={{
