@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import Button from "../components/atoms/button";
 import info from "../data/info.json";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import InnerHTML from "dangerously-set-html-content";
 
 const ComingSoon = () => {
+  const titoEmbed = `
+    <script src='https://js.tito.io/v1' async></script>
+    <tito-widget event="uxph/uxph-conference-2020"></tito-widget>
+  `;
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
   return (
@@ -20,9 +25,9 @@ const ComingSoon = () => {
           zIndex: 9999,
         }}
       >
-        <ModalHeader toggle={toggle}>Buy tickets now!</ModalHeader>
+        <ModalHeader toggle={toggle}>Buy tickets</ModalHeader>
         <ModalBody>
-          <tito-widget event="ultimateconf/2013"></tito-widget>
+          <InnerHTML html={titoEmbed} />
         </ModalBody>
       </Modal>
       {/* Video overlay */}
