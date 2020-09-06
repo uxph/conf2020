@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Hero from "../components/index/hero";
 import AboutConference from "../components/index/aboutConference";
-import Figures from "../components/index/figures";
+// import Figures from "../components/index/figures";
 import Speakers from "../components/index/speakers";
 import Testimonials from "../components/index/testimonials";
 import Partners from "../components/index/partners";
@@ -26,7 +26,7 @@ const IndexPage = () => {
         <SEO title="Home" />
         <Hero />
         <AboutConference />
-        <Figures />
+        {/* <Figures /> */}
         <Speakers />
         <Testimonials />
         <Partners />

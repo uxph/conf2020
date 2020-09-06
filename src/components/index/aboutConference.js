@@ -31,7 +31,12 @@ const AboutConference = () => {
             data-aos-offset={500}
           >
             <h2 className="margin-bottom-16">{home.about_conf["title"]}</h2>
-            <p className="margin-bottom-32">
+            <p
+              className="margin-bottom-32"
+              style={{
+                fontSize: "17px",
+              }}
+            >
               This year we invite you to{" "}
               <span className="red">
                 The UXPH 2020 Conference: Growth Beyond Borders

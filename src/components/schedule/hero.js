@@ -30,7 +30,7 @@ const Hero = ({ day, setDay }) => {
                 variant={day === 1 ? null : "outline"}
                 onClick={() => setDay(1)}
               >
-                Day 1
+                Day 1 (Sat)
               </Button>
               <Button
                 className="margin-left-8"
@@ -40,7 +40,7 @@ const Hero = ({ day, setDay }) => {
                 variant={day === 2 ? null : "outline"}
                 onClick={() => setDay(2)}
               >
-                Day 2
+                Day 2 (Sun)
               </Button>
             </CardBody>
           </Card>

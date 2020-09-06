@@ -127,6 +127,19 @@ const Inquiries = () => {
     <section className="padding-y-64">
       <div className="wrapper">
         <Row>{faq_items}</Row>
+        <div className="margin-y-32">
+          <p
+            className="text-center font-size-32"
+            style={{
+              lineHeight: "40px",
+            }}
+          >
+            Can’t find an answer? Send us a message at{" "}
+            <strong>
+              <span className="red">partnerships@uxph.org</span>
+            </strong>
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -6,7 +6,8 @@
       "type": "Keynote Speakers",
       "title": "Designing Grit: Discovering Features Towards Supporting Novice Programmer DevOps Integration",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-      "speaker_id": 0
+      "speaker_id": 0,
+      "workshop": ["Software Design"]
     },
     {
       "id": 1,
@@ -33,7 +34,8 @@
       "type": "Keynote Speakers",
       "title": "Combating Memory Limitations through Simultaneous Triangulation",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
-      "speaker_id": 1
+      "speaker_id": 1,
+      "workshop": ["#"]
     },
     {
       "id": 1,

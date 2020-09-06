@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import sponsors from "../../data/sponsors.json";
+import Button from "../../components/atoms/button";
 
 const items = sponsors.map((sponsor) => {
   return (
@@ -18,10 +19,15 @@ const Partners = () => {
       data-aos-offset={500}
     >
       <Container>
-        <h2 className="text-center margin-bottom-64 font-size-24">
+        <h2 className="text-center margin-bottom-64 font-size-32">
           OUR PARTNERS AND SPONSORS
         </h2>
         <div className="partners-list">{items}</div>
+        <div className="btn-container">
+          <Button href="/sponsors" className="mx-auto">
+            View all sponsors
+          </Button>
+        </div>
       </Container>
     </section>
   );

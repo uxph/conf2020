@@ -22,7 +22,9 @@ const Hero = () => {
         </span>
       </p>
       <div className="text-center">
-        <Button className="mr-3">See Sponsorship Packages</Button>
+        <Button className="mr-3" href="mailto:partnerships@uxph.org">
+          Inquire for sponsorship
+        </Button>
       </div>
     </section>
   );

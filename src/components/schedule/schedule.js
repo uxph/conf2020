@@ -1,62 +1,9 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import schedule from "../../data/schedule";
+import schedule from "../../data/schedule.json";
 import speakers from "../../data/speakers.json";
 import Button from "../atoms/button";
-
-// const ListSpeakers = ({ speakers }) => {
-//   const listSpeakers = speakers.map((speaker, index) => {
-//     return (
-//       <Media className="margin-bottom-48">
-//         <Media left href="#" className="mr-2">
-//           <Media object src={speaker.img} alt="Generic placeholder image" />
-//         </Media>
-//         <Media body className="ml-2">
-//           <Media heading className="margin-bottom-16">
-//             {speaker.title}
-//           </Media>
-//           <h6 className="margin-bottom-16">by {speaker.name}</h6>
-//           <p style={{ lineHeight: "30px" }}>{speaker.description}</p>
-//           <Button variant="outline">Read More</Button>
-//         </Media>
-//       </Media>
-//     );
-//   });
-
-//   return <div>{listSpeakers}</div>;
-// };
-
-// const ScheduleTime = ({ day }) => {
-//   const schedTime = schedule[day].map((sched, index) => {
-//     return (
-//       <div className="margin-bottom-96">
-//         <h2 style={{ color: "#777" }} className="margin-bottom-64 text-center">
-//           {sched.type}
-//         </h2>
-//         <Row key={index}>
-//           <Col md={3}>
-//             <p style={{ color: "#777" }}>{sched.time}</p>
-//           </Col>
-//           <Col md={9}>
-//             <ListSpeakers speakers={sched.speaker} />
-//           </Col>
-//         </Row>
-//       </div>
-//     );
-//   });
-
-//   return <>{schedTime}</>;
-// };
-
-// const Schedule = ({ count }) => {
-//   return (
-//     <section className="padding-x-128">
-//       <Container>
-//         <ScheduleTime day={count} />
-//       </Container>
-//     </section>
-//   );
-// };
+import Chip from "@material-ui/core/Chip";
 
 const DayOne = () => {
   const times = [
@@ -72,6 +19,29 @@ const DayOne = () => {
     "4:30PM",
     "5:00PM",
   ];
+
+  const WorkshopChip = (workshop) => {
+    if (workshop.workshop) {
+      const workshopType = workshop.workshop.map((workType, index) => {
+        return (
+          <Chip
+            key={index}
+            label={workType}
+            variant="outlined"
+            className="margin-bottom-8 red"
+            style={{
+              borderColor: "#e8006f",
+              fontFamily: "Work Sans",
+            }}
+          />
+        );
+      });
+
+      return <>{workshopType}</>;
+    } else {
+      return null;
+    }
+  };
 
   const schedule_list = times.map((time, key) => {
     let aos_time = 100;
@@ -97,14 +67,31 @@ const DayOne = () => {
                 src={target_speaker.image_url}
                 className="d-block margin-right-24 featured-image"
                 style={{
-                  width: "10.25rem",
+                  width: "9rem",
                   borderRadius: "100%",
                 }}
                 alt={target_speaker.name}
               />
             </div>
             <div>
-              <h3 className="font-size-24">{workshop.title}</h3>
+              <Chip
+                label={workshop.type}
+                variant="outlined"
+                className="margin-bottom-8 margin-right-8 red"
+                style={{
+                  borderColor: "#e8006f",
+                  fontFamily: "Work Sans",
+                }}
+              />
+              <WorkshopChip workshop={workshop.workshop} />
+
+              <h3
+                style={{
+                  fontSize: "20px",
+                }}
+              >
+                {workshop.title}
+              </h3>
               <p className="red">
                 <strong>by {target_speaker.name}</strong>
               </p>
@@ -112,7 +99,7 @@ const DayOne = () => {
               <Button
                 variant="outline"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem 1rem",
                 }}
               >
                 Read more
@@ -139,6 +126,7 @@ const DayOne = () => {
           </div>
         </Col>
         <Col>{workshops}</Col>
+        <hr />
       </Row>
     );
   });
@@ -183,7 +171,7 @@ const DayTwo = () => {
                 src={target_speaker.image_url}
                 className="d-block margin-right-24"
                 style={{
-                  width: "10.25rem",
+                  width: "9rem",
                   borderRadius: "100%",
                 }}
                 alt={target_speaker.name}
@@ -191,7 +179,24 @@ const DayTwo = () => {
             </div>
 
             <div>
-              <h3 className="font-size-24">{workshop.title}</h3>
+              <Chip
+                label={workshop.type}
+                variant="outlined"
+                className="margin-bottom-8 red"
+                style={{
+                  borderColor: "#e8006f",
+                  fontFamily: "Work Sans",
+                }}
+              />
+              <WorkshopChip workshop={workshop.workshop} />
+
+              <h3
+                style={{
+                  fontSize: "20px",
+                }}
+              >
+                {workshop.title}
+              </h3>
               <p className="red">
                 <strong>by {target_speaker.name}</strong>
               </p>
@@ -199,7 +204,7 @@ const DayTwo = () => {
               <Button
                 variant="outline"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem 1rem",
                 }}
               >
                 Read more
@@ -226,6 +231,7 @@ const DayTwo = () => {
           </div>
         </Col>
         <Col>{workshops}</Col>
+        <hr />
       </Row>
     );
   });

@@ -37,7 +37,7 @@ const Nav = ({ activeUrl = "/" }) => {
 
   return (
     <nav
-      className="bg-white shadow-sm"
+      className="shadow-sm dark"
       style={{
         position: "fixed",
         top: "0",
@@ -49,8 +49,8 @@ const Nav = ({ activeUrl = "/" }) => {
         <div className="d-flex justify-content-between align-items-center">
           <a href="/">
             <img
-              src={"/images/logos/uxph_conf_logo.svg"}
-              className="width-64 margin-y-8"
+              src={"/images/logos/uxph_conf_logo_banner.svg"}
+              className="width-96"
               alt="UXPH Conference 2020"
             />
           </a>

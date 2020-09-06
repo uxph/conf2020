@@ -17,20 +17,26 @@ const Speakers = () => {
         }}
         className="margin-y-16 speakers-thumbnail rounded-circle"
       >
-        <div className="speakers-avatar text-center margin-bottom-24">
+        <div className="speakers-avatar text-center margin-bottom-32">
           <img src={speaker.image_url} alt={speaker.name} />
         </div>
         <h3
           className="text-center text-uppercase"
           style={{
-            fontSize: "0.83rem",
+            fontSize: "1rem",
             margin: "0",
           }}
         >
           {speaker.name}
         </h3>
-        <p className="text-center font-size-16">
-          {speaker.position} at <span>{speaker.company}</span>
+        <p
+          className="text-center font-size-16"
+          style={{
+            fontSize: "0.875rem",
+          }}
+        >
+          {speaker.position} at <br />
+          <span>{speaker.company}</span>
         </p>
         <div className="text-center padding-bottom-32">
           <img src={speaker.company_logo} alt={speaker.company} />
@@ -47,7 +53,7 @@ const Speakers = () => {
       data-aos-offset={500}
     >
       <Container>
-        <h2 className="text-center margin-bottom-64 font-size-24">
+        <h2 className="text-center margin-bottom-64 font-size-32">
           OUR SPEAKERS
         </h2>
         <div className="margin-bottom-32 speakers-list">{list_speakers}</div>

@@ -19,7 +19,12 @@ const Intro = () => {
             />
           </Col>
           <Col md={6} xs={12}>
-            <p className="font-size-16 line-height-32">
+            <p
+              className="line-height-32"
+              style={{
+                fontSize: "1.125rem",
+              }}
+            >
               Despite the many challenges faced by the world this year, it has
               become even smaller, more connected, and more resourceful than
               ever. Being agents of change, we designers should continue to ask,

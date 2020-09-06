@@ -8,7 +8,12 @@ const Intro = () => {
       <div className="wrapper">
         <Row data-aos="fade-up" data-aos-offset={500}>
           <Col md={6} xs={12} className="margin-bottom-24">
-            <p className="font-size-16 line-height-32 margin-right-32 margin-bottom-32">
+            <p
+              className="line-height-32 margin-right-32 margin-bottom-32"
+              style={{
+                fontSize: "1.125rem",
+              }}
+            >
               This year we invite you to{" "}
               <strong>The UXPH 2020 Conference: Growth Beyond</strong>
               Borders, a fully online conference made to bring together hundreds

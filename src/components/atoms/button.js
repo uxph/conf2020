@@ -7,7 +7,7 @@ const Button = ({
   className = "",
   bgColor = "white",
   style = "",
-  target = "self",
+  target = "_self",
   onClick,
 }) => {
   if (href) {

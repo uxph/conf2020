@@ -22,6 +22,9 @@ const Testimonials = () => {
       data-aos-offset={500}
       data-aos-once={true}
     >
+      <h2 className="text-center margin-bottom-64 text-uppercase font-size-32">
+        What people say about UXPH
+      </h2>
       <div className="wrapper">
         <Row>
           <Col>{testimonials[0]}</Col>
