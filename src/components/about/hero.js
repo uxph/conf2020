@@ -7,8 +7,9 @@ const Hero = () => {
   return (
     <section
       className="padding-top-128 padding-bottom-256 text-center about-hero"
-      data-aos="fade-down"
+      data-aos="fade"
       data-aos-duration={500}
+      data-aos-once={true}
     >
       <Container className="margin-x-64">
         <div>

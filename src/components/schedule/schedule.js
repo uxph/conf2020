@@ -84,8 +84,10 @@ const DayOne = () => {
           <div
             key={index}
             className="workshop-item margin-bottom-96"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay={aos_time}
+            data-aos-once={true}
+            data-aos-offset={300}
             style={{
               display: "flex",
             }}
