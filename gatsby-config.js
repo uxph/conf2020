@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `UX Philippines Conference 2020`,
+    title: `UXPH Conf 2020`,
     description: `The UXPH CONF, now in its 5th year, will be an online event filled with talks and workshops for Experience Designers, enthusiasts, and creative problem-solvers.`,
     author: `@uxphofficial`,
   },
