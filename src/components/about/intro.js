@@ -6,6 +6,7 @@ const Intro = () => {
     <section
       className="padding-y-128 padding-top-192"
       data-aos="fade-up"
+      data-aos-offset={500}
       data-aos-delay={300}
     >
       <Container>

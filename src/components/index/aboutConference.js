@@ -28,6 +28,7 @@ const AboutConference = () => {
             md={6}
             data-aos="fade-left"
             data-aos-once={true}
+            data-aos-offset={500}
           >
             <h2 className="margin-bottom-16">{home.about_conf["title"]}</h2>
             <p className="margin-bottom-32">

@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <section className="padding-y-96">
       <div className="wrapper">
-        <Row data-aos="fade-up">
+        <Row data-aos="fade-up" data-aos-offset={500}>
           <Col md={6} xs={12} className="margin-bottom-24">
             <p className="font-size-16 line-height-32 margin-right-32 margin-bottom-32">
               This year we invite you to{" "}

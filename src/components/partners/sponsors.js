@@ -18,7 +18,12 @@ const ListSponsors = ({ list, className, contentClassName, heading }) => {
   });
 
   return (
-    <div className={className}>
+    <div
+      className={className}
+      data-aos="fade-up"
+      data-aos-once={true}
+      data-aos-offset={200}
+    >
       <Container>
         <h3 className="margin-bottom-32 text-center">{heading}</h3>
         <div className={contentClassName}>{listTier}</div>
