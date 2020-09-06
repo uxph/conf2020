@@ -109,7 +109,7 @@ const ComingSoon = () => {
               padding: "12px 16px",
             }}
           >
-            Speaker inquiries
+            Speaker applications
           </Button>
           <Button
             variant="outline"
@@ -121,7 +121,7 @@ const ComingSoon = () => {
               padding: "12px 16px",
             }}
           >
-            Sponsor Inquiries
+            Sponsorship inquiries
           </Button>
         </div>
         <div className="d-flex justify-content-center margin-top-48">
