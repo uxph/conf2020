@@ -88,7 +88,7 @@ const ComingSoon = () => {
             letterSpacing: "0.5rem",
           }}
         >
-          November 7-8, 2020
+          November 14 - 15, 2020
         </h1>
         <div className="text-center">
           <Button innerClassName="w-100" onClick={toggle}>
