@@ -11,18 +11,28 @@ const SponsorModal = (props) => {
     )[0];
 
     const closeBtn = (
-      <button className="close" onClick={props.toggle}>
+      <button
+        className="close overwrite-btn"
+        style={{
+          backgroundColor: "transparent",
+        }}
+        onClick={props.toggle}
+      >
         &times;
       </button>
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-y-256 padding-x-64"
+        contentClassName="sponsor-modal"
         isOpen={props.modal}
         toggle={props.toggle}
-        fade={false}
+        zIndex={9999}
       >
-        <ModalHeader className="overwrite-modal" close={closeBtn}></ModalHeader>
+        <ModalHeader
+          className="overwrite-modal"
+          close={closeBtn}
+          c
+        ></ModalHeader>
         <Container>
           <Row className="margin-bottom-64">
             <p>{sponsorKey.name}</p>

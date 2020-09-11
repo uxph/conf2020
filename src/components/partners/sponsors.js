@@ -8,18 +8,27 @@ const gold = sponsors.filter((sponsor) => sponsor.tier === "gold");
 const silver = sponsors.filter((sponsor) => sponsor.tier === "silver");
 const bronze = sponsors.filter((sponsor) => sponsor.tier === "bronze");
 
-const ListSponsors = ({ list, className, contentClassName, heading }) => {
-  const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
-  const [speakerVal, setSponsorVal] = useState(-1);
-
+const ListSponsors = ({
+  list,
+  className,
+  contentClassName,
+  heading,
+  setModal,
+  setSponsorVal,
+  modal,
+}) => {
   const listTier = list.map((item, index) => {
     return (
       <div className="sponsor-item margin-bottom-32" key={index}>
-        <div className="img-container">
+        <div
+          className="img-container"
+          onClick={() => {
+            setSponsorVal(item.id);
+            setModal(!modal);
+          }}
+        >
           <img src={item.image_url} alt={item.name} />
         </div>
-        <SponsorModal val={speakerVal} modal={modal} toggle={toggle} />
       </div>
     );
   });
@@ -42,6 +51,10 @@ const ListSponsors = ({ list, className, contentClassName, heading }) => {
 };
 
 const Sponsors = () => {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+  const [sponsorVal, setSponsorVal] = useState(-1);
+
   return (
     <section className="sponsor-section">
       <ListSponsors
@@ -49,6 +62,9 @@ const Sponsors = () => {
         className={"padding-y-64"}
         contentClassName={"sponsor"}
         heading={"Premium Sponsors"}
+        setModal={setModal}
+        modal={modal}
+        setSponsorVal={setSponsorVal}
       />
 
       <ListSponsors
@@ -59,6 +75,9 @@ const Sponsors = () => {
         style={{
           backgroundColor: "#F6F6F6",
         }}
+        setModal={setModal}
+        modal={modal}
+        setSponsorVal={setSponsorVal}
       />
 
       <ListSponsors
@@ -66,7 +85,11 @@ const Sponsors = () => {
         className={"padding-y-64"}
         contentClassName={"sponsor"}
         heading={"Community Sponsors"}
+        setModal={setModal}
+        modal={modal}
+        setSponsorVal={setSponsorVal}
       />
+      <SponsorModal val={sponsorVal} modal={modal} toggle={toggle} />
     </section>
   );
 };
