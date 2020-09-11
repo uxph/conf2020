@@ -10,6 +10,10 @@ const SponsorModal = (props) => {
       (sponsor) => sponsor.id === props.val
     )[0];
 
+    const par = sponsorKey.description.map((item, index) => {
+      return <p key={index}>{item}</p>;
+    });
+
     const closeBtn = (
       <button
         className="close overwrite-btn"
@@ -34,8 +38,21 @@ const SponsorModal = (props) => {
           c
         ></ModalHeader>
         <Container>
-          <Row className="margin-bottom-64">
-            <p>{sponsorKey.name}</p>
+          <Row
+            className="margin-y-96 margin-y-64 text-center"
+            style={{
+              position: "relative",
+              textAlign: "center",
+              display: "block",
+            }}
+          >
+            <img
+              className="margin-bottom-32"
+              src={sponsorKey.image_url}
+              alt={sponsorKey.name}
+            />
+            <h3 className="gray">{sponsorKey.name}</h3>
+            {par}
           </Row>
         </Container>
       </Modal>
