@@ -91,26 +91,21 @@ const ComingSoon = () => {
           November 14 - 15, 2020
         </h1>
         <div className="text-center">
-          <Button innerClassName="w-100" onClick={toggle}>
-            Buy tickets
-          </Button>
           <hr
-            className="margin-top-32 margin-bottom-32 d-block"
+            className="margin-top-128 margin-bottom-32 d-block"
             style={{
               width: "2rem",
             }}
           />
           <Button
-            variant="outline"
-            bgColor="rgba(0, 0, 0, 0.9)"
             className="margin-left-8 margin-right-8 margin-bottom-16"
-            href="/call-for-speakers"
-            target="blank"
+            onClick={toggle}
+            innerClassName="w-100"
             style={{
               padding: "12px 16px",
             }}
           >
-            Speaker applications
+            Tickets on Sale Soon
           </Button>
           <Button
             variant="outline"
