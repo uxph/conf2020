@@ -57,7 +57,7 @@ const ComingSoon = () => {
       </div>
       <div
         id="coming-soon-content"
-        className="margin-top-32 margin-bottom-64 mx-auto"
+        className="margin-top-32 margin-bottom-48 mx-auto"
         style={{
           position: "relative",
           zIndex: "500",
@@ -120,7 +120,7 @@ const ComingSoon = () => {
             Sponsorship inquiries
           </Button>
         </div>
-        <div className="text-center margin-top-16">
+        <div className="text-center margin-top-4">
           <p
             style={{
               color: "#FFF",
