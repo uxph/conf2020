@@ -92,13 +92,13 @@ const ComingSoon = () => {
         </h1>
         <div className="text-center">
           <hr
-            className="margin-top-128 margin-bottom-32 d-block"
+            className="margin-top-64 margin-bottom-32 d-block"
             style={{
               width: "2rem",
             }}
           />
           <Button
-            className="margin-left-8 margin-right-8 margin-bottom-16"
+            className="margin-left-8 margin-right-8 margin-bottom-32"
             onClick={toggle}
             innerClassName="w-100"
             style={{
@@ -120,7 +120,16 @@ const ComingSoon = () => {
             Sponsorship inquiries
           </Button>
         </div>
-        <div className="d-flex justify-content-center margin-top-48">
+        <div className="text-center margin-top-16">
+          <p
+            style={{
+              color: "#FFF",
+            }}
+          >
+            Follow us for the announcement!
+          </p>
+        </div>
+        <div className="d-flex justify-content-center margin-top-32">
           <a href={info.facebook_page} target="blank">
             <img
               src={"/images/icons/facebook-square.svg"}
