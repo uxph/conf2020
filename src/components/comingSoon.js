@@ -91,12 +91,6 @@ const ComingSoon = () => {
           November 14 - 15, 2020
         </h1>
         <div className="text-center">
-          <hr
-            className="margin-top-64 margin-bottom-32 d-block"
-            style={{
-              width: "2rem",
-            }}
-          />
           <Button
             className="margin-left-8 margin-right-8 margin-bottom-32"
             onClick={toggle}
@@ -119,6 +113,12 @@ const ComingSoon = () => {
           >
             Sponsorship inquiries
           </Button>
+          <hr
+            className="margin-top-64 margin-bottom-32 d-block"
+            style={{
+              width: "2rem",
+            }}
+          />
         </div>
         <div className="text-center margin-top-4">
           <p
