@@ -57,7 +57,7 @@ const ComingSoon = () => {
       </div>
       <div
         id="coming-soon-content"
-        className="margin-top-32 margin-bottom-64 mx-auto"
+        className="margin-top-32 margin-bottom-48 mx-auto"
         style={{
           position: "relative",
           zIndex: "500",
@@ -91,26 +91,15 @@ const ComingSoon = () => {
           November 14 - 15, 2020
         </h1>
         <div className="text-center">
-          <Button innerClassName="w-100" onClick={toggle}>
-            Buy tickets
-          </Button>
-          <hr
-            className="margin-top-32 margin-bottom-32 d-block"
-            style={{
-              width: "2rem",
-            }}
-          />
           <Button
-            variant="outline"
-            bgColor="rgba(0, 0, 0, 0.9)"
-            className="margin-left-8 margin-right-8 margin-bottom-16"
-            href="/call-for-speakers"
-            target="blank"
+            className="margin-left-8 margin-right-8 margin-bottom-32"
+            onClick={toggle}
+            innerClassName="w-100"
             style={{
               padding: "12px 16px",
             }}
           >
-            Speaker applications
+            Tickets on Sale Soon
           </Button>
           <Button
             variant="outline"
@@ -124,8 +113,23 @@ const ComingSoon = () => {
           >
             Sponsorship inquiries
           </Button>
+          <hr
+            className="margin-top-32 margin-bottom-32 d-block"
+            style={{
+              width: "2rem",
+            }}
+          />
         </div>
-        <div className="d-flex justify-content-center margin-top-48">
+        <div className="text-center margin-top-4">
+          <p
+            style={{
+              color: "#FFF",
+            }}
+          >
+            Follow us for the announcement!
+          </p>
+        </div>
+        <div className="d-flex justify-content-center margin-top-32">
           <a href={info.facebook_page} target="blank">
             <img
               src={"/images/icons/facebook-square.svg"}
