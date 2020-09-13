@@ -11,7 +11,39 @@ const SponsorModal = (props) => {
     )[0];
 
     const par = sponsorKey.description.map((item, index) => {
-      return <p key={index}>{item}</p>;
+      return (
+        <p className="margin-x-48" key={index}>
+          {item}
+        </p>
+      );
+    });
+
+    const socmeds = sponsorKey.social_media.map((item, index) => {
+      if (item.includes("facebook"))
+        return (
+          <a href={item} className="gray" target="blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+        );
+      else if (item.includes("twitter"))
+        return (
+          <a href={item} className="gray" target="blank">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        );
+      else if (item.includes("linkedin"))
+        return (
+          <a href={item} className="gray" target="blank">
+            <i className="fa fa-linkedin"></i>
+          </a>
+        );
+      else if (item.includes("github"))
+        return (
+          <a href={item} className="gray" target="blank">
+            <i className="fa fa-github-square"></i>
+          </a>
+        );
+      else return <></>;
     });
 
     const closeBtn = (
@@ -51,8 +83,19 @@ const SponsorModal = (props) => {
               src={sponsorKey.image_url}
               alt={sponsorKey.name}
             />
-            <h3 className="gray">{sponsorKey.name}</h3>
-            {par}
+            <a
+              href={sponsorKey.website_url}
+              style={{
+                textDecoration: "none",
+              }}
+              target="blank"
+            >
+              <h3 className="gray">{sponsorKey.name}</h3>
+            </a>
+            <div className="modal-body custom-scrollbar">
+              {par}
+              <div className="socmedList">{socmeds}</div>
+            </div>
           </Row>
         </Container>
       </Modal>

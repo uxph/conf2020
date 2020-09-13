@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import sponsors from "../../data/sponsors.json";
 import { Container } from "reactstrap";
 import SponsorModal from "./sponsorModal";
+import "font-awesome/css/font-awesome.min.css";
+
 //import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const gold = sponsors.filter((sponsor) => sponsor.tier === "gold");
@@ -20,15 +22,18 @@ const ListSponsors = ({
   const listTier = list.map((item, index) => {
     return (
       <div className="sponsor-item margin-bottom-32" key={index}>
-        <div
-          className="img-container"
-          onClick={() => {
+        <a
+          href="/"
+          onClick={(e) => {
             setSponsorVal(item.id);
             setModal(!modal);
+            e.preventDefault();
           }}
         >
-          <img src={item.image_url} alt={item.name} />
-        </div>
+          <div className="img-container">
+            <img src={item.image_url} alt={item.name} />
+          </div>
+        </a>
       </div>
     );
   });
@@ -52,7 +57,9 @@ const ListSponsors = ({
 
 const Sponsors = () => {
   const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
+  const toggle = (e) => {
+    setModal(!modal);
+  };
   const [sponsorVal, setSponsorVal] = useState(-1);
 
   return (

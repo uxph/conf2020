@@ -26,7 +26,12 @@
     ],
     "image_url": "/images/sponsors/sponsor_02.png",
     "website_url": "#",
-    "social_media": ["#"],
+    "social_media": [
+      "facebook.com",
+      "twitter.com",
+      "github.com",
+      "linkedin.com"
+    ],
     "tier": "silver"
   },
   {
