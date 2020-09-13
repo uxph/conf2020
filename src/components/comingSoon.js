@@ -114,7 +114,7 @@ const ComingSoon = () => {
             Sponsorship inquiries
           </Button>
           <hr
-            className="margin-top-64 margin-bottom-32 d-block"
+            className="margin-top-32 margin-bottom-32 d-block"
             style={{
               width: "2rem",
             }}
