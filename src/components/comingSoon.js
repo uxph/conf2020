@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Button from "../components/atoms/button";
 import info from "../data/info.json";
-import { Modal, ModalHeader, ModalBody } from "reactstrap";
-import InnerHTML from "dangerously-set-html-content";
+// import PaymentModal from "../components/atoms/paymentModal";
 
 const ComingSoon = () => {
-  const titoEmbed = `
-    <script src='https://js.tito.io/v1' async></script>
-    <tito-widget event="uxph/uxph-conference-2020"></tito-widget>
-  `;
+  // const titoEmbed = `
+  //   <script src='https://js.tito.io/v1' async></script>
+  //   <tito-widget event="uxph/uxph-conference-2020"></tito-widget>
+  // `;
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
   return (
@@ -18,18 +17,7 @@ const ComingSoon = () => {
         boxSizing: "border-box",
       }}
     >
-      <Modal
-        isOpen={modal}
-        toggle={toggle}
-        style={{
-          zIndex: 9999,
-        }}
-      >
-        <ModalHeader toggle={toggle}>Buy tickets</ModalHeader>
-        <ModalBody>
-          <InnerHTML html={titoEmbed} />
-        </ModalBody>
-      </Modal>
+      {/* <PaymentModal isOpen={modal} toggle={toggle} /> */}
       {/* Video overlay */}
       <div
         id="coming-soon-overlay"
@@ -41,10 +29,10 @@ const ComingSoon = () => {
           left: "0",
           top: "0",
           zIndex: "400",
-          opacity: "0.8",
+          opacity: "1",
         }}
       ></div>
-      <div
+      {/* <div
         className="bg-video position-fixed"
         style={{
           top: 0,
@@ -54,7 +42,7 @@ const ComingSoon = () => {
           <source src="/videos/CONF20_BG_bnw.mp4" type="video/mp4" />
           <source src="/videos/CONF20_BG_bnw.webm" type="video/webm" />
         </video>
-      </div>
+      </div> */}
       <div
         id="coming-soon-content"
         className="margin-top-32 margin-bottom-48 mx-auto"
@@ -99,7 +87,7 @@ const ComingSoon = () => {
               padding: "12px 16px",
             }}
           >
-            Tickets on Sale Soon
+            Tickets on sale soon
           </Button>
           <Button
             variant="outline"
