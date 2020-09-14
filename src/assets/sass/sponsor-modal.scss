@@ -35,6 +35,29 @@
   background-image: none;
   font-size: 24px !important;
 }
+.overwrite-btn-2 {
+  background-color: #c077fa !important;
+  height: 48px !important;
+  width: 48px !important;
+  text-align: center;
+  color: #fff !important;
+  border-radius: 100% !important;
+  background-image: none !important;
+  font-size: 48px !important;
+  z-index: 9999 !important;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.92 !important;
+
+  &:hover {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    opacity: 1 !important;
+  }
+}
+.pos-fixed {
+  position: fixed;
+  top: 20%;
+  right: 10%;
+}
 
 .socmedList {
   display: inline-block;
@@ -43,6 +66,22 @@
     text-decoration: none;
     opacity: 0.8;
     margin: 16px;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 1;
+      color: inherit !important;
+    }
+  }
+}
+
+.socmedList-speaker {
+  display: inline-block;
+  font-size: 32px;
+  a {
+    text-decoration: none;
+    opacity: 0.8;
+    margin-right: 32px;
 
     &:hover {
       text-decoration: none;
