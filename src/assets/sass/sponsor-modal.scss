@@ -36,20 +36,19 @@
   font-size: 24px !important;
 }
 .overwrite-btn-2 {
-  background-color: #c077fa !important;
+  background-color: transparent !important;
   height: 48px !important;
   width: 48px !important;
   text-align: center;
-  color: #fff !important;
   border-radius: 100% !important;
   background-image: none !important;
   font-size: 48px !important;
   z-index: 9999 !important;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
-  opacity: 0.92 !important;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.6 !important;
 
   &:hover {
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
     opacity: 1 !important;
   }
 }
