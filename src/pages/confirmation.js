@@ -23,7 +23,7 @@ const ConfirmationPage = () => {
     const tickets = [
       {
         name: "super_early_bird",
-        quantity: parseInt(urlParams.get("early_bird")),
+        quantity: parseInt(urlParams.get("super_early_bird")),
       },
     ]
       .filter((x) => x.quantity)
@@ -34,7 +34,9 @@ const ConfirmationPage = () => {
       data: {
         attributes: {
           amount: parseInt(amount),
-          description: `{discount_code: ${discountCode}, ${tickets}}`,
+          description: `{discount_code: ${
+            discountCode ? discountCode : "none"
+          }, ${tickets}}`,
           source: {
             type: "source",
             id: id,

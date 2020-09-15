@@ -12,10 +12,12 @@ import {
   Col,
   Row,
   Table,
+  Alert,
 } from "reactstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Button from "./button";
 import numeral from "numeral";
+import months from "months";
 import discount_codes from "../../data/discounts.json";
 
 // const public_key = "pk_live_BgwqPfGCXbdTYUnSJZwFGDLN";
@@ -26,16 +28,43 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
 const PaymentModal = ({ isOpen, toggle }) => {
+  // getting the list of payments
+  const [paymentList, setPaymentList] = useState(null);
+  const fetchAllPayments = () => {
+    const data = null;
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === this.DONE) {
+        const responseText = JSON.parse(this.responseText);
+        console.log("fetchAllPayments", responseText);
+        if (responseText.data) {
+          setPaymentList(responseText.data);
+        }
+      }
+    });
+
+    xhr.open("GET", "https://api.paymongo.com/v1/payments?limit=100");
+    xhr.setRequestHeader("authorization", auth_sk);
+
+    xhr.send(data);
+  };
+
   // tickets
   const superEarlyBirdPrice = 2000;
   const [superEarlyBirdQuantity, setSuperEarlyBirdQuantity] = useState(1);
 
+  // payment method
   const [paymentMethod, setPaymentMethod] = useState("gcash");
 
+  // authentication variables
   const [checkoutUrl, setCheckoutUrl] = useState(null);
   const [confirmNumber, setConfirmNumber] = useState(null);
   const [copyCode, setCopyCode] = useState(null);
+  const [error, setError] = useState([]);
 
+  // price calculations
   const [subtotal, setSubtotal] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [discountCode, setDiscountCode] = useState("");
@@ -53,6 +82,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   const [expiryYear, setExpiryYear] = useState(2020);
   const [cvc, setCvc] = useState(null);
 
+  // Paymongo API for card method
   const [paymentIntentId, setPaymentIntentId] = useState(null);
   const [paymentMethodId, setPaymentMethodId] = useState(null);
 
@@ -68,6 +98,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
     </option>
   ));
 
+  // useEffect for ticket pricing calculations
   useEffect(() => {
     let superEarlyBirdTotal = superEarlyBirdQuantity * superEarlyBirdPrice;
     setSubtotal(superEarlyBirdTotal);
@@ -78,6 +109,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
     }
   }, [superEarlyBirdQuantity, setSuperEarlyBirdQuantity, subtotal]);
 
+  // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
     if (discount_codes[lowerCasedCode]) {
@@ -91,22 +123,141 @@ const PaymentModal = ({ isOpen, toggle }) => {
     }
   }, [discountCode, subtotal]);
 
+  // useEffect for checkout URL
   useEffect(() => {
     setCheckoutUrl(null);
   }, [subtotal]);
 
+  // useEffect for modal open/close
   useEffect(() => {
     if (!isOpen) {
       setCopyCode(null);
+      fetchAllPayments(); // initial fetching of all payments
+      setError([]);
     }
   }, [isOpen]);
 
-  useEffect(() => {
-    if (paymentMethodId && paymentIntentId) {
+  // error handling logic
+  const errorChecking = () => {
+    let errorList = [];
+    setError([]);
+    if (firstName === null || firstName === "") {
+      errorList.push(
+        <small key="firstName" className="d-block">
+          <strong>First name</strong> is required.
+        </small>
+      );
+    }
+
+    if (lastName === null || lastName === "") {
+      errorList.push(
+        <small key="lastName" className="d-block">
+          <strong>Last name</strong> is required.
+        </small>
+      );
+    }
+
+    if (email === null || email === "") {
+      errorList.push(
+        <small key="email" className="d-block">
+          <strong>Email</strong> is required.
+        </small>
+      );
+    }
+
+    if (mobileNumber === null || mobileNumber === "") {
+      errorList.push(
+        <small key="mobileNumber" className="d-block">
+          <strong>Mobile number</strong> is required.
+        </small>
+      );
+    } else if (mobileNumber.length !== 11) {
+      errorList.push(
+        <small key="mobileNumber" className="d-block">
+          <strong>Mobile number</strong> must be 11 digits.
+        </small>
+      );
+    } else if (mobileNumber.substring(0, 2) !== "09") {
+      errorList.push(
+        <small key="mobileNumber" className="d-block">
+          <strong>Mobile number</strong> must start with "09".
+        </small>
+      );
+    }
+
+    if (paymentMethod === "card") {
+      if (cardNumber === null || cardNumber === "") {
+        errorList.push(
+          <small key="cardNumber" className="d-block">
+            <strong>Card number</strong> is required.
+          </small>
+        );
+      }
+
+      if (cvc === null || cvc === "") {
+        errorList.push(
+          <small key="cvc" className="d-block">
+            <strong>CVC</strong> is required.
+          </small>
+        );
+      }
+
+      const currMonth = new Date().getMonth() + 1;
+      const currYear = new Date().getFullYear();
+      if (expiryYear < currYear) {
+        errorList.push(
+          <small key="expiryDate" className="d-block">
+            Your card seems to be expired already.
+          </small>
+        );
+      } else if (expiryMonth <= currMonth && expiryYear === currYear) {
+        errorList.push(
+          <small key="expiryDate" className="d-block">
+            Your card seems to be expired already.
+          </small>
+        );
+      }
+    }
+
+    if (subtotal <= 0) {
+      errorList.push(
+        <small key="noPurchase" className="d-block">
+          You have not selected a ticket yet.
+        </small>
+      );
+    }
+
+    if (errorList.length > 0) {
+      setError(errorList);
+    }
+
+    return errorList.length > 0;
+  };
+
+  // Paymongo API for paying with GCash
+  const payWithGcash = (details) => {
+    let errorFound = errorChecking();
+    if (!errorFound) {
+      // parseInt(details.amount) * 100
+      const successUrl = `http://localhost:8000/confirmation/?amount=${10000}&discount_code=${
+        details.discountCode
+      }&super_early_bird=${details.superEarlyBird}`;
+
       const data = JSON.stringify({
         data: {
           attributes: {
-            payment_method: paymentMethodId,
+            amount: 10000, // parseInt(details.amount) * 100
+            redirect: {
+              success: successUrl,
+              failed: "http://localhost:8000/payment-error",
+            },
+            billing: {
+              name: details.name,
+              email: details.email,
+              phone: details.phone,
+            },
+            type: "gcash",
+            currency: "PHP",
           },
         },
       });
@@ -115,67 +266,29 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
-          console.log("Attach paymentIntent", this.responseText);
+          const responseText = JSON.parse(this.responseText);
+          console.log(responseText);
+          if (responseText.data) {
+            setCheckoutUrl(responseText.data.attributes.redirect.checkout_url);
+            setConfirmNumber(responseText.data.id);
+            setError([]);
+          } else {
+            setError(responseText.errors[0].detail);
+          }
         }
       });
 
-      xhr.open(
-        "POST",
-        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
-      );
+      xhr.open("POST", "https://api.paymongo.com/v1/sources");
       xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("authorization", auth_sk);
+      xhr.setRequestHeader("authorization", auth_pk);
 
       xhr.send(data);
     }
-  }, [paymentIntentId, paymentMethodId]);
-
-  const payWithGcash = (details) => {
-    // parseInt(details.amount) * 100
-    const successUrl = `http://localhost:8000/confirmation/?amount=${10000}&discount_code=${
-      details.discountCode
-    }&super_early_bird=${details.superEarlyBird}`;
-
-    const data = JSON.stringify({
-      data: {
-        attributes: {
-          amount: 10000, // parseInt(details.amount) * 100
-          redirect: {
-            success: successUrl,
-            failed: "http://localhost:8000/payment-error",
-          },
-          billing: {
-            name: details.name,
-            email: details.email,
-            phone: details.phone,
-          },
-          type: "gcash",
-          currency: "PHP",
-        },
-      },
-    });
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === this.DONE) {
-        const responseText = JSON.parse(this.responseText);
-        console.log(responseText);
-        if (responseText.data) {
-          setCheckoutUrl(responseText.data.attributes.redirect.checkout_url);
-          setConfirmNumber(responseText.data.id);
-        }
-      }
-    });
-
-    xhr.open("POST", "https://api.paymongo.com/v1/sources");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("authorization", auth_pk);
-
-    xhr.send(data);
   };
 
+  // Paymongo API for paying with credit/debit card
   const payWithCard = (details) => {
+    // Creating payment intent
     const createPaymentIntent = () => {
       const tickets = [
         {
@@ -204,8 +317,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
-          console.log("Create paymentIntent", this.responseText);
           const responseText = JSON.parse(this.responseText);
+          console.log("Create paymentIntent", responseText);
 
           if (responseText.data) {
             setPaymentIntentId(responseText.data.id);
@@ -220,6 +333,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.send(data);
     };
 
+    // Creating payment method
     const createPaymentMethod = () => {
       const data = JSON.stringify({
         data: {
@@ -233,7 +347,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             billing: {
               name: details.name,
               email: details.email,
-              phone: details.mobileNumber,
+              phone: details.phone,
             },
             type: "card",
           },
@@ -244,8 +358,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
-          console.log("Create paymentMethod", this.responseText);
           const responseText = JSON.parse(this.responseText);
+          console.log("Create paymentMethod", responseText);
 
           if (responseText.data) {
             setPaymentMethodId(responseText.data.id);
@@ -260,8 +374,39 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.send(data);
     };
 
-    createPaymentMethod();
-    createPaymentIntent();
+    const errorFound = errorChecking();
+    if (!errorFound) {
+      createPaymentMethod();
+      createPaymentIntent();
+    }
+  };
+
+  // Paymongo API for ACTUALLY paying with credit/debit card
+  const attachPayWithCard = () => {
+    const data = JSON.stringify({
+      data: {
+        attributes: {
+          payment_method: paymentMethodId,
+        },
+      },
+    });
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === this.DONE) {
+        console.log("Attach paymentIntent", this.responseText);
+      }
+    });
+
+    xhr.open(
+      "POST",
+      `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+    );
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.setRequestHeader("authorization", auth_sk);
+
+    xhr.send(data);
   };
 
   return (
@@ -274,7 +419,10 @@ const PaymentModal = ({ isOpen, toggle }) => {
       id="payment-modal"
     >
       <ModalHeader toggle={toggle} className="border-0">
-        Buy tickets
+        Buy tickets{" "}
+        <span className="d-none">
+          {paymentList ? paymentList.length : null}
+        </span>
       </ModalHeader>
       {checkoutUrl && paymentMethod === "gcash" ? (
         <>
@@ -330,6 +478,75 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 {copyCode ? "Copied" : "Copy"}
               </Button>
             </CopyToClipboard>
+          </ModalFooter>
+        </>
+      ) : paymentMethodId && paymentMethodId && paymentMethod === "card" ? (
+        <>
+          {/* Credit/Debit card payment instructions */}
+          <ModalBody id="modal-body">
+            <p
+              className="font-weight-bold"
+              style={{
+                fontSize: "1.125rem",
+              }}
+            >
+              Basic Information
+            </p>
+            <Table>
+              <tbody>
+                <tr>
+                  <td className="font-weight-bold">Name:</td>
+                  <td>
+                    {firstName} {lastName}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">Email:</td>
+                  <td>{email}</td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">Mobile number:</td>
+                  <td>{mobileNumber}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <br />
+            <p
+              className="font-weight-bold"
+              style={{
+                fontSize: "1.125rem",
+              }}
+            >
+              Credit/Debit card details
+            </p>
+            <Table>
+              <tbody>
+                <tr>
+                  <td className="font-weight-bold">Card number:</td>
+                  <td>{cardNumber}</td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">Expiry month & year:</td>
+                  <td>
+                    {months[expiryMonth - 1]} {expiryYear}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">CVC:</td>
+                  <td>{cvc}</td>
+                </tr>
+              </tbody>
+            </Table>
+          </ModalBody>
+          <ModalFooter className="border-0">
+            <Button
+              style={{
+                padding: "8px 16px",
+              }}
+              onClick={() => attachPayWithCard()}
+            >
+              Place Order
+            </Button>
           </ModalFooter>
         </>
       ) : (
@@ -491,8 +708,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         </Label>
                         <CustomInput
                           type="select"
-                          id="expiryMonth"
-                          name="expiryMonth"
+                          id="expiryYear"
+                          name="expiryYear"
                           required
                           value={expiryYear}
                           onChange={(event) =>
@@ -611,6 +828,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </Col>
               </Row>
             </Form>
+            {error.length > 0 && <Alert color="danger">{error}</Alert>}
           </ModalBody>
           <ModalFooter className="border-0">
             <Button
