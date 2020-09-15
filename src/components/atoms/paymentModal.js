@@ -239,7 +239,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
     let errorFound = errorChecking();
     if (!errorFound) {
       // parseInt(details.amount) * 100
-      const successUrl = `https://loving-volhard-7197c7.netlify.app/confirmation/?amount=${10000}&discount_code=${
+      const successUrl = `${window.location.protocol}//${
+        window.location.hostname
+      }/confirmation/?amount=${10000}&discount_code=${
         details.discountCode
       }&super_early_bird=${details.superEarlyBird}`;
 
@@ -249,7 +251,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             amount: 10000, // parseInt(details.amount) * 100
             redirect: {
               success: successUrl,
-              failed: "https://loving-volhard-7197c7.netlify.app/payment-error",
+              failed: `${window.location.protocol}//${window.location.hostname}/payment-error`,
             },
             billing: {
               name: details.name,
