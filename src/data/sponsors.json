@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "name": "Ateneo De Davao University",
+    "name": "Grafik Nine",
     "description": ["#"],
     "image_url": "/images/sponsors/sponsor_01.png",
     "website_url": "#",
@@ -20,10 +20,18 @@
   {
     "id": 2,
     "name": "Symph",
-    "description": ["#"],
+    "description": [
+      "We are a team of designers and developers that create technology solutions to change the world. We love to build products that people love to use! With our team’s diverse skill set – user experience, design, branding, web and mobile development, product strategy and business analysis – Symph is constantly turning our customer’s ideas into successful realities.",
+      "At Symph, our work is fueled by love and passion. We put a lot of skill, effort, and heart onto what we do because we want to be able to create things that people would value. We desire to help change the world positively, and help people with the same vision, act on the same. Similarly, we strive to help ourselves and our team change for the better as we believe that change is the key to growth."
+    ],
     "image_url": "/images/sponsors/sponsor_02.png",
     "website_url": "#",
-    "social_media": ["#"],
+    "social_media": [
+      "facebook.com",
+      "twitter.com",
+      "github.com",
+      "linkedin.com"
+    ],
     "tier": "silver"
   },
   {
