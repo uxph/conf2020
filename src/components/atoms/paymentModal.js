@@ -73,6 +73,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // Basic info
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
+  const [company, setCompany] = useState(null);
   const [email, setEmail] = useState(null);
   const [mobileNumber, setMobileNumber] = useState(null);
 
@@ -153,6 +154,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
       errorList.push(
         <small key="lastName" className="d-block">
           <strong>Last name</strong> is required.
+        </small>
+      );
+    }
+
+    if (company === null || company === "") {
+      errorList.push(
+        <small key="company" className="d-block">
+          <strong>Company</strong> is required.
         </small>
       );
     }
@@ -241,9 +250,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
       // parseInt(details.amount) * 100
       const successUrl = `${window.location.protocol}//${
         window.location.hostname
-      }/confirmation/?amount=${10000}&discount_code=${
-        details.discountCode
-      }&super_early_bird=${details.superEarlyBird}`;
+      }/confirmation/?amount=${10000}&company=${
+        details.company
+      }&discount_code=${details.discountCode}&super_early_bird=${
+        details.superEarlyBird
+      }`;
 
       const data = JSON.stringify({
         data: {
@@ -466,12 +477,20 @@ const PaymentModal = ({ isOpen, toggle }) => {
             </div>
           </ModalBody>
           <ModalFooter className="border-0">
+            <Button
+              variant="outline"
+              onClick={() => setCheckoutUrl(null)}
+              style={{
+                padding: "8px 16px",
+              }}
+            >
+              Back
+            </Button>
             <CopyToClipboard
               text={confirmNumber}
               onCopy={() => setCopyCode(confirmNumber)}
             >
               <Button
-                variant="outline"
                 onClick={() => setCopyCode(confirmNumber)}
                 style={{
                   padding: "8px 16px",
@@ -482,7 +501,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             </CopyToClipboard>
           </ModalFooter>
         </>
-      ) : paymentMethodId && paymentMethodId && paymentMethod === "card" ? (
+      ) : paymentIntentId && paymentMethodId && paymentMethod === "card" ? (
         <>
           {/* Credit/Debit card payment instructions */}
           <ModalBody id="modal-body">
@@ -541,6 +560,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
             </Table>
           </ModalBody>
           <ModalFooter className="border-0">
+            <Button
+              variant="outline"
+              style={{
+                padding: "8px 16px",
+              }}
+              onClick={() => setPaymentIntentId(null)}
+            >
+              Back
+            </Button>
             <Button
               style={{
                 padding: "8px 16px",
@@ -638,6 +666,19 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       </FormGroup>
                     </Col>
                   </Row>
+                  <FormGroup>
+                    <Label for="company">
+                      Company <span className="red">*</span>
+                    </Label>
+                    <Input
+                      type="company"
+                      name="company"
+                      id="company"
+                      required
+                      value={company ? company : ""}
+                      onChange={(event) => setCompany(event.target.value)}
+                    />
+                  </FormGroup>
                   <FormGroup>
                     <Label for="email">
                       Email <span className="red">*</span>
@@ -866,6 +907,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 onClick={() =>
                   payWithGcash({
                     name: `${firstName} ${lastName}`,
+                    company: company,
                     email: email,
                     phone: mobileNumber,
                     amount: total,
@@ -885,6 +927,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 onClick={() =>
                   payWithCard({
                     name: `${firstName} ${lastName}`,
+                    company: company,
                     email: email,
                     phone: mobileNumber,
                     cardNumber: cardNumber,

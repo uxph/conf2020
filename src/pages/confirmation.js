@@ -20,6 +20,9 @@ const ConfirmationPage = () => {
     const discountCode = urlParams.get("discount_code")
       ? urlParams.get("discount_code")
       : "none";
+    const company = urlParams.get("company")
+      ? urlParams.get("company")
+      : "none";
     const tickets = [
       {
         name: "super_early_bird",
@@ -36,7 +39,7 @@ const ConfirmationPage = () => {
           amount: parseInt(amount),
           description: `{discount_code: ${
             discountCode ? discountCode : "none"
-          }, ${tickets}}`,
+          }, company: ${company}, ${tickets}}`,
           source: {
             type: "source",
             id: id,
