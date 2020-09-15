@@ -239,7 +239,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
     let errorFound = errorChecking();
     if (!errorFound) {
       // parseInt(details.amount) * 100
-      const successUrl = `http://localhost:8000/confirmation/?amount=${10000}&discount_code=${
+      const successUrl = `https://loving-volhard-7197c7.netlify.app/confirmation/?amount=${10000}&discount_code=${
         details.discountCode
       }&super_early_bird=${details.superEarlyBird}`;
 
@@ -249,7 +249,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             amount: 10000, // parseInt(details.amount) * 100
             redirect: {
               success: successUrl,
-              failed: "http://localhost:8000/payment-error",
+              failed: "https://loving-volhard-7197c7.netlify.app/payment-error",
             },
             billing: {
               name: details.name,
@@ -795,8 +795,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   </Col>
                 </FormGroup>
               )}
-
-              <Row className="margin-top-32 px-2">
+              <Row
+                className={`margin-top-32 px-2 ${
+                  discount <= 0 ? "margin-bottom-12" : ""
+                }`}
+              >
                 <Col>
                   <p className="font-size-26 mb-0 gray">Subtotal</p>
                 </Col>
@@ -806,18 +809,19 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   </p>
                 </Col>
               </Row>
-              <Row className="margin-bottom-12 px-2">
-                <Col>
-                  <p className="font-size-26 mb-0 gray">Discount price</p>
-                </Col>
-                <Col>
-                  <p className="font-size-26 mb-0 text-right gray">
-                    PHP {discount > 0 ? "-" : ""}
-                    {numeral(discount).format("0,0.00")}
-                  </p>
-                </Col>
-              </Row>
-              <Row className="margin-top-32 margin-bottom-24 px-2">
+              {discount > 0 && (
+                <Row className="margin-bottom-32 px-2">
+                  <Col>
+                    <p className="font-size-26 mb-0 gray">You saved</p>
+                  </Col>
+                  <Col>
+                    <p className="font-size-26 mb-0 text-right gray">
+                      <strike>PHP {numeral(discount).format("0,0.00")}</strike>
+                    </p>
+                  </Col>
+                </Row>
+              )}
+              <Row className="margin-bottom-24 px-2">
                 <Col>
                   <p className="font-size-24 mb-0 gray">Total</p>
                 </Col>
