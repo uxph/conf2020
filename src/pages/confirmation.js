@@ -22,7 +22,7 @@ const ConfirmationPage = () => {
       : "none";
     const tickets = [
       {
-        name: "early_bird",
+        name: "super_early_bird",
         quantity: parseInt(urlParams.get("early_bird")),
       },
     ]
@@ -54,7 +54,7 @@ const ConfirmationPage = () => {
         if (responseText.data) {
           setConfirmMessage("Payment successful!");
         } else {
-          setConfirmMessage("There was an error");
+          setConfirmMessage("Uh-oh! Something went wrong.");
         }
       }
     });

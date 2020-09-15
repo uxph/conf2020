@@ -1,6 +1,7 @@
 {
-  "UXPH2020UX+": {
-    "percent": 0.2
+  "uxph2020ux+": {
+    "percent": null,
+    "solid": 600
   },
   "uxph-mj": {
     "percent": 1

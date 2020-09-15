@@ -10,6 +10,7 @@ const Button = ({
   style = "",
   target = "self",
   onClick = null,
+  value = null,
 }) => {
   if (href === null) {
     return (
@@ -21,6 +22,7 @@ const Button = ({
             ...style,
           }}
           target={target}
+          value={value}
           onClick={onClick}
         >
           <span>{children}</span>

@@ -13,6 +13,7 @@ import {
   Row,
   Table,
 } from "reactstrap";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Button from "./button";
 import numeral from "numeral";
 import discount_codes from "../../data/discounts.json";
@@ -25,13 +26,15 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
 const PaymentModal = ({ isOpen, toggle }) => {
-  const earlyBirdPrice = 2000;
-  const [earlyBirdQuantity, setEarlyBirdQuantity] = useState(1);
+  // tickets
+  const superEarlyBirdPrice = 2000;
+  const [superEarlyBirdQuantity, setSuperEarlyBirdQuantity] = useState(1);
 
   const [paymentMethod, setPaymentMethod] = useState("gcash");
 
   const [checkoutUrl, setCheckoutUrl] = useState(null);
   const [confirmNumber, setConfirmNumber] = useState(null);
+  const [copyCode, setCopyCode] = useState(null);
 
   const [subtotal, setSubtotal] = useState(0);
   const [discount, setDiscount] = useState(0);
@@ -66,18 +69,23 @@ const PaymentModal = ({ isOpen, toggle }) => {
   ));
 
   useEffect(() => {
-    let earlyBirdTotal = earlyBirdQuantity * earlyBirdPrice;
-    setSubtotal(earlyBirdTotal);
+    let superEarlyBirdTotal = superEarlyBirdQuantity * superEarlyBirdPrice;
+    setSubtotal(superEarlyBirdTotal);
 
     if (!subtotal) {
       setDiscountCode("");
       setDiscount(0);
     }
-  }, [earlyBirdQuantity, setEarlyBirdQuantity, subtotal]);
+  }, [superEarlyBirdQuantity, setSuperEarlyBirdQuantity, subtotal]);
 
   useEffect(() => {
-    if (discount_codes[discountCode]) {
-      setDiscount(subtotal * discount_codes[discountCode].percent);
+    const lowerCasedCode = discountCode.toLowerCase();
+    if (discount_codes[lowerCasedCode]) {
+      if (discount_codes[lowerCasedCode].percent) {
+        setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+      } else {
+        setDiscount(discount_codes[lowerCasedCode].solid);
+      }
     } else {
       setDiscount(0);
     }
@@ -87,11 +95,46 @@ const PaymentModal = ({ isOpen, toggle }) => {
     setCheckoutUrl(null);
   }, [subtotal]);
 
+  useEffect(() => {
+    if (!isOpen) {
+      setCopyCode(null);
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (paymentMethodId && paymentIntentId) {
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            payment_method: paymentMethodId,
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          console.log("Attach paymentIntent", this.responseText);
+        }
+      });
+
+      xhr.open(
+        "POST",
+        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+      );
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
+    }
+  }, [paymentIntentId, paymentMethodId]);
+
   const payWithGcash = (details) => {
     // parseInt(details.amount) * 100
     const successUrl = `http://localhost:8000/confirmation/?amount=${10000}&discount_code=${
       details.discountCode
-    }&early_bird=${details.earlyBird}`;
+    }&super_early_bird=${details.superEarlyBird}`;
 
     const data = JSON.stringify({
       data: {
@@ -134,12 +177,25 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
   const payWithCard = (details) => {
     const createPaymentIntent = () => {
+      const tickets = [
+        {
+          name: "super_early_bird",
+          quantity: details.superEarlyBird,
+        },
+      ]
+        .filter((x) => x.quantity)
+        .map((x) => `${x.name}: ${x.quantity}`)
+        .join(", ");
+
       const data = JSON.stringify({
         data: {
           attributes: {
             amount: 10000, // parseInt(details.amount) * 100
             payment_method_allowed: ["card"],
             currency: "PHP",
+            description: `{discount_code: ${
+              discountCode ? discountCode : "none"
+            }, ${tickets}}`,
           },
         },
       });
@@ -204,38 +260,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.send(data);
     };
 
-    const attachPaymentIntent = () => {
-      const data = JSON.stringify({
-        data: {
-          attributes: {
-            payment_method: paymentMethodId,
-          },
-        },
-      });
-
-      const xhr = new XMLHttpRequest();
-
-      xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === this.DONE) {
-          console.log("Attach paymentIntent", this.responseText);
-        }
-      });
-
-      xhr.open(
-        "POST",
-        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
-      );
-      xhr.setRequestHeader("content-type", "application/json");
-      xhr.setRequestHeader("authorization", auth_sk);
-
-      xhr.send(data);
-    };
-
     createPaymentMethod();
     createPaymentIntent();
-    if (paymentMethodId && paymentIntentId) {
-      attachPaymentIntent();
-    }
   };
 
   return (
@@ -264,7 +290,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             </p>
             <ol>
               <li>
-                To proceed with your payment through GCash,{" "}
+                To proceed with your payment,{" "}
                 <a href={checkoutUrl} target="blank">
                   Click here
                 </a>
@@ -275,20 +301,35 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 <strong>confirmation number</strong> in our confirmation page:
               </li>
             </ol>
-            <div className="px-3 py-2 mt-3 rounded bg-light border border-secondary">
-              <p className="m-0 text-secondary">{confirmNumber}</p>
+            <div
+              className={`px-3 py-2 mt-3 rounded border ${
+                copyCode ? "border-success" : "border-secondary"
+              }`}
+            >
+              <p
+                className={`m-0 ${
+                  copyCode ? "text-success" : "text-secondary"
+                }`}
+              >
+                {confirmNumber}
+              </p>
             </div>
           </ModalBody>
           <ModalFooter className="border-0">
-            <Button
-              variant="outline"
-              onClick={toggle}
-              style={{
-                padding: "8px 16px",
-              }}
+            <CopyToClipboard
+              text={confirmNumber}
+              onCopy={() => setCopyCode(confirmNumber)}
             >
-              Copy code
-            </Button>
+              <Button
+                variant="outline"
+                onClick={() => setCopyCode(confirmNumber)}
+                style={{
+                  padding: "8px 16px",
+                }}
+              >
+                {copyCode ? "Copied" : "Copy"}
+              </Button>
+            </CopyToClipboard>
           </ModalFooter>
         </>
       ) : (
@@ -327,7 +368,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       You make bayad appropriate amount of pera with bank
                       details found sa baba. Tapos, make visit this link and
                       upload proof of payment para we give you ticket:{" "}
-                      <a href={bankTransferUrl} traget="blank">
+                      <a href={bankTransferUrl} target="blank">
                         {bankTransferUrl}
                       </a>
                     </p>
@@ -357,6 +398,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="firstName"
                           id="firstName"
                           required
+                          value={firstName ? firstName : ""}
                           onChange={(event) => setFirstName(event.target.value)}
                         />
                       </FormGroup>
@@ -371,6 +413,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="lastName"
                           id="lastName"
                           required
+                          value={lastName ? lastName : ""}
                           onChange={(event) => setLastName(event.target.value)}
                         />
                       </FormGroup>
@@ -385,6 +428,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       name="email"
                       id="email"
                       required
+                      value={email ? email : ""}
                       onChange={(event) => setEmail(event.target.value)}
                     />
                   </FormGroup>
@@ -397,6 +441,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       name="mobileNumber"
                       id="mobileNumber"
                       required
+                      value={mobileNumber ? mobileNumber : ""}
                       onChange={(event) => setMobileNumber(event.target.value)}
                     />
                   </FormGroup>
@@ -415,6 +460,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       name="cardNumber"
                       id="cardNumber"
                       required
+                      value={cardNumber ? cardNumber : ""}
                       onChange={(event) => setCardNumber(event.target.value)}
                     />
                   </FormGroup>
@@ -467,6 +513,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="cvc"
                           id="cvc"
                           required
+                          value={cvc ? cvc : ""}
                           onChange={(event) => setCvc(event.target.value)}
                         />
                       </FormGroup>
@@ -492,7 +539,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           fontSize: "20px",
                         }}
                       >
-                        PHP {numeral(earlyBirdPrice).format("0,0.00")}
+                        PHP {numeral(superEarlyBirdPrice).format("0,0.00")}
                       </strong>
                     </td>
                     <td>
@@ -503,9 +550,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         }}
                         className="ml-auto"
                         min="0"
-                        value={earlyBirdQuantity}
+                        value={superEarlyBirdQuantity}
                         onChange={(event) =>
-                          setEarlyBirdQuantity(event.target.value)
+                          setSuperEarlyBirdQuantity(event.target.value)
                         }
                       />
                     </td>
@@ -598,7 +645,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     email: email,
                     phone: mobileNumber,
                     amount: total,
-                    earlyBird: earlyBirdQuantity,
+                    superEarlyBird: superEarlyBirdQuantity,
                     discountCode: discountCode,
                   })
                 }
@@ -621,7 +668,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     expiryYear: expiryYear,
                     cvc: cvc,
                     amount: total,
-                    earlyBird: earlyBirdQuantity,
+                    superEarlyBird: superEarlyBirdQuantity,
                     discountCode: discountCode,
                   })
                 }
