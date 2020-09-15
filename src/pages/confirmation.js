@@ -17,11 +17,24 @@ const ConfirmationPage = () => {
 
     // values from Paymongo
     const amount = urlParams.get("amount");
+    const discountCode = urlParams.get("discount_code")
+      ? urlParams.get("discount_code")
+      : "none";
+    const tickets = [
+      {
+        name: "early_bird",
+        quantity: parseInt(urlParams.get("early_bird")),
+      },
+    ]
+      .filter((x) => x.quantity)
+      .map((x) => `${x.name}: ${x.quantity}`)
+      .join(", ");
 
     const data = JSON.stringify({
       data: {
         attributes: {
           amount: parseInt(amount),
+          description: `{discount_code: ${discountCode}, ${tickets}}`,
           source: {
             type: "source",
             id: id,

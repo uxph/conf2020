@@ -20,7 +20,7 @@ import discount_codes from "../../data/discounts.json";
 // const public_key = "pk_live_BgwqPfGCXbdTYUnSJZwFGDLN";
 // const secret_key = "sk_live_Rv7HynggLMRT4LT6RwFgPDww";
 const auth_pk = "Basic cGtfbGl2ZV9CZ3dxUGZHQ1hiZFRZVW5TSlp3RkdETE46";
-// const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
+const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
@@ -38,8 +38,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
   const [discountCode, setDiscountCode] = useState("");
   let total = subtotal - discount >= 0 ? subtotal - discount : 0;
 
-  const [invalid, setInvalid] = useState(false);
-
   // Basic info
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
@@ -47,10 +45,13 @@ const PaymentModal = ({ isOpen, toggle }) => {
   const [mobileNumber, setMobileNumber] = useState(null);
 
   // Bank details
-  // const [cardNumber, setCardNumber] = useState(null);
-  // const [expiryMonth, setExpiryMonth] = useState(null);
-  // const [expiryYear, setExpiryYear] = useState(null);
-  // const [cvc, setCvc] = useState(null);
+  const [cardNumber, setCardNumber] = useState(null);
+  const [expiryMonth, setExpiryMonth] = useState(1);
+  const [expiryYear, setExpiryYear] = useState(2020);
+  const [cvc, setCvc] = useState(null);
+
+  const [paymentIntentId, setPaymentIntentId] = useState(null);
+  const [paymentMethodId, setPaymentMethodId] = useState(null);
 
   const monthOptions = new Array(12).fill(0).map((x, index) => (
     <option value={index + 1} key={index}>
@@ -88,14 +89,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
   const payWithGcash = (details) => {
     // parseInt(details.amount) * 100
-    const successUrl = `http://localhost:8000/confirmation/?amount=${
-      parseInt(details.amount) * 100
-    }&discount_code=${details.discountCode}&early_bird=${details.earlyBird}`;
+    const successUrl = `http://localhost:8000/confirmation/?amount=${10000}&discount_code=${
+      details.discountCode
+    }&early_bird=${details.earlyBird}`;
 
     const data = JSON.stringify({
       data: {
         attributes: {
-          amount: parseInt(details.amount) * 100, // parseInt(details.amount) * 100
+          amount: 10000, // parseInt(details.amount) * 100
           redirect: {
             success: successUrl,
             failed: "http://localhost:8000/payment-error",
@@ -120,8 +121,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
         if (responseText.data) {
           setCheckoutUrl(responseText.data.attributes.redirect.checkout_url);
           setConfirmNumber(responseText.data.id);
-        } else {
-          setInvalid(true);
         }
       }
     });
@@ -131,6 +130,112 @@ const PaymentModal = ({ isOpen, toggle }) => {
     xhr.setRequestHeader("authorization", auth_pk);
 
     xhr.send(data);
+  };
+
+  const payWithCard = (details) => {
+    const createPaymentIntent = () => {
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            amount: 10000, // parseInt(details.amount) * 100
+            payment_method_allowed: ["card"],
+            currency: "PHP",
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          console.log("Create paymentIntent", this.responseText);
+          const responseText = JSON.parse(this.responseText);
+
+          if (responseText.data) {
+            setPaymentIntentId(responseText.data.id);
+          }
+        }
+      });
+
+      xhr.open("POST", "https://api.paymongo.com/v1/payment_intents");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
+    };
+
+    const createPaymentMethod = () => {
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            details: {
+              card_number: details.cardNumber,
+              exp_month: parseInt(details.expiryMonth),
+              exp_year: parseInt(details.expiryYear),
+              cvc: details.cvc,
+            },
+            billing: {
+              name: details.name,
+              email: details.email,
+              phone: details.mobileNumber,
+            },
+            type: "card",
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          console.log("Create paymentMethod", this.responseText);
+          const responseText = JSON.parse(this.responseText);
+
+          if (responseText.data) {
+            setPaymentMethodId(responseText.data.id);
+          }
+        }
+      });
+
+      xhr.open("POST", "https://api.paymongo.com/v1/payment_methods");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
+    };
+
+    const attachPaymentIntent = () => {
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            payment_method: paymentMethodId,
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          console.log("Attach paymentIntent", this.responseText);
+        }
+      });
+
+      xhr.open(
+        "POST",
+        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+      );
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
+    };
+
+    createPaymentMethod();
+    createPaymentIntent();
+    if (paymentMethodId && paymentIntentId) {
+      attachPaymentIntent();
+    }
   };
 
   return (
@@ -147,6 +252,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       </ModalHeader>
       {checkoutUrl && paymentMethod === "gcash" ? (
         <>
+          {/* GCash payment instructions */}
           <ModalBody id="modal-body">
             <p
               className="font-weight-bold"
@@ -181,12 +287,13 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 padding: "8px 16px",
               }}
             >
-              Finish
+              Copy code
             </Button>
           </ModalFooter>
         </>
       ) : (
         <>
+          {/* Payment details */}
           <ModalBody id="modal-body">
             <Form>
               <div>
@@ -308,6 +415,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       name="cardNumber"
                       id="cardNumber"
                       required
+                      onChange={(event) => setCardNumber(event.target.value)}
                     />
                   </FormGroup>
                   <Row>
@@ -321,6 +429,10 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           id="expiryMonth"
                           name="expiryMonth"
                           required
+                          value={expiryMonth}
+                          onChange={(event) =>
+                            setExpiryMonth(event.target.value)
+                          }
                         >
                           {monthOptions}
                         </CustomInput>
@@ -336,6 +448,10 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           id="expiryMonth"
                           name="expiryMonth"
                           required
+                          value={expiryYear}
+                          onChange={(event) =>
+                            setExpiryYear(event.target.value)
+                          }
                         >
                           {yearOptions}
                         </CustomInput>
@@ -346,7 +462,13 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         <Label for="cvc">
                           CVC <span className="red">*</span>
                         </Label>
-                        <Input type="text" name="cvc" id="cvc" required />
+                        <Input
+                          type="text"
+                          name="cvc"
+                          id="cvc"
+                          required
+                          onChange={(event) => setCvc(event.target.value)}
+                        />
                       </FormGroup>
                     </Col>
                   </Row>
@@ -467,7 +589,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
             )}
             {paymentMethod === "gcash" && (
               <Button
-                className={invalid ? "disabled" : null}
                 style={{
                   padding: "8px 16px",
                 }}
@@ -476,6 +597,29 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     name: `${firstName} ${lastName}`,
                     email: email,
                     phone: mobileNumber,
+                    amount: total,
+                    earlyBird: earlyBirdQuantity,
+                    discountCode: discountCode,
+                  })
+                }
+              >
+                Next
+              </Button>
+            )}
+            {paymentMethod === "card" && (
+              <Button
+                style={{
+                  padding: "8px 16px",
+                }}
+                onClick={() =>
+                  payWithCard({
+                    name: `${firstName} ${lastName}`,
+                    email: email,
+                    phone: mobileNumber,
+                    cardNumber: cardNumber,
+                    expiryMonth: expiryMonth,
+                    expiryYear: expiryYear,
+                    cvc: cvc,
                     amount: total,
                     earlyBird: earlyBirdQuantity,
                     discountCode: discountCode,
