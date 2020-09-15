@@ -1,0 +1,28 @@
+#payment-modal {
+  #modal-body {
+    p {
+      word-break: break-word;
+    }
+
+    * {
+      font-family: "Work sans", sans-serif;
+    }
+
+    label {
+      color: var(--gray);
+      font-size: 0.875rem;
+    }
+
+    table {
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    ol {
+      li {
+        margin-bottom: var(--value-16);
+      }
+    }
+  }
+}
