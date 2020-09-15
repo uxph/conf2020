@@ -321,7 +321,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             currency: "PHP",
             description: `{discount_code: ${
               discountCode ? discountCode : "none"
-            }, ${tickets}}`,
+            }, company: ${company}, ${tickets}}`,
           },
         },
       });
