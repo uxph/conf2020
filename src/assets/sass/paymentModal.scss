@@ -25,14 +25,39 @@
       }
     }
   }
+
+  .modal-footer.direction {
+    justify-content: space-between !important;
+  }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   #payment-modal {
     #modal-body {
       .ticket-price {
         font-size: 1rem !important;
       }
+
+      table.basic-info {
+        tr {
+          td {
+            display: block !important;
+            border: none !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+          }
+
+          td:nth-child(1) {
+            color: var(--gray) !important;
+            font-size: 0.875rem !important;
+          }
+
+          td:nth-child(2) {
+            padding-bottom: 1rem !important;
+          }
+        }
+      }
+
       #total-label {
         div.col:nth-child(1) {
           padding-right: 0 !important;

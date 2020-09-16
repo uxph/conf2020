@@ -14,7 +14,6 @@ import {
   Table,
   Alert,
 } from "reactstrap";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import Button from "./button";
 import numeral from "numeral";
 import months from "months";
@@ -438,36 +437,56 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 fontSize: "1.125rem",
               }}
             >
-              Paying with GCash
+              Basic Information
             </p>
-            <ol>
-              <li>
-                To proceed with your payment,{" "}
-                <a href={checkoutUrl} target="blank">
-                  Click here
-                </a>
-                .
-              </li>
-              <li>
-                After the payment, fill in your{" "}
-                <strong>confirmation number</strong> in our confirmation page:
-              </li>
-            </ol>
-            <div
-              className={`px-3 py-2 mt-3 rounded border ${
-                copyCode ? "border-success" : "border-secondary"
-              }`}
-            >
-              <p
-                className={`m-0 ${
-                  copyCode ? "text-success" : "text-secondary"
-                }`}
-              >
-                {confirmNumber}
-              </p>
-            </div>
+            <Table className="basic-info">
+              <tbody>
+                <tr>
+                  <td className="font-weight-bold">Name:</td>
+                  <td>
+                    {firstName} {lastName}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">Email:</td>
+                  <td>{email}</td>
+                </tr>
+                <tr>
+                  <td className="font-weight-bold">Mobile number:</td>
+                  <td>{mobileNumber}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <br />
+            <Table className="border-bottom">
+              <thead>
+                <tr>
+                  <td className="font-weight-bolder">Tickets</td>
+                  <td className="font-weight-bolder text-right">Quantity</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <small className="gray">Super early bird</small> <br />
+                  </td>
+                  <td className="text-right">x {superEarlyBirdQuantity}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <br />
+            <Row className="px-2" id="total-label">
+              <Col>
+                <p className="font-size-24 mb-0 gray font-weight-bold">Total</p>
+              </Col>
+              <Col>
+                <p className="font-size-24 mb-0 text-right font-weight-bold">
+                  PHP {numeral(total).format("0,0.00")}
+                </p>
+              </Col>
+            </Row>
           </ModalBody>
-          <ModalFooter className="border-0">
+          <ModalFooter className="border-0 direction">
             <Button
               variant="outline"
               onClick={() => setCheckoutUrl(null)}
@@ -477,19 +496,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
             >
               Back
             </Button>
-            <CopyToClipboard
-              text={confirmNumber}
-              onCopy={() => setCopyCode(confirmNumber)}
+            <Button
+              href={checkoutUrl}
+              target="blank"
+              style={{
+                padding: "8px 16px",
+              }}
             >
-              <Button
-                onClick={() => setCopyCode(confirmNumber)}
-                style={{
-                  padding: "8px 16px",
-                }}
-              >
-                {copyCode ? "Copied" : "Copy"}
-              </Button>
-            </CopyToClipboard>
+              Place order
+            </Button>
           </ModalFooter>
         </>
       ) : paymentIntentId && paymentMethodId && paymentMethod === "card" ? (
@@ -504,7 +519,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             >
               Basic Information
             </p>
-            <Table>
+            <Table className="basic-info">
               <tbody>
                 <tr>
                   <td className="font-weight-bold">Name:</td>
@@ -531,7 +546,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             >
               Credit/Debit card details
             </p>
-            <Table>
+            <Table className="basic-info">
               <tbody>
                 <tr>
                   <td className="font-weight-bold">Card number:</td>
@@ -549,8 +564,36 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </tr>
               </tbody>
             </Table>
+            <br />
+            <Table className="border-bottom">
+              <thead>
+                <tr>
+                  <td className="font-weight-bolder">Tickets</td>
+                  <td className="font-weight-bolder text-right">Quantity</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <small className="gray">Super early bird</small> <br />
+                  </td>
+                  <td className="text-right">x {superEarlyBirdQuantity}</td>
+                </tr>
+              </tbody>
+            </Table>
+            <br />
+            <Row className="px-2" id="total-label">
+              <Col>
+                <p className="font-size-24 mb-0 gray font-weight-bold">Total</p>
+              </Col>
+              <Col>
+                <p className="font-size-24 mb-0 text-right font-weight-bold">
+                  PHP {numeral(total).format("0,0.00")}
+                </p>
+              </Col>
+            </Row>
           </ModalBody>
-          <ModalFooter className="border-0">
+          <ModalFooter className="border-0 direction">
             <Button
               variant="outline"
               style={{
@@ -716,8 +759,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onChange={(event) => setCardNumber(event.target.value)}
                     />
                   </FormGroup>
-                  <Row>
-                    <Col>
+                  <Row className="align-items-baseline">
+                    <Col sm={6} md={4}>
                       <FormGroup>
                         <Label for="expiryMonth">
                           Expiry month <span className="red">*</span>
@@ -736,7 +779,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         </CustomInput>
                       </FormGroup>
                     </Col>
-                    <Col>
+                    <Col sm={6} md={4}>
                       <FormGroup>
                         <Label for="expiryYear">
                           Expiry year <span className="red">*</span>
@@ -755,7 +798,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         </CustomInput>
                       </FormGroup>
                     </Col>
-                    <Col>
+                    <Col sm={6} md={4}>
                       <FormGroup>
                         <Label for="cvc">
                           CVC <span className="red">*</span>
