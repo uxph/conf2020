@@ -1,6 +1,12 @@
 {
   "uxph2020ux+": {
     "percent": null,
-    "solid": 750
+    "solid": 750,
+    "email": ["tyrone@uxph.org", "gavin@uxph.org"]
+  },
+  "uxdavao": {
+    "percent": null,
+    "solid": 1250,
+    "email": []
   }
 }
