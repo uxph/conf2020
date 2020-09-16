@@ -197,65 +197,6 @@ const ConfirmationPage = () => {
             </center>
           )}
 
-          {/* {confirmMessage ? (
-            <>
-              <h1
-                className="text-white text-center"
-                style={{
-                  fontSize: "48px",
-                }}
-              >
-                {confirmMessage}
-              </h1>
-              <center
-                className={
-                  confirmMessage.includes("successful") ? "d-none" : "d-block"
-                }
-              >
-                <Button
-                  style={{
-                    padding: "8px 24px",
-                  }}
-                  onClick={() => setConfirmMessage(null)}
-                  className="margin-top-16"
-                >
-                  Try again
-                </Button>
-              </center>
-            </>
-          ) : (
-            <>
-              <p className="text-white font-size-24">
-                Your Confirmation Number:
-              </p>
-              <Row className="align-items-center">
-                <Col md={9}>
-                  <Input
-                    type="text"
-                    name="confirmNumber"
-                    id="confirmNumber"
-                    onChange={(event) => setConfirmNumber(event.target.value)}
-                    style={{
-                      fontFamily: "Work sans",
-                    }}
-                  />
-                </Col>
-                <Col>
-                  <Button
-                    className="w-100"
-                    innerClassName="w-100"
-                    style={{
-                      padding: "8px 16px",
-                    }}
-                    onClick={() => fetchConfirmation(confirmNumber)}
-                  >
-                    Confirm
-                  </Button>
-                </Col>
-              </Row>
-            </>
-          )} */}
-
           <div className="text-center margin-top-48">
             <p
               style={{

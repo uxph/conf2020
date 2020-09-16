@@ -27,7 +27,7 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
-const env = "test";
+const env = "test"; // TODO DO NOT FORGET TO CHANGE THIS
 let url = null;
 if (env === "test") {
   url = "https://loving-volhard-7197c7.netlify.app";
@@ -412,40 +412,13 @@ const PaymentModal = ({ isOpen, toggle }) => {
     }
   };
 
-  // Paymongo API for ACTUALLY paying with credit/debit card
-  // const attachPayWithCard = () => {
-  //   const data = JSON.stringify({
-  //     data: {
-  //       attributes: {
-  //         payment_method: paymentMethodId,
-  //       },
-  //     },
-  //   });
-
-  //   const xhr = new XMLHttpRequest();
-
-  //   xhr.addEventListener("readystatechange", function () {
-  //     if (this.readyState === this.DONE) {
-  //       console.log("Attach paymentIntent", this.responseText);
-  //     }
-  //   });
-
-  //   xhr.open(
-  //     "POST",
-  //     `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
-  //   );
-  //   xhr.setRequestHeader("content-type", "application/json");
-  //   xhr.setRequestHeader("authorization", auth_sk);
-
-  //   xhr.send(data);
-  // };
-
   return (
     <Modal
       isOpen={isOpen}
       toggle={toggle}
       style={{
         zIndex: 9999,
+        marginBottom: "115px",
       }}
       id="payment-modal"
     >
@@ -817,6 +790,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         style={{
                           fontSize: "20px",
                         }}
+                        className="ticket-price"
                       >
                         PHP {numeral(superEarlyBirdPrice).format("0,0.00")}
                       </strong>
@@ -883,12 +857,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   </Col>
                 </Row>
               )}
-              <Row className="margin-bottom-24 px-2">
+              <Row className="margin-bottom-24 px-2" id="total-label">
                 <Col>
-                  <p className="font-size-24 mb-0 gray">Total</p>
+                  <p className="font-size-24 mb-0 gray font-weight-bold">
+                    Total
+                  </p>
                 </Col>
                 <Col>
-                  <p className="font-size-24 mb-0 text-right">
+                  <p className="font-size-24 mb-0 text-right font-weight-bold">
                     PHP {numeral(total).format("0,0.00")}
                   </p>
                 </Col>
