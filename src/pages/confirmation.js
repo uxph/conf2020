@@ -12,111 +12,112 @@ const ConfirmationPage = () => {
   // Paymongo API
   const [confirmMessage, setConfirmMessage] = useState(null);
   const [confirmed, setConfirmed] = useState(false);
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
-
-  const fetchGcashConfirmation = () => {
-    // values from Paymongo
-    const id = localStorage.getItem("uxph_2020_confirm_number");
-    const amount = urlParams.get("amount");
-    const discountCode = urlParams.get("discount_code")
-      ? urlParams.get("discount_code")
-      : "none";
-    const company = urlParams.get("company")
-      ? urlParams.get("company")
-      : "none";
-    const tickets = [
-      {
-        name: "super_early_bird",
-        quantity: parseInt(urlParams.get("super_early_bird")),
-      },
-    ]
-      .filter((x) => x.quantity)
-      .map((x) => `${x.name}: ${x.quantity}`)
-      .join(", ");
-
-    const data = JSON.stringify({
-      data: {
-        attributes: {
-          amount: parseInt(amount),
-          description: `{discount_code: ${
-            discountCode ? discountCode : "none"
-          }, company: ${company}, ${tickets}}`,
-          source: {
-            type: "source",
-            id: id,
-          },
-          currency: "PHP",
-        },
-      },
-    });
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === this.DONE) {
-        const responseText = JSON.parse(this.responseText);
-        console.log("responseText", responseText);
-
-        if (responseText.data) {
-          setConfirmMessage("Payment successful!");
-        } else {
-          setConfirmMessage("Uh-oh! Something went wrong.");
-        }
-
-        setConfirmed(true);
-      }
-    });
-
-    xhr.open("POST", "https://api.paymongo.com/v1/payments");
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader(
-      "authorization",
-      "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6"
-    );
-
-    xhr.send(data);
-  };
-
-  const fetchCardConfirmation = () => {
-    const paymentIntentId = urlParams.get("payment_intent");
-    const paymentMethodId = urlParams.get("payment_method");
-
-    const data = JSON.stringify({
-      data: {
-        attributes: {
-          payment_method: paymentMethodId,
-        },
-      },
-    });
-
-    const xhr = new XMLHttpRequest();
-
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === this.DONE) {
-        const responseText = JSON.parse(this.responseText);
-        console.log("Attach paymentIntent", responseText);
-        if (responseText.data) {
-          setConfirmMessage("Payment successful!");
-        } else {
-          setConfirmMessage("Uh-oh! Something went wrong.");
-        }
-
-        setConfirmed(true);
-      }
-    });
-
-    xhr.open(
-      "POST",
-      `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
-    );
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("authorization", auth_sk);
-
-    xhr.send(data);
-  };
 
   useEffect(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const fetchGcashConfirmation = () => {
+      // values from Paymongo
+      const id = localStorage.getItem("uxph_2020_confirm_number");
+      const amount = urlParams.get("amount");
+      const discountCode = urlParams.get("discount_code")
+        ? urlParams.get("discount_code")
+        : "none";
+      const company = urlParams.get("company")
+        ? urlParams.get("company")
+        : "none";
+      const tickets = [
+        {
+          name: "super_early_bird",
+          quantity: parseInt(urlParams.get("super_early_bird")),
+        },
+      ]
+        .filter((x) => x.quantity)
+        .map((x) => `${x.name}: ${x.quantity}`)
+        .join(", ");
+
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            amount: parseInt(amount),
+            description: `{discount_code: ${
+              discountCode ? discountCode : "none"
+            }, company: ${company}, ${tickets}}`,
+            source: {
+              type: "source",
+              id: id,
+            },
+            currency: "PHP",
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          const responseText = JSON.parse(this.responseText);
+          console.log("responseText", responseText);
+
+          if (responseText.data) {
+            setConfirmMessage("Payment successful!");
+          } else {
+            setConfirmMessage("Uh-oh! Something went wrong.");
+          }
+
+          setConfirmed(true);
+        }
+      });
+
+      xhr.open("POST", "https://api.paymongo.com/v1/payments");
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader(
+        "authorization",
+        "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6"
+      );
+
+      xhr.send(data);
+    };
+
+    const fetchCardConfirmation = () => {
+      const paymentIntentId = urlParams.get("payment_intent");
+      const paymentMethodId = urlParams.get("payment_method");
+
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            payment_method: paymentMethodId,
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          const responseText = JSON.parse(this.responseText);
+          console.log("Attach paymentIntent", responseText);
+          if (responseText.data) {
+            setConfirmMessage("Payment successful!");
+          } else {
+            setConfirmMessage("Uh-oh! Something went wrong.");
+          }
+
+          setConfirmed(true);
+        }
+      });
+
+      xhr.open(
+        "POST",
+        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+      );
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
+    };
+
     // confirm the payments right off the bat
     if (!confirmed && !confirmMessage) {
       const method = urlParams.get("method");
