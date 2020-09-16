@@ -121,16 +121,29 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
+
     if (discount_codes[lowerCasedCode]) {
-      if (discount_codes[lowerCasedCode].percent) {
-        setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+      if (discount_codes[lowerCasedCode].email.length) {
+        if (discount_codes[lowerCasedCode].email.includes(email)) {
+          if (discount_codes[lowerCasedCode].percent) {
+            setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+          } else {
+            setDiscount(discount_codes[lowerCasedCode].solid);
+          }
+        } else {
+          setDiscount(0);
+        }
       } else {
-        setDiscount(discount_codes[lowerCasedCode].solid);
+        if (discount_codes[lowerCasedCode].percent) {
+          setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+        } else {
+          setDiscount(discount_codes[lowerCasedCode].solid);
+        }
       }
     } else {
       setDiscount(0);
     }
-  }, [discountCode, subtotal]);
+  }, [discountCode, email, subtotal]);
 
   // useEffect for checkout URL
   useEffect(() => {
