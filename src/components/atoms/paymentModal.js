@@ -94,6 +94,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // Paymongo API for card method
   const [paymentIntentId, setPaymentIntentId] = useState(null);
   const [paymentMethodId, setPaymentMethodId] = useState(null);
+  const [clientKey, setClientKey] = useState(null);
 
   const monthOptions = new Array(12).fill(0).map((x, index) => (
     <option value={index + 1} key={index}>
@@ -121,7 +122,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
-    if (discount_codes[lowerCasedCode]) {
+    if (lowerCasedCode === "uxcult100") {
+      setDiscount(subtotal - 100);
+    } else if (discount_codes[lowerCasedCode]) {
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
       } else {
@@ -267,14 +270,16 @@ const PaymentModal = ({ isOpen, toggle }) => {
       // parseInt(details.amount) * 100
       const caseUrl = `${url}/confirmation/?method=${
         details.paymentMethod
-      }&amount=${10000}&company=${details.company}&discount_code=${
-        details.discountCode
-      }&super_early_bird=${details.superEarlyBird}`;
+      }&amount=${parseInt(details.amount) * 100}&company=${
+        details.company
+      }&discount_code=${details.discountCode}&super_early_bird=${
+        details.superEarlyBird
+      }`;
 
       const data = JSON.stringify({
         data: {
           attributes: {
-            amount: 10000, // parseInt(details.amount) * 100
+            amount: parseInt(details.amount) * 100, // parseInt(details.amount) * 100
             redirect: {
               success: caseUrl,
               failed: caseUrl,
@@ -331,8 +336,13 @@ const PaymentModal = ({ isOpen, toggle }) => {
       const data = JSON.stringify({
         data: {
           attributes: {
-            amount: 10000, // parseInt(details.amount) * 100
+            amount: parseInt(details.amount) * 100, // parseInt(details.amount) * 100
             payment_method_allowed: ["card"],
+            payment_method_options: {
+              card: {
+                request_three_d_secure: "any",
+              },
+            },
             currency: "PHP",
             description: `{discount_code: ${
               discountCode ? discountCode : "none"
@@ -350,6 +360,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
           if (responseText.data) {
             setPaymentIntentId(responseText.data.id);
+            setClientKey(responseText.data.attributes.client_key);
           }
         }
       });
@@ -420,10 +431,23 @@ const PaymentModal = ({ isOpen, toggle }) => {
       id="payment-modal"
     >
       <ModalHeader toggle={toggle} className="border-0">
-        Buy tickets{" "}
-        <span className="d-none">
-          {paymentList ? paymentList.length : null}
-        </span>
+        {(checkoutUrl && paymentMethod === "gcash") ||
+        (paymentIntentId && paymentMethodId && paymentMethod === "card") ? (
+          <span
+            style={{
+              fontSize: "1rem",
+            }}
+          >
+            Review your information
+          </span>
+        ) : (
+          <>
+            Buy tickets{" "}
+            <span className="d-none">
+              {paymentList ? paymentList.length : null}
+            </span>
+          </>
+        )}
       </ModalHeader>
       {checkoutUrl && paymentMethod === "gcash" ? (
         <>
@@ -606,7 +630,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 padding: "8px 16px",
               }}
               // onClick={() => attachPayWithCard()}
-              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}`}
+              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}&client=${clientKey}`}
             >
               Place Order
             </Button>
@@ -812,7 +836,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       </FormGroup>
                     </Col>
                   </Row>
-
                   <br />
                 </div>
               )}
@@ -868,44 +891,46 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         fontSize: "14px",
                       }}
                       valid={discount !== 0 ? true : null}
+                      invalid={
+                        discount === 0 && discountCode !== "" ? true : null
+                      }
                     />
                   </Col>
                 </FormGroup>
               )}
-              <Row
-                className={`margin-top-32 px-2 ${
-                  discount <= 0 ? "margin-bottom-12" : ""
-                }`}
-              >
+              <Row className={`margin-top-32 px-2 margin-bottom-12`}>
                 <Col>
                   <p className="font-size-26 mb-0 gray">Subtotal</p>
                 </Col>
                 <Col>
-                  <p className="font-size-26 mb-0 text-right">
-                    PHP {numeral(subtotal).format("0,0.00")}
-                  </p>
+                  {discount <= 0 ? (
+                    <p className="font-size-26 mb-0 text-right">
+                      PHP {numeral(subtotal).format("0,0.00")}
+                    </p>
+                  ) : (
+                    <p className="font-size-26 mb-0 text-right">
+                      PHP {numeral(subtotal).format("0,0.00")}
+                    </p>
+                  )}
                 </Col>
               </Row>
-              {discount > 0 && (
-                <Row className="margin-bottom-32 px-2">
-                  <Col>
-                    <p className="font-size-26 mb-0 gray">You saved</p>
-                  </Col>
-                  <Col>
-                    <p className="font-size-26 mb-0 text-right gray">
-                      <strike>PHP {numeral(discount).format("0,0.00")}</strike>
-                    </p>
-                  </Col>
-                </Row>
-              )}
               <Row className="margin-bottom-24 px-2" id="total-label">
-                <Col>
+                <Col md={3}>
                   <p className="font-size-24 mb-0 gray font-weight-bold">
                     Total
                   </p>
                 </Col>
-                <Col>
+                <Col md={9}>
                   <p className="font-size-24 mb-0 text-right font-weight-bold">
+                    <span
+                      className="font-weight-normal d-block"
+                      style={{
+                        fontSize: "0.875rem",
+                      }}
+                    >
+                      Regular Price:{" "}
+                      <strike>PHP {numeral(2770).format("0,0.00")}</strike>
+                    </span>
                     PHP {numeral(total).format("0,0.00")}
                   </p>
                 </Col>

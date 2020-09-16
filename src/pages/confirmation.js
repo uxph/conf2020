@@ -83,11 +83,13 @@ const ConfirmationPage = () => {
     const fetchCardConfirmation = () => {
       const paymentIntentId = urlParams.get("payment_intent");
       const paymentMethodId = urlParams.get("payment_method");
+      const client = urlParams.get("client");
 
       const data = JSON.stringify({
         data: {
           attributes: {
             payment_method: paymentMethodId,
+            client_key: client,
           },
         },
       });
@@ -99,6 +101,13 @@ const ConfirmationPage = () => {
           const responseText = JSON.parse(this.responseText);
           console.log("Attach paymentIntent", responseText);
           if (responseText.data) {
+            const paymentIntent = responseText.data.data;
+            const paymentIntentStatus = paymentIntent.attributes.status;
+            if (paymentIntentStatus === "succeeded") {
+              setConfirmMessage("Payment successful!");
+            } else if (paymentIntentStatus === "awaiting_payment_method") {
+              setConfirmMessage("Uh-oh! Something went wrong.");
+            }
             setConfirmMessage("Payment successful!");
           } else {
             setConfirmMessage("Uh-oh! Something went wrong.");
