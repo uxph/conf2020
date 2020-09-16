@@ -70,7 +70,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // authentication variables
   const [checkoutUrl, setCheckoutUrl] = useState(null);
   const [confirmNumber, setConfirmNumber] = useState(null);
-  const [copyCode, setCopyCode] = useState(null);
   const [error, setError] = useState([]);
 
   // price calculations
@@ -141,7 +140,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // useEffect for modal open/close
   useEffect(() => {
     if (!isOpen) {
-      setCopyCode(null);
       fetchAllPayments(); // initial fetching of all payments
       setError([]);
     }
