@@ -52,7 +52,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   };
 
   // tickets
-  const superEarlyBirdPrice = 2000;
+  const superEarlyBirdPrice = 2250;
   const [superEarlyBirdQuantity, setSuperEarlyBirdQuantity] = useState(1);
 
   // payment method
