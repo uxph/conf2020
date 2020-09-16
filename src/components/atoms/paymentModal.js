@@ -27,6 +27,16 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
+const env = "test";
+let url = null;
+if (env === "test") {
+  url = "https://loving-volhard-7197c7.netlify.app";
+} else if (env === "production") {
+  url = "https://2020.uxph.org";
+} else if (env === "local") {
+  url = "http://localhost:8000";
+}
+
 const PaymentModal = ({ isOpen, toggle }) => {
   // getting the list of payments
   const [paymentList, setPaymentList] = useState(null);
@@ -258,13 +268,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
     let errorFound = errorChecking();
     if (!errorFound) {
       // parseInt(details.amount) * 100
-      const caseUrl = `${window.location.protocol}//${
-        window.location.hostname
-      }/confirmation/?method=${details.paymentMethod}&amount=${10000}&company=${
-        details.company
-      }&discount_code=${details.discountCode}&super_early_bird=${
-        details.superEarlyBird
-      }`;
+      const caseUrl = `${url}/confirmation/?method=${
+        details.paymentMethod
+      }&amount=${10000}&company=${details.company}&discount_code=${
+        details.discountCode
+      }&super_early_bird=${details.superEarlyBird}`;
 
       const data = JSON.stringify({
         data: {
@@ -584,7 +592,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 padding: "8px 16px",
               }}
               // onClick={() => attachPayWithCard()}
-              href={`${window.location.protocol}//${window.location.hostname}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}`}
+              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}`}
             >
               Place Order
             </Button>
