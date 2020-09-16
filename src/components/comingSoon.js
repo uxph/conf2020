@@ -63,6 +63,7 @@ const ComingSoon = () => {
           style={{
             width: "9.5rem",
           }}
+          id="conf-logo"
         />
         <img
           src={"/images/logos/headline.svg"}
@@ -80,7 +81,7 @@ const ComingSoon = () => {
         </h1>
         <div className="text-center">
           <Button
-            className="margin-left-8 margin-right-8 margin-bottom-32"
+            className="margin-left-8 margin-right-8 margin-bottom-16 cta-button"
             onClick={toggle}
             innerClassName="w-100"
             style={{
@@ -92,7 +93,8 @@ const ComingSoon = () => {
           <Button
             variant="outline"
             bgColor="rgba(0, 0, 0, 0.9)"
-            className="margin-left-8 margin-right-8 margin-bottom-16"
+            className="margin-left-8 margin-right-8 margin-bottom-16 cta-button"
+            innerClassName="w-100"
             href="mailto:partnerships@uxph.org"
             target="blank"
             style={{

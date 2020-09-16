@@ -138,6 +138,16 @@ const PaymentModal = ({ isOpen, toggle }) => {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    if (confirmNumber) {
+      localStorage.setItem("uxph_2020_confirm_number", confirmNumber);
+      console.log(
+        "uxph_2020_confirm_number",
+        localStorage.getItem("uxph_2020_confirm_number")
+      );
+    }
+  }, [confirmNumber]);
+
   // error handling logic
   const errorChecking = () => {
     let errorList = [];
@@ -248,9 +258,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
     let errorFound = errorChecking();
     if (!errorFound) {
       // parseInt(details.amount) * 100
-      const successUrl = `${window.location.protocol}//${
+      const caseUrl = `${window.location.protocol}//${
         window.location.hostname
-      }/confirmation/?amount=${10000}&company=${
+      }/confirmation/?method=${details.paymentMethod}&amount=${10000}&company=${
         details.company
       }&discount_code=${details.discountCode}&super_early_bird=${
         details.superEarlyBird
@@ -261,8 +271,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
           attributes: {
             amount: 10000, // parseInt(details.amount) * 100
             redirect: {
-              success: successUrl,
-              failed: `${window.location.protocol}//${window.location.hostname}/payment-error`,
+              success: caseUrl,
+              failed: caseUrl,
             },
             billing: {
               name: details.name,
@@ -395,32 +405,32 @@ const PaymentModal = ({ isOpen, toggle }) => {
   };
 
   // Paymongo API for ACTUALLY paying with credit/debit card
-  const attachPayWithCard = () => {
-    const data = JSON.stringify({
-      data: {
-        attributes: {
-          payment_method: paymentMethodId,
-        },
-      },
-    });
+  // const attachPayWithCard = () => {
+  //   const data = JSON.stringify({
+  //     data: {
+  //       attributes: {
+  //         payment_method: paymentMethodId,
+  //       },
+  //     },
+  //   });
 
-    const xhr = new XMLHttpRequest();
+  //   const xhr = new XMLHttpRequest();
 
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === this.DONE) {
-        console.log("Attach paymentIntent", this.responseText);
-      }
-    });
+  //   xhr.addEventListener("readystatechange", function () {
+  //     if (this.readyState === this.DONE) {
+  //       console.log("Attach paymentIntent", this.responseText);
+  //     }
+  //   });
 
-    xhr.open(
-      "POST",
-      `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
-    );
-    xhr.setRequestHeader("content-type", "application/json");
-    xhr.setRequestHeader("authorization", auth_sk);
+  //   xhr.open(
+  //     "POST",
+  //     `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+  //   );
+  //   xhr.setRequestHeader("content-type", "application/json");
+  //   xhr.setRequestHeader("authorization", auth_sk);
 
-    xhr.send(data);
-  };
+  //   xhr.send(data);
+  // };
 
   return (
     <Modal
@@ -573,7 +583,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
               style={{
                 padding: "8px 16px",
               }}
-              onClick={() => attachPayWithCard()}
+              // onClick={() => attachPayWithCard()}
+              href={`${window.location.protocol}//${window.location.hostname}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}`}
             >
               Place Order
             </Button>
@@ -913,6 +924,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     amount: total,
                     superEarlyBird: superEarlyBirdQuantity,
                     discountCode: discountCode,
+                    paymentMethod: paymentMethod,
+                    id: confirmNumber,
                   })
                 }
               >
