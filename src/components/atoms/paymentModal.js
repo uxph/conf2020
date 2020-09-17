@@ -177,84 +177,87 @@ const PaymentModal = ({ isOpen, toggle }) => {
     let errorList = [];
     setError([]);
     if (firstName === null || firstName === "") {
-      errorList.push(
-        <small key="firstName" className="d-block">
-          <strong>First name</strong> is required.
-        </small>
-      );
-
+      // errorList.push(
+      //   <small key="firstName" className="d-block">
+      //     <strong>First name</strong> is required.
+      //   </small>
+      // );
+      errorList.push(true);
       setFirstName("");
     }
 
     if (lastName === null || lastName === "") {
-      errorList.push(
-        <small key="lastName" className="d-block">
-          <strong>Last name</strong> is required.
-        </small>
-      );
-
+      // errorList.push(
+      //   <small key="lastName" className="d-block">
+      //     <strong>Last name</strong> is required.
+      //   </small>
+      // );
+      errorList.push(true);
       setLastName("");
     }
 
     if (company === null || company === "") {
-      errorList.push(
-        <small key="company" className="d-block">
-          <strong>Company</strong> is required.
-        </small>
-      );
-
+      // errorList.push(
+      //   <small key="company" className="d-block">
+      //     <strong>Company</strong> is required.
+      //   </small>
+      // );
+      errorList.push(true);
       setCompany("");
     }
 
     if (email === null || email === "") {
-      errorList.push(
-        <small key="email" className="d-block">
-          <strong>Email</strong> is required.
-        </small>
-      );
-
+      // errorList.push(
+      //   <small key="email" className="d-block">
+      //     <strong>Email</strong> is required.
+      //   </small>
+      // );
+      errorList.push(true);
       setEmail("");
     }
 
     if (mobileNumber === null || mobileNumber === "") {
-      errorList.push(
-        <small key="mobileNumber" className="d-block">
-          <strong>Mobile number</strong> is required.
-        </small>
-      );
+      // errorList.push(
+      //   <small key="mobileNumber" className="d-block">
+      //     <strong>Mobile number</strong> is required.
+      //   </small>
+      // );
+      errorList.push(true);
       setMobileNumber("");
     } else if (mobileNumber.length !== 11) {
-      errorList.push(
-        <small key="mobileNumber" className="d-block">
-          <strong>Mobile number</strong> must be 11 digits.
-        </small>
-      );
+      // errorList.push(
+      //   <small key="mobileNumber" className="d-block">
+      //     <strong>Mobile number</strong> must be 11 digits.
+      //   </small>
+      // );
+      errorList.push(true);
     } else if (mobileNumber.substring(0, 2) !== "09") {
-      errorList.push(
-        <small key="mobileNumber" className="d-block">
-          <strong>Mobile number</strong> must start with "09".
-        </small>
-      );
+      // errorList.push(
+      //   <small key="mobileNumber" className="d-block">
+      //     <strong>Mobile number</strong> must start with "09".
+      //   </small>
+      // );
+      errorList.push(true);
     }
 
     if (paymentMethod === "card") {
       if (cardNumber === null || cardNumber === "") {
-        errorList.push(
-          <small key="cardNumber" className="d-block">
-            <strong>Card number</strong> is required.
-          </small>
-        );
-
+        // errorList.push(
+        //   <small key="cardNumber" className="d-block">
+        //     <strong>Card number</strong> is required.
+        //   </small>
+        // );
+        errorList.push(true);
         setCardNumber("");
       }
 
       if (cvc === null || cvc === "") {
-        errorList.push(
-          <small key="cvc" className="d-block">
-            <strong>CVC</strong> is required.
-          </small>
-        );
-
+        // errorList.push(
+        //   <small key="cvc" className="d-block">
+        //     <strong>CVC</strong> is required.
+        //   </small>
+        // );
+        errorList.push(true);
         setCvc("");
       }
 
@@ -845,13 +848,38 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onChange={(event) => setMobileNumber(event.target.value)}
                       placeholder="e.g. 09171234567"
                       onBlur={(event) => setMobileNumber(event.target.value)}
-                      invalid={mobileNumber === "" ? true : null}
+                      invalid={
+                        mobileNumber === "" ||
+                        mobileNumber.length !== 11 ||
+                        mobileNumber.substring(0, 2) !== "09" ||
+                        mobileNumber
+                          .toLowerCase()
+                          .split("")
+                          .filter((x) => !"1234567890".includes(x)).length > 0
+                          ? true
+                          : null
+                      }
                     />
-                    {mobileNumber === "" && (
+                    {mobileNumber === "" ? (
                       <small className="red font-size-12">
                         This field is required
                       </small>
-                    )}
+                    ) : mobileNumber.length !== 11 ? (
+                      <small className="red font-size-12">
+                        Mobile number must has exactly 11 digits.
+                      </small>
+                    ) : mobileNumber.substring(0, 2) !== "09" ? (
+                      <small className="red font-size-12">
+                        Mobile number must start with "09".
+                      </small>
+                    ) : mobileNumber
+                        .toLowerCase()
+                        .split("")
+                        .filter((x) => !"1234567890".includes(x)).length > 0 ? (
+                      <small className="red font-size-12">
+                        Mobile number must not contain any letters.
+                      </small>
+                    ) : null}
                   </FormGroup>
                   <br />
                 </>
@@ -1062,10 +1090,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </Col>
               </Row>
             </Form>
-            {error.length > 0 && (
-              <Alert color="danger" className="d-none">
-                {error}
-              </Alert>
+            {error.filter((x) => x !== true).length > 0 && (
+              <Alert color="danger">{error}</Alert>
             )}
           </ModalBody>
           <ModalFooter className="border-0">
@@ -1086,7 +1112,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 }}
                 href={!subtotal ? null : bankTransferUrl}
                 target="blank"
-                // onClick={toggle}
+                onClick={toggle}
               >
                 Checkout
               </Button>
