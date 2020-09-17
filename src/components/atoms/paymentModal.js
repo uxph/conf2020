@@ -849,13 +849,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       placeholder="e.g. 09171234567"
                       onBlur={(event) => setMobileNumber(event.target.value)}
                       invalid={
-                        mobileNumber === "" ||
-                        mobileNumber.length !== 11 ||
-                        mobileNumber.substring(0, 2) !== "09" ||
-                        mobileNumber
-                          .toLowerCase()
-                          .split("")
-                          .filter((x) => !"1234567890".includes(x)).length > 0
+                        mobileNumber !== null &&
+                        (mobileNumber === "" ||
+                          mobileNumber.length !== 11 ||
+                          mobileNumber.substring(0, 2) !== "09" ||
+                          mobileNumber
+                            .toLowerCase()
+                            .split("")
+                            .filter((x) => !"1234567890".includes(x)).length >
+                            0)
                           ? true
                           : null
                       }
@@ -864,15 +866,17 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       <small className="red font-size-12">
                         This field is required
                       </small>
-                    ) : mobileNumber.length !== 11 ? (
+                    ) : mobileNumber !== null && mobileNumber.length !== 11 ? (
                       <small className="red font-size-12">
                         Mobile number must has exactly 11 digits.
                       </small>
-                    ) : mobileNumber.substring(0, 2) !== "09" ? (
+                    ) : mobileNumber !== null &&
+                      mobileNumber.substring(0, 2) !== "09" ? (
                       <small className="red font-size-12">
                         Mobile number must start with "09".
                       </small>
-                    ) : mobileNumber
+                    ) : mobileNumber !== null &&
+                      mobileNumber
                         .toLowerCase()
                         .split("")
                         .filter((x) => !"1234567890".includes(x)).length > 0 ? (
@@ -1091,7 +1095,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
               </Row>
             </Form>
             {error.filter((x) => x !== true).length > 0 && (
-              <Alert color="danger">{error}</Alert>
+              <Alert color="danger">{error.filter((x) => x !== true)}</Alert>
             )}
           </ModalBody>
           <ModalFooter className="border-0">
