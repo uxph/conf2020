@@ -13,6 +13,7 @@ const ConfirmationPage = () => {
 
   // Paymongo API
   const [confirmMessage, setConfirmMessage] = useState(null);
+  const [paymentMessage, setPaymentMessage] = useState(null);
   const [confirmed, setConfirmed] = useState(false);
   const [authUrl, setAuthUrl] = useState(null);
 
@@ -69,8 +70,14 @@ const ConfirmationPage = () => {
 
           if (responseText.data) {
             setConfirmMessage("Payment successful!");
+            setPaymentMessage(
+              "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+            );
           } else {
-            setConfirmMessage("Uh-oh! Something went wrong.");
+            setConfirmMessage("The payment didn't go through");
+            setPaymentMessage(
+              "There was a problem in processing your payment. Please double check the details and try again."
+            );
           }
 
           setConfirmed(true);
@@ -145,10 +152,16 @@ const ConfirmationPage = () => {
 
                         if (paymentIntentStatus === "succeeded") {
                           setConfirmMessage("Payment successful!");
+                          setPaymentMessage(
+                            "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+                          );
                         } else if (
                           paymentIntentStatus === "awaiting_payment_method"
                         ) {
-                          setConfirmMessage("Uh-oh! Something went wrong.");
+                          setConfirmMessage("The payment didn't go through");
+                          setPaymentMessage(
+                            "There was a problem in processing your payment. Please double check the details and try again."
+                          );
                         } else if (paymentIntentStatus === "processing") {
                           refetchCardConfirmation();
                         }
@@ -159,13 +172,22 @@ const ConfirmationPage = () => {
               );
             } else if (paymentIntentStatus === "succeeded") {
               setConfirmMessage("Payment successful!");
+              setPaymentMessage(
+                "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+              );
             } else if (paymentIntentStatus === "awaiting_payment_method") {
-              setConfirmMessage("Uh-oh! Something went wrong.");
+              setConfirmMessage("The payment didn't go through");
+              setPaymentMessage(
+                "There was a problem in processing your payment. Please double check the details and try again."
+              );
             } else if (paymentIntentStatus === "processing") {
               refetchCardConfirmation();
             }
           } else {
-            setConfirmMessage("Uh-oh! Something went wrong.");
+            setConfirmMessage("The payment didn't go through");
+            setPaymentMessage(
+              "There was a problem in processing your payment. Please double check the details and try again."
+            );
           }
 
           setConfirmed(true);
@@ -255,6 +277,13 @@ const ConfirmationPage = () => {
                 }}
               >
                 {confirmMessage}
+                <p
+                  style={{ color: `white`, fontWeight: `light` }}
+                  className="margin-top-24"
+                >
+                  {paymentMessage}
+                </p>
+                {/*  */}
               </h1>
               <center>
                 <Button
@@ -285,7 +314,9 @@ const ConfirmationPage = () => {
                 color: "#FFF",
               }}
             >
-              Follow us for the announcement!
+              If you have any questions or concerns, please contact{" "}
+              <a href="mailto:conference@uxph.org">conference@uxph.org.</a>
+              {/* Follow us for the announcement! */}
             </p>
           </div>
           <div className="d-flex justify-content-center margin-top-16">
