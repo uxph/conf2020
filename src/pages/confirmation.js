@@ -18,7 +18,7 @@ const ConfirmationPage = () => {
   const [authUrl, setAuthUrl] = useState(null);
 
   const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
+  // const toggle = () => setModal(!modal);
 
   // useEffect for confirmations
   useEffect(() => {
@@ -229,8 +229,8 @@ const ConfirmationPage = () => {
             const paymentIntent = responseText.data;
             const paymentIntentStatus = paymentIntent.attributes.status;
             if (paymentIntentStatus === "awaiting_next_action") {
-              setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
-              // setAuthUrl("https://2020.uxph.org");
+              // setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
+              setAuthUrl("https://uxph.org");
               window.addEventListener(
                 "message",
                 (ev) => {
@@ -336,7 +336,7 @@ const ConfirmationPage = () => {
   return (
     <>
       <SEO title="Ticket Confirmation" />
-      <Modal isOpen={modal} toggle={toggle}>
+      <Modal isOpen={modal}>
         <ModalBody>
           <iframe
             className="w-100 border-0"
@@ -378,6 +378,7 @@ const ConfirmationPage = () => {
             // left: "50%",
             // transform: "translate(-50%, -50%)",
           }}
+          id="confirmation-content"
         >
           {confirmMessage ? (
             <>

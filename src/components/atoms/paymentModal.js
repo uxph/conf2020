@@ -26,7 +26,7 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
 
-const env = "test"; // TODO DO NOT FORGET TO CHANGE THIS
+const env = "local"; // TODO DO NOT FORGET TO CHANGE THIS
 let url = null;
 if (env === "test") {
   url = "https://loving-volhard-7197c7.netlify.app";
@@ -122,15 +122,22 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
+    // secret code
     if (lowerCasedCode === "uxcult100") {
       setDiscount(subtotal - 100);
-    } else if (discount_codes[lowerCasedCode]) {
+    }
+
+    // matched code
+    else if (discount_codes[lowerCasedCode]) {
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
       } else {
         setDiscount(discount_codes[lowerCasedCode].solid);
       }
-    } else {
+    }
+
+    // invalid code
+    else {
       setDiscount(0);
     }
   }, [discountCode, subtotal]);
@@ -272,9 +279,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
         details.paymentMethod
       }&amount=${parseInt(details.amount) * 100}&company=${
         details.company
-      }&discount_code=${details.discountCode}&super_early_bird=${
-        details.superEarlyBird
-      }`;
+      }&discount_code=${
+        discount > 0 ? details.discountCode : "none"
+      }&super_early_bird=${details.superEarlyBird}`;
 
       const data = JSON.stringify({
         data: {
@@ -345,7 +352,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             },
             currency: "PHP",
             description: `{discount_code: ${
-              discountCode ? discountCode : "none"
+              discount > 0 ? discountCode : "none"
             }, company: ${company}, ${tickets}}`,
           },
         },
@@ -668,17 +675,36 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     >
                       <strong>Bank transfer instructions</strong>
                     </p>
+                    <ol>
+                      <li>
+                        If you have a code, enter it below and send the total
+                        amount the account details below:
+                        <br />
+                        <br />
+                        <strong>Bank:</strong> Unionbank of the Philippines
+                        <br />
+                        <strong>Account Name:</strong> Janyl Tamayo
+                        <br />
+                        <strong>Account number:</strong> 1094 2245 4557
+                      </li>
+                      <li>
+                        Take a screenshot of the transfer and click CHECKOUT.
+                        You'll be taken to a form where you need to upload your
+                        order details and the screenshot.
+                      </li>
+                      <li>
+                        When we confirm all the details are correct, you will be
+                        sent a confirmation email, your tickets, and further
+                        instructions for the event.
+                      </li>
+                    </ol>
+                    <br />
                     <p>
-                      You make bayad appropriate amount of pera with bank
-                      details found sa baba. Tapos, make visit this link and
-                      upload proof of payment para we give you ticket:{" "}
-                      <a href={bankTransferUrl} target="blank">
-                        {bankTransferUrl}
+                      If you have any questions, email{" "}
+                      <a href="mailto:conference@uxph.org" className="red">
+                        conference@uxph.org
                       </a>
-                    </p>
-                    <p className="m-0">
-                      <strong>Account name:</strong> Janyl Tamayo <br />
-                      <strong>Account number:</strong> 1094 2245 4557
+                      .
                     </p>
                   </div>
                 )}
@@ -747,6 +773,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       required
                       value={email ? email : ""}
                       onChange={(event) => setEmail(event.target.value)}
+                      placeholder="sample@website.com"
                     />
                   </FormGroup>
                   <FormGroup>
@@ -760,6 +787,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       required
                       value={mobileNumber ? mobileNumber : ""}
                       onChange={(event) => setMobileNumber(event.target.value)}
+                      placeholder="e.g. 09171234567"
                     />
                   </FormGroup>
                   <br />
@@ -956,6 +984,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 }}
                 href={!subtotal ? null : bankTransferUrl}
                 target="blank"
+                // onClick={toggle}
               >
                 Checkout
               </Button>

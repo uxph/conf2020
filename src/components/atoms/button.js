@@ -41,6 +41,7 @@ const Button = ({
           ...style,
         }}
         target={target}
+        onClick={onClick}
       >
         <span>{children}</span>
       </a>
