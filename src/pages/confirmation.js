@@ -229,8 +229,8 @@ const ConfirmationPage = () => {
             const paymentIntent = responseText.data;
             const paymentIntentStatus = paymentIntent.attributes.status;
             if (paymentIntentStatus === "awaiting_next_action") {
-              // setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
-              setAuthUrl("https://uxph.org");
+              setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
+              // setAuthUrl("https://uxph.org");
               window.addEventListener(
                 "message",
                 (ev) => {
