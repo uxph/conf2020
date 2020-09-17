@@ -732,6 +732,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
               <br />
               {paymentMethod !== "bank" && (
                 <>
+                  <p
+                    className="margin-bottom-12"
+                    style={{
+                      fontSize: "20px",
+                    }}
+                  >
+                    <strong>About you</strong>
+                  </p>
                   <Row>
                     <Col sm={12} md={6}>
                       <FormGroup>
@@ -851,6 +859,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
               {paymentMethod === "card" && (
                 <div className="border-top">
                   <br />
+                  <p
+                    className="margin-bottom-12"
+                    style={{
+                      fontSize: "20px",
+                    }}
+                  >
+                    <strong>Card details</strong>
+                  </p>
                   <FormGroup>
                     <Label for="cardNumber">
                       Card number <span className="red">*</span>
@@ -946,15 +962,27 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 <tbody>
                   <tr>
                     <td>
-                      <small className="gray">Super early bird</small> <br />
-                      <strong
+                      <small className="gray">Super Early Bird</small> <br />
+                      <div>
+                        <strong
+                          style={{
+                            fontSize: "20px",
+                          }}
+                          className="ticket-price"
+                        >
+                          PHP {numeral(superEarlyBirdPrice).format("0,0.00")}
+                        </strong>{" "}
+                        <small className="gray">/ USD $45 (18% off)</small>
+                      </div>
+                      <span
+                        className="font-weight-normal d-block"
                         style={{
-                          fontSize: "20px",
+                          fontSize: "0.75rem",
                         }}
-                        className="ticket-price"
                       >
-                        PHP {numeral(superEarlyBirdPrice).format("0,0.00")}
-                      </strong>
+                        Regular Price:{" "}
+                        <strike>PHP {numeral(2770).format("0,0.00")}</strike>
+                      </span>
                     </td>
                     <td>
                       <Input
@@ -995,22 +1023,32 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   </Col>
                 </FormGroup>
               )}
-              <Row className={`margin-top-32 px-2 margin-bottom-12`}>
+              <Row
+                className={`margin-top-32 px-2 ${
+                  discount > 0 ? "" : "margin-bottom-12"
+                }`}
+              >
                 <Col>
                   <p className="font-size-26 mb-0 gray">Subtotal</p>
                 </Col>
                 <Col>
-                  {discount <= 0 ? (
-                    <p className="font-size-26 mb-0 text-right">
-                      PHP {numeral(subtotal).format("0,0.00")}
-                    </p>
-                  ) : (
-                    <p className="font-size-26 mb-0 text-right">
-                      PHP {numeral(subtotal).format("0,0.00")}
-                    </p>
-                  )}
+                  <p className="font-size-26 mb-0 text-right">
+                    PHP {numeral(subtotal).format("0,0.00")}
+                  </p>
                 </Col>
               </Row>
+              {discount > 0 && (
+                <Row className={`px-2 margin-bottom-12`}>
+                  <Col>
+                    <p className="font-size-26 mb-0 gray">Discount price</p>
+                  </Col>
+                  <Col>
+                    <p className="font-size-26 mb-0 text-right">
+                      PHP {numeral(discount).format("0,0.00")}
+                    </p>
+                  </Col>
+                </Row>
+              )}
               <Row className="margin-bottom-24 px-2" id="total-label">
                 <Col md={3}>
                   <p className="font-size-24 mb-0 gray font-weight-bold">
@@ -1019,21 +1057,16 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </Col>
                 <Col md={9}>
                   <p className="font-size-24 mb-0 text-right font-weight-bold">
-                    <span
-                      className="font-weight-normal d-block"
-                      style={{
-                        fontSize: "0.875rem",
-                      }}
-                    >
-                      Regular Price:{" "}
-                      <strike>PHP {numeral(2770).format("0,0.00")}</strike>
-                    </span>
                     PHP {numeral(total).format("0,0.00")}
                   </p>
                 </Col>
               </Row>
             </Form>
-            {error.length > 0 && <Alert color="danger">{error}</Alert>}
+            {error.length > 0 && (
+              <Alert color="danger" className="d-none">
+                {error}
+              </Alert>
+            )}
           </ModalBody>
           <ModalFooter className="border-0">
             <Button
