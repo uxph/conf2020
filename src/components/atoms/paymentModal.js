@@ -741,12 +741,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                             fontFamily: "Work sans",
                           }}
                         >
-                          First name <span className="red">*</span>{" "}
-                          {firstName === "" && (
-                            <small className="red">
-                              This field is required
-                            </small>
-                          )}
+                          First name <span className="red">*</span>
                         </Label>
                         <Input
                           type="text"
@@ -758,17 +753,17 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           onBlur={(event) => setFirstName(event.target.value)}
                           invalid={firstName === "" ? true : null}
                         />
+                        {firstName === "" && (
+                          <small className="red font-size-12">
+                            This field is required
+                          </small>
+                        )}
                       </FormGroup>
                     </Col>
                     <Col sm={12} md={6}>
                       <FormGroup>
                         <Label for="lastName">
-                          Last name <span className="red">*</span>{" "}
-                          {lastName === "" && (
-                            <small className="red">
-                              This field is required
-                            </small>
-                          )}
+                          Last name <span className="red">*</span>
                         </Label>
                         <Input
                           type="text"
@@ -780,15 +775,17 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           onBlur={(event) => setLastName(event.target.value)}
                           invalid={lastName === "" ? true : null}
                         />
+                        {lastName === "" && (
+                          <small className="red font-size-12">
+                            This field is required
+                          </small>
+                        )}
                       </FormGroup>
                     </Col>
                   </Row>
                   <FormGroup>
                     <Label for="company">
-                      Company <span className="red">*</span>{" "}
-                      {company === "" && (
-                        <small className="red">This field is required</small>
-                      )}
+                      Company <span className="red">*</span>
                     </Label>
                     <Input
                       type="company"
@@ -800,13 +797,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onBlur={(event) => setCompany(event.target.value)}
                       invalid={company === "" ? true : null}
                     />
+                    {company === "" && (
+                      <small className="red font-size-12">
+                        This field is required
+                      </small>
+                    )}
                   </FormGroup>
                   <FormGroup>
                     <Label for="email">
-                      Email <span className="red">*</span>{" "}
-                      {email === "" && (
-                        <small className="red">This field is required</small>
-                      )}
+                      Email <span className="red">*</span>
                     </Label>
                     <Input
                       type="email"
@@ -819,13 +818,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onBlur={(event) => setEmail(event.target.value)}
                       invalid={email === "" ? true : null}
                     />
+                    {email === "" && (
+                      <small className="red font-size-12">
+                        This field is required
+                      </small>
+                    )}
                   </FormGroup>
                   <FormGroup>
                     <Label for="mobileNumber">
-                      Mobile number <span className="red">*</span>{" "}
-                      {mobileNumber === "" && (
-                        <small className="red">This field is required</small>
-                      )}
+                      Mobile number <span className="red">*</span>
                     </Label>
                     <Input
                       type="phone"
@@ -838,6 +839,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onBlur={(event) => setMobileNumber(event.target.value)}
                       invalid={mobileNumber === "" ? true : null}
                     />
+                    {mobileNumber === "" && (
+                      <small className="red font-size-12">
+                        This field is required
+                      </small>
+                    )}
                   </FormGroup>
                   <br />
                 </>
@@ -847,10 +853,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   <br />
                   <FormGroup>
                     <Label for="cardNumber">
-                      Card number <span className="red">*</span>{" "}
-                      {cardNumber === "" && (
-                        <small className="red">This field is required</small>
-                      )}
+                      Card number <span className="red">*</span>
                     </Label>
                     <Input
                       type="text"
@@ -862,6 +865,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       onBlur={(event) => setCardNumber(event.target.value)}
                       invalid={cardNumber === "" ? true : null}
                     />
+                    {cardNumber === "" && (
+                      <small className="red font-size-12">
+                        This field is required
+                      </small>
+                    )}
                   </FormGroup>
                   <Row className="align-items-baseline">
                     <Col sm={6} md={4}>
@@ -905,12 +913,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     <Col sm={6} md={4}>
                       <FormGroup>
                         <Label for="cvc">
-                          CVC <span className="red">*</span>{" "}
-                          {cvc === "" && (
-                            <small className="red">
-                              This field is required
-                            </small>
-                          )}
+                          CVC <span className="red">*</span>
                         </Label>
                         <Input
                           type="text"
@@ -922,6 +925,11 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           onBlur={(event) => setCvc(event.target.value)}
                           invalid={cvc === "" ? true : null}
                         />
+                        {cvc === "" && (
+                          <small className="red font-size-12">
+                            This field is required
+                          </small>
+                        )}
                       </FormGroup>
                     </Col>
                   </Row>
