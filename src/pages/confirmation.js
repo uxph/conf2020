@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import SEO from "../components/seo";
 import Button from "../components/atoms/button";
 import ReactLoading from "react-loading";
+import { Modal, ModalBody } from "reactstrap";
+import axios from "axios";
 
 import "../assets/sass/home.scss";
 import info from "../data/info.json";
@@ -12,7 +14,12 @@ const ConfirmationPage = () => {
   // Paymongo API
   const [confirmMessage, setConfirmMessage] = useState(null);
   const [confirmed, setConfirmed] = useState(false);
+  const [authUrl, setAuthUrl] = useState(null);
 
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
+  // useEffect for confirmations
   useEffect(() => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -80,6 +87,10 @@ const ConfirmationPage = () => {
       xhr.send(data);
     };
 
+    const refetchCardConfirmation = () => {
+      console.log("same content with the original fetch");
+    };
+
     const fetchCardConfirmation = () => {
       const paymentIntentId = urlParams.get("payment_intent");
       const paymentMethodId = urlParams.get("payment_method");
@@ -101,14 +112,58 @@ const ConfirmationPage = () => {
           const responseText = JSON.parse(this.responseText);
           console.log("Attach paymentIntent", responseText);
           if (responseText.data) {
-            const paymentIntent = responseText.data.data;
+            const paymentIntent = responseText.data;
             const paymentIntentStatus = paymentIntent.attributes.status;
-            if (paymentIntentStatus === "succeeded") {
+            if (paymentIntentStatus === "awaiting_next_action") {
+              setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
+              // setAuthUrl("https://2020.uxph.org");
+              window.addEventListener(
+                "message",
+                (ev) => {
+                  if (ev.data === "3DS-authentication-complete") {
+                    // 3D Secure authentication is complete. You can requery the payment intent again to check the status.
+
+                    axios
+                      .get(
+                        "https://api.paymongo.com/v1/payment_intents/" +
+                          paymentIntentId +
+                          "?client_key=" +
+                          client,
+                        {
+                          headers: {
+                            // Base64 encoded public PayMongo API key.
+                            Authorization: auth_sk,
+                          },
+                        }
+                      )
+                      .then(function (response) {
+                        var paymentIntent = response.data.data;
+                        var paymentIntentStatus =
+                          paymentIntent.attributes.status;
+
+                        setModal(false);
+
+                        if (paymentIntentStatus === "succeeded") {
+                          setConfirmMessage("Payment successful!");
+                        } else if (
+                          paymentIntentStatus === "awaiting_payment_method"
+                        ) {
+                          setConfirmMessage("Uh-oh! Something went wrong.");
+                        } else if (paymentIntentStatus === "processing") {
+                          refetchCardConfirmation();
+                        }
+                      });
+                  }
+                },
+                false
+              );
+            } else if (paymentIntentStatus === "succeeded") {
               setConfirmMessage("Payment successful!");
             } else if (paymentIntentStatus === "awaiting_payment_method") {
               setConfirmMessage("Uh-oh! Something went wrong.");
+            } else if (paymentIntentStatus === "processing") {
+              refetchCardConfirmation();
             }
-            setConfirmMessage("Payment successful!");
           } else {
             setConfirmMessage("Uh-oh! Something went wrong.");
           }
@@ -138,9 +193,27 @@ const ConfirmationPage = () => {
     }
   });
 
+  useEffect(() => {
+    if (authUrl) {
+      setModal(true);
+    }
+  }, [authUrl]);
+
   return (
     <>
       <SEO title="Ticket Confirmation" />
+      <Modal isOpen={modal} toggle={toggle}>
+        <ModalBody>
+          <iframe
+            className="w-100 border-0"
+            src={authUrl}
+            title="3DS Transaction Authenticatoin"
+            style={{
+              height: "400px",
+            }}
+          ></iframe>
+        </ModalBody>
+      </Modal>
       <header
         style={{
           backgroundColor: "var(--black)",
