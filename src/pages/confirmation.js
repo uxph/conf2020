@@ -256,7 +256,6 @@ const ConfirmationPage = () => {
           }}
         ></div>
         <div
-          id="coming-soon-content"
           className="margin-top-256 margin-bottom-48 mx-auto"
           style={{
             position: "relative",
@@ -273,18 +272,22 @@ const ConfirmationPage = () => {
               <h1
                 className="text-white text-center"
                 style={{
-                  fontSize: "48px",
+                  fontSize: "3rem",
+                  marginBottom: "1rem",
                 }}
               >
                 {confirmMessage}
-                <p
-                  style={{ color: `white`, fontWeight: `light` }}
-                  className="margin-top-24"
-                >
-                  {paymentMessage}
-                </p>
                 {/*  */}
               </h1>
+              <p
+                style={{
+                  fontWeight: `light`,
+                  fontFamily: "Work sans",
+                }}
+                className="text-center light-gray"
+              >
+                {paymentMessage}
+              </p>
               <center>
                 <Button
                   style={{
@@ -296,6 +299,47 @@ const ConfirmationPage = () => {
                   Back to homepage
                 </Button>
               </center>
+              <div className="text-center margin-top-64">
+                <p className="text-white margin-bottom-4">
+                  If you have any questions or concerns, please contact{" "}
+                  <a href="mailto:conference@uxph.org" className="red">
+                    conference@uxph.org.
+                  </a>
+                  {/* Follow us for the announcement! */}
+                </p>
+                <p className="text-white margin-bottom-16">
+                  Join the community and follow us for updates!
+                </p>
+              </div>
+              <div className="d-flex justify-content-center margin-top-16">
+                <a href={info.facebook_page} target="blank">
+                  <img
+                    src={"/images/icons/facebook-square.svg"}
+                    alt="UXPH Facebook Page"
+                    className="margin-right-24"
+                  />
+                </a>
+                <a href={info.instagram} target="blank">
+                  <img
+                    src={"/images/icons/ig-square.svg"}
+                    alt="UXPH Instagram Page"
+                    className="margin-right-24"
+                  />
+                </a>
+                <a href={info.twitter} target="blank">
+                  <img
+                    src={"/images/icons/twitter.svg"}
+                    alt="UXPH Twitter Page"
+                    className="margin-right-24"
+                  />
+                </a>
+                <a href={info.linkedin} target="blank">
+                  <img
+                    src={"/images/icons/linkedin.svg"}
+                    alt="UXPH LinkedIn Page"
+                  />
+                </a>
+              </div>
             </>
           ) : (
             <center>
@@ -305,49 +349,16 @@ const ConfirmationPage = () => {
                 height={96}
                 width={128}
               />
+              <p
+                className="text-white text-center"
+                style={{
+                  fontSize: "1.125rem",
+                }}
+              >
+                Please wait while we process your payment.
+              </p>
             </center>
           )}
-
-          <div className="text-center margin-top-48">
-            <p
-              style={{
-                color: "#FFF",
-              }}
-            >
-              If you have any questions or concerns, please contact{" "}
-              <a href="mailto:conference@uxph.org">conference@uxph.org.</a>
-              {/* Follow us for the announcement! */}
-            </p>
-          </div>
-          <div className="d-flex justify-content-center margin-top-16">
-            <a href={info.facebook_page} target="blank">
-              <img
-                src={"/images/icons/facebook-square.svg"}
-                alt="UXPH Facebook Page"
-                className="margin-right-24"
-              />
-            </a>
-            <a href={info.instagram} target="blank">
-              <img
-                src={"/images/icons/ig-square.svg"}
-                alt="UXPH Instagram Page"
-                className="margin-right-24"
-              />
-            </a>
-            <a href={info.twitter} target="blank">
-              <img
-                src={"/images/icons/twitter.svg"}
-                alt="UXPH Twitter Page"
-                className="margin-right-24"
-              />
-            </a>
-            <a href={info.linkedin} target="blank">
-              <img
-                src={"/images/icons/linkedin.svg"}
-                alt="UXPH LinkedIn Page"
-              />
-            </a>
-          </div>
         </div>
       </header>
     </>

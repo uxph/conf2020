@@ -116,7 +116,7 @@ const ComingSoon = () => {
               color: "#FFF",
             }}
           >
-            Follow us for the announcement!
+            Join the community and follow us for updates!
           </p>
         </div>
         <div className="d-flex justify-content-center margin-top-24">
