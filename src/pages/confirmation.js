@@ -95,7 +95,114 @@ const ConfirmationPage = () => {
     };
 
     const refetchCardConfirmation = () => {
-      console.log("same content with the original fetch");
+      const paymentIntentId = urlParams.get("payment_intent");
+      const paymentMethodId = urlParams.get("payment_method");
+      const client = urlParams.get("client");
+
+      const data = JSON.stringify({
+        data: {
+          attributes: {
+            payment_method: paymentMethodId,
+            client_key: client,
+          },
+        },
+      });
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          const responseText = JSON.parse(this.responseText);
+          console.log("Attach paymentIntent", responseText);
+          if (responseText.data) {
+            const paymentIntent = responseText.data;
+            const paymentIntentStatus = paymentIntent.attributes.status;
+            if (paymentIntentStatus === "awaiting_next_action") {
+              setAuthUrl(paymentIntent.attributes.next_action.redirect.url);
+              // setAuthUrl("https://2020.uxph.org");
+              window.addEventListener(
+                "message",
+                (ev) => {
+                  if (ev.data === "3DS-authentication-complete") {
+                    // 3D Secure authentication is complete. You can requery the payment intent again to check the status.
+
+                    axios
+                      .get(
+                        "https://api.paymongo.com/v1/payment_intents/" +
+                          paymentIntentId +
+                          "?client_key=" +
+                          client,
+                        {
+                          headers: {
+                            // Base64 encoded public PayMongo API key.
+                            Authorization: auth_sk,
+                          },
+                        }
+                      )
+                      .then(function (response) {
+                        var paymentIntent = response.data.data;
+                        var paymentIntentStatus =
+                          paymentIntent.attributes.status;
+
+                        setModal(false);
+
+                        if (paymentIntentStatus === "succeeded") {
+                          setConfirmMessage("Payment successful!");
+                          setPaymentMessage(
+                            "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+                          );
+                        } else if (
+                          paymentIntentStatus === "awaiting_payment_method"
+                        ) {
+                          setConfirmMessage("The payment didn't go through");
+                          setPaymentMessage(
+                            "There was a problem in processing your payment. Please double check the details and try again."
+                          );
+                        } else if (paymentIntentStatus === "processing") {
+                          refetchCardConfirmation();
+                        }
+                      });
+                  }
+                },
+                false
+              );
+            } else if (paymentIntentStatus === "succeeded") {
+              setConfirmMessage("Payment successful!");
+              setPaymentMessage(
+                "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+              );
+            } else if (paymentIntentStatus === "awaiting_payment_method") {
+              setConfirmMessage("The payment didn't go through");
+              setPaymentMessage(
+                "There was a problem in processing your payment. Please double check the details and try again."
+              );
+            } else if (paymentIntentStatus === "processing") {
+              refetchCardConfirmation();
+            }
+          } else if (responseText.errors[0].code.includes("succeed")) {
+            setConfirmMessage("Payment successful!");
+            setPaymentMessage(
+              "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+            );
+          } else {
+            setConfirmMessage("The payment didn't go through");
+            setPaymentMessage(
+              "There was a problem in processing your payment. Please double check the details and try again."
+            );
+          }
+
+          setConfirmed(true);
+        }
+      });
+
+      xhr.open(
+        "POST",
+        `https://api.paymongo.com/v1/payment_intents/${paymentIntentId}/attach`
+      );
+      xhr.setRequestHeader("content-type", "application/json");
+      xhr.setRequestHeader("authorization", auth_sk);
+
+      xhr.send(data);
     };
 
     const fetchCardConfirmation = () => {
@@ -183,6 +290,11 @@ const ConfirmationPage = () => {
             } else if (paymentIntentStatus === "processing") {
               refetchCardConfirmation();
             }
+          } else if (responseText.errors[0].code.includes("succeed")) {
+            setConfirmMessage("Payment successful!");
+            setPaymentMessage(
+              "Please check your email for your ticket and further instructions. We'll be sharing more updates on the event in the coming weeks. See you there!"
+            );
           } else {
             setConfirmMessage("The payment didn't go through");
             setPaymentMessage(
@@ -284,7 +396,7 @@ const ConfirmationPage = () => {
                   fontWeight: `light`,
                   fontFamily: "Work sans",
                 }}
-                className="text-center light-gray"
+                className="text-center text-white"
               >
                 {paymentMessage}
               </p>
