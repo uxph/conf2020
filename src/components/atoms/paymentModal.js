@@ -61,6 +61,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   };
 
   // tickets
+  const regularPrice = 2770; // TODO for discount calculations
   const superEarlyBirdPrice = 2250;
   const [superEarlyBirdQuantity, setSuperEarlyBirdQuantity] = useState(1);
 
@@ -129,6 +130,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
     // matched code
     else if (discount_codes[lowerCasedCode]) {
+      setSubtotal(regularPrice * superEarlyBirdQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
       } else {
@@ -138,9 +140,16 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
     // invalid code
     else {
+      setSubtotal(superEarlyBirdPrice * superEarlyBirdQuantity);
       setDiscount(0);
     }
-  }, [discountCode, subtotal]);
+  }, [
+    discountCode,
+    subtotal,
+    superEarlyBirdPrice,
+    superEarlyBirdQuantity,
+    setSubtotal,
+  ]);
 
   // useEffect for checkout URL
   useEffect(() => {
