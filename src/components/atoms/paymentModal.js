@@ -1080,7 +1080,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
               {discount > 0 && (
                 <Row className={`px-2 margin-bottom-12`}>
                   <Col>
-                    <p className="font-size-26 mb-0 gray">Discount price</p>
+                    <p className="font-size-26 mb-0 gray">You saved</p>
                   </Col>
                   <Col>
                     <p className="font-size-26 mb-0 text-right">
