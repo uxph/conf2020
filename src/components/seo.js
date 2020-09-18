@@ -34,30 +34,37 @@ function SEO({ description, lang, meta, title }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156991006-3"
         ></script>
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-156991006-3');`}
-        </script>
+        <div id="fb-root"></div>
         <script>
           {`
-(function(d,t) {
-  var BASE_URL = "https://app.chatwoot.com";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src= BASE_URL + "/packs/js/sdk.js";
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken: 'q6wSADRgSBkoJk5c572RJ2KW',
-      baseUrl: BASE_URL
-    })
-  }
-})(document,"script");
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
 
-`}
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      `}
         </script>
+        <div
+          class="fb-customerchat"
+          attribution="setup_tool"
+          page_id="314394185432326"
+          theme_color="#0084ff"
+        ></div>
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js"
+        ></script>
       </Helmet>
       <Helmet
         htmlAttributes={{
