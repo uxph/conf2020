@@ -1084,7 +1084,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                   </Col>
                   <Col>
                     <p className="font-size-26 mb-0 text-right">
-                      PHP {numeral(discount).format("0,0.00")}
+                      PHP -{numeral(discount).format("0,0.00")}
                     </p>
                   </Col>
                 </Row>
