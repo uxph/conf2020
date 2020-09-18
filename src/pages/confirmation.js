@@ -95,7 +95,7 @@ const ConfirmationPage = () => {
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === this.DONE) {
         const responseText = JSON.parse(this.responseText);
-        console.log("responseText", responseText);
+        // console.log("responseText", responseText);
 
         if (responseText.data) {
           setConfirmMessage("Payment successful!");
@@ -141,7 +141,7 @@ const ConfirmationPage = () => {
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === this.DONE) {
         const responseText = JSON.parse(this.responseText);
-        console.log("Attach paymentIntent", responseText);
+        // console.log("Attach paymentIntent", responseText);
         if (responseText.data) {
           const paymentIntent = responseText.data;
           const paymentIntentStatus = paymentIntent.attributes.status;
@@ -248,10 +248,10 @@ const ConfirmationPage = () => {
     const xhr = new XMLHttpRequest();
 
     xhr.addEventListener("readystatechange", function () {
-      console.log("before Readystate", this.readyState);
+      // console.log("before Readystate", this.readyState);
       if (this.readyState === this.DONE) {
         const responseText = JSON.parse(this.responseText);
-        console.log("Attach paymentIntent", responseText);
+        // console.log("Attach paymentIntent", responseText);
         if (responseText.data) {
           const paymentIntent = responseText.data;
           const paymentIntentStatus = paymentIntent.attributes.status;
@@ -261,7 +261,7 @@ const ConfirmationPage = () => {
             window.addEventListener(
               "message",
               (ev) => {
-                console.log("ev.data", ev.data);
+                // console.log("ev.data", ev.data);
                 if (ev.data === "3DS-authentication-complete") {
                   // 3D Secure authentication is complete. You can requery the payment intent again to check the status.
 
@@ -282,7 +282,7 @@ const ConfirmationPage = () => {
                       var paymentIntent = response.data.data;
                       var paymentIntentStatus = paymentIntent.attributes.status;
 
-                      console.log("paymentIntentStatus", paymentIntentStatus);
+                      // console.log("paymentIntentStatus", paymentIntentStatus);
 
                       setModal(false);
 
@@ -368,15 +368,34 @@ const ConfirmationPage = () => {
     <>
       <SEO title="Ticket Confirmation" />
       <Modal isOpen={modal}>
-        <ModalBody>
+        <ModalBody className="position-relative">
           <iframe
-            className="w-100 border-0"
+            className="w-100 border-0 rounded position-relative bg-transparent"
             src={authUrl}
             title="3DS Transaction Authenticatoin"
             style={{
               height: "400px",
+              zIndex: 1000,
             }}
           ></iframe>
+          <div
+            style={{
+              position: "absolute",
+              top: "40%",
+              left: "0",
+              right: "0",
+              zIndex: 900,
+            }}
+          >
+            <ReactLoading
+              type="bubbles"
+              color="#182335"
+              height={32}
+              width={48}
+              className="mx-auto"
+            />
+            <p className="text-center m-0">Waiting for authentication</p>
+          </div>
         </ModalBody>
       </Modal>
       <header
@@ -496,6 +515,8 @@ const ConfirmationPage = () => {
                 }}
               >
                 Please wait while we process your payment.
+                <br />
+                This may take a few minutes.
               </p>
             </center>
           )}

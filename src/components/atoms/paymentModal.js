@@ -47,7 +47,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === this.DONE) {
         const responseText = JSON.parse(this.responseText);
-        console.log("fetchAllPayments", responseText);
+        // console.log("fetchAllPayments", responseText);
         if (responseText.data) {
           setPaymentList(responseText.data);
         }
@@ -174,10 +174,10 @@ const PaymentModal = ({ isOpen, toggle }) => {
   useEffect(() => {
     if (confirmNumber) {
       localStorage.setItem("uxph_2020_confirm_number", confirmNumber);
-      console.log(
-        "uxph_2020_confirm_number",
-        localStorage.getItem("uxph_2020_confirm_number")
-      );
+      // console.log(
+      //   "uxph_2020_confirm_number",
+      //   localStorage.getItem("uxph_2020_confirm_number")
+      // );
     }
   }, [confirmNumber]);
 
@@ -349,7 +349,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
           const responseText = JSON.parse(this.responseText);
-          console.log(responseText);
+          // console.log(responseText);
           if (responseText.data) {
             setCheckoutUrl(responseText.data.attributes.redirect.checkout_url);
             setConfirmNumber(responseText.data.id);
@@ -405,7 +405,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
           const responseText = JSON.parse(this.responseText);
-          console.log("Create paymentIntent", responseText);
+          // console.log("Create paymentIntent", responseText);
 
           if (responseText.data) {
             setPaymentIntentId(responseText.data.id);
@@ -447,7 +447,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === this.DONE) {
           const responseText = JSON.parse(this.responseText);
-          console.log("Create paymentMethod", responseText);
+          // console.log("Create paymentMethod", responseText);
 
           if (responseText.data) {
             setPaymentMethodId(responseText.data.id);
