@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "../components/atoms/button";
 import info from "../data/info.json";
-// import PaymentModal from "../components/atoms/paymentModal";
+import PaymentModal from "../components/atoms/paymentModal";
 
 const ComingSoon = () => {
   // const titoEmbed = `
@@ -17,7 +17,7 @@ const ComingSoon = () => {
         boxSizing: "border-box",
       }}
     >
-      {/* <PaymentModal isOpen={modal} toggle={toggle} /> */}
+      <PaymentModal isOpen={modal} toggle={toggle} />
       {/* Video overlay */}
       <div
         id="coming-soon-overlay"
@@ -63,6 +63,7 @@ const ComingSoon = () => {
           style={{
             width: "9.5rem",
           }}
+          id="conf-logo"
         />
         <img
           src={"/images/logos/headline.svg"}
@@ -80,19 +81,20 @@ const ComingSoon = () => {
         </h1>
         <div className="text-center">
           <Button
-            className="margin-left-8 margin-right-8 margin-bottom-32"
+            className="margin-left-8 margin-right-8 margin-bottom-16 cta-button"
             onClick={toggle}
             innerClassName="w-100"
             style={{
               padding: "12px 16px",
             }}
           >
-            Tickets on sale soon
+            Get tickets
           </Button>
           <Button
             variant="outline"
             bgColor="rgba(0, 0, 0, 0.9)"
-            className="margin-left-8 margin-right-8 margin-bottom-16"
+            className="margin-left-8 margin-right-8 margin-bottom-16 cta-button"
+            innerClassName="w-100"
             href="mailto:partnerships@uxph.org"
             target="blank"
             style={{
@@ -114,10 +116,10 @@ const ComingSoon = () => {
               color: "#FFF",
             }}
           >
-            Follow us for the announcement!
+            Join the community and follow us for updates!
           </p>
         </div>
-        <div className="d-flex justify-content-center margin-top-32">
+        <div className="d-flex justify-content-center margin-top-24">
           <a href={info.facebook_page} target="blank">
             <img
               src={"/images/icons/facebook-square.svg"}

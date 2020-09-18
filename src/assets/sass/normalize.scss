@@ -68,7 +68,11 @@ ul {
 }
 
 .gray {
-  color: var(--gray);
+  color: var(--gray) !important;
+}
+
+.light-gray {
+  color: var(--light-gray) !important;
 }
 
 .red {

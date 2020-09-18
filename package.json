@@ -8,8 +8,11 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.20.0",
     "bootstrap": "^4.5.0",
     "dangerously-set-html-content": "^1.0.8",
+    "fs": "0.0.1-security",
+    "fs-request": "^0.2.1",
     "gatsby": "^2.23.10",
     "gatsby-image": "^2.4.8",
     "gatsby-plugin-manifest": "^2.4.13",
@@ -19,12 +22,18 @@
     "gatsby-plugin-sharp": "^2.6.13",
     "gatsby-source-filesystem": "^2.3.13",
     "gatsby-transformer-sharp": "^2.5.6",
+    "months": "^2.1.0",
+    "net": "^1.0.2",
     "node-sass": "^4.14.1",
+    "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "reactstrap": "^8.5.1"
+    "react-loading": "^2.0.3",
+    "reactstrap": "^8.5.1",
+    "tls": "0.0.1"
   },
   "devDependencies": {
     "prettier": "2.0.5"
