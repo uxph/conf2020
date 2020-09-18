@@ -82,7 +82,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   // Basic info
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
-  const [company, setCompany] = useState(null);
+  const [company, setCompany] = useState("n/a");
   const [email, setEmail] = useState(null);
   const [mobileNumber, setMobileNumber] = useState(null);
 
@@ -108,6 +108,17 @@ const PaymentModal = ({ isOpen, toggle }) => {
       {x + index}
     </option>
   ));
+
+  const coc = (
+    <small>
+      By purchasing a ticket, you have read and agree to abide by the terms
+      stated in{" "}
+      <a href="http://bit.ly/UXPHCodeOfConduct" target="blank" className="red">
+        UXPH’s Code of Conduct
+      </a>
+      .
+    </small>
+  );
 
   // useEffect for ticket pricing calculations
   useEffect(() => {
@@ -163,7 +174,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       setError([]);
       setFirstName(null);
       setLastName(null);
-      setCompany(null);
+      setCompany("n/a");
       setEmail(null);
       setMobileNumber(null);
       setCardNumber(null);
@@ -205,15 +216,15 @@ const PaymentModal = ({ isOpen, toggle }) => {
       setLastName("");
     }
 
-    if (company === null || company === "") {
-      // errorList.push(
-      //   <small key="company" className="d-block">
-      //     <strong>Company</strong> is required.
-      //   </small>
-      // );
-      errorList.push(true);
-      setCompany("");
-    }
+    // if (company === null || company === "") {
+    //   // errorList.push(
+    //   //   <small key="company" className="d-block">
+    //   //     <strong>Company</strong> is required.
+    //   //   </small>
+    //   // );
+    //   errorList.push(true);
+    //   setCompany("n/a");
+    // }
 
     if (email === null || email === "") {
       // errorList.push(
@@ -556,6 +567,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </p>
               </Col>
             </Row>
+            <br />
+            {coc}
           </ModalBody>
           <ModalFooter className="border-0 direction">
             <Button
@@ -663,6 +676,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </p>
               </Col>
             </Row>
+            <br />
+            {coc}
           </ModalBody>
           <ModalFooter className="border-0 direction">
             <Button
@@ -720,7 +735,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     <ol>
                       <li>
                         If you have a code, enter it below and send the total
-                        amount the account details below:
+                        amount to the account details below:
                         <br />
                         <br />
                         <strong>Bank:</strong> Unionbank of the Philippines
@@ -813,7 +828,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       </FormGroup>
                     </Col>
                   </Row>
-                  <FormGroup>
+                  <FormGroup className="d-none">
                     <Label for="company">
                       Company <span className="red">*</span>
                     </Label>
@@ -1105,6 +1120,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             {error.filter((x) => x !== true).length > 0 && (
               <Alert color="danger">{error.filter((x) => x !== true)}</Alert>
             )}
+            {paymentMethod === "bank" && coc}
           </ModalBody>
           <ModalFooter className="border-0">
             <Button
