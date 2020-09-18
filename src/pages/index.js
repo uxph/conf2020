@@ -16,7 +16,7 @@ const IndexPage = () => {
   if (coming_soon) {
     return (
       <>
-        <SEO title="Coming Soon!" />
+        <SEO title="Coming Nov. 14-15" />
         <ComingSoon />
       </>
     );

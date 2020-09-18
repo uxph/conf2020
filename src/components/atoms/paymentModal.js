@@ -111,8 +111,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
   const coc = (
     <small>
-      By purchasing a ticket, you have read and agree to abide by the terms
-      stated in{" "}
+      By purchasing a ticket, you are agreeing to have read and will abide by
+      the terms stated in{" "}
       <a href="http://bit.ly/UXPHCodeOfConduct" target="blank" className="red">
         UXPH’s Code of Conduct
       </a>
@@ -793,6 +793,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="firstName"
                           id="firstName"
                           required
+                          placeholder="e.g. Juan"
                           value={firstName ? firstName : ""}
                           onChange={(event) => setFirstName(event.target.value)}
                           onBlur={(event) => setFirstName(event.target.value)}
@@ -815,6 +816,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="lastName"
                           id="lastName"
                           required
+                          placeholder="e.g. Dela Cruz"
                           value={lastName ? lastName : ""}
                           onChange={(event) => setLastName(event.target.value)}
                           onBlur={(event) => setLastName(event.target.value)}
@@ -931,6 +933,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       name="cardNumber"
                       id="cardNumber"
                       required
+                      placeholder="16 digits"
                       value={cardNumber ? cardNumber : ""}
                       onChange={(event) => setCardNumber(event.target.value)}
                       onBlur={(event) => setCardNumber(event.target.value)}
@@ -991,6 +994,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           name="cvc"
                           id="cvc"
                           required
+                          placeholder="3-digit code"
                           value={cvc ? cvc : ""}
                           onChange={(event) => setCvc(event.target.value)}
                           onBlur={(event) => setCvc(event.target.value)}
