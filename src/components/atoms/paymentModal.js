@@ -233,21 +233,31 @@ const PaymentModal = ({ isOpen, toggle }) => {
       // );
       errorList.push(true);
       setMobileNumber("");
-    } else if (mobileNumber.length !== 11) {
-      // errorList.push(
-      //   <small key="mobileNumber" className="d-block">
-      //     <strong>Mobile number</strong> must be 11 digits.
-      //   </small>
-      // );
-      errorList.push(true);
-    } else if (mobileNumber.substring(0, 2) !== "09") {
-      // errorList.push(
-      //   <small key="mobileNumber" className="d-block">
-      //     <strong>Mobile number</strong> must start with "09".
-      //   </small>
-      // );
+    } else if (
+      mobileNumber !== null &&
+      mobileNumber
+        .toLowerCase()
+        .split("")
+        .filter((x) => !"1234567890".includes(x)).length > 0
+    ) {
       errorList.push(true);
     }
+
+    // else if (mobileNumber.length !== 11) {
+    //   // errorList.push(
+    //   //   <small key="mobileNumber" className="d-block">
+    //   //     <strong>Mobile number</strong> must be 11 digits.
+    //   //   </small>
+    //   // );
+    //   errorList.push(true);
+    // } else if (mobileNumber.substring(0, 2) !== "09") {
+    //   // errorList.push(
+    //   //   <small key="mobileNumber" className="d-block">
+    //   //     <strong>Mobile number</strong> must start with "09".
+    //   //   </small>
+    //   // );
+    //   errorList.push(true);
+    // }
 
     if (paymentMethod === "card") {
       if (cardNumber === null || cardNumber === "") {
@@ -860,8 +870,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
                       invalid={
                         mobileNumber !== null &&
                         (mobileNumber === "" ||
-                          mobileNumber.length !== 11 ||
-                          mobileNumber.substring(0, 2) !== "09" ||
                           mobileNumber
                             .toLowerCase()
                             .split("")
@@ -874,15 +882,6 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     {mobileNumber === "" ? (
                       <small className="red font-size-12">
                         This field is required
-                      </small>
-                    ) : mobileNumber !== null && mobileNumber.length !== 11 ? (
-                      <small className="red font-size-12">
-                        Mobile number must has exactly 11 digits.
-                      </small>
-                    ) : mobileNumber !== null &&
-                      mobileNumber.substring(0, 2) !== "09" ? (
-                      <small className="red font-size-12">
-                        Mobile number must start with "09".
                       </small>
                     ) : mobileNumber !== null &&
                       mobileNumber

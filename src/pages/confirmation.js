@@ -51,10 +51,10 @@ const ConfirmationPage = () => {
   const [modal, setModal] = useState(false);
   // const toggle = () => setModal(!modal);
 
-  let queryString = window.location.search;
-  let urlParams = new URLSearchParams(queryString);
-
   const fetchGcashConfirmation = () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
     // values from Paymongo
     const id = localStorage.getItem("uxph_2020_confirm_number");
     const amount = urlParams.get("amount");
@@ -120,6 +120,9 @@ const ConfirmationPage = () => {
   };
 
   const refetchCardConfirmation = () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
     const paymentIntentId = urlParams.get("payment_intent");
     const paymentMethodId = urlParams.get("payment_method");
     const client = urlParams.get("client");
@@ -226,6 +229,9 @@ const ConfirmationPage = () => {
   };
 
   const fetchCardConfirmation = () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
     const paymentIntentId = urlParams.get("payment_intent");
     const paymentMethodId = urlParams.get("payment_method");
     const client = urlParams.get("client");
@@ -337,8 +343,9 @@ const ConfirmationPage = () => {
 
   // useEffect for confirmations
   useEffect(() => {
-    // queryString = window.location.search;
-    // urlParams = new URLSearchParams(queryString);
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
     // confirm the payments right off the bat
     if (!confirmed && !confirmMessage) {
       const method = urlParams.get("method");
