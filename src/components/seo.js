@@ -34,6 +34,12 @@ function SEO({ description, lang, meta, title }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-156991006-3"
         ></script>
+        <script>
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+   gtag('config', 'UA-156991006-3');`}
+        </script>
       </Helmet>
       <Helmet
         htmlAttributes={{

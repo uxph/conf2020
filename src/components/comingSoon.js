@@ -17,8 +17,6 @@ const ComingSoon = () => {
         boxSizing: "border-box",
       }}
     >
-      <PaymentModal isOpen={modal} toggle={toggle} />
-      {/* Video overlay */}
       <div id="fb-root"></div>
       <script>{`
   window.fbAsyncInit = function() {
@@ -48,6 +46,9 @@ const ComingSoon = () => {
         crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js"
       ></script>
+
+      <PaymentModal isOpen={modal} toggle={toggle} />
+      {/* Video overlay */}
       <div
         id="coming-soon-overlay"
         style={{
