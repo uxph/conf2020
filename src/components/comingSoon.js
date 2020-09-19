@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../components/atoms/button";
 import info from "../data/info.json";
 import PaymentModal from "../components/atoms/paymentModal";
+import InnerHTML from "dangerously-set-html-content";
 
 const ComingSoon = () => {
   // const titoEmbed = `
@@ -10,15 +11,9 @@ const ComingSoon = () => {
   // `;
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
-  return (
-    <header
-      style={{
-        backgroundColor: "var(--black)",
-        boxSizing: "border-box",
-      }}
-    >
-      <div id="fb-root"></div>
-      <script>{`
+  const messengerEmbed = `
+  <div id="fb-root"></div>
+  <script>
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,
@@ -33,20 +28,28 @@ const ComingSoon = () => {
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-`}</script>
-      <div
-        class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="314394185432326"
-        theme_color="#0084ff"
-      ></div>
-      <script
-        async
-        defer
-        crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js"
-      ></script>
-
+  </script>
+  <div
+    class="fb-customerchat"
+    attribution="setup_tool"
+    page_id="314394185432326"
+    theme_color="#0084ff"
+  ></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js"
+  ></script>
+`;
+  return (
+    <header
+      style={{
+        backgroundColor: "var(--black)",
+        boxSizing: "border-box",
+      }}
+    >
+      <InnerHTML html={messengerEmbed} />
       <PaymentModal isOpen={modal} toggle={toggle} />
       {/* Video overlay */}
       <div
