@@ -4,6 +4,7 @@ import Button from "../components/atoms/button";
 import ReactLoading from "react-loading";
 import { Modal, ModalBody } from "reactstrap";
 import axios from "axios";
+import InnerHTML from "dangerously-set-html-content";
 
 import "../assets/sass/home.scss";
 import info from "../data/info.json";
@@ -363,12 +364,9 @@ const ConfirmationPage = () => {
       setModal(true);
     }
   }, [authUrl]);
-
-  return (
-    <>
-      <SEO title="Ticket Confirmation" />
-      <div id="fb-root"></div>
-      <script>{`
+  const messengerEmbed = `
+  <div id="fb-root"></div>
+  <script>
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,
@@ -383,19 +381,26 @@ const ConfirmationPage = () => {
   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-`}</script>
-      <div
-        class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="314394185432326"
-        theme_color="#0084ff"
-      ></div>
-      <script
-        async
-        defer
-        crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js"
-      ></script>
+  </script>
+  <div
+    class="fb-customerchat"
+    attribution="setup_tool"
+    page_id="314394185432326"
+    theme_color="#0084ff"
+  ></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js"
+  ></script>
+`;
+
+  return (
+    <>
+      <SEO title="Ticket Confirmation" />
+      <InnerHTML html={messengerEmbed} />
+
       <Modal isOpen={modal}>
         <ModalBody className="position-relative">
           <iframe
