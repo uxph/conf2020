@@ -1,0 +1,33 @@
+@media only screen and (max-width: 414px) {
+  #confirmation-content {
+    width: 90% !important;
+    margin: var(--value-128) auto !important;
+    padding: 0 !important;
+
+    #conf-logo {
+      margin-top: 0 !important;
+      width: 35% !important;
+    }
+
+    h1 {
+      font-size: 1.5rem !important;
+      letter-spacing: 0.2rem !important;
+    }
+
+    p {
+      width: 100% !important;
+      font-size: 0.8rem !important;
+    }
+
+    .cta-button {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #confirmation-content {
+    margin: var(--value-64) auto !important;
+  }
+}

@@ -13,6 +13,15 @@
   box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
 }
 
+.button-outer-layer.disabled {
+  opacity: 0.5;
+}
+
+.button-outer-layer.disabled:hover {
+  transform: scale(1);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+}
+
 .button {
   display: inline-block;
 }
