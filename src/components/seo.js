@@ -38,25 +38,7 @@ function SEO({ description, lang, meta, title }) {
           {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'UA-156991006-3');`}
-        </script>
-        <script>
-          {`
-(function(d,t) {
-  var BASE_URL = "https://app.chatwoot.com";
-  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src= BASE_URL + "/packs/js/sdk.js";
-  s.parentNode.insertBefore(g,s);
-  g.onload=function(){
-    window.chatwootSDK.run({
-      websiteToken: 'q6wSADRgSBkoJk5c572RJ2KW',
-      baseUrl: BASE_URL
-    })
-  }
-})(document,"script");
-
-`}
+   gtag('config', 'UA-156991006-3');`}
         </script>
       </Helmet>
       <Helmet
