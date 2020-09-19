@@ -386,7 +386,7 @@ const ConfirmationPage = () => {
     class="fb-customerchat"
     attribution="setup_tool"
     page_id="314394185432326"
-    theme_color="#0084ff"
+    theme_color="#e8006f"
   ></div>
   <script
     async
