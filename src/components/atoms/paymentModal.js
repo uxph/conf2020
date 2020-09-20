@@ -462,6 +462,16 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
           if (responseText.data) {
             setPaymentMethodId(responseText.data.id);
+            setError([]);
+          } else if (
+            responseText.errors[0].detail.includes("details.card_number")
+          ) {
+            setPaymentMethodId(null);
+            setError([
+              <small key="cardNumber" className="d-block">
+                Your card number seems to be invalid.
+              </small>,
+            ]);
           }
         }
       });
