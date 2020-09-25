@@ -93,7 +93,7 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             name: `twitter:card`,
-            content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
+            content: `summary_large_image`,
           },
           {
             name: `twitter:creator`,
@@ -110,6 +110,10 @@ function SEO({ description, lang, meta, title }) {
           {
             name: `twitter:description`,
             content: metaDescription,
+          },
+          {
+            name: `twitter:image`,
+            content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
           },
           {
             developer: `Mike Jaren Yap`,
