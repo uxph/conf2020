@@ -4,6 +4,7 @@ import Button from "../components/atoms/button";
 import ReactLoading from "react-loading";
 import { Modal, ModalBody } from "reactstrap";
 import axios from "axios";
+import email from "../components/email";
 import InnerHTML from "dangerously-set-html-content";
 
 import "../assets/sass/home.scss";
@@ -356,6 +357,7 @@ const ConfirmationPage = () => {
         fetchCardConfirmation();
       }
     }
+    email();
     // eslint-disable-next-line
   }, []);
 
