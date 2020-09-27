@@ -1,28 +1,62 @@
+#coming-soon-overlay {
+  background: url(/images/backgrounds/dark-background.svg), #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+hr {
+  border-color: white !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg-video__content {
+    height: 100vh !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #form-wrapper {
     width: 90% !important;
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 414px) {
+  #coming-soon-headline {
+    width: 100% !important;
+  }
+
   #coming-soon-overlay {
+    background-position: center !important;
     opacity: 1 !important;
   }
+
   #coming-soon-video {
     display: none !important;
   }
 
   #coming-soon-content {
     width: 90% !important;
-    margin: var(--value-96) auto !important;
+    margin: var(--value-64) auto !important;
     padding: 0 !important;
 
+    #conf-logo {
+      margin-top: 0 !important;
+      width: 35% !important;
+    }
+
     h1 {
-      font-size: 2rem !important;
+      font-size: 1rem !important;
+      letter-spacing: 0.2rem !important;
     }
 
     p {
       width: 100% !important;
+    }
+
+    .cta-button {
+      width: 100% !important;
+      margin-left: 0 !important;
     }
   }
 

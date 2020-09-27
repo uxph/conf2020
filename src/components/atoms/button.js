@@ -2,40 +2,27 @@ import React from "react";
 
 const Button = ({
   children,
-  href,
+  href = null,
   variant = "",
   className = "",
+  innerClassName = "",
   bgColor = "white",
   style = "",
-  target = "_self",
-  onClick,
+  target = null,
+  onClick = null,
+  value = null,
 }) => {
-  if (href) {
-    return (
-      <div className={`button-outer-layer ${className}`}>
-        <a
-          className={`button ${variant}`}
-          href={href}
-          style={{
-            backgroundColor: bgColor,
-            ...style,
-          }}
-          target={target}
-        >
-          <span>{children}</span>
-        </a>
-      </div>
-    );
-  } else {
+  if (href === null) {
     return (
       <div className={`button-outer-layer ${className}`}>
         <button
-          className={`button ${variant}`}
+          className={`button ${variant} ${innerClassName}`}
           style={{
             backgroundColor: bgColor,
             ...style,
           }}
           target={target}
+          value={value}
           onClick={onClick}
         >
           <span>{children}</span>
@@ -43,6 +30,23 @@ const Button = ({
       </div>
     );
   }
+
+  return (
+    <div className={`button-outer-layer ${className}`}>
+      <a
+        className={`button ${variant} ${innerClassName}`}
+        href={href}
+        style={{
+          backgroundColor: bgColor,
+          ...style,
+        }}
+        target={target}
+        onClick={onClick}
+      >
+        <span>{children}</span>
+      </a>
+    </div>
+  );
 };
 
 export default Button;

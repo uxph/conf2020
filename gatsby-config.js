@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `UX Philippines Conference 2020`,
-    description: `UXPH (User Experience Philippines) is a non-profit organization that hosts the Philippines' largest community of individuals passionate about the realm of User Experience, and all things related.`,
+    title: `UXPH Conf 2020`,
+    description: `The UXPH CONF, now in its 5th year, will be an online event filled with talks and workshops for Experience Designers, enthusiasts, and creative problem-solvers.`,
     author: `@uxphofficial`,
   },
   plugins: [

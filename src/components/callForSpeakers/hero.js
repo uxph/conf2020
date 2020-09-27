@@ -9,16 +9,14 @@ const Hero = () => {
       data-aos-once={true}
     >
       <div className="wrapper" id="call-for-speakers-header">
-        <img
-          src={"/images/logos/uxph_conf_logo.svg"}
-          alt="UXPH Conference 2020"
-          className="width-96 d-block mx-auto margin-bottom-32"
-        />
+        <a href="/">
+          <img
+            src={"/images/logos/uxph_conf_logo.svg"}
+            alt="UXPH Conference 2020"
+            className="width-96 d-block mx-auto margin-bottom-32"
+          />
+        </a>
         <h2 className="text-white margin-bottom-24">Call for speakers</h2>
-        <p className="margin-bottom-48">
-          We need people who are willing to talk or to facilitate workshops for
-          our upcoming online conference.
-        </p>
       </div>
     </header>
   );

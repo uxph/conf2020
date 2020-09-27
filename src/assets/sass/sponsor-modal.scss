@@ -12,11 +12,12 @@
   overflow-y: none;
   z-index: 999;
 }
-.modal-body {
-  width: 100%;
-  height: 360px;
-  overflow-y: hidden;
-}
+
+// .modal-body {
+//   width: 100%;
+//   height: 360px;
+//   overflow-y: hidden;
+// }
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
