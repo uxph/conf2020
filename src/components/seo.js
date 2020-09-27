@@ -124,19 +124,6 @@ function SEO({ description, lang, meta, title }) {
             site: `https://gavindizon.github.io`,
           },
         ].concat(meta)}
-        link={[
-          {
-            rel: "stylesheet",
-            type: "text/css",
-            href: "https://css.tito.io/v1.1",
-          },
-        ]}
-        script={[
-          {
-            src: "https://js.tito.io/v1",
-            async: true,
-          },
-        ]}
       />
     </>
   );

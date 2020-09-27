@@ -3,7 +3,12 @@ import { Row, Col, Container } from "reactstrap";
 
 const Intro = () => {
   return (
-    <section className="padding-y-128 padding-top-192">
+    <section
+      className="padding-y-128 padding-top-192"
+      data-aos="fade-up"
+      data-aos-offset={500}
+      data-aos-delay={300}
+    >
       <Container>
         <Row>
           <Col md={6} xs={12} className="margin-bottom-8 text-center">
@@ -14,7 +19,12 @@ const Intro = () => {
             />
           </Col>
           <Col md={6} xs={12}>
-            <p className="font-size-16 line-height-32">
+            <p
+              className="line-height-32"
+              style={{
+                fontSize: "1.125rem",
+              }}
+            >
               Despite the many challenges faced by the world this year, it has
               become even smaller, more connected, and more resourceful than
               ever. Being agents of change, we designers should continue to ask,

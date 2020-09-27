@@ -1,42 +1,34 @@
 [
   {
-    "question": "Do participants need to bring anything for the workshop?",
-    "answer": "Always bring a pen or pencil and paper to take notes. Specific requirements for each workshop will be announced to email attendees and on the website. Internet will be provided in the venue.",
-    "category": "Ticketing System"
+    "question": "Do participants need to bring anything for workshops?",
+    "answer": "Always bring a pen or pencil and paper to take notes. Specific requirements for each workshop will be announced to email attendees and on the website. Internet will be provided in the venue."
   },
   {
-    "question": "Are tickets refundable or transferrable?",
-    "answer": "Tickets are non-refundable, but are transferable. Please send us an email to info@uxph.org and cc the details of the attending participants.",
-    "category": "Ticketing System"
+    "question": "Are tickets refundable or transferable?",
+    "answer": "Tickets are non-refundable, but are transferable. Please send us an email to info@uxph.org and cc the details of the attending participants."
   },
   {
     "question": "Will lunch be served during the event?",
-    "answer": "No, lunch is not provided as part of the event. Our tickets are affordably priced to provide access to speakers, workshops, basic workshop materials, and some awesome UXPH swag. You may bring food and drinks inside the venue. Just remember to practice Clean As You Go (CLAYGO)!",
-    "category": "Ticketing System"
+    "answer": "No, lunch is not provided as part of the event. Our tickets are affordably priced to provide access to speakers, workshops, basic workshop materials, and some awesome UXPH swag. You may bring food and drinks inside the venue. Just remember to practice Clean As You Go (CLAYGO)!"
   },
   {
     "question": "Will you provide certificates?",
-    "answer": "Yes! We have an awesome certificate to give to each attendee at the event. To avail of it, you’ll need to fill up a feedback form at the event before we present you with the digital copy.",
-    "category": "Ticketing System"
+    "answer": "Yes! We have an awesome certificate to give to each attendee at the event. To avail of it, you’ll need to fill up a feedback form at the event before we present you with the digital copy."
   },
   {
     "question": "How can I get a ticket? How much are they?",
-    "answer": "Tickets are available online via Eventbrite using PayPal. Prices vary according per event and are announced online. A voucher will be sent to your email - please present a printed or digital copy on the event day.",
-    "category": "Ticketing System"
+    "answer": "Tickets are available online via Eventbrite using PayPal. Prices vary according per event and are announced online. A voucher will be sent to your email - please present a printed or digital copy on the event day."
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Onlinehustle"
+    "question": "Do you have student pricing?",
+    "answer": "Currently, we do not have student pricing, as our tickets are already reasonably priced to accommodate students."
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Initiation Rights"
+    "question": "Are there walk-in tickets?",
+    "answer": "We cannot accept any more walk-ins for the event since all tickets are sold out already."
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Hooking Into Wifi"
+    "question": "Are you looking for sponsors? Will you have booths at the event?",
+    "answer": "Yes! If your company would like to be a partner or purchase a booth to promote your company, please email us at info@uxph.org."
   }
 ]

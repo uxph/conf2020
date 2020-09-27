@@ -39,15 +39,19 @@ html {
   background-color: var(--black);
 }
 
-// body {
-//   box-sizing: border-box !important;
-//   margin-top: 73px !important;
-// }
+body {
+  box-sizing: border-box !important;
+  margin-top: 72px !important;
+}
 
 div.wrapper {
   width: 60rem;
   margin: auto;
   box-sizing: border-box;
+}
+
+p {
+  word-break: break-word;
 }
 
 a {

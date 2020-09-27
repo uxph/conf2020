@@ -1,0 +1,20 @@
+@import "./mixins.scss";
+
+.faq-hero {
+  @include hero;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+  }
+}
+
+h2,
+h3,
+h4,
+h6 {
+  text-transform: unset;
+}

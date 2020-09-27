@@ -7,13 +7,34 @@ nav {
 
     li {
       display: inline-block;
+      position: relative;
       list-style-type: none;
       cursor: pointer;
 
       a {
         color: inherit !important;
         transition: ease all 0.3s;
-        padding: var(--value-16) var(--value-16);
+        padding: var(--value-24) var(--value-16);
+        display: block;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        opacity: 0.2;
+        background-color: var(--red);
+        height: 3px;
+        transition: ease all 0.5s;
+      }
+
+      a:hover::after {
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        transition: ease all 0.2s;
       }
 
       a:hover {
@@ -23,8 +44,18 @@ nav {
       a.active {
         font-weight: bold;
         color: var(--red) !important;
-        background-color: #f4f4f4 !important;
-        border-radius: var(--value-4);
+        background-color: #fafafa !important;
+      }
+
+      a.active::after {
+        content: "";
+        position: absolute;
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--red);
+        height: 3px;
       }
 
       a.button {
@@ -34,6 +65,38 @@ nav {
 
     li:hover {
       color: var(--red);
+    }
+  }
+}
+
+nav.dark {
+  background-color: black;
+
+  ul {
+    li {
+      * {
+        color: white !important;
+      }
+
+      a:hover {
+        color: var(--red) !important;
+      }
+
+      a.active {
+        background-color: transparent !important;
+        color: var(--red) !important;
+      }
+
+      a.active::after {
+        content: "";
+        position: absolute;
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--red) !important;
+        height: 3px;
+      }
     }
   }
 }
