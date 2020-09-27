@@ -27,7 +27,7 @@ const Nav = ({ activeUrl = "/" }) => {
   ];
   const navItems = nav_items.map((item, key) => {
     return (
-      <li key={key}>
+      <li key={key} className="nav-item">
         <a href={item.url} className={activeUrl === item.url ? "active" : null}>
           {item.name}
         </a>
@@ -58,6 +58,7 @@ const Nav = ({ activeUrl = "/" }) => {
             {navItems}
             <li className="margin-left-16">
               <Button
+                href="/tickets"
                 style={{
                   padding: "0.75rem 1.2rem",
                 }}

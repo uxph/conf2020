@@ -10,7 +10,9 @@ nav {
       position: relative;
       list-style-type: none;
       cursor: pointer;
+    }
 
+    li.nav-item {
       a {
         color: inherit !important;
         transition: ease all 0.3s;
@@ -73,7 +75,7 @@ nav.dark {
   background-color: black;
 
   ul {
-    li {
+    li.nav-item {
       * {
         color: white !important;
       }

@@ -9,10 +9,9 @@ $primary-white: #fff;
   background: url(/images/section-transition--main.svg),
     url(/images/backgrounds/dark-background.svg), $primary-dark;
   background-size: 100%, cover;
-  background-attachment: scroll, scroll;
   background-position: bottom, top;
   background-repeat: no-repeat;
-  background-attachment: scroll, fixed;
+  background-attachment: scroll, scroll;
   width: 100%;
   height: 100%;
   position: relative;
