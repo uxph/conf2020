@@ -65,6 +65,7 @@ const ConfirmationPage = () => {
     const company = urlParams.get("company")
       ? urlParams.get("company")
       : "none";
+    const subscribed = urlParams.get("subscribed");
     const tickets = [
       {
         name: "super_early_bird",
@@ -81,7 +82,7 @@ const ConfirmationPage = () => {
           amount: parseInt(amount),
           description: `{discount_code: ${
             discountCode ? discountCode : "none"
-          }, company: ${company}, ${tickets}}`,
+          }, subscribed: ${subscribed}, company: ${company}, ${tickets}}`,
           source: {
             type: "source",
             id: id,

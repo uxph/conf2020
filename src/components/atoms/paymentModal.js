@@ -97,6 +97,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
   const [paymentMethodId, setPaymentMethodId] = useState(null);
   const [clientKey, setClientKey] = useState(null);
 
+  // Other tracking values
+  const [subscribed, setSubscribed] = useState(false);
+
   const monthOptions = new Array(12).fill(0).map((x, index) => (
     <option value={index + 1} key={index}>
       {index + 1}
@@ -334,7 +337,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
         details.company
       }&discount_code=${
         discount > 0 ? details.discountCode : "none"
-      }&super_early_bird=${details.superEarlyBird}`;
+      }&super_early_bird=${details.superEarlyBird}&subscribed=${subscribed}`;
 
       const data = JSON.stringify({
         data: {
@@ -376,6 +379,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
       xhr.setRequestHeader("authorization", auth_pk);
 
       xhr.send(data);
+
+      console.log("GCash link", caseUrl);
     }
   };
 
@@ -406,7 +411,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             currency: "PHP",
             description: `{discount_code: ${
               discount > 0 ? discountCode : "none"
-            }, company: ${company}, ${tickets}}`,
+            }, subscribed: ${subscribed}, company: ${company}, ${tickets}}`,
           },
         },
       });
@@ -704,7 +709,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 padding: "8px 16px",
               }}
               // onClick={() => attachPayWithCard()}
-              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}&client=${clientKey}`}
+              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}&client=${clientKey}&subscribed=${subscribed}`}
             >
               Place Order
             </Button>
@@ -1119,17 +1124,28 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 </Row>
               )}
               <Row className="margin-bottom-24 px-2" id="total-label">
-                <Col md={3}>
+                <Col>
                   <p className="font-size-24 mb-0 gray font-weight-bold">
                     Total
                   </p>
                 </Col>
-                <Col md={9}>
+                <Col>
                   <p className="font-size-24 mb-0 text-right font-weight-bold">
                     PHP {numeral(total).format("0,0.00")}
                   </p>
                 </Col>
               </Row>
+              <FormGroup check inline className="px-2">
+                <Label check>
+                  <Input
+                    type="checkbox"
+                    onChange={() => setSubscribed(!subscribed)}
+                  />
+                  <span>
+                    It's okay to send me emails about UXPH events and activities
+                  </span>
+                </Label>
+              </FormGroup>
             </Form>
             {error.filter((x) => x !== true).length > 0 && (
               <Alert color="danger">{error.filter((x) => x !== true)}</Alert>
