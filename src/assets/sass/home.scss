@@ -53,6 +53,7 @@ section {
   &-thumbnail {
     position: relative;
     transition: ease all 0.3s;
+    max-width: 200px;
   }
 
   &-thumbnail:hover {
@@ -63,9 +64,14 @@ section {
   &-section {
     width: 100%;
 
+    h3 {
+      max-width: 100%;
+    }
+
     p {
       font-size: 12px;
       color: rgba(0, 0, 0, 0.6);
+      max-width: 100%;
 
       span {
         font-weight: bold;
@@ -83,7 +89,6 @@ section {
   &-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     div div {
       margin: 0px 16px 8px;

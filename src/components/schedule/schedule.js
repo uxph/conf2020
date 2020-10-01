@@ -5,43 +5,45 @@ import speakers from "../../data/speakers.json";
 import Button from "../atoms/button";
 import Chip from "@material-ui/core/Chip";
 
+const WorkshopChip = (workshop) => {
+  if (workshop.workshop) {
+    const workshopType = workshop.workshop.map((workType, index) => {
+      return (
+        <Chip
+          key={index}
+          label={workType}
+          variant="outlined"
+          className="margin-bottom-8 red"
+          style={{
+            borderColor: "#e8006f",
+            fontFamily: "Work Sans",
+          }}
+        />
+      );
+    });
+
+    return <>{workshopType}</>;
+  } else {
+    return null;
+  }
+};
+
 const DayOne = () => {
   const times = [
     "9:30AM",
-    "10:00AM",
-    "11:00AM",
-    "11:30AM",
-    "12:00NN",
+    "10:05AM",
+    "10:35AM",
+    "11:25AM",
+    "12:10PM",
     "1:00PM",
-    "2:00PM",
-    "3:00PM",
-    "3:30PM",
-    "4:30PM",
-    "5:00PM",
+    "1:45PM",
+    "2:20PM",
+    "2:50PM",
+    "3:15PM",
+    "3:40PM",
+    "4:25PM",
+    "5:15PM",
   ];
-
-  const WorkshopChip = (workshop) => {
-    if (workshop.workshop) {
-      const workshopType = workshop.workshop.map((workType, index) => {
-        return (
-          <Chip
-            key={index}
-            label={workType}
-            variant="outlined"
-            className="margin-bottom-8 red"
-            style={{
-              borderColor: "#e8006f",
-              fontFamily: "Work Sans",
-            }}
-          />
-        );
-      });
-
-      return <>{workshopType}</>;
-    } else {
-      return null;
-    }
-  };
 
   const schedule_list = times.map((time, key) => {
     let aos_time = 100;
@@ -74,16 +76,18 @@ const DayOne = () => {
               />
             </div>
             <div>
-              <Chip
-                label={workshop.type}
-                variant="outlined"
-                className="margin-bottom-8 margin-right-8 red"
-                style={{
-                  borderColor: "#e8006f",
-                  fontFamily: "Work Sans",
-                }}
-              />
-              <WorkshopChip workshop={workshop.workshop} />
+              <div className="margin-bottom-12">
+                <Chip
+                  label={workshop.type}
+                  variant="outlined"
+                  className="margin-bottom-8 margin-right-8 red"
+                  style={{
+                    borderColor: "#e8006f",
+                    fontFamily: "Work Sans",
+                  }}
+                />
+                <WorkshopChip workshop={workshop.workshop} />
+              </div>
 
               <h3
                 style={{
@@ -99,7 +103,7 @@ const DayOne = () => {
               <Button
                 variant="outline"
                 style={{
-                  padding: "1rem 1rem",
+                  padding: "0.75rem 1rem",
                 }}
               >
                 Read more
@@ -137,15 +141,16 @@ const DayOne = () => {
 const DayTwo = () => {
   const times = [
     "9:30AM",
-    "10:00AM",
-    "11:00AM",
-    "11:30AM",
-    "12:00NN",
-    "1:00PM",
-    "2:00PM",
-    "3:00PM",
-    "3:30PM",
-    "4:30PM",
+    "10:05AM",
+    "10:50AM",
+    "11:20AM",
+    "12:05PM",
+    "1:10PM",
+    "1:55PM",
+    "2:40PM",
+    "3:20PM",
+    "4:00PM",
+    "4:40PM",
     "5:00PM",
   ];
 
@@ -179,16 +184,18 @@ const DayTwo = () => {
             </div>
 
             <div>
-              <Chip
-                label={workshop.type}
-                variant="outlined"
-                className="margin-bottom-8 red"
-                style={{
-                  borderColor: "#e8006f",
-                  fontFamily: "Work Sans",
-                }}
-              />
-              <WorkshopChip workshop={workshop.workshop} />
+              <div className="margin-bottom-12">
+                <Chip
+                  label={workshop.type}
+                  variant="outlined"
+                  className="margin-bottom-8 red"
+                  style={{
+                    borderColor: "#e8006f",
+                    fontFamily: "Work Sans",
+                  }}
+                />
+                <WorkshopChip workshop={workshop.workshop} />
+              </div>
 
               <h3
                 style={{
@@ -204,7 +211,7 @@ const DayTwo = () => {
               <Button
                 variant="outline"
                 style={{
-                  padding: "1rem 1rem",
+                  padding: "0.75rem 1rem",
                 }}
               >
                 Read more

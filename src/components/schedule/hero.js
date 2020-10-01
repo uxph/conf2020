@@ -25,7 +25,7 @@ const Hero = ({ day, setDay }) => {
               <Button
                 className="margin-right-8"
                 style={{
-                  width: "150px",
+                  width: "170px",
                 }}
                 variant={day === 1 ? null : "outline"}
                 onClick={() => setDay(1)}
@@ -35,7 +35,7 @@ const Hero = ({ day, setDay }) => {
               <Button
                 className="margin-left-8"
                 style={{
-                  width: "150px",
+                  width: "170px",
                 }}
                 variant={day === 2 ? null : "outline"}
                 onClick={() => setDay(2)}

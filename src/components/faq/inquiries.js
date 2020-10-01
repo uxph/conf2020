@@ -12,6 +12,7 @@ import React from "react";
 // import classnames from "classnames";
 import faq from "../../data/faq.json";
 import { Row, Col } from "reactstrap";
+import Markdown from "markdown-to-jsx";
 
 // let listCategs = faq.map((query) => query.category);
 // listCategs = listCategs.filter(
@@ -115,21 +116,28 @@ import { Row, Col } from "reactstrap";
 // };
 
 const Inquiries = () => {
-  const faq_items = faq.map((item, index) => (
-    <Col sm={12} md={6} key={index}>
-      <div className="margin-bottom-64">
-        <h3 className="font-size-24">{item.question}</h3>
-        <p className="gray">{item.answer}</p>
-      </div>
-    </Col>
-  ));
+  const faq_items = faq.map((item, index) => {
+    const answers = item.answer.map((a) => (
+      <p className="gray">
+        <Markdown>{a}</Markdown>
+      </p>
+    ));
+    return (
+      <Col sm={12} md={9} key={index}>
+        <div className="margin-bottom-64">
+          <h3 className="font-size-24">{item.question}</h3>
+          {answers}
+        </div>
+      </Col>
+    );
+  });
   return (
     <section className="padding-y-64">
       <div className="wrapper">
-        <Row>{faq_items}</Row>
+        <Row className="justify-content-center">{faq_items}</Row>
         <div className="margin-y-32">
           <p
-            className="text-center font-size-32"
+            className="text-center font-size-24"
             style={{
               lineHeight: "40px",
             }}

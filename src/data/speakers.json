@@ -1,102 +1,497 @@
 [
   {
     "id": 0,
-    "name": "Michael Knowels",
+    "name": "Aldrich Tan",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#", "#", "#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": ["IM GONNA OPEN THE PROGRAM GUYS!!"],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/aldricht/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Managing Director",
+    "company": "UXPH",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 1,
-    "name": "Charlie Kirk",
+    "name": "Alec Levin",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": [
+      "Alec is one of the cofounders of UXR Collective and UXRConf, and he spends most of his time trying to connect the dots in the UX research world. When he's not working, you can find him hanging out with his wife, newborn, and two cats or watching highlights from the Toronto Raptors 2019 championship run."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/aleclevin/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://twitter.com/al_clevin",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Co-founder",
+    "company": "UXR Collective",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 2,
-    "name": "Ben Shapiro",
+    "name": "Anjo Cerdeña",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": [
+      "My initial encounter with graphic design as a child was with Wordart in Microsoft Office. That eventually led me to design student publications in high school and at the University of the Philippines Baguio where I majored in journalism and minored in broadcast & speech communication. At the advent of smartphone tech, I studied Android design, which was pivotal in my transition from print to digital.",
+
+      "I was among the first to use Figma in 2015 before its public release, and I've remained an advocate since. I believe expensive tech should not be a prerequisite for design work.",
+
+      "I recently led the design team at Maria Health. Now, I design and manage digital products. I've worked with freelance designers and indie developers from around the world. You may have seen my contributions in Android apps like AccuBattery, DigiCal, and Today Calendar, or browser extensions by Carlos Jeurissen."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/anjocerdena/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://www.figma.com/@anjocerdena",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Product Designer, Consultant",
+    "company": "Friends of Figma, Philippines",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 3,
-    "name": "Donald Trump",
+    "name": "Christine Wang",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": ["#"],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/christine-wang-1016",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Research Lead",
+    "company": "Shopify, R&D Singapore, Brunel University",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 4,
-    "name": "Frank Sinatra",
+    "name": "Dae Lee",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": ["Culture / behavior researcher"],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/daehyuklee/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Managing Partner",
+    "company": "Fourth Wall Global",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 5,
-    "name": "Ravi Zacharias",
+    "name": "Daisuke Yukita",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": [
+      "Daisuke “Dice” Yukita is an Interaction Designer at IDEO Tokyo. He is passionate about designing playful user experiences and unleashing creativity out of people through the act of making. Before coming to IDEO, Dice worked at dot by dot, a digital design studio in Tokyo. He has also taught and facilitated design thinking at many schools in Japan.",
+
+      "Dice holds a BE in Computer Science from Keio University and an MA in Media Design from Keio University Graduate School of Media Design. He also completed the Global Innovation Design (GID) program with RCA and Pratt Institute. When he’s not working he likes to make a cup of coffee on mountaintops or make weird things at home."
+    ],
+    "social_media": [
+      {
+        "url": "https://daisukeyukita.com/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://jp.ideo.com/people/daisuke-yukita",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Senior Interaction Designer",
+    "company": "IDEO",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 6,
-    "name": "Steven Crowe",
+    "name": "Florida Doci",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
+    "bio": [
+      "Academic researcher turned UX researcher. Lead and collaborated in various qualitative, multi-method and mixed-methods study focused on health, education and more recently technology. Author or co-author of 2 book chapters, 6 peer-reviewed publications, and a number of reports, editorial pieces and blog posts. Experienced facilitator and public speaker, counting  more than 20 conference presentations, 15 workshops, and several guest lectures, interviews, panels and media appearances."
+    ],
+    "social_media": [
+      {
+        "url": "floridadoci.ca",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Senior Ux Researcher",
     "company": "Shopify",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 7,
-    "name": "Blaire White",
+    "name": "Francis Alturas",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["facebook.com", "github.com"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": [
+      "Hello friends! Here to help out and support. hehe.",
+
+      "Francis is the co-founder and Chief Design Officer of Abstract Digital - a digital product design agency in the sunny hills of Cebu City. Also, a certified AJ&Smart Design Sprint Facilitator.",
+
+      "He designs interfaces and experiences that are usable and delightful for human beings. He facilitates design sprints, writes frontend markup, and co-organizes local design events like the UXPH Roadshow, Visual 4, Sketch and Dribbble Meetups.",
+
+      "He also has worked with people from brands like 500 Startups, Rocket Internet, The World Bank and The Presidential Communications Office. Previously, Francis was also a design director at Symph - a startup foundry where he built & led the design team."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/francisalturas/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "www.abstract.ph",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Chief Design Officer",
+    "company": "Abstract Digital",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 8,
-    "name": "Mike Pence",
+    "name": "Jill Quek",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
-    "position": "Product Designer",
-    "company": "Shopify",
+    "bio": [
+      "I'm a product designer working on WooCommerce at Automattic. Previously, I was at Zendesk, where I designed messaging interfaces for business software. Before that, I was an interaction and brand designer, working with clients like Cartier, Dean and Deluca, and Comme des Garçons.",
+
+      "Outside of work, I seek to support the next generation of designers through meet-ups and mentorship. Recently, I've mentored with Designlab, The ADP List, and TechLadies."
+    ],
+    "social_media": [
+      {
+        "url": "http://jilln.com",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Senior Product Designer",
+    "company": "Automattic",
     "company_logo": "/images/placeholders/company.png"
   },
   {
     "id": 9,
-    "name": "Candace Owens",
+    "name": "Julee Hyunju Lee",
     "image_url": "/images/placeholders/avatar.png",
-    "bio": "#",
-    "social_media": ["#"],
+    "bio": [
+      "For the love of design. That is at the heart of who Julee is. Having spent 15 years doing what she loves most, Julee’s extensive product and design skillsets across various disciplines have been vital in delivering products for companies like PayPal, Intuit, Cisco, Yahoo! and Samsung.",
+
+      "Drawing on her vast experience from both multinational companies and disruptive start-ups, Julee brings her expertise in UX, Product Design, Design Thinking for Innovation, and Design Sprints based on User Research practices.",
+
+      "Julee joins Facebook as a Product Design Manager, which is the first design leadership hire in Singapore. She helps expanding Product Design disciplines in APAC region.",
+
+      "Prior joining Facebook, Julee helped NTUC Enterprise to build the Centre of Design Excellence that drives digital transformation with the team of 20 with three core pillars of Product Design, Research, and Design Thinking. Prior NTUC Enterprise, Julee was a Vice President, Head of Product and Design at honestbee, where she managed teams across multiple platforms from consumers to logistics and operations.",
+
+      "Julee is a recognised as a leader in the design community. She continues to organise meetups as the founder of Design Bootcamp Asia, and is also a regular keynote speaker at UX conferences.",
+
+      "Julee received her Bachelor of Fine Arts in Communication Design from Carnegie Mellon University in the U.S. and Master of Arts in Digital Media Management from Hyper Island."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/hyunjulee/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Product Designer Manager",
+    "company": "Facebook",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 10,
+    "name": "Julius Charles Serrano",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Julius Charles Serrano is an accessibility specialist for Catalyst IT, New Zealand's largest open source technology company. He serves as a consultant and mentor to high-performing IT professionals who make the Internet a more inclusive and accessible place for everyone. Julius works with front-end developers, business analysts, QA testers, and content managers to ensure that accessibility is implemented in the entire software development life cycle. He also provides accessibility trainings that entertain, educate, and inspire people to make their web content accessible to everyone regardless of ability."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/julius-charles-serrano-b672669/?originalSubdomain=nz",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://www.facebook.com/juliusserranospeaker",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Accessibility Consultant",
+    "company": "Catalyst IT",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 11,
+    "name": "Kevin Liang",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Kevin is a UX Researcher, YouTube creator, and consultant with over 10 years of behavioral research experience, 6 of which in the UX industry at various Fortune 500 companies including Google, Uber, StubHub, and Volkswagen, as well as consulting for startups.",
+      "He has received patents for his research, launched over 60+ features and products, and adapted research methods and processes in creative ways, all while mentoring and inspiring aspiring UX researchers around the world with his YouTube channel, Zero to UX.",
+      "He is from the Bay Area, California and as a self-proclaimed “space nerd”, his claim to fame is that he predicted Pluto’s demotion as a planet when he was 8 years old."
+    ],
+    "social_media": [
+      {
+        "url": "https://linkedin.com/in/kevinliang-1/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://youtube.com/c/KevinLiang",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "UX Researcher",
+    "company": "Zero to UX / ex-Uber, Google, StubHub, Volkswagen / UC Berkeley",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 12,
+    "name": "LaDonna Witmer Willems",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Writer and editorial director LaDonna Witmer Willems takes lessons learned in two decades of brand building—and in her own journey from silence to the stage—and turns them into tools you can use to break through the silence and find your voice. Along her personal journey to own her voice, LaDonna has been a journalist, copywriter, copy director, and poet."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/ladonnawitmerwillems/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://www.instagram.com/wordsbyladonna/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Associate Editorial Director",
+    "company": "Dropbox",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 13,
+    "name": "Lisa Gokongwei",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "I am president and founder of Summit Media, the leading digital lifestyle network in the country.  I founded Summit Media in 1993 and it became the largest magazine publisher in the country.  We closed our last magazine in 2018 and transformed into a full digital company.  I concurrently run the Digital Transformation and Corporate Services for JG Summit, a Philippine conglomerate.  Our office is tasked to speed up the group's digital transformation by enabling the new ways of working, including design thinking and agile, taught via lighthouse projects--priority digital initiatives that drive real value for the group.  "
+    ],
+    "social_media": [
+      {
+        "url": "https://www.jgsummit.com.ph",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "President & Founder",
+    "company": "JG Summit",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 14,
+    "name": "Markus Hofmann",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Started my first webdesign company in 2001 while still in school. Since then got to experience everything from development to more product-focussed roles across industries from startups to MNCs. In recent years built up diverse UX design & research teams hiring a dozen UXers internationally, performed research from Africa to China and shaped product vision & strategy for products with millions of users. Recently focussing more on the fascinating possibilities of AR/VR and slowly shifting towards consulting."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/markushofmanncom",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://instagram.com/markushofmannux",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Director of UX",
+    "company": "MRstudio",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 15,
+    "name": "Merdy Andrian",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Hi!! I am a Jakarta based pixelsmith, currently working as product designer for DGIT systems, based in Melbourne Australia. I've been rock and rolling in the industry for the past 8 years, thriving to orchestrate digital experience and craft digital goods that mixes usability, feasibility, and viability. Wrapping it into a state of art pixel symphony."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/merdy/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://www.behance.net/merdyandrian",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Product - Design Lead",
+    "company": "DGIT Systems, Melbourne",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 16,
+    "name": "Michael Tam",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Michael is a storyteller and creative at heart. He is the Global Associate Design Director at IBM iX, the experience design consulting arm of IBM. Michael designs smarter businesses through progressive strategy, enterprise experience, and transformational technology. He believes placing humans at the centre is the key to impactful business results at scale. An Enterprise Design Thinking Leader, Michael lives every day as a prototype.",
+      "Before joining IBM in 2016, Michael has over ten years of experience creating innovative brand strategies and omni-channel consumer experiences for brands in the automotive, CPG, financial services, retail, and travel industries."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/michaeltam/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://twitter.com/infinideas",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Global Associate Design Director",
+    "company": "IBM iX",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 17,
+    "name": "Paul Sabandal",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "I'm a seasoned Product Designer and Developer who worked in various startup companies that focus on Legal Technology, Loyalty/Rewards Program, and FinTech.",
+
+      "Helping Friends of Figma, Philippines to organize meetups, workshops and collaborations since 2018.",
+
+      "Also featured in Figma Resources: https://www.figma.com/resources/assets/value-proposition-canvas/"
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/paulsabandal/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Head of Product",
+    "company": "Friends of Figma, Philippines",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 18,
+    "name": "Sonya Seddarasan",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Sonya Seddarasan - a professional over-thinker with a love of art since toddler. She graduated from Art and Design Major in Bina Nusantara back in 2012 and recently completed her time with Harvard Business School Online on Disruptive Innovation studies . She is also a certified Human Computer Interaction and Design Thinking Practitioner, whom on the spare time, enjoy reading Psychology, Science and Self Help books. Nurturing a long life passion of design, she is lucky enough to be able to work with various sizes of corporate and start-up since 2008.",
+      "She started her career in creative industry as part time designer in college and got introduced to Product while working for a grocery company called Happy Fresh. There, she was exposed to a lot of the process in product development, delivering a good User Experience Online & Offline till testing the impact of the product to users. Nothing comes without price, she overworked herself in the company for 2 1/2 years and got completely burned out. Being in that state, she took herself a year break from the corporate world and started taking a lot of sides gigs from creating web, mobile app, to designing product strategy for different clients and companies she got off Upwork, a freelance site.",
+      "Yet this experience made her realise she wanted something more, something that is more impactful for her and people around her. The isolation of working on her own started to kill her and thats when she got herself a job in Qlue, a crowd sourcing citizen app that helped Indonesian government to hear the voice of the citizen on city issues, there she holds a title of Product Design Lead, creating strategy for variety of smart city products.",
+      "Today she is a Principal Product Design for Tokopedia. Her current day job includes building solution combining Product Strategy and Business Needs in various B2B & B2C Mobile Apps . With that she is lucky enough to be able to try on different problem solving methods from ideation to evaluation of the product.",
+      "With that memory and experience in bank, today she founded herself a Product Strategy workshop called The Process for designers in Jakarta to collaborate & hands-on with different case studies. She has also been investing a lot of her time in VR 3D Experience Design this past 1 year and build herself a knowledgeable community with likeminded people.",
+      "On side, she is a mentor for Adplist.com, Designed.org and Femme Pallete for Product, Design and Leadership Skill, she learn a lot dealing with different people from different background and enjoy connecting with different people. ",
+      "Indonesia digital economy is growing rapidly every year and working in one of the biggest e-commerce in South East Asia feeding 6 million users, it gives her a lot of challenge to tackle ,but also a continuous learning that she wish to share with people out there to get their perspective on it."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/sonya-seddarasan-303570a4/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://www.instagram.com/sonyased/?hl=en",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Principal Product Design",
+    "company": "Tokopedia",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 19,
+    "name": "Styliana Sarris",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Styliana Sarris is a Senior User Experience Consultant passionate about fusing data and design to supercharge innovation.",
+
+      "With a background in Psychology studies at the University of Melbourne, she specialises in creating mixed-method user research strategies grounded in academic-level rigour, to generate insights that both fuel ideation and evaluate designs.",
+
+      "Over the last five years, Styliana has delivered a multitude of digital projects in the travel, utility, telecommunication and health sectors. Her designs have won multiple awards, been used by millions of users, and translated to over three languages internationally. With a love for problem-solving and cross-discipline collaboration, she partners with business and technology teams to create applications which are intuitive, engaging, powerful, and competitive."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/styliana-sarris-93709310b",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Senior User Experience Consultant",
+    "company": "Tigerspike",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 20,
+    "name": "Trixie Pama",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "I am an Interaction Design major from Simon Fraser University in Vancouver, BC. I have worked for several companies as a product designer in a variety of applications from Business Analytics, Operations, Finance, and E-Commerce"
+    ],
+    "social_media": [
+      {
+        "url": "trixiepama.com",
+        "icon": "fa-icon"
+      }
+    ],
     "position": "Product Designer",
-    "company": "Shopify",
+    "company": "Instacart",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 21,
+    "name": "Ruth Ellison",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Ruth Ellison is an experienced user researcher who helps organisations gain a deeper understanding of their users and to make better evidence-based decisions. She cares deeply about building happy and creative teams. With over 18 years of design experience in both the public and private sectors, she loves working on complex problems and making meaningful work.",
+
+      "In her spare time, Ruth makes science-based jewellery with lasers and 3D printers through her design label, CrankyBot, and loves exploring and writing about escape rooms. You can follow her on twitter at @RuthEllison"
+    ],
+    "social_media": [
+      {
+        "url": "https://linkedin.com/in/ruthellison",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://twitter.com/RuthEllison",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Head of User Research, Director of Digital Squads",
+    "company": "N/A",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 22,
+    "name": "Smile Indias",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": ["To follow"],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/smileindias/",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Coordinator, Information Design Program",
+    "company": "Ateneo de Manila University",
+    "company_logo": "/images/placeholders/company.png"
+  },
+  {
+    "id": 23,
+    "name": "Felix Lee",
+    "image_url": "/images/placeholders/avatar.png",
+    "bio": [
+      "Felix is a designer and tech entrepreneur who believes in constantly reinventing the way we experience the world. He is currently a design lead at Gotrade, funded by Y Combinator; also, Co-Founder at ADPList.org; funded by InVision. Felix previously co-founded Packdat (acquired in 2018) and was the former Head of Product at Passpod Indonesia."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/felixleezd/",
+        "icon": "fa-icon"
+      },
+      {
+        "url": "https://twitter.com/felixleezd",
+        "icon": "fa-icon"
+      }
+    ],
+    "position": "Design Lead, Gotrade (YC S19) & Co-Founder, ADPList.org",
+    "company": "Gotrade (YC S19) & ADPList.org",
     "company_logo": "/images/placeholders/company.png"
   }
 ]

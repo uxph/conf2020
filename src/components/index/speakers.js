@@ -43,7 +43,7 @@ const Speakers = () => {
               fontSize: "0.875rem",
             }}
           >
-            {speaker.position} at <br />
+            {speaker.position} <br />
             <span>{speaker.company}</span>
           </p>
           <div className="text-center padding-bottom-32">
