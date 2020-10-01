@@ -333,9 +333,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
       // parseInt(details.amount) * 100
       const caseUrl = `${url}/confirmation/?method=${
         details.paymentMethod
-      }&amount=${parseInt(details.amount) * 100}&company=${
-        details.company
-      }&discount_code=${
+      }&amount=${parseInt(details.amount) * 100}&discount_code=${
         discount > 0 ? details.discountCode : "none"
       }&super_early_bird=${details.superEarlyBird}&subscribed=${subscribed}`;
 
@@ -411,7 +409,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
             currency: "PHP",
             description: `{discount_code: ${
               discount > 0 ? discountCode : "none"
-            }, subscribed: ${subscribed}, company: ${company}, ${tickets}}`,
+            }, subscribed: ${subscribed}, ${tickets}}`,
           },
         },
       });

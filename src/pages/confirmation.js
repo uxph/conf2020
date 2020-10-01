@@ -62,9 +62,6 @@ const ConfirmationPage = () => {
     const discountCode = urlParams.get("discount_code")
       ? urlParams.get("discount_code")
       : "none";
-    const company = urlParams.get("company")
-      ? urlParams.get("company")
-      : "none";
     const subscribed = urlParams.get("subscribed");
     const tickets = [
       {
@@ -82,7 +79,7 @@ const ConfirmationPage = () => {
           amount: parseInt(amount),
           description: `{discount_code: ${
             discountCode ? discountCode : "none"
-          }, subscribed: ${subscribed}, company: ${company}, ${tickets}}`,
+          }, subscribed: ${subscribed}, ${tickets}}`,
           source: {
             type: "source",
             id: id,
@@ -207,10 +204,15 @@ const ConfirmationPage = () => {
             // setPaymentMessage(
             //   "Please refresh this page in order to update the payment status."
             // );
+
+            // declined by the issuing bank
           }
         } else if (responseText.errors[0].code.includes("succeed")) {
           setConfirmMessage("Payment successful!");
           setPaymentMessage(successMessage);
+        } else if (responseText.errors[0].code.includes("declined by the issuing bank")) {
+          setConfirmMessage("The card has been declined by the issuing bank");
+          setPaymentMessage(failedMessage);
         } else {
           setConfirmMessage("The payment didn't go through");
           setPaymentMessage(failedMessage);
@@ -324,6 +326,9 @@ const ConfirmationPage = () => {
         } else if (responseText.errors[0].code.includes("succeed")) {
           setConfirmMessage("Payment successful!");
           setPaymentMessage(successMessage);
+        } else if (responseText.errors[0].code.includes("declined by the issuing bank")) {
+          setConfirmMessage("The card has been declined by the issuing bank");
+          setPaymentMessage(failedMessage);
         } else {
           setConfirmMessage("The payment didn't go through");
           setPaymentMessage(failedMessage);
