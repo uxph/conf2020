@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, CardBody } from "reactstrap";
+import { Card, CardBody } from "reactstrap";
 import Button from "../atoms/button";
 
 const Hero = ({ day, setDay }) => {
@@ -10,10 +10,15 @@ const Hero = ({ day, setDay }) => {
       data-aos-duration={500}
       data-aos-once={true}
     >
-      <Container className="margin-x-64">
+      <div className="margin-x-64 wrapper">
         <h1 className="text-white margin-bottom-8">Conference Schedule</h1>
-        <p className="text-white margin-bottom-96">
-          Program details and speakers to be finalized closer to the event.
+        <p className="margin-bottom-96">
+          Our PACKED 2-day virtual conference includes exclusive pre-conference
+          events. All talks will be streamed on our conference platform and
+          available to ticket holders even after the event for a limited time.{" "}
+          <a href="/tickets" className="red">
+            Get your tickets now!
+          </a>
         </p>
         <div
           style={{
@@ -45,7 +50,7 @@ const Hero = ({ day, setDay }) => {
             </CardBody>
           </Card>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "reactstrap";
 import schedule from "../../data/schedule.json";
 import speakers from "../../data/speakers.json";
+import WorkshopModal from "./workshopModal";
+
 import Button from "../atoms/button";
 import Chip from "@material-ui/core/Chip";
 
@@ -16,7 +18,7 @@ const WorkshopChip = (workshop) => {
           className="margin-bottom-8 red"
           style={{
             borderColor: "#e8006f",
-            fontFamily: "Work Sans",
+            fontFamily: "Karla",
           }}
         />
       );
@@ -28,7 +30,15 @@ const WorkshopChip = (workshop) => {
   }
 };
 
-const DayOne = () => {
+const DayOne = ({
+  workshopVal,
+  setWorkshopVal,
+  workshopVal2,
+  setWorkshopVal2,
+  modal,
+  setModal,
+  setSchedDay,
+}) => {
   const times = [
     "9:30AM",
     "10:05AM",
@@ -47,6 +57,7 @@ const DayOne = () => {
 
   const schedule_list = times.map((time, key) => {
     let aos_time = 100;
+
     const workshops = schedule["day_1"].map((workshop, index) => {
       if (workshop.time === time) {
         const target_speaker = speakers.filter(
@@ -70,6 +81,8 @@ const DayOne = () => {
                 className="d-block margin-right-24 featured-image"
                 style={{
                   width: "9rem",
+                  height: "9rem",
+                  objectFit: "cover",
                   borderRadius: "100%",
                 }}
                 alt={target_speaker.name}
@@ -83,7 +96,7 @@ const DayOne = () => {
                   className="margin-bottom-8 margin-right-8 red"
                   style={{
                     borderColor: "#e8006f",
-                    fontFamily: "Work Sans",
+                    fontFamily: "Karla",
                   }}
                 />
                 <WorkshopChip workshop={workshop.workshop} />
@@ -107,6 +120,14 @@ const DayOne = () => {
                 variant="outline"
                 style={{
                   padding: "0.75rem 1rem",
+                }}
+                href="/"
+                onClick={(e) => {
+                  setWorkshopVal(workshop.speaker_id);
+                  setWorkshopVal2(workshop.id);
+                  setSchedDay("day_1");
+                  setModal(!modal);
+                  e.preventDefault();
                 }}
               >
                 Read more
@@ -136,7 +157,15 @@ const DayOne = () => {
   return <>{schedule_list}</>;
 };
 
-const DayTwo = () => {
+const DayTwo = ({
+  workshopVal,
+  setWorkshopVal,
+  workshopVal2,
+  setWorkshopVal2,
+  modal,
+  setModal,
+  setSchedDay,
+}) => {
   const times = [
     "9:30AM",
     "10:05AM",
@@ -163,8 +192,10 @@ const DayTwo = () => {
           <div
             key={index}
             className="margin-bottom-96 workshop-item"
-            data-aos="fade-down"
+            data-aos="fade-up"
             data-aos-delay={aos_time}
+            data-aos-once={true}
+            data-aos-offset={100}
             style={{
               display: "flex",
             }}
@@ -175,6 +206,8 @@ const DayTwo = () => {
                 className="d-block margin-right-24"
                 style={{
                   width: "9rem",
+                  height: "9rem",
+                  objectFit: "cover",
                   borderRadius: "100%",
                 }}
                 alt={target_speaker.name}
@@ -189,7 +222,7 @@ const DayTwo = () => {
                   className="margin-bottom-8 red"
                   style={{
                     borderColor: "#e8006f",
-                    fontFamily: "Work Sans",
+                    fontFamily: "Karla",
                   }}
                 />
                 <WorkshopChip workshop={workshop.workshop} />
@@ -214,6 +247,14 @@ const DayTwo = () => {
                 style={{
                   padding: "0.75rem 1rem",
                 }}
+                href="/"
+                onClick={(e) => {
+                  setWorkshopVal(workshop.speaker_id);
+                  setWorkshopVal2(workshop.id);
+                  setSchedDay("day_2");
+                  setModal(!modal);
+                  e.preventDefault();
+                }}
               >
                 Read more
               </Button>
@@ -225,22 +266,19 @@ const DayTwo = () => {
       }
     });
     return (
-      <Row key={key}>
-        <Col sm={12} md={2}>
-          <div
-            style={{
-              position: "sticky",
-              top: 116,
-            }}
-          >
-            <p className="gray margin-y-64">
-              <strong>{time}</strong>
-            </p>
-          </div>
-        </Col>
-        <Col>{workshops}</Col>
+      <div>
+        <Row key={key}>
+          <Col sm={12} md={2}>
+            <div>
+              <p className="gray margin-y-64">
+                <strong>{time}</strong>
+              </p>
+            </div>
+          </Col>
+          <Col>{workshops}</Col>
+        </Row>
         <hr />
-      </Row>
+      </div>
     );
   });
 
@@ -248,11 +286,46 @@ const DayTwo = () => {
 };
 
 const Schedule = ({ day }) => {
+  const [workshopVal, setWorkshopVal] = useState(-1);
+  const [workshopVal2, setWorkshopVal2] = useState(-1);
+  const [schedDay, setSchedDay] = useState("day_1");
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+
   return (
     <section className="padding-y-96">
       <div className="wrapper">
-        {day === 1 && <DayOne />}
-        {day === 2 && <DayTwo />}
+        {day === 1 && (
+          <DayOne
+            workshopVal={workshopVal}
+            setWorkshopVal={setWorkshopVal}
+            workshopVal2={workshopVal2}
+            setWorkshopVal2={setWorkshopVal2}
+            modal={modal}
+            setModal={setModal}
+            toggle={toggle}
+            setSchedDay={setSchedDay}
+          />
+        )}
+        {day === 2 && (
+          <DayTwo
+            workshopVal={workshopVal}
+            setWorkshopVal={setWorkshopVal}
+            workshopVal2={workshopVal2}
+            setWorkshopVal2={setWorkshopVal2}
+            modal={modal}
+            setModal={setModal}
+            toggle={toggle}
+            setSchedDay={setSchedDay}
+          />
+        )}
+        <WorkshopModal
+          val={workshopVal}
+          val2={workshopVal2}
+          schedDay={schedDay}
+          modal={modal}
+          toggle={toggle}
+        />
       </div>
     </section>
   );

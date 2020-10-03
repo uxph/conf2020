@@ -82,7 +82,6 @@ section {
   &-avatar {
     border-radius: 100%;
     width: 166px;
-    height: 166px;
     background-color: $primary-white;
     margin: 0 auto 8px;
   }
@@ -151,10 +150,10 @@ section {
   left: 50%;
   transform: translate(-50%, 0%);
   top: 0;
-  background: url(/images/section-transition.svg), #fff;
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
+  // background: url(/images/section-transition.svg), #fff;
+  // background-size: 100%;
+  // background-position: top;
+  // background-repeat: no-repeat;
   overflow-y: scroll;
   z-index: 99;
   h3 {

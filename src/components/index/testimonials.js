@@ -8,7 +8,6 @@ testimonies.forEach((test, index) => {
     <Card className="border-0 shadow margin-bottom-32">
       <CardBody>
         <p className="testimonial margin-bottom-16">{test.body}</p>
-        <p className="author">{test.author}</p>
       </CardBody>
     </Card>
   );
@@ -19,11 +18,11 @@ const Testimonials = () => {
     <section
       className="testimonials-section padding-top-192 padding-bottom-128"
       data-aos="fade-up"
-      data-aos-offset={500}
+      data-aos-offset={400}
       data-aos-once={true}
     >
       <h2 className="text-center margin-bottom-64 text-uppercase font-size-32">
-        What people say about UXPH
+        Why do people love UXPH Conf?
       </h2>
       <div className="wrapper">
         <Row>

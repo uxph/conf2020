@@ -1,9 +1,57 @@
 {
-  "pre_event_1": [],
+  "pre_event_1": [
+    {
+      "id": 0,
+      "time": "2:00pm",
+      "type": "Panel",
+      "title": "Screenside chat: UX Basics",
+      "description": ["Hosted by Reine and Stella"],
+      "speaker_id": 0,
+      "workshop": []
+    },
+    {
+      "id": 1,
+      "time": "2:45pm",
+      "type": "Workshop",
+      "title": "Basics of Figma",
+      "description": ["Hosted by Friends of Figma Philippines (Anjo, Paul)"],
+      "speaker_id": 0,
+      "workshop": []
+    }
+  ],
 
-  "pre_event_2": [],
+  "pre_event_2": [
+    {
+      "id": 0,
+      "time": "10:10am",
+      "type": "Workshop",
+      "title": "UX Research Interactive Workshop",
+      "description": ["TBD"],
+      "speaker_id": 6,
+      "workshop": []
+    }
+  ],
 
-  "pre_event_3": [],
+  "pre_event_3": [
+    {
+      "id": 0,
+      "time": "2:05pm",
+      "type": "Keynote",
+      "title": "Intro to UX Research",
+      "description": ["TBD"],
+      "speaker_id": 11,
+      "workshop": []
+    },
+    {
+      "id": 1,
+      "time": "2:50pm",
+      "type": "Keynote",
+      "title": "Remote Design Research",
+      "description": ["TBD"],
+      "speaker_id": 3,
+      "workshop": []
+    }
+  ],
 
   "day_1": [
     {
@@ -11,18 +59,18 @@
       "time": "9:30AM",
       "type": "Team",
       "title": "Open House",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 1,
       "time": "10:05AM",
       "type": "Lightning",
       "title": "Welcome!",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 2,
@@ -31,7 +79,7 @@
       "title": "DCP Talk",
       "description": [""],
       "speaker_id": 5,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 3,
@@ -42,7 +90,7 @@
         "Designers have always been gifted with the skill to navigate change. However, being a great designer alone is only the start of creating change. For designers to maximize the ability to change, we must be more than just great designers: we need to learn to be the enablers of change. We must be intentionally strategic in the way we make, and educate the wider audience about the designer's thought processes. I will be using examples from IDEO's client work and offerings to show how designers can make full use of our gift to make the world a better place."
       ],
       "speaker_id": 5,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 4,
@@ -55,16 +103,16 @@
         "Breaking through the silence requires you to be vulnerable and uncomfortable. You’ve got to be brave enough to crack yourself open and dig up the truth of who you really are and what you really value. Because there is a story inside you that no one else can tell."
       ],
       "speaker_id": 12,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 5,
       "time": "12:10PM",
       "type": "Break",
       "title": "Lunch Break",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["Lunch Break"],
       "speaker_id": 0,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 6,
@@ -77,7 +125,7 @@
         "This talk is intended for those who are thinking of getting into the industry, or junior / intermediate designers."
       ],
       "speaker_id": 20,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 7,
@@ -90,16 +138,16 @@
         "But every hero's story has its fair share of obstacles. Designers often face a series of roadblocks which impede on our ability to work our magic. Sometimes, even the things we do ourselves (or the things that we don't do) get in our way. This talk will explore common areas of opportunity in our process and the ways we conduct ourselves as designers, leaving the audience with tangible advice on how to assuage these shortcomings in replacement for better processes and ultimately, outcomes."
       ],
       "speaker_id": 19,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 8,
       "time": "2:20PM",
       "type": "Lightning",
       "title": "Lessons in Digital Transformation in a Corporate Setting",
-      "description": ["ten minute presentation with Q and A."],
+      "description": ["TBD"],
       "speaker_id": 13,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 9,
@@ -110,28 +158,28 @@
         "We’ve often seen that taking a human-centred lens and experiencing research first hand can have a large impact on understanding the problem space and influencing the direction of projects and products. As user researchers and UX designers, we’re the lucky ones who get to experience this frequently, but how do we help our teams and stakeholders to take a human-centred lens so that we shift from a purely logical lens to one that embraces empathy? In this presentation, we’ll be looking at how we get non-researchers involved in the research process, and the impact this has on digital transformation journeys and the shifts in mindsets.  Using a range of stories of things that worked (and didn’t work so well) from a range of projects from a government context, we’ll be covering a number of techniques that can be used to bring our stakeholders and teams  directly into the research process, so that they can also live and breath our end user’s experience and develop a better shared understanding of the problem space."
       ],
       "speaker_id": 21,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 10,
       "time": "3:15PM",
       "type": "Break",
       "title": "Break",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["Software Design"]
-    },
-    {
-      "id": 10,
-      "time": "3:40PM",
-      "type": "Lightning",
-      "title": "UX Growth (Tentative)",
-      "description": ["UX Growth (Tentative)"],
-      "speaker_id": 9,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 11,
+      "time": "3:40PM",
+      "type": "Lightning",
+      "title": "UX Growth (Tentative)",
+      "description": ["TBD"],
+      "speaker_id": 9,
+      "workshop": []
+    },
+    {
+      "id": 12,
       "time": "4:25PM",
       "type": "Panel",
       "title": "UX Community",
@@ -139,16 +187,16 @@
         "Will be doing a panel discussion on community panel - ADPList"
       ],
       "speaker_id": 23,
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
-      "id": 11,
+      "id": 13,
       "time": "5:15PM",
       "type": "Socials",
       "title": "UXPH x Design Buddies",
       "description": ["Socials with Design Buddies"],
       "speaker_id": 0,
-      "workshop": ["Software Design"]
+      "workshop": []
     }
   ],
 
@@ -156,11 +204,11 @@
     {
       "id": 0,
       "time": "9:30AM",
-      "type": "Team ",
+      "type": "Team",
       "title": "Open house",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 1,
@@ -171,7 +219,7 @@
         "The role of research in modern organizations has changed dramatically over the last few years, and it seems like the pace of change is only accelerating. In this talk we'll examine the past and present responsibilities of researchers, and where I believe research is going in the future."
       ],
       "speaker_id": 1,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 2,
@@ -182,7 +230,7 @@
         "In this powerful and engaging talk, Julius will present the 3 most important keystones possessed by web content that is accessible to everyone including people with disabilities. He will discuss the tools and techniques you can use right now to test your content's accessibility. Julius will also provide clear examples of web pages that demonstrate the 3 keystones."
       ],
       "speaker_id": 10,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 3,
@@ -194,25 +242,25 @@
         "What is UX Research, why is it important, and how to get started in UX Research"
       ],
       "speaker_id": 11,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 4,
       "time": "12:05PM",
       "type": "Break",
       "title": "Lunch Break",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 5,
       "time": "1:10PM",
       "type": "Workshop",
       "title": "Basic Data Analytics",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 6,
@@ -221,7 +269,7 @@
       "title": "Culture and Psychology of Teams",
       "description": ["Adjusting teams to be more focused and collaborative."],
       "speaker_id": 4,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 7,
@@ -233,52 +281,52 @@
         "2. Using Customer Value Proposition as Revenue Model - In This talk i would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
       ],
       "speaker_id": 18,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 8,
       "time": "2:40PM",
       "type": "Break",
       "title": "Break Time",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 9,
       "time": "3:20PM",
       "type": "Panel",
       "title": "Design Leadership and Culture",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 16,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 10,
       "time": "4:00PM",
       "type": "Keynote",
       "title": "Speculative Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 11,
       "time": "4:40PM",
       "type": "Remarks",
       "title": "Closing Remarks and Announcement",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["TBD"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     },
     {
       "id": 12,
       "time": "5:00PM",
       "type": "Concert",
       "title": "Mini Concert",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus molestie eget rhoncus est, non turpis morbi morbi eu. Nunc, gravida convallis mattis id ullamcorper.",
+      "description": ["Any Name's Okay"],
       "speaker_id": 0,
-      "workshop": ["#"]
+      "workshop": []
     }
   ]
 }

@@ -7,15 +7,16 @@ const Hero = () => {
   let time = 0;
 
   const figure_list = home["figures"].map((figure, index) => {
-    time += 400;
+    time += 200;
     return (
       <Col
         xs={12}
         md={4}
-        className="padding-y-128"
         key={index}
         data-aos="fade-in"
         data-aos-delay={time}
+        data-aos-offset={100}
+        data-aos-once={true}
       >
         <h3 className="text-center text-white font-size-64">{figure.header}</h3>
         <p
@@ -40,7 +41,9 @@ const Hero = () => {
         <img
           src={"/images/logos/uxph_conf_logo.svg"}
           alt="UXPH Conference 2020"
-          className="width-192"
+          style={{
+            width: "170px",
+          }}
         />
       </div>
       <div>
@@ -68,7 +71,9 @@ const Hero = () => {
         </Button>
       </div>
       <div className="wrapper">
-        <Row className="justify-content-center">{figure_list}</Row>
+        <Row className="justify-content-center padding-y-128">
+          {figure_list}
+        </Row>
       </div>
     </section>
   );

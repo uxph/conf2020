@@ -53,13 +53,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  div.wrapper {
-    width: 100% !important;
-  }
-}
 @media only screen and (max-width: 1024px) {
   .modal-body {
     overflow-y: scroll !important;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  div.wrapper {
+    width: 100% !important;
   }
 }

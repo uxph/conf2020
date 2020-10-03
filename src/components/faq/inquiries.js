@@ -123,7 +123,14 @@ const Inquiries = () => {
       </p>
     ));
     return (
-      <Col sm={12} md={9} key={index}>
+      <Col
+        sm={12}
+        md={9}
+        key={index}
+        data-aos="fade"
+        data-aos-offset={200}
+        data-aos-once={true}
+      >
         <div className="margin-bottom-64">
           <h3 className="font-size-24">{item.question}</h3>
           {answers}

@@ -19,8 +19,8 @@ const Partners = () => {
       data-aos-offset={500}
     >
       <Container>
-        <h2 className="text-center margin-bottom-64 font-size-32">
-          OUR PARTNERS AND SPONSORS
+        <h2 className="text-center text-uppercase margin-bottom-64 font-size-32">
+          Proudly supported by
         </h2>
         <div className="partners-list">{items}</div>
         <div className="btn-container">

@@ -68,8 +68,8 @@ const ConfirmationPage = () => {
     const subscribed = urlParams.get("subscribed");
     const tickets = [
       {
-        name: "super_early_bird",
-        quantity: parseInt(urlParams.get("super_early_bird")),
+        name: "early_bird",
+        quantity: parseInt(urlParams.get("early_bird")),
       },
     ]
       .filter((x) => x.quantity)

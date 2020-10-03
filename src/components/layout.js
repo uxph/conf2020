@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Nav from "./nav";
 import Footer from "./footer";
@@ -17,6 +17,21 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Layout = (props) => {
+  const [navTheme, setNavTheme] = useState("dark");
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      const pageOffset = window.pageYOffset;
+      if (pageOffset > 300) {
+        setNavTheme("light");
+      } else {
+        setNavTheme("dark");
+      }
+    },
+    300
+  ); //ms
+
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -55,12 +70,16 @@ const Layout = (props) => {
   `;
 
   return (
-    <>
-      <Nav isHomePage={props.isHomePage} activeUrl={props.activeUrl} />
+    <div>
+      <Nav
+        isHomePage={props.isHomePage}
+        activeUrl={props.activeUrl}
+        theme={navTheme}
+      />
       <main>{props.children}</main>
       <Footer />
       <InnerHTML html={messengerEmbed} />
-    </>
+    </div>
   );
 };
 

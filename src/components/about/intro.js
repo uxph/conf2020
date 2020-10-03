@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container } from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 const Intro = () => {
   return (
@@ -8,8 +8,9 @@ const Intro = () => {
       data-aos="fade-up"
       data-aos-offset={500}
       data-aos-delay={300}
+      data-aos-once={true}
     >
-      <Container>
+      <div className="wrapper">
         <Row>
           <Col md={6} xs={12} className="margin-bottom-8 text-center">
             <img
@@ -37,7 +38,7 @@ const Intro = () => {
             </p>
           </Col>
         </Row>
-      </Container>
+      </div>
     </section>
   );
 };

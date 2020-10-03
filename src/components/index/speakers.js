@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "reactstrap";
 import speakers from "../../data/speakers.json";
-import SpeakerModal from "./speakerModal";
+//import SpeakerModal from "./speakerModal";
 import Button from "../atoms/button";
 
 const Speakers = () => {
-  const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
-  const [speakerVal, setSpeakerVal] = useState(-1);
+  // const [modal, setModal] = useState(false);
+  // const toggle = () => setModal(!modal);
+  // const [speakerVal, setSpeakerVal] = useState(-1);
+
   const list_speakers = speakers.map((speaker) => {
     return (
       <div
@@ -17,39 +18,45 @@ const Speakers = () => {
         }}
         className="margin-y-16 speakers-thumbnail rounded-circle"
       >
-        <a
-          href="/"
-          onClick={(e) => {
-            setSpeakerVal(speaker.id);
-            setModal(!modal);
-            e.preventDefault();
+        <div className="speakers-avatar text-center margin-bottom-24">
+          <img
+            src={speaker.image_url}
+            alt={speaker.name}
+            style={{
+              width: "140px",
+              height: "140px",
+              borderRadius: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        <h3
+          className="text-center text-uppercase"
+          style={{
+            fontSize: "1rem",
+            margin: "0",
           }}
         >
-          <div className="speakers-avatar text-center margin-bottom-32">
-            <img src={speaker.image_url} alt={speaker.name} />
-          </div>
-          <h3
-            className="text-center text-uppercase"
+          {speaker.name}
+        </h3>
+        <p
+          className="text-center font-size-16"
+          style={{
+            fontSize: "0.875rem",
+          }}
+        >
+          {speaker.position} <br />
+          {/* <span>{speaker.company}</span> */}
+        </p>
+        <div className="text-center padding-bottom-32">
+          <img
+            src={speaker.company_logo}
+            alt={speaker.company}
             style={{
-              fontSize: "1rem",
-              margin: "0",
+              width: "96px",
             }}
-          >
-            {speaker.name}
-          </h3>
-          <p
-            className="text-center font-size-16"
-            style={{
-              fontSize: "0.875rem",
-            }}
-          >
-            {speaker.position} <br />
-            <span>{speaker.company}</span>
-          </p>
-          <div className="text-center padding-bottom-32">
-            <img src={speaker.company_logo} alt={speaker.company} />
-          </div>
-        </a>
+          />
+        </div>
       </div>
     );
   });
@@ -71,7 +78,7 @@ const Speakers = () => {
             See Full Program
           </Button>
         </div>
-        <SpeakerModal val={speakerVal} modal={modal} toggle={toggle} />
+        {/* <SpeakerModal val={speakerVal} modal={modal} toggle={toggle} /> */}
       </Container>
     </section>
   );

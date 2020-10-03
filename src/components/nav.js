@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/atoms/button";
 
-const Nav = ({ activeUrl = "/" }) => {
+const Nav = ({ activeUrl = "/", theme }) => {
   // let navClass = props.isHomePage ? "home-nav" : "";
   const nav_items = [
     {
@@ -37,7 +37,8 @@ const Nav = ({ activeUrl = "/" }) => {
 
   return (
     <nav
-      className="shadow-sm dark"
+      className={`shadow-sm ${theme}`}
+      id="main-nav"
       style={{
         position: "fixed",
         top: "0",
@@ -45,30 +46,63 @@ const Nav = ({ activeUrl = "/" }) => {
         zIndex: "9999",
       }}
     >
-      <div className="wrapper">
-        <div className="d-flex justify-content-between align-items-center">
-          <a href="/">
-            <img
-              src={"/images/logos/uxph_conf_logo_banner.svg"}
-              className="width-96"
-              alt="UXPH Conference 2020"
-            />
-          </a>
-          <ul>
-            {navItems}
-            <li className="margin-left-16">
-              <Button
-                href="/tickets"
-                style={{
-                  padding: "0.75rem 1.2rem",
-                }}
-              >
-                Get Tickets
-              </Button>
-            </li>
-          </ul>
+      {activeUrl === "/" ? (
+        <div className="wrapper">
+          <div
+            className={`d-flex align-items-center ${
+              theme === "light"
+                ? "justify-content-between"
+                : "justify-content-center"
+            }`}
+          >
+            <a href="/">
+              <img
+                src={"/images/logos/uxph_conf_logo_banner.svg"}
+                className={`width-96 ${theme === "light" ? "" : "d-none"}`}
+                alt="UXPH Conference 2020"
+              />
+            </a>
+            <ul>
+              {navItems}
+              <li className="margin-left-16">
+                <Button
+                  href="/tickets"
+                  style={{
+                    padding: "0.75rem 1.2rem",
+                  }}
+                >
+                  Get Tickets
+                </Button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="wrapper">
+          <div className={`d-flex align-items-center justify-content-between`}>
+            <a href="/">
+              <img
+                src={"/images/logos/uxph_conf_logo_banner.svg"}
+                className={`width-96`}
+                alt="UXPH Conference 2020"
+              />
+            </a>
+            <ul>
+              {navItems}
+              <li className="margin-left-16">
+                <Button
+                  href="/tickets"
+                  style={{
+                    padding: "0.75rem 1.2rem",
+                  }}
+                >
+                  Get Tickets
+                </Button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

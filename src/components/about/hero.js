@@ -17,7 +17,7 @@ const Hero = () => {
             src={"/images/logos/headline.svg"}
             alt="Growth Beyond Borders"
             id="headline"
-            className="margin-bottom-64"
+            className="margin-bottom-32"
           />
         </div>
         <h1 className="font-size-32 text-white margin-bottom-24">
@@ -41,6 +41,7 @@ const Hero = () => {
           your own screen.
         </p>
         <Button
+          href="/tickets"
           style={{
             padding: "0.5rem 1.5rem",
           }}

@@ -1,8 +1,11 @@
 import React from "react";
 import speakers from "../../data/speakers.json";
+import schedule from "../../data/schedule.json";
 import { Container, Modal, ModalHeader, Row, Col } from "reactstrap";
 
-const SpeakerModal = (props) => {
+const WorkshopModal = (props) => {
+  const currentWorkshop = schedule[props.schedDay][props.val2];
+
   if (props.val === -1) {
     return <div></div>;
   } else {
@@ -12,8 +15,19 @@ const SpeakerModal = (props) => {
     const socmeds = speakerKey.social_media.map((item, index) => {
       return (
         <a href={item.url} className="gray" target="blank" key={index}>
-          <i class={item.icon} aria-hidden="true"></i>
+          <i className={item.icon}></i>
         </a>
+      );
+    });
+    const abstract = currentWorkshop.description.map((item, index) => {
+      return (
+        <p
+          className="font-size-16 margin-bottom-16"
+          style={{ lineHeight: "30px" }}
+          key={index}
+        >
+          {item}
+        </p>
       );
     });
     const bio = speakerKey.bio.map((item, index) => {
@@ -37,7 +51,7 @@ const SpeakerModal = (props) => {
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-top-256 padding-bottom-64 padding-x-64  custom-scrollbar"
+        contentClassName="speaker-modal padding-top-256 padding-bottom-64 padding-x-64 custom-scrollbar"
         isOpen={props.modal}
         toggle={props.toggle}
         external={closeBtn}
@@ -49,12 +63,14 @@ const SpeakerModal = (props) => {
           }}
         ></ModalHeader>
         <Container>
-          <Row className="margin-bottom-64">
+          <Row className="margin-bottom-32">
             <Col md={8} xs={12}>
               {" "}
-              <h3 className="font-size-24 gray margin-bottom-16">Workshop</h3>
+              <h3 className="font-size-24 gray margin-bottom-16">
+                {currentWorkshop.type}
+              </h3>
               <h2 className="workshop-title margin-bottom-24">
-                Combating Memory Limitations through Simultaneous Triangulation
+                {currentWorkshop.title}
               </h2>
               <p className="font-size-24">by {speakerKey.name}</p>
             </Col>
@@ -63,6 +79,12 @@ const SpeakerModal = (props) => {
                 <img
                   src={speakerKey && speakerKey.image_url}
                   alt={speakerKey.name}
+                  style={{
+                    width: "192px",
+                    height: "192px",
+                    objectFit: "cover",
+                    borderRadius: "100%",
+                  }}
                 />
               </div>
             </Col>
@@ -70,24 +92,7 @@ const SpeakerModal = (props) => {
           <Row>
             <Col md={8} xs={12}>
               <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
-              <p
-                className="font-size-16 margin-bottom-16"
-                style={{ lineHeight: "30px" }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
-                molestie eget rhoncus est, non turpis morbi morbi eu. Nunc,
-                gravida convallis mattis id ullamcorper. Sem sem fringilla diam
-                nibh. Quis risus nulla orci, pharetra, eu, massa malesuada duis.
-              </p>
-              <p
-                className="font-size-16 margin-bottom-16"
-                style={{ lineHeight: "30px" }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
-                molestie eget rhoncus est, non turpis morbi morbi eu. Nunc,
-                gravida convallis mattis id ullamcorper. Sem sem fringilla diam
-                nibh. Quis risus nulla orci, pharetra, eu, massa malesuada duis.
-              </p>
+              {abstract}
               <h3 className="font-size-24  margin-top-32 margin-bottom-24">
                 Speaker Bio
               </h3>
@@ -101,4 +106,4 @@ const SpeakerModal = (props) => {
   }
 };
 
-export default SpeakerModal;
+export default WorkshopModal;

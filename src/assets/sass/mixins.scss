@@ -35,7 +35,7 @@ $primary-white: #fff;
   background: url(/images/section-transition.svg),
     url(/images/section-transition--main.svg),
     url(/images/backgrounds/light-background.svg), $primary-white;
-  background-size: 100%;
+  background-size: 100%, 100%, cover;
   background-position: top, bottom, top;
   background-repeat: no-repeat;
 }

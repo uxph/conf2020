@@ -40,25 +40,21 @@ const Footer = () => {
         <div className="margin-bottom-24 d-flex justify-content-center">
           <ul className="footer-nav d-inline-block">
             <li>
-              <a href="/">FAQ</a>
+              <a href="/faq">FAQ</a>
             </li>
             <li className="delimiter">
               <span>●</span>
             </li>
             <li>
-              <a href="/">Terms & Conditions</a>
+              <a href="https://www.uxph.org/code-of-conduct/" target="blank">
+                Code of Conduct
+              </a>
             </li>
             <li className="delimiter">
               <span>●</span>
             </li>
             <li>
-              <a href="/">Code of Conduct</a>
-            </li>
-            <li className="delimiter">
-              <span>●</span>
-            </li>
-            <li>
-              <a href="/">Contact</a>
+              <a href="mailto:info@uxph.org">Contact</a>
             </li>
           </ul>
         </div>
