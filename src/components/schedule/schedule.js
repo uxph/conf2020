@@ -59,7 +59,7 @@ const DayOne = () => {
             data-aos="fade-up"
             data-aos-delay={aos_time}
             data-aos-once={true}
-            data-aos-offset={300}
+            data-aos-offset={100}
             style={{
               display: "flex",
             }}
@@ -91,7 +91,8 @@ const DayOne = () => {
 
               <h3
                 style={{
-                  fontSize: "20px",
+                  fontSize: "24px",
+                  lineHeight: "2rem",
                 }}
               >
                 {workshop.title}
@@ -99,7 +100,9 @@ const DayOne = () => {
               <p className="red">
                 <strong>by {target_speaker.name}</strong>
               </p>
-              <p className="gray">{workshop.description}</p>
+              <p className="gray workshop-description">
+                {workshop.description}
+              </p>
               <Button
                 variant="outline"
                 style={{
@@ -118,12 +121,7 @@ const DayOne = () => {
     return (
       <Row key={key}>
         <Col md={2}>
-          <div
-            style={{
-              position: "sticky",
-              top: 116,
-            }}
-          >
+          <div>
             <p className="gray margin-y-64">
               <strong>{time}</strong>
             </p>
@@ -199,7 +197,8 @@ const DayTwo = () => {
 
               <h3
                 style={{
-                  fontSize: "20px",
+                  fontSize: "24px",
+                  lineHeight: "2rem",
                 }}
               >
                 {workshop.title}
@@ -207,7 +206,9 @@ const DayTwo = () => {
               <p className="red">
                 <strong>by {target_speaker.name}</strong>
               </p>
-              <p className="gray">{workshop.description}</p>
+              <p className="gray workshop-description">
+                {workshop.description}
+              </p>
               <Button
                 variant="outline"
                 style={{

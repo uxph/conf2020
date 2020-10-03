@@ -46,9 +46,7 @@ const ListSponsors = ({
       data-aos-offset={200}
     >
       <Container>
-        <h3 className="margin-bottom-32 text-uppercase font-size-32 text-center">
-          {heading}
-        </h3>
+        <h3 className="margin-bottom-32 font-size-32 text-center">{heading}</h3>
         <div className={contentClassName}>{listTier}</div>
       </Container>
     </div>
@@ -57,9 +55,10 @@ const ListSponsors = ({
 
 const Sponsors = () => {
   const [modal, setModal] = useState(false);
-  const toggle = (e) => {
+  const toggle = () => {
     setModal(!modal);
   };
+
   const [sponsorVal, setSponsorVal] = useState(-1);
 
   return (
@@ -91,7 +90,7 @@ const Sponsors = () => {
         list={bronze}
         className={"padding-y-64"}
         contentClassName={"sponsor"}
-        heading={"Community Sponsors"}
+        heading={"Media & Community Sponsors"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}

@@ -7,8 +7,16 @@
 .card-container {
   display: flex;
   justify-content: space-evenly;
+}
 
-  div {
+.workshop-item {
+  .workshop-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: var(--value-32);
   }
 }
 

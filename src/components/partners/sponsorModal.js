@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Modal, ModalHeader, Row } from "reactstrap";
+import { Container, Modal, ModalHeader, ModalBody, Row } from "reactstrap";
 import sponsors from "../../data/sponsors.json";
 
 const SponsorModal = (props) => {
@@ -64,40 +64,38 @@ const SponsorModal = (props) => {
         toggle={props.toggle}
         zIndex={9999}
       >
-        <ModalHeader
-          className="overwrite-modal"
-          close={closeBtn}
-          c
-        ></ModalHeader>
-        <Container>
-          <Row
-            className="margin-y-96 margin-y-64 text-center"
-            style={{
-              position: "relative",
-              textAlign: "center",
-              display: "block",
-            }}
-          >
-            <img
-              className="margin-bottom-32"
-              src={sponsorKey.image_url}
-              alt={sponsorKey.name}
-            />
-            <a
-              href={sponsorKey.website_url}
+        <ModalHeader className="overwrite-modal" close={closeBtn}></ModalHeader>
+        <ModalBody>
+          <Container>
+            <Row
+              className="margin-y-96 margin-y-64 text-center"
               style={{
-                textDecoration: "none",
+                position: "relative",
+                textAlign: "center",
+                display: "block",
               }}
-              target="blank"
             >
-              <h3 className="gray">{sponsorKey.name}</h3>
-            </a>
-            <div className="modal-body custom-scrollbar">
-              {par}
-              <div className="socmedList">{socmeds}</div>
-            </div>
-          </Row>
-        </Container>
+              <img
+                className="margin-bottom-32"
+                src={sponsorKey.image_url}
+                alt={sponsorKey.name}
+              />
+              <a
+                href={sponsorKey.website_url}
+                style={{
+                  textDecoration: "none",
+                }}
+                target="blank"
+              >
+                <h3 className="gray">{sponsorKey.name}</h3>
+              </a>
+              <div className="modal-body custom-scrollbar">
+                {par}
+                <div className="socmedList">{socmeds}</div>
+              </div>
+            </Row>
+          </Container>
+        </ModalBody>
       </Modal>
     );
   }

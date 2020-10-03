@@ -11,13 +11,13 @@ const Hero = () => {
     return (
       <Col
         xs={12}
-        md={3}
+        md={4}
         className="padding-y-128"
         key={index}
         data-aos="fade-in"
         data-aos-delay={time}
       >
-        <h3 className="text-center text-white font-size-48">{figure.header}</h3>
+        <h3 className="text-center text-white font-size-64">{figure.header}</h3>
         <p
           className="text-center margin-x-16 text-white"
           style={{
@@ -36,16 +36,17 @@ const Hero = () => {
       data-aos-duration={500}
       data-aos-once={true}
     >
-      <div className="main-header--logo">
+      <div>
         <img
           src={"/images/logos/uxph_conf_logo.svg"}
           alt="UXPH Conference 2020"
+          className="width-192"
         />
       </div>
       <div>
         <img
           src={"./images/logos/headline.svg"}
-          className="width-384"
+          className="width-512"
           alt="Designers as navigators of change"
         />
       </div>
@@ -67,7 +68,7 @@ const Hero = () => {
         </Button>
       </div>
       <div className="wrapper">
-        <Row>{figure_list}</Row>
+        <Row className="justify-content-center">{figure_list}</Row>
       </div>
     </section>
   );

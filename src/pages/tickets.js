@@ -18,7 +18,7 @@ const IndexPage = () => {
     );
   } else {
     return (
-      <Layout isHomePage={true} activeUrl="/">
+      <Layout isHomePage={true} activeUrl="">
         <SEO title="Buy Tickets" />
         <Hero />
         <section className="padding-bottom-96">

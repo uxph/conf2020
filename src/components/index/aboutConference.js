@@ -48,7 +48,7 @@ const AboutConference = () => {
               as well as social gatherings with the Filipino UX design
               community.
             </p>
-            <Button>Get Tickets</Button>
+            <Button href="/tickets">Get Tickets</Button>
           </Col>
         </Row>
       </Container>
