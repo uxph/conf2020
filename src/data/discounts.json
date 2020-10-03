@@ -2,5 +2,130 @@
   "uxph2020speakers": {
     "percent": 0.1,
     "solid": null
+  },
+  
+  "uxph2020comet": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020dsc": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020invision": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020invision": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020adp": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020ambi": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020spnsr": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020brains": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020cebuxd": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020fluffle": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020developh": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020dcp": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020figmaph": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020igniteph": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020pwa": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020pwdo": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020ptlc": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020roots": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020summit": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020uxdvo": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020uxrc": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020uxsea": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020dlsu": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020icebreaker": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020s2s": {
+    "percent": 0.1,
+    "solid": null
   }
 }
