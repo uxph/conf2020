@@ -62,8 +62,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
   // tickets
   const regularPrice = 2770; // TODO for discount calculations
-  const superEarlyBirdPrice = 2250;
-  const [superEarlyBirdQuantity, setSuperEarlyBirdQuantity] = useState(1);
+  const earlyBirdPrice = 2500;
+  const [earlyBirdQuantity, setEarlyBirdQuantity] = useState(1);
 
   // payment method
   const [paymentMethod, setPaymentMethod] = useState("gcash");
@@ -125,14 +125,14 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
   // useEffect for ticket pricing calculations
   useEffect(() => {
-    let superEarlyBirdTotal = superEarlyBirdQuantity * superEarlyBirdPrice;
-    setSubtotal(superEarlyBirdTotal);
+    let earlyBirdTotal = earlyBirdQuantity * earlyBirdPrice;
+    setSubtotal(earlyBirdTotal);
 
     if (!subtotal) {
       setDiscountCode("");
       setDiscount(0);
     }
-  }, [superEarlyBirdQuantity, setSuperEarlyBirdQuantity, subtotal]);
+  }, [earlyBirdQuantity, setEarlyBirdQuantity, subtotal]);
 
   // useEffect for discount codes
   useEffect(() => {
@@ -144,7 +144,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
     // matched code
     else if (discount_codes[lowerCasedCode]) {
-      setSubtotal(regularPrice * superEarlyBirdQuantity); // TODO verify
+      setSubtotal(regularPrice * earlyBirdQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
       } else {
@@ -154,16 +154,10 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
     // invalid code
     else {
-      setSubtotal(superEarlyBirdPrice * superEarlyBirdQuantity);
+      setSubtotal(earlyBirdPrice * earlyBirdQuantity);
       setDiscount(0);
     }
-  }, [
-    discountCode,
-    subtotal,
-    superEarlyBirdPrice,
-    superEarlyBirdQuantity,
-    setSubtotal,
-  ]);
+  }, [discountCode, subtotal, earlyBirdPrice, earlyBirdQuantity, setSubtotal]);
 
   // useEffect for checkout URL
   useEffect(() => {
@@ -335,7 +329,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
         details.paymentMethod
       }&amount=${parseInt(details.amount) * 100}&discount_code=${
         discount > 0 ? details.discountCode : "none"
-      }&super_early_bird=${details.superEarlyBird}&subscribed=${subscribed}`;
+      }&early_bird=${details.earlyBird}&subscribed=${subscribed}`;
 
       const data = JSON.stringify({
         data: {
@@ -388,8 +382,8 @@ const PaymentModal = ({ isOpen, toggle }) => {
     const createPaymentIntent = () => {
       const tickets = [
         {
-          name: "super_early_bird",
-          quantity: details.superEarlyBird,
+          name: "early_bird",
+          quantity: details.earlyBird,
         },
       ]
         .filter((x) => x.quantity)
@@ -563,9 +557,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
               <tbody>
                 <tr>
                   <td>
-                    <small className="gray">Super early bird</small> <br />
+                    <small className="gray">Early bird</small> <br />
                   </td>
-                  <td className="text-right">x {superEarlyBirdQuantity}</td>
+                  <td className="text-right">x {earlyBirdQuantity}</td>
                 </tr>
               </tbody>
             </Table>
@@ -672,9 +666,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
               <tbody>
                 <tr>
                   <td>
-                    <small className="gray">Super early bird</small> <br />
+                    <small className="gray">Early bird</small> <br />
                   </td>
-                  <td className="text-right">x {superEarlyBirdQuantity}</td>
+                  <td className="text-right">x {earlyBirdQuantity}</td>
                 </tr>
               </tbody>
             </Table>
@@ -1034,7 +1028,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                 <tbody>
                   <tr>
                     <td>
-                      <small className="gray">Super Early Bird</small> <br />
+                      <small className="gray">Early Bird</small> <br />
                       <div>
                         <strong
                           style={{
@@ -1042,9 +1036,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
                           }}
                           className="ticket-price"
                         >
-                          PHP {numeral(superEarlyBirdPrice).format("0,0.00")}
+                          PHP {numeral(earlyBirdPrice).format("0,0.00")}
                         </strong>{" "}
-                        <small className="gray">/ USD $45 (18% off)</small>
+                        <small className="gray">/ USD $50 (10% off)</small>
                       </div>
                       <span
                         className="font-weight-normal d-block"
@@ -1064,9 +1058,9 @@ const PaymentModal = ({ isOpen, toggle }) => {
                         }}
                         className="ml-auto"
                         min="0"
-                        value={superEarlyBirdQuantity}
+                        value={earlyBirdQuantity}
                         onChange={(event) =>
-                          setSuperEarlyBirdQuantity(event.target.value)
+                          setEarlyBirdQuantity(event.target.value)
                         }
                       />
                     </td>
@@ -1185,7 +1179,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     email: email,
                     phone: mobileNumber,
                     amount: total,
-                    superEarlyBird: superEarlyBirdQuantity,
+                    earlyBird: earlyBirdQuantity,
                     discountCode: discountCode,
                     paymentMethod: paymentMethod,
                     id: confirmNumber,
@@ -1211,7 +1205,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     expiryYear: expiryYear,
                     cvc: cvc,
                     amount: total,
-                    superEarlyBird: superEarlyBirdQuantity,
+                    earlyBird: earlyBirdQuantity,
                     discountCode: discountCode,
                   })
                 }

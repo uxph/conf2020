@@ -65,8 +65,8 @@ const ConfirmationPage = () => {
     const subscribed = urlParams.get("subscribed");
     const tickets = [
       {
-        name: "super_early_bird",
-        quantity: parseInt(urlParams.get("super_early_bird")),
+        name: "early_bird",
+        quantity: parseInt(urlParams.get("early_bird")),
       },
     ]
       .filter((x) => x.quantity)
@@ -210,7 +210,9 @@ const ConfirmationPage = () => {
         } else if (responseText.errors[0].code.includes("succeed")) {
           setConfirmMessage("Payment successful!");
           setPaymentMessage(successMessage);
-        } else if (responseText.errors[0].code.includes("declined by the issuing bank")) {
+        } else if (
+          responseText.errors[0].code.includes("declined by the issuing bank")
+        ) {
           setConfirmMessage("The card has been declined by the issuing bank");
           setPaymentMessage(failedMessage);
         } else {
@@ -326,7 +328,9 @@ const ConfirmationPage = () => {
         } else if (responseText.errors[0].code.includes("succeed")) {
           setConfirmMessage("Payment successful!");
           setPaymentMessage(successMessage);
-        } else if (responseText.errors[0].code.includes("declined by the issuing bank")) {
+        } else if (
+          responseText.errors[0].code.includes("declined by the issuing bank")
+        ) {
           setConfirmMessage("The card has been declined by the issuing bank");
           setPaymentMessage(failedMessage);
         } else {
