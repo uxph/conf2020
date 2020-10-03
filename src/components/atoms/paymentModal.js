@@ -1134,7 +1134,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     onChange={() => setSubscribed(!subscribed)}
                   />
                   <span>
-                    It's okay to send me emails about UXPH events and activities
+                    Send me emails about UXPH events and activities.
                   </span>
                 </Label>
               </FormGroup>
