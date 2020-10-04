@@ -43,7 +43,10 @@ const WorkshopModal = (props) => {
     });
     const closeBtn = (
       <button
-        className="close overwrite-btn-2 pos-fixed2"
+        className="close overwrite-btn"
+        style={{
+          backgroundColor: "transparent",
+        }}
         onClick={props.toggle}
       >
         &times;
@@ -51,18 +54,18 @@ const WorkshopModal = (props) => {
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-top-128 padding-bottom-64 padding-x-64"
+        contentClassName="speaker-modal padding-bottom-64"
         isOpen={props.modal}
         toggle={props.toggle}
-        external={closeBtn}
       >
         <ModalHeader
           className="overwrite-modal"
           style={{
             fontSize: "48px !important",
           }}
+          close={closeBtn}
         ></ModalHeader>
-        <Container>
+        <Container className="padding-top-128 padding-x-64">
           <Row className="margin-bottom-32">
             <Col md={8} xs={12}>
               {" "}
