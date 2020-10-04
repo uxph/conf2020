@@ -10,55 +10,59 @@ const Speakers = () => {
   // const [speakerVal, setSpeakerVal] = useState(-1);
 
   const list_speakers = speakers.map((speaker) => {
-    return (
-      <div
-        key={speaker.id}
-        style={{
-          cursor: "pointer",
-        }}
-        className="margin-y-16 speakers-thumbnail rounded-circle"
-      >
-        <div className="speakers-avatar text-center margin-bottom-24">
-          <img
-            src={speaker.image_url}
-            alt={speaker.name}
-            style={{
-              width: "140px",
-              height: "140px",
-              borderRadius: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <h3
-          className="text-center text-uppercase"
+    if (!speaker.disabled) {
+      return (
+        <div
+          key={speaker.id}
           style={{
-            fontSize: "1rem",
-            margin: "0",
+            cursor: "pointer",
           }}
+          className="margin-y-16 speakers-thumbnail rounded-circle"
         >
-          {speaker.name}
-        </h3>
-        <p
-          className="text-center font-size-16"
-          style={{
-            fontSize: "0.875rem",
-          }}
-        >
-          {speaker.position} <br />
-          {/* <span>{speaker.company}</span> */}
-        </p>
-        <div className="text-center padding-bottom-32">
-          <img
-            src={speaker.company_logo}
-            alt={speaker.company}
+          <div className="speakers-avatar text-center margin-bottom-24">
+            <img
+              src={speaker.image_url}
+              alt={speaker.name}
+              style={{
+                width: "140px",
+                height: "140px",
+                borderRadius: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+          <h3
+            className="text-center text-uppercase"
             style={{
-              width: "96px",
+              fontSize: "1rem",
+              margin: "0",
             }}
-          />
+          >
+            {speaker.name}
+          </h3>
+          <p
+            className="text-center font-size-16"
+            style={{
+              fontSize: "0.875rem",
+            }}
+          >
+            {speaker.position} <br />
+            {/* <span>{speaker.company}</span> */}
+          </p>
+          <div className="text-center padding-bottom-32">
+            <img
+              src={speaker.company_logo}
+              alt={speaker.company}
+              style={{
+                width: "96px",
+              }}
+            />
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return null;
+    }
   });
 
   return (

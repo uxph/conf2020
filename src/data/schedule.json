@@ -3,18 +3,28 @@
     {
       "id": 0,
       "time": "2:00PM",
-      "type": "Panel Discussion",
+      "type": "Screenside Chat",
       "title": "Screenside chat: UX Basics",
       "description": ["Hosted by Reine and Stella"],
+      "speakers_img": [
+        "https://www.uxph.org/assets/team/reine.jpg",
+        "https://ca.slack-edge.com/TK85EQGCX-U01AMSLBT4H-074bde69344b-512"
+      ],
+      "speakers_names": "Reine Bantang & Stella Pangilinan",
       "speaker_id": 0,
       "workshop": []
     },
     {
       "id": 1,
       "time": "2:45PM",
-      "type": "Workshop",
+      "type": "Special Workshop",
       "title": "Basics of Figma",
-      "description": ["Hosted by Friends of Figma Philippines (Anjo, Paul)"],
+      "description": ["Hosted by Friends of Figma Philippines"],
+      "speakers_img": [
+        "https://lh3.googleusercontent.com/pw/ACtC-3d-8jREpIt905iVjGimLcvRnyeV1NFUz9j4YCUkkVKYBmbD7BQYPbVMzpPd0zpCTFvjYMk9SNy0PlCqr47HVqSbYffChjfwffMgmaDLunrmftaK50Fa1RohvJyP3cONcLMwaOvcG_VQbDKewrWeXzCy=s969-no?authuser=0",
+        "https://lh3.googleusercontent.com/pw/ACtC-3ffW6H0I6Ao8mJ7sggGzbVtkgq_cJzp0VV2YfBKtE2ychLu_qfYUTKfwb9ZwQAHMgViIsWp9IEnSvRbuW32Q0JWPWAQV1WJFaZXhe4RNERfnUXefqw54J6tgPegl4d1egE6D41KCEDRVhh7WmNkkRDE=w972-h920-no?authuser=2"
+      ],
+      "speakers_names": "Anjo Cerdeña & Paul Sabandal",
       "speaker_id": 0,
       "workshop": []
     }
@@ -183,9 +193,14 @@
       "time": "4:25PM",
       "type": "Panel Discussion",
       "title": "UX Community",
-      "description": [
-        "Will be doing a panel discussion on community panel - ADPList"
+      "description": ["A panel discussion on community panel - ADPList"],
+      "speakers_img": [
+        "https://lh3.googleusercontent.com/pw/ACtC-3dL-7ki4zICSrpJ_7XgSJweezeajYMu6PF8ra71KSIXlBVletPAJVhqpXoxhj-DSbNtFysvBTR1gUtxd6vA808EEForjsjj8SsB2c3HT29LfLQCpFEBU3x7rwP5WyrX1tIgqP188URs-Ujl2YTaH0Sx=s920-no?authuser=2",
+        "https://lh3.googleusercontent.com/pw/ACtC-3dtLgf1TIAXz89_vKUnFobXhnYttMLiuGBQCIBylXZwnMh1l_qnKm1gVmW_TASQTxT-8mcQDF8Io1UlIG789VTpbpbvJ70gJ_QkSwQs90ixRLAbmsW0adtqLfnTp_KZPmgejJK91J-xaqXL9PA9Q7FR=s800-no?authuser=1",
+        "https://lh3.googleusercontent.com/pw/ACtC-3drt4JKa5nRIzhp2g31WMltYeOq_-4Gp32QOAVGxFynk0-9-N8NoAadObiSVujJ8Ht1tsZEBd4CH_JKZZ6l-H0ft_2G6y9RFqgkkJs1EZlamm1Uj9qAF5COHgxLPd2sfU8rIgZFkRMw4FRuLRc0zEbm=s500-no?authuser=1",
+        "https://lh3.googleusercontent.com/pw/ACtC-3e9OhNVo7BNmTbgfS5zuMo5wpwEZx9wNuG643XYXlOO8V_wad_oklx2BFqAihmQSVNbw6PnUx1oTlRK6KO8xUO0N04mEIFEk4KxGj8gAsi1kuyqlo7Iu5Vw0NPlyWBBGVJ9Xyd26yLARxToB7X6vES6=w646-h969-no?authuser=1"
       ],
+      "speakers_names": "Felix Lee (ADP List), Grace Ling (Design Buddies), Chia Amisola (Developh), Aldrich Tan (UXPH)",
       "speaker_id": 23,
       "workshop": []
     },
@@ -196,6 +211,7 @@
       "title": "UXPH x Design Buddies",
       "description": ["Socials with Design Buddies"],
       "speaker_id": 0,
+      "speakers_img": ["/images/logos/uxph_icon.png"],
       "workshop": []
     }
   ],
@@ -205,7 +221,7 @@
       "id": 0,
       "time": "9:30AM",
       "type": "Team",
-      "title": "Open house",
+      "title": "Open House",
       "description": ["TBD"],
       "speaker_id": 0,
       "workshop": []
@@ -238,10 +254,16 @@
       "type": "Panel Discussion",
       "title": "UX Career Talk",
       "description": [
-        "\"UX Research: The Guiding Light for Design Decisions.\"",
+        "\"UX Research: The Guiding Light for Design Decisions.\" ",
         "What is UX Research, why is it important, and how to get started in UX Research"
       ],
       "speaker_id": 11,
+      "speakers_img": [
+        "https://lh3.googleusercontent.com/pw/ACtC-3es63mcZOd5QJ9iMrMsvMXuCI3gJhj1leA_ZS3EkIK58V1ZWRz7maOgoIW2c8nINvJavanacNDtP2s_5Jt5D1GKKUY_Vu2OG_d-f-zVHE4M7tHvWrVlsd0jvkzvxJkzF3fsiCvmNPJim8FB5eTFlL3m=w834-h920-no?authuser=2",
+        "https://lh3.googleusercontent.com/pw/ACtC-3cCqvn8fzfdjJ5XawA18lUq3OK7RNUzup9kPMGyzxPOxWAyRF659CSy13rPgLVCNWYmbAvS-Ypa5PHjH3pxDYsXEZk_-nqrAoz2Pbm2yhTxmpGAGlN2UTE6oR1r1HVVYq3-Xefs_lRysUNzLyXjoLjG=s800-no?authuser=2",
+        "https://lh3.googleusercontent.com/pw/ACtC-3dIG-UAGbmbmqHmvqy43BNRvcqojvQVumVncCBZ5uyK15bCtv4FUZsXr28ENz_DeuDNw84Ja-2Ilokh1JXHklaUBeOP1Dwrg4OCiTy2pgL_3IdV_0CFOknDfz9b4b4ibQ3xQ1qIrWk7JbfETzE5bdcM=w587-h715-no?authuser=2"
+      ],
+      "speakers_names": "Kevin Liang, Jill Quek (ADP Mentor), Marcus (ADP), Merdy Adrian (ADP)",
       "workshop": []
     },
     {
@@ -298,6 +320,11 @@
       "type": "Panel Discussion",
       "title": "Design Leadership and Culture",
       "description": ["TBD"],
+      "speakers_img": [
+        "https://lh3.googleusercontent.com/pw/ACtC-3drmgy61F4PeasIOyeoGduzdyVM1kQaB93OafkPYXgZ9fzmIbsLNIfEZE-a5fxVM7Dyp0k_FyFQ40c39ijKlfB2fOUVlEiYBT_ZtmywtT5v0KBJUMbF3ih4sBQ50MQujoOxB7gadgChBwOObb1qx4rf=s500-no?authuser=1",
+        "https://lh3.googleusercontent.com/pw/ACtC-3eqvM4zEFA1KPH52e_EGN1fbesdfC7Fi2qbm9XuKjpzahb-x6PyGfPFf4R3R3QUiS3qWcuLEKEhO_B91MIhO5s8e6FjThgNDV5JyNoQTET1FV2GIgO0axLcEduJviNS3X_349968GpK4Y3jpJ8UBMf_=s407-no?authuser=1"
+      ],
+      "speakers_names": "Aldrich Huang (uxtesting) & Michael Tam (IBM iX, ADP List)",
       "speaker_id": 16,
       "workshop": []
     },
@@ -307,7 +334,7 @@
       "type": "Keynote Speaker",
       "title": "Speculative Design",
       "description": ["TBD"],
-      "speaker_id": 0,
+      "speaker_id": 24,
       "workshop": []
     },
     {
@@ -317,14 +344,18 @@
       "title": "Closing Remarks and Announcement",
       "description": ["TBD"],
       "speaker_id": 0,
+      "speakers_names": "UXPH",
       "workshop": []
     },
     {
       "id": 12,
       "time": "5:00PM",
       "type": "Concert",
-      "title": "Mini Concert",
-      "description": ["Any Name's Okay"],
+      "title": "Any Name's Okay",
+      "description": ["Special Closing Performance"],
+      "speakers_img": [
+        "https://lh3.googleusercontent.com/pw/ACtC-3ePC8OybeBWWSYGA--QkwR2VxuEl2siii__S0GCw2jepGf1byQ4wthrz-Bsos42CYW8F3gxHVb5kmfT2eL_RLVcdCZUP5Dtn9m0LArD86DcqeOMBC7VmMVjJdVQkOV8rmCRZZ8dM0wlGcibfYJGnVug=s637-no?authuser=1"
+      ],
       "speaker_id": 0,
       "workshop": []
     }

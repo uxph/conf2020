@@ -54,7 +54,7 @@ const WorkshopModal = (props) => {
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-bottom-64"
+        contentClassName="speaker-modal padding-bottom-64 custom-scrollbar"
         isOpen={props.modal}
         toggle={props.toggle}
       >
@@ -64,45 +64,58 @@ const WorkshopModal = (props) => {
             fontSize: "48px !important",
           }}
           close={closeBtn}
-        ></ModalHeader>
-        <Container className="padding-top-128 padding-x-64">
-          <Row className="margin-bottom-32">
-            <Col md={8} xs={12}>
-              {" "}
-              <h3 className="font-size-24 gray margin-bottom-16">
-                {currentWorkshop.type}
-              </h3>
-              <h2 className="workshop-title margin-bottom-24">
-                {currentWorkshop.title}
-              </h2>
-              <p className="font-size-24">by {speakerKey.name}</p>
-            </Col>
-            <Col md={{ size: 3, offset: 1 }} xs={12}>
-              <div className="modal-avatar">
-                <img
-                  src={speakerKey && speakerKey.image_url}
-                  alt={speakerKey.name}
-                  style={{
-                    width: "192px",
-                    height: "192px",
-                    objectFit: "cover",
-                    borderRadius: "100%",
-                  }}
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row className="modal-container custom-scrollbar">
-            <Col md={8} xs={12}>
-              <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
-              {abstract}
-              <h3 className="font-size-24  margin-top-32 margin-bottom-24">
-                Speaker Bio
-              </h3>
-              {bio}
-              <div className="socmedList-speaker">{socmeds}</div>
-            </Col>
-          </Row>
+        >
+          <img
+            src="/images/section-transition.svg"
+            className="w-100"
+            style={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+            }}
+            alt="modal aesthetic"
+          />
+        </ModalHeader>
+        <Container className="margin-top-128">
+          <div className="padding-x-64">
+            <Row className="margin-bottom-32">
+              <Col md={8} xs={12}>
+                {" "}
+                <h3 className="font-size-24 gray margin-bottom-16">
+                  {currentWorkshop.type}
+                </h3>
+                <h2 className="workshop-title margin-bottom-24">
+                  {currentWorkshop.title}
+                </h2>
+                <p className="font-size-24">by {speakerKey.name}</p>
+              </Col>
+              <Col md={{ size: 3, offset: 1 }} xs={12}>
+                <div className="modal-avatar">
+                  <img
+                    src={speakerKey && speakerKey.image_url}
+                    alt={speakerKey.name}
+                    style={{
+                      width: "192px",
+                      height: "192px",
+                      objectFit: "cover",
+                      borderRadius: "100%",
+                    }}
+                  />
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={8} xs={12}>
+                <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
+                {abstract}
+                <h3 className="font-size-24  margin-top-32 margin-bottom-24">
+                  Speaker Bio
+                </h3>
+                {bio}
+                <div className="socmedList-speaker">{socmeds}</div>
+              </Col>
+            </Row>
+          </div>
         </Container>
         <div className="workshop-modal"></div>
       </Modal>

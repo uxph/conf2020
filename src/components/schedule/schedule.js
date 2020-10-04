@@ -74,7 +74,16 @@ const Programme = ({
     pre_event_3: ["2:05PM", "2:50PM"],
   };
 
-  const specials = ["break", "panel discussion", "team", "socials", "concert"];
+  const specials = [
+    "break",
+    "panel discussion",
+    "team",
+    "socials",
+    "concert",
+    "screenside chat",
+    "remarks",
+    "special workshop",
+  ];
 
   const schedule_list = times[sched].map((time, key) => {
     let aos_time = 50;
@@ -82,7 +91,7 @@ const Programme = ({
       if (workshop.time === time) {
         const type = workshop.type.toLowerCase();
         if (specials.includes(type)) {
-          if (type === "break") {
+          if (type === "break" || type === "team") {
             return (
               <div
                 key={index}
@@ -103,10 +112,180 @@ const Programme = ({
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
+                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "6rem",
+                          height: "6rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
                 <h2 className="text-center align-top m-0">
                   Panel Discussion: {workshop.title}
                 </h2>
                 <p className="text-center gray">{workshop.description}</p>
+                <p className="red text-center">
+                  <strong>by {workshop.speakers_names}</strong>
+                </p>
+              </div>
+            );
+          } else if (type === "screenside chat") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "6rem",
+                          height: "6rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+                <p className="red text-center">
+                  <strong>Hosted by {workshop.speakers_names}</strong>
+                </p>
+              </div>
+            );
+          } else if (type === "special workshop") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "6rem",
+                          height: "6rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+                <p className="red text-center">
+                  <strong>Hosted by {workshop.speakers_names}</strong>
+                </p>
+              </div>
+            );
+          } else if (type === "screenside chat") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "6rem",
+                          height: "6rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+                <p className="red text-center">
+                  <strong>Hosted by {workshop.speakers_names}</strong>
+                </p>
+              </div>
+            );
+          } else if (type === "remarks") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+                <p className="red text-center">
+                  <strong>by {workshop.speakers_names}</strong>
+                </p>
+              </div>
+            );
+          } else if (type === "socials" || type === "concert") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm special-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <div className="speaker-photos margin-bottom-16 d-flex justify-content-center">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "8rem",
+                          height: "8rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <h2 className="text-center text-white align-top m-0">
+                  {workshop.title}
+                </h2>
+                <p className="text-center text-white mb-0">
+                  {workshop.description}
+                </p>
               </div>
             );
           }

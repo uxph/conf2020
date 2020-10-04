@@ -149,19 +149,20 @@ section {
   // position: fixed;
   left: 50%;
   transform: translate(-50%, 10%);
-  background: url(/images/section-transition.svg), #fff;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  // background: url(/images/section-transition.svg), #fff;
+  // background-attachment: scroll !important;
+  // background-size: 100%;
+  // background-repeat: no-repeat;
   top: 0;
-  overflow: hidden;
-  z-index: 99;
+  overflow-y: scroll;
+  z-index: 9999 !important;
   h3 {
     color: $primary-gray;
   }
 }
 .modal-container {
   overflow-y: scroll;
-  height: 27.5vh;
+  // height: 27.5vh;
 }
 .overwrite-modal {
   border: none;
