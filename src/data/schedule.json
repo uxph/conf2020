@@ -2,7 +2,7 @@
   "pre_event_1": [
     {
       "id": 0,
-      "time": "2:00pm",
+      "time": "2:00PM",
       "type": "Panel",
       "title": "Screenside chat: UX Basics",
       "description": ["Hosted by Reine and Stella"],
@@ -11,7 +11,7 @@
     },
     {
       "id": 1,
-      "time": "2:45pm",
+      "time": "2:45PM",
       "type": "Workshop",
       "title": "Basics of Figma",
       "description": ["Hosted by Friends of Figma Philippines (Anjo, Paul)"],
@@ -23,7 +23,7 @@
   "pre_event_2": [
     {
       "id": 0,
-      "time": "10:10am",
+      "time": "10:10AM",
       "type": "Workshop",
       "title": "UX Research Interactive Workshop",
       "description": ["TBD"],
@@ -35,7 +35,7 @@
   "pre_event_3": [
     {
       "id": 0,
-      "time": "2:05pm",
+      "time": "2:05PM",
       "type": "Keynote",
       "title": "Intro to UX Research",
       "description": ["TBD"],
@@ -44,7 +44,7 @@
     },
     {
       "id": 1,
-      "time": "2:50pm",
+      "time": "2:50PM",
       "type": "Keynote",
       "title": "Remote Design Research",
       "description": ["TBD"],

@@ -32,6 +32,26 @@ const Hero = ({ day, setDay }) => {
                 style={{
                   width: "170px",
                 }}
+                variant={day === 3 ? null : "outline"}
+                onClick={() => setDay(3)}
+              >
+                Pre-event 1
+              </Button>
+              <Button
+                className="margin-right-8"
+                style={{
+                  width: "170px",
+                }}
+                variant={day === 4 ? null : "outline"}
+                onClick={() => setDay(4)}
+              >
+                Pre-event 2
+              </Button>
+              <Button
+                className="margin-right-8"
+                style={{
+                  width: "170px",
+                }}
                 variant={day === 1 ? null : "outline"}
                 onClick={() => setDay(1)}
               >

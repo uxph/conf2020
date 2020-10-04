@@ -54,7 +54,7 @@ const Footer = () => {
               <span>●</span>
             </li>
             <li>
-              <a href="mailto:info@uxph.org">Contact</a>
+              <a href="mailto:conference@uxph.org">Contact</a>
             </li>
           </ul>
         </div>
