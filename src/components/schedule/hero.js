@@ -32,60 +32,60 @@ const Hero = ({ day, setDay }) => {
                   className="margin-right-8"
                   innerClassName="pre-conf-button"
                   style={{
-                    width: "150px",
+                    width: "120px",
                   }}
                   variant={day === 3 ? null : "outline"}
                   onClick={() => setDay(3)}
                 >
                   Pre-conf
-                  <br /> (Sat, Oct 24)
+                  <br /> <small>(Sat, Oct 24)</small>
                 </Button>
                 <Button
                   className="margin-right-8"
                   innerClassName="pre-conf-button text-center"
                   style={{
-                    width: "150px",
+                    width: "120px",
                   }}
                   variant={day === 4 ? null : "outline"}
                   onClick={() => setDay(4)}
                 >
                   Pre-conf <br />
-                  (Sat, Oct 31)
+                  <small>(Sat, Oct 31)</small>
                 </Button>
                 <Button
+                  className="margin-right-8"
                   innerClassName="pre-conf-button"
                   style={{
-                    width: "150px",
+                    width: "120px",
                   }}
                   variant={day === 5 ? null : "outline"}
                   onClick={() => setDay(5)}
                 >
                   Pre-conf <br />
-                  (Sat, Nov 7)
+                  <small>(Sat, Nov 7)</small>
                 </Button>
-              </div>
-              <div>
                 <Button
                   className="margin-right-8"
-                  innerClassName="day-button"
+                  innerClassName="pre-conf-button"
                   style={{
-                    width: "200px",
+                    width: "120px",
                   }}
                   variant={day === 1 ? null : "outline"}
                   onClick={() => setDay(1)}
                 >
-                  Day 1 (Sat, Nov 14)
+                  Day 1 <br />
+                  <small>(Sat, Nov 14)</small>
                 </Button>
                 <Button
-                  className="margin-left-8"
-                  innerClassName="day-button"
+                  innerClassName="pre-conf-button"
                   style={{
-                    width: "200px",
+                    width: "120px",
                   }}
                   variant={day === 2 ? null : "outline"}
                   onClick={() => setDay(2)}
                 >
-                  Day 2 (Sun, Nov 15)
+                  Day 2 <br />
+                  <small>(Sun, Nov 15)</small>
                 </Button>
               </div>
             </CardBody>

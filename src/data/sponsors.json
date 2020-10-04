@@ -1,190 +1,496 @@
-[
-  {
-    "id": 0,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_00.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 1,
-    "name": "Grafik Nine",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_01.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 2,
-    "name": "Symph",
-    "description": [
-      "We are a team of designers and developers that create technology solutions to change the world. We love to build products that people love to use! With our team’s diverse skill set – user experience, design, branding, web and mobile development, product strategy and business analysis – Symph is constantly turning our customer’s ideas into successful realities.",
-      "At Symph, our work is fueled by love and passion. We put a lot of skill, effort, and heart onto what we do because we want to be able to create things that people would value. We desire to help change the world positively, and help people with the same vision, act on the same. Similarly, we strive to help ourselves and our team change for the better as we believe that change is the key to growth."
-    ],
-    "image_url": "/images/sponsors/sponsor_02.png",
-    "website_url": "#",
-    "social_media": [
-      "facebook.com",
-      "twitter.com",
-      "github.com",
-      "linkedin.com"
-    ],
-    "tier": "silver"
-  },
-  {
-    "id": 3,
-    "name": "CollaBox",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_03.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 4,
-    "name": "NuWorks",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_04.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 5,
-    "name": "Stylegenie",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_05.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 6,
-    "name": "Home Credit",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_06.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 7,
-    "name": "Canva",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_07.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 8,
-    "name": "Developer Student Club Loyola",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_08.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "#"
-  },
-  {
-    "id": 9,
-    "name": "Interaction Designer Foundation",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_09.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 10,
-    "name": "DevCon Davao",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_10.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 11,
-    "name": "Art n' Nature",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_11.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 12,
-    "name": "IngKing",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_12.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "silver"
-  },
-  {
-    "id": 13,
-    "name": "Philippine Web Designers Organization",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_13.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "silver"
-  },
-  {
-    "id": 14,
-    "name": "Cebu Design Week",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "bronze"
-  },
-  {
-    "id": 15,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "bronze"
-  },
-  {
-    "id": 16,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 17,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "silver"
-  },
-  {
-    "id": 18,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  },
-  {
-    "id": 19,
-    "name": "Ateneo De Davao University",
-    "description": ["#"],
-    "image_url": "/images/sponsors/sponsor_14.png",
-    "website_url": "#",
-    "social_media": ["#"],
-    "tier": "gold"
-  }
-]
+{
+  "Community Partners": [
+    {
+      "id": 0,
+      "name": "Friends of Figma, Philippines",
+      "description": [
+        "Figma's vision is to make design accessible to everyone. Friends of Figma exists so users of this collaborative design tool can come together to help each other; lifting everyone up. It’s run by the community and everyone is welcome. The Philippine chapter of Friends of Figma was started in 2018 and it's the first of its kind in Asia."
+      ],
+      "image_url": "/images/sponsors/fof.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://friends.figma.com/philippines/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/fof-philippines",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/groups/fofphilippines/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/fof_philippines",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "UXSEA Society",
+      "description": [
+        "UXSEA Society is a trusted non-profit UX community that unifies, connects, and support all-level UX professionals, enthusiasts, and students across SEA through knowledge-sharing and collaboration with local communities.",
+        "SouthEast Asia is diverse, young, and vibrant. The Design problems and UX practice here can be different in many aspects when compared with geographies like North America, UK and the EU. Underlying reasons for this diversity is the significant variation in culture, language and larger income gaps.",
+        "By connecting fellow UXers residing in Southeast Asia, we hope to build connections and conversations that will help the understanding and growth of UX practice in the region.UXSEA Society is non-profit and an officially registered entity."
+      ],
+      "image_url": "/images/sponsors/uxsea.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://uxsea.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://sg.linkedin.com/company/uxsea-society",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/uxsea/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.instagram.com/uxsea_society/?hl=en",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Design Buddies",
+      "description": [
+        "Design Buddies is an inclusive community for designers from all backgrounds to connect, share resources, and participate in virtual events. We have mentorship programs, workshops, AMAs, portfolio reviews, and more. All for free."
+      ],
+      "image_url": "/images/sponsors/design-buddies.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://designbuddies.community/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/designbuddies/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/DsgnBuddies/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.instagram.com/design.buddies/",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://twitter.com/DsgnBuddies",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "UXDVO",
+      "description": [
+        "A non-profit community for user experience design practitioners and digital designers from Davao City and neighboring Mindanao municipalities."
+      ],
+      "image_url": "/images/sponsors/uxdvo.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://facebook.com/uxdvo",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://instagram.com/uxdvo",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://twitter.com/uxdvo",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Developh",
+      "description": [
+        "Developh is an international student-led nonprofit accelerating technology & experiences for social good."
+      ],
+      "image_url": "/images/sponsors/developh.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://developh.org",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/13410798/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/develophorg",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/develophorg",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://instagram.com/develophorg",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "PWA Pilipinas",
+      "description": [
+        "The community organization for Progressive Web Apps (PWA) enthusiasts, designers and developers in the Philippines."
+      ],
+      "image_url": "/images/sponsors/pwa.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://pwapilipinas.org",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://linkedin.com/company/pwa-pilipinas",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://facebook.com/PWAPilipinas",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/PWAPilipinas",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ambidextr",
+      "description": [
+        "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
+      ],
+      "image_url": "/images/sponsors/ambidextr.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "http://ambidextr.media/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/ambidextr-media-corporation/?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/ambidextrPH/?ref=aymt_homepage_panel&eid=ARC5i4ldoCcllTUCnfBlOI0oOKovnEDgMnW-FmG80qyxLeb8VBe0lRGV4DEDyLOOHbim0j_0LGv1gKbu",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/ambidextrPH",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
+          "icon": "fa fa-youtube"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Roots",
+      "description": [
+        "Roots is a podcast about the stories of Filipino designers. It’s a safe space to be vulnerable and share about who they are. Guests talks about their career journeys, quirks, hobbies, techniques, life aspirations, and what makes them tick."
+      ],
+      "image_url": "/images/sponsors/roots.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://rootspodcast.design https://open.spotify.com/show/7MczXerWgrsth7bL2XkR11?si=2SRdwLseSQKsW_auvxqhiw",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://open.spotify.com/show/7MczXerWgrsth7bL2XkR11?si=2SRdwLseSQKsW_auvxqhiw",
+          "icon": "fa fa-spotify"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "CebUXD",
+      "description": [
+        "CebUXD is the first user-centered design community in Cebu where UX practitioners and enthusiasts can freely share design ideas, experiences, and techniques that helps grow and cultivate UX in the region."
+      ],
+      "image_url": "/images/sponsors/cebuxd.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/CebUXD",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Streets to Schools",
+      "description": [
+        "Streets to Schools (STS) is a youth organization founded by young leaders aged 12 to 15 back in 2017. STS aims to bring quality education to impoverished students, and to provide opportunities for all children, regardless of social status. Furthermore, it aims to intersect the advocacy of both the United Nations’ Sustainable Development Goals (SDGs) and United Nations Conventions on the Rights of the Child (UNCRC) in their initiatives. By following and acting on these goals, it believes that it can make the state of Education for Sustainable Development in the Philippines more inclusive and of better quality."
+      ],
+      "image_url": "/images/sponsors/streets-to-school.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/StreetstoSchoolsProject",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.instagram.com/streetstoschools.project/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Philippine Tech Community Leads",
+      "description": [
+        "PH Tech Community Leads is a community of tech leaders that aims to produce and empower tech community leaders through continuous advocacy, collaboration and education to improve IT skills and culture in the Philippines."
+      ],
+      "image_url": "/images/sponsors/ptlc.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.phtechcommunity.org/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "UXR Collective",
+      "description": [
+        "UXR Collective is the best place to learn about UX research. Sign up today for new research talks, case studies, and shows published every week for just $12/month."
+      ],
+      "image_url": "/images/sponsors/uxrc.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://twitter.com/uxrcollective",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxrcollective",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.linkedin.com/company/11234935",
+          "icon": "fa fa-linkedin"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "QBO Innovation Hub",
+      "description": [
+        "QBO (‘ku-bo’) is the country’s first public-private initiative for startups and it’s our mission to create a globally competitive startup ecosystem in the Philippines."
+      ],
+      "image_url": "/images/sponsors/qbo.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "www.qbo.com.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/QBOphilippines",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    }
+  ],
+
+  "General Sponsors": [
+    {
+      "id": 0,
+      "name": "Toasty",
+      "description": [
+        "Toasty is a video meeting platform that focuses on driving online collaborations in meetings and workshops. It comes with built-in activities, breakout rooms, integration with Miro and Google Doc, to empower collaborations and drive outcomes."
+      ],
+      "image_url": "/images/sponsors/toasty.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://toasty.ai/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Amazing Design People List",
+      "description": [
+        "ADPList is an online community platform for designers to find and book mentorships and events."
+      ],
+      "image_url": "/images/sponsors/adplist.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.adplist.org https://www.linkedin.com/company/adplist-org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/adplist-org/",
+          "icon": "fa fa-linkedin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anflo Management & Investment Corp.",
+      "description": [
+        "Established in 1977, the Anflo Management and Investment Corporation (ANFLOCOR) is the management and investment company of the ANFLO Group of Companies, founded by the Floirendo family’s patriarch, Don Antonio O. Floirendo, Sr.",
+        "The Mindanao-based business conglomerate is engaged in a diverse range of industries, including agriculture (production and export of Cavendish bananas, livestock operations), industrial (container port terminal, storage facilities, manufacturing of packaging materials and labels, trucking services, aerial spray and helicopter charter services), real estate (residential and commercial developments) and tourism (resort and franchise hotels operations). The ANFLO Group also has companies that are into construction, retail, consumer financing, radio broadcasting, and security agency.",
+        "The ANFLO Group continues to grow and expand while remaining true to its commitment to the development and upliftment of the people of Mindanao."
+      ],
+      "image_url": "/images/sponsors/anflocor.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/anflocor",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Eskwelabs",
+      "description": [
+        "Eskwelabs is an online data upskilling school in the Philippines. Our mission is to drive social mobility in the future of work through data skills education. And we do that through bringing together the best of online & community-based learning to achieve affordability for in-demand digital and data skills, job outcomes at different skills levels, and a peer community to promote lifelong learning."
+      ],
+      "image_url": "/images/sponsors/eskwelabs.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/Eskwelabs",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Icebreaker",
+      "description": [
+        "Icebreaker is an online event platform that connects everyone at your company, university, or community — even while working remotely. Build community, culture, and connection today."
+      ],
+      "image_url": "/images/sponsors/icebreaker.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://twitter.com/IcebreakerVideo",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "PayMongo",
+      "description": [
+        "PayMongo is a payment platform for the modern business that allows anyone to easily accept online payments from their customers online via credit cards, e-wallets and over-the-counter."
+      ],
+      "image_url": "/images/sponsors/paymongo.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/paymongo",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    }
+  ],
+
+  "Premium Sponsors": [
+    {
+      "id": 0,
+      "name": "Make Technology",
+      "description": [
+        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+      ],
+      "image_url": "/images/sponsors/make.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/make.technology",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Figma",
+      "description": [
+        "Figma is a design platform for teams who build products together. Born on the Web, Figma helps the entire product team create, test, and ship better designs, faster."
+      ],
+      "image_url": "/images/sponsors/figma.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "www.figma.com",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/figma/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://twitter.com/figmadesign",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://instagram.com/figmadesign",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.facebook.com/figmadesign",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Smart Communications, Inc.",
+      "description": [
+        "Smart Communications, Inc. is a leading innovator in mobile telecommunications and digital services in the Philippines delivered through Smart LTE, the country's fast mobile network, as certified by third-party mobile analytics firms such as Ookla and Opensignal."
+      ],
+      "image_url": "/images/sponsors/smart.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "www.smart.com.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/smart-communications-inc.",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.twitter.com/LiveSmart",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/livesmart",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.facebook.com/SmartCommunications",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    }
+  ]
+}

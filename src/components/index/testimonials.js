@@ -7,7 +7,9 @@ testimonies.forEach((test, index) => {
   testimonials[index % 3].push(
     <Card className="border-0 shadow margin-bottom-32">
       <CardBody>
-        <p className="testimonial margin-bottom-16">{test.body}</p>
+        <p className="testimonial margin-bottom-16">
+          <em>"{test.body}"</em>
+        </p>
       </CardBody>
     </Card>
   );
@@ -18,7 +20,7 @@ const Testimonials = () => {
     <section
       className="testimonials-section padding-top-192 padding-bottom-128"
       data-aos="fade-up"
-      data-aos-offset={400}
+      data-aos-offset={200}
       data-aos-once={true}
     >
       <h2 className="text-center margin-bottom-64 text-uppercase font-size-32">

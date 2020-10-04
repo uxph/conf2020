@@ -55,6 +55,7 @@ const Speakers = () => {
               alt={speaker.company}
               style={{
                 width: "96px",
+                filter: "grayscale(100%)",
               }}
             />
           </div>
@@ -70,7 +71,7 @@ const Speakers = () => {
       className="speakers-section padding-y-64"
       data-aos="fade-up"
       data-aos-once={true}
-      data-aos-offset={500}
+      data-aos-offset={200}
     >
       <Container>
         <h2 className="text-center margin-bottom-64 font-size-32">

@@ -79,7 +79,7 @@ const WorkshopModal = (props) => {
         <Container className="margin-top-128">
           <div className="padding-x-64">
             <Row className="margin-bottom-32">
-              <Col md={8} xs={12}>
+              <Col md={8} sm={12}>
                 {" "}
                 <h3 className="font-size-24 gray margin-bottom-16">
                   {currentWorkshop.type}
@@ -105,7 +105,7 @@ const WorkshopModal = (props) => {
               </Col>
             </Row>
             <Row>
-              <Col md={8} xs={12}>
+              <Col md={8} sm={12}>
                 <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
                 {abstract}
                 <h3 className="font-size-24  margin-top-32 margin-bottom-24">

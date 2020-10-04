@@ -6,44 +6,24 @@ const SponsorModal = (props) => {
   if (props.val === -1) {
     return <div></div>;
   } else {
-    const sponsorKey = sponsors.filter(
+    const sponsorKey = sponsors[props.tier].filter(
       (sponsor) => sponsor.id === props.val
     )[0];
 
     const par = sponsorKey.description.map((item, index) => {
       return (
-        <p className="margin-x-48" key={index}>
+        <p className="margin-x-96 gray" key={index}>
           {item}
         </p>
       );
     });
 
     const socmeds = sponsorKey.social_media.map((item, index) => {
-      if (item.includes("facebook"))
-        return (
-          <a href={item} className="gray" target="blank">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        );
-      else if (item.includes("twitter"))
-        return (
-          <a href={item} className="gray" target="blank">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        );
-      else if (item.includes("linkedin"))
-        return (
-          <a href={item} className="gray" target="blank">
-            <i className="fa fa-linkedin"></i>
-          </a>
-        );
-      else if (item.includes("github"))
-        return (
-          <a href={item} className="gray" target="blank">
-            <i className="fa fa-github-square"></i>
-          </a>
-        );
-      else return <></>;
+      return (
+        <a href={item.url} className="gray" target="blank" key={index}>
+          <i className={item.icon}></i>
+        </a>
+      );
     });
 
     const closeBtn = (
@@ -65,7 +45,11 @@ const SponsorModal = (props) => {
         zIndex={9999}
       >
         <ModalHeader className="overwrite-modal" close={closeBtn}></ModalHeader>
-        <ModalBody>
+        <ModalBody
+          style={{
+            overflowY: "scroll",
+          }}
+        >
           <Container>
             <Row
               className="margin-y-96 margin-y-64 text-center"
@@ -76,20 +60,19 @@ const SponsorModal = (props) => {
               }}
             >
               <img
-                className="margin-bottom-32"
+                className="margin-bottom-64"
                 src={sponsorKey.image_url}
                 alt={sponsorKey.name}
-              />
-              <a
-                href={sponsorKey.website_url}
                 style={{
-                  textDecoration: "none",
+                  width: "192px",
+                  objectFit: "contain",
                 }}
-                target="blank"
-              >
-                <h3 className="gray">{sponsorKey.name}</h3>
-              </a>
-              <div className="modal-body custom-scrollbar">
+              />
+              <h3 className="gray">{sponsorKey.name}</h3>
+              <p className="red">
+                {props.tier.substring(0, props.tier.length - 1)}
+              </p>
+              <div className="modal-body">
                 {par}
                 <div className="socmedList">{socmeds}</div>
               </div>

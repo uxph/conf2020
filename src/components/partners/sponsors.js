@@ -6,17 +6,19 @@ import "font-awesome/css/font-awesome.min.css";
 
 //import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
-const gold = sponsors.filter((sponsor) => sponsor.tier === "gold");
-const silver = sponsors.filter((sponsor) => sponsor.tier === "silver");
-const bronze = sponsors.filter((sponsor) => sponsor.tier === "bronze");
+const premium = sponsors["Premium Sponsors"];
+const general = sponsors["General Sponsors"];
+const community = sponsors["Community Partners"];
 
 const ListSponsors = ({
   list,
+  tier,
   className,
   contentClassName,
   heading,
   setModal,
   setSponsorVal,
+  setSponsorTier,
   modal,
 }) => {
   const listTier = list.map((item, index) => {
@@ -26,12 +28,21 @@ const ListSponsors = ({
           href="/"
           onClick={(e) => {
             setSponsorVal(item.id);
+            setSponsorTier(tier);
             setModal(!modal);
             e.preventDefault();
           }}
         >
           <div className="img-container">
-            <img src={item.image_url} alt={item.name} />
+            <img
+              src={item.image_url}
+              alt={item.name}
+              style={{
+                width: "150px",
+                height: "150px",
+                objectFit: "contain",
+              }}
+            />
           </div>
         </a>
       </div>
@@ -60,21 +71,25 @@ const Sponsors = () => {
   };
 
   const [sponsorVal, setSponsorVal] = useState(-1);
+  const [sponsorTier, setSponsorTier] = useState(null);
 
   return (
     <section className="sponsor-section">
       <ListSponsors
-        list={gold}
+        list={premium}
+        tier={"Premium Sponsors"}
         className={"padding-y-64"}
         contentClassName={"sponsor"}
         heading={"Premium Sponsors"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}
+        setSponsorTier={setSponsorTier}
       />
 
       <ListSponsors
-        list={silver}
+        list={general}
+        tier={"General Sponsors"}
         className={"silver-sponsor padding-y-192"}
         contentClassName={"sponsor"}
         heading={"General Sponsors"}
@@ -84,18 +99,26 @@ const Sponsors = () => {
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}
+        setSponsorTier={setSponsorTier}
       />
 
       <ListSponsors
-        list={bronze}
+        list={community}
+        tier={"Community Partners"}
         className={"padding-y-64"}
         contentClassName={"sponsor"}
         heading={"Media & Community Sponsors"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}
+        setSponsorTier={setSponsorTier}
       />
-      <SponsorModal val={sponsorVal} modal={modal} toggle={toggle} />
+      <SponsorModal
+        val={sponsorVal}
+        tier={sponsorTier}
+        modal={modal}
+        toggle={toggle}
+      />
     </section>
   );
 };

@@ -21,8 +21,11 @@
   }
 }
 
+.strip {
+  border-color: #f4f4f4 !important;
+}
+
 .lunch-item {
-  background: url(/images/backgrounds/light-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }

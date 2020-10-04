@@ -95,24 +95,24 @@ const Programme = ({
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 bg-light rounded shadow-sm lunch-item border-0"
+                className="padding-y-64 lunch-item"
                 data-aos="fade"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+                <h2 className="m-0">{workshop.title}</h2>
               </div>
             );
           } else if (type === "panel discussion") {
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                className="padding-y-64 padding-right-64 lunch-item"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                <div className="speaker-photos margin-bottom-32 d-flex">
                   {workshop.speakers_img.map((img, index) => (
                     <div className="mx-1">
                       <img
@@ -130,11 +130,11 @@ const Programme = ({
                     </div>
                   ))}
                 </div>
-                <h2 className="text-center align-top m-0">
+                <h2 className="align-top m-0">
                   Panel Discussion: {workshop.title}
                 </h2>
-                <p className="text-center gray">{workshop.description}</p>
-                <p className="red text-center">
+                <p className="gray">{workshop.description}</p>
+                <p className="red">
                   <strong>by {workshop.speakers_names}</strong>
                 </p>
               </div>
@@ -143,12 +143,12 @@ const Programme = ({
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                className="padding-y-64 padding-right-64 lunch-item"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                <div className="speaker-photos margin-bottom-32 d-flex">
                   {workshop.speakers_img.map((img, index) => (
                     <div className="mx-1">
                       <img
@@ -166,8 +166,8 @@ const Programme = ({
                     </div>
                   ))}
                 </div>
-                <h2 className="text-center align-top m-0">{workshop.title}</h2>
-                <p className="red text-center">
+                <h2 className="align-top m-0">{workshop.title}</h2>
+                <p className="red">
                   <strong>Hosted by {workshop.speakers_names}</strong>
                 </p>
               </div>
@@ -176,12 +176,12 @@ const Programme = ({
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                className="padding-y-64 padding-right-64 lunch-item"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
+                <div className="speaker-photos margin-bottom-32 d-flex">
                   {workshop.speakers_img.map((img, index) => (
                     <div className="mx-1">
                       <img
@@ -199,41 +199,8 @@ const Programme = ({
                     </div>
                   ))}
                 </div>
-                <h2 className="text-center align-top m-0">{workshop.title}</h2>
-                <p className="red text-center">
-                  <strong>Hosted by {workshop.speakers_names}</strong>
-                </p>
-              </div>
-            );
-          } else if (type === "screenside chat") {
-            return (
-              <div
-                key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
-                data-aos="fade-right"
-                data-aos-delay={aos_time}
-                data-aos-offset={100}
-              >
-                <div className="speaker-photos margin-bottom-32 d-flex justify-content-center">
-                  {workshop.speakers_img.map((img, index) => (
-                    <div className="mx-1">
-                      <img
-                        src={img}
-                        className="d-block margin-right-24 bg-white"
-                        style={{
-                          width: "6rem",
-                          height: "6rem",
-                          objectFit: "cover",
-                          borderRadius: "100%",
-                        }}
-                        key={index}
-                        alt={workshop.speakers_names}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <h2 className="text-center align-top m-0">{workshop.title}</h2>
-                <p className="red text-center">
+                <h2 className="align-top m-0">{workshop.title}</h2>
+                <p className="red">
                   <strong>Hosted by {workshop.speakers_names}</strong>
                 </p>
               </div>
@@ -242,27 +209,24 @@ const Programme = ({
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                className="padding-y-64 padding-right-64 lunch-item"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <h2 className="text-center align-top m-0">{workshop.title}</h2>
-                <p className="red text-center">
-                  <strong>by {workshop.speakers_names}</strong>
-                </p>
+                <h2 className="align-top m-0">{workshop.title}</h2>
               </div>
             );
           } else if (type === "socials" || type === "concert") {
             return (
               <div
                 key={index}
-                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm special-item border-0"
+                className="padding-y-64 padding-right-64 special-item"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <div className="speaker-photos margin-bottom-16 d-flex justify-content-center">
+                <div className="speaker-photos margin-bottom-16 d-flex">
                   {workshop.speakers_img.map((img, index) => (
                     <div className="mx-1">
                       <img
@@ -297,7 +261,7 @@ const Programme = ({
         return (
           <div
             key={index}
-            className="margin-bottom-96 workshop-item"
+            className="margin-y-32 workshop-item"
             data-aos="fade-right"
             data-aos-delay={aos_time}
             data-aos-offset={100}
@@ -341,8 +305,11 @@ const Programme = ({
               >
                 {workshop.title}
               </h3>
-              <p className="red">
+              <p className="red mb-0">
                 <strong>by {target_speaker.name}</strong>
+              </p>
+              <p className="red">
+                {target_speaker.position} at {target_speaker.company}
               </p>
               <p className="gray workshop-description">
                 {workshop.description}
@@ -384,7 +351,7 @@ const Programme = ({
           </Col>
           <Col>{workshops}</Col>
         </Row>
-        <hr />
+        <hr className="strip" />
       </div>
     );
   });
