@@ -61,7 +61,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
   };
 
   // tickets
-  const regularPrice = 2770; // TODO for discount calculations
+  // const regularPrice = 2770; // TODO for discount calculations
   const earlyBirdPrice = 2500;
   const [earlyBirdQuantity, setEarlyBirdQuantity] = useState(1);
 
@@ -144,7 +144,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
 
     // matched code
     else if (discount_codes[lowerCasedCode]) {
-      setSubtotal(regularPrice * earlyBirdQuantity); // TODO verify
+      setSubtotal(earlyBirdPrice * earlyBirdQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
       } else {
@@ -1133,9 +1133,7 @@ const PaymentModal = ({ isOpen, toggle }) => {
                     type="checkbox"
                     onChange={() => setSubscribed(!subscribed)}
                   />
-                  <span>
-                    Send me emails about UXPH events and activities.
-                  </span>
+                  <span>Send me emails about UXPH events and activities.</span>
                 </Label>
               </FormGroup>
             </Form>
