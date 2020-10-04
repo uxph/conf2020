@@ -74,10 +74,44 @@ const Programme = ({
     pre_event_3: ["2:05PM", "2:50PM"],
   };
 
+  const specials = ["break", "panel discussion", "team", "socials", "concert"];
+
   const schedule_list = times[sched].map((time, key) => {
     let aos_time = 50;
     const workshops = schedule[sched].map((workshop, index) => {
       if (workshop.time === time) {
+        const type = workshop.type.toLowerCase();
+        if (specials.includes(type)) {
+          if (type === "break") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <h2 className="text-center align-top m-0">{workshop.title}</h2>
+              </div>
+            );
+          } else if (type === "panel discussion") {
+            return (
+              <div
+                key={index}
+                className="margin-bottom-96 padding-y-64 padding-x-64 bg-light rounded shadow-sm lunch-item border-0"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <h2 className="text-center align-top m-0">
+                  Panel Discussion: {workshop.title}
+                </h2>
+                <p className="text-center gray">{workshop.description}</p>
+              </div>
+            );
+          }
+        }
+
         const target_speaker = speakers.filter(
           (x) => workshop["speaker_id"] === x.id
         )[0];
@@ -134,22 +168,24 @@ const Programme = ({
               <p className="gray workshop-description">
                 {workshop.description}
               </p>
-              <Button
-                variant="outline"
-                style={{
-                  padding: "0.75rem 1rem",
-                }}
-                href="/"
-                onClick={(e) => {
-                  setWorkshopVal(workshop.speaker_id);
-                  setWorkshopVal2(workshop.id);
-                  setSchedDay(sched);
-                  setModal(!modal);
-                  e.preventDefault();
-                }}
-              >
-                Read more
-              </Button>
+              {workshop.description.join("") !== "TBD" && (
+                <Button
+                  variant="outline"
+                  style={{
+                    padding: "0.75rem 1rem",
+                  }}
+                  href="/"
+                  onClick={(e) => {
+                    setWorkshopVal(workshop.speaker_id);
+                    setWorkshopVal2(workshop.id);
+                    setSchedDay(sched);
+                    setModal(!modal);
+                    e.preventDefault();
+                  }}
+                >
+                  Read more
+                </Button>
+              )}
             </div>
           </div>
         );
@@ -162,7 +198,7 @@ const Programme = ({
         <Row>
           <Col sm={12} md={2}>
             <div>
-              <p className="gray margin-y-64">
+              <p className="gray margin-y-64 mb-0">
                 <strong>{time}</strong>
               </p>
             </div>

@@ -4,9 +4,27 @@
   @include hero;
 }
 
-.card-container {
-  display: flex;
-  justify-content: space-evenly;
+.day-button {
+  font-size: 0.875rem !important;
+  letter-spacing: 0.1rem;
+  padding: 0.875rem 0.5rem !important;
+}
+
+.pre-conf-button {
+  font-size: var(--value-12) !important;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem !important;
+  text-align: center !important;
+
+  span {
+    display: block;
+  }
+}
+
+.lunch-item {
+  background: url(/images/backgrounds/light-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .workshop-item {

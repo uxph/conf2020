@@ -6,7 +6,7 @@ import Hero from "../components/schedule/hero";
 import Schedule from "../components/schedule/schedule";
 
 const IndexPage = () => {
-  const [day, setDay] = useState(1);
+  const [day, setDay] = useState(3);
 
   return (
     <Layout activeUrl="/schedule">

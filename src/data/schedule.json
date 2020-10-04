@@ -3,7 +3,7 @@
     {
       "id": 0,
       "time": "2:00PM",
-      "type": "Panel",
+      "type": "Panel Discussion",
       "title": "Screenside chat: UX Basics",
       "description": ["Hosted by Reine and Stella"],
       "speaker_id": 0,
@@ -36,7 +36,7 @@
     {
       "id": 0,
       "time": "2:05PM",
-      "type": "Keynote",
+      "type": "Keynote Speaker",
       "title": "Intro to UX Research",
       "description": ["TBD"],
       "speaker_id": 11,
@@ -45,7 +45,7 @@
     {
       "id": 1,
       "time": "2:50PM",
-      "type": "Keynote",
+      "type": "Keynote Speaker",
       "title": "Remote Design Research",
       "description": ["TBD"],
       "speaker_id": 3,
@@ -66,7 +66,7 @@
     {
       "id": 1,
       "time": "10:05AM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "Welcome!",
       "description": ["TBD"],
       "speaker_id": 0,
@@ -75,7 +75,7 @@
     {
       "id": 2,
       "time": "10:20AM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "DCP Talk",
       "description": [""],
       "speaker_id": 5,
@@ -95,7 +95,7 @@
     {
       "id": 4,
       "time": "11:25AM",
-      "type": "Keynote Speakers",
+      "type": "Keynote Speaker",
       "title": "Permission to Speak",
       "description": [
         "Many of us have been trained from a young age to take a seat, to raise our hands, to ask for permission to speak. Even the most accomplished, most outspoken, most self-aware still end up taking a backseat, sitting down, shutting up, silencing ourselves without even realizing what we’re doing.  ",
@@ -117,7 +117,7 @@
     {
       "id": 6,
       "time": "1:00PM",
-      "type": "Keynote Speakers",
+      "type": "Keynote Speaker",
       "title": "Winning with What You Have",
       "description": [
         "I'd like to talk about problem solving in the context of Design. Oftentimes, we are faced with ill-defined problems in different scales -- the design brief, our role, or even our career paths. I plan to discuss how synthesizing the information at hand helps in propelling us forward in an agile fashion, and how it has helped me in my own journey as a designer. ",
@@ -130,7 +130,7 @@
     {
       "id": 7,
       "time": "1:45PM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "How to Pioneer Change (& How Not To)",
       "description": [
         "As the conduit between business and tech, designers are in a unique position to be the pioneers of real transformation in the world. Be it disrupting an industry, replacing old traditions with modern thinking or designing for societal-wide positive behavioral change, our skills and toolkit equip us to drive innovation - using technology to push the envelope within the landscapes we work in.",
@@ -143,7 +143,7 @@
     {
       "id": 8,
       "time": "2:20PM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "Lessons in Digital Transformation in a Corporate Setting",
       "description": ["TBD"],
       "speaker_id": 13,
@@ -152,7 +152,7 @@
     {
       "id": 9,
       "time": "2:50PM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "Stories from government: shifting mindsets from logic to empathy",
       "description": [
         "We’ve often seen that taking a human-centred lens and experiencing research first hand can have a large impact on understanding the problem space and influencing the direction of projects and products. As user researchers and UX designers, we’re the lucky ones who get to experience this frequently, but how do we help our teams and stakeholders to take a human-centred lens so that we shift from a purely logical lens to one that embraces empathy? In this presentation, we’ll be looking at how we get non-researchers involved in the research process, and the impact this has on digital transformation journeys and the shifts in mindsets.  Using a range of stories of things that worked (and didn’t work so well) from a range of projects from a government context, we’ll be covering a number of techniques that can be used to bring our stakeholders and teams  directly into the research process, so that they can also live and breath our end user’s experience and develop a better shared understanding of the problem space."
@@ -164,7 +164,7 @@
       "id": 10,
       "time": "3:15PM",
       "type": "Break",
-      "title": "Break",
+      "title": "Break time",
       "description": ["TBD"],
       "speaker_id": 0,
       "workshop": []
@@ -172,7 +172,7 @@
     {
       "id": 11,
       "time": "3:40PM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "UX Growth (Tentative)",
       "description": ["TBD"],
       "speaker_id": 9,
@@ -181,7 +181,7 @@
     {
       "id": 12,
       "time": "4:25PM",
-      "type": "Panel",
+      "type": "Panel Discussion",
       "title": "UX Community",
       "description": [
         "Will be doing a panel discussion on community panel - ADPList"
@@ -213,7 +213,7 @@
     {
       "id": 1,
       "time": "10:05AM",
-      "type": "Keynote Speakers",
+      "type": "Keynote Speaker",
       "title": "The Winds of Change in UX Research",
       "description": [
         "The role of research in modern organizations has changed dramatically over the last few years, and it seems like the pace of change is only accelerating. In this talk we'll examine the past and present responsibilities of researchers, and where I believe research is going in the future."
@@ -224,7 +224,7 @@
     {
       "id": 2,
       "time": "10:50AM",
-      "type": "Lightning",
+      "type": "Lightning Talk",
       "title": "Accessibility",
       "description": [
         "In this powerful and engaging talk, Julius will present the 3 most important keystones possessed by web content that is accessible to everyone including people with disabilities. He will discuss the tools and techniques you can use right now to test your content's accessibility. Julius will also provide clear examples of web pages that demonstrate the 3 keystones."
@@ -235,7 +235,7 @@
     {
       "id": 3,
       "time": "11:20AM",
-      "type": "Panel",
+      "type": "Panel Discussion",
       "title": "UX Career Talk",
       "description": [
         "\"UX Research: The Guiding Light for Design Decisions.\"",
@@ -287,7 +287,7 @@
       "id": 8,
       "time": "2:40PM",
       "type": "Break",
-      "title": "Break Time",
+      "title": "Break time",
       "description": ["TBD"],
       "speaker_id": 0,
       "workshop": []
@@ -295,7 +295,7 @@
     {
       "id": 9,
       "time": "3:20PM",
-      "type": "Panel",
+      "type": "Panel Discussion",
       "title": "Design Leadership and Culture",
       "description": ["TBD"],
       "speaker_id": 16,
@@ -304,7 +304,7 @@
     {
       "id": 10,
       "time": "4:00PM",
-      "type": "Keynote",
+      "type": "Keynote Speaker",
       "title": "Speculative Design",
       "description": ["TBD"],
       "speaker_id": 0,

@@ -27,46 +27,67 @@ const Hero = ({ day, setDay }) => {
         >
           <Card className="border-0 shadow d-inline-block day-cards">
             <CardBody className="card-container">
-              <Button
-                className="margin-right-8"
-                style={{
-                  width: "170px",
-                }}
-                variant={day === 3 ? null : "outline"}
-                onClick={() => setDay(3)}
-              >
-                Pre-event 1
-              </Button>
-              <Button
-                className="margin-right-8"
-                style={{
-                  width: "170px",
-                }}
-                variant={day === 4 ? null : "outline"}
-                onClick={() => setDay(4)}
-              >
-                Pre-event 2
-              </Button>
-              <Button
-                className="margin-right-8"
-                style={{
-                  width: "170px",
-                }}
-                variant={day === 1 ? null : "outline"}
-                onClick={() => setDay(1)}
-              >
-                Day 1 (Sat)
-              </Button>
-              <Button
-                className="margin-left-8"
-                style={{
-                  width: "170px",
-                }}
-                variant={day === 2 ? null : "outline"}
-                onClick={() => setDay(2)}
-              >
-                Day 2 (Sun)
-              </Button>
+              <div className="margin-bottom-8">
+                <Button
+                  className="margin-right-8"
+                  innerClassName="pre-conf-button"
+                  style={{
+                    width: "150px",
+                  }}
+                  variant={day === 3 ? null : "outline"}
+                  onClick={() => setDay(3)}
+                >
+                  Pre-conf
+                  <br /> (Sat, Oct 24)
+                </Button>
+                <Button
+                  className="margin-right-8"
+                  innerClassName="pre-conf-button text-center"
+                  style={{
+                    width: "150px",
+                  }}
+                  variant={day === 4 ? null : "outline"}
+                  onClick={() => setDay(4)}
+                >
+                  Pre-conf <br />
+                  (Sat, Oct 31)
+                </Button>
+                <Button
+                  innerClassName="pre-conf-button"
+                  style={{
+                    width: "150px",
+                  }}
+                  variant={day === 5 ? null : "outline"}
+                  onClick={() => setDay(5)}
+                >
+                  Pre-conf <br />
+                  (Sat, Nov 7)
+                </Button>
+              </div>
+              <div>
+                <Button
+                  className="margin-right-8"
+                  innerClassName="day-button"
+                  style={{
+                    width: "200px",
+                  }}
+                  variant={day === 1 ? null : "outline"}
+                  onClick={() => setDay(1)}
+                >
+                  Day 1 (Sat, Nov 14)
+                </Button>
+                <Button
+                  className="margin-left-8"
+                  innerClassName="day-button"
+                  style={{
+                    width: "200px",
+                  }}
+                  variant={day === 2 ? null : "outline"}
+                  onClick={() => setDay(2)}
+                >
+                  Day 2 (Sun, Nov 15)
+                </Button>
+              </div>
             </CardBody>
           </Card>
         </div>

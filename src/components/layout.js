@@ -19,23 +19,22 @@ import "aos/dist/aos.css";
 const Layout = (props) => {
   const [navTheme, setNavTheme] = useState("dark");
 
-  window.addEventListener(
-    "scroll",
-    () => {
-      const pageOffset = window.pageYOffset;
-      if (pageOffset > 300) {
-        setNavTheme("light");
-      } else {
-        setNavTheme("dark");
-      }
-    },
-    300
-  ); //ms
-
   useEffect(() => {
     Aos.init({
       duration: 1500,
     });
+    window.addEventListener(
+      "scroll",
+      () => {
+        const pageOffset = window.pageYOffset;
+        if (pageOffset > 300) {
+          setNavTheme("light");
+        } else {
+          setNavTheme("dark");
+        }
+      },
+      300
+    ); //ms
   }, []);
 
   const messengerEmbed = `

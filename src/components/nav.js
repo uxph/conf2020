@@ -43,7 +43,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
         position: "fixed",
         top: "0",
         left: "0",
-        zIndex: "9999",
+        zIndex: 9000,
       }}
     >
       {activeUrl === "/" ? (
