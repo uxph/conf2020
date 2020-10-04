@@ -144,23 +144,25 @@ section {
 }
 
 .speaker-modal {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  // position: fixed;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 10%);
+  background: url(/images/section-transition.svg), #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
   top: 0;
-  // background: url(/images/section-transition.svg), #fff;
-  // background-size: 100%;
-  // background-position: top;
-  // background-repeat: no-repeat;
-  overflow-y: scroll;
+  overflow: hidden;
   z-index: 99;
   h3 {
     color: $primary-gray;
   }
 }
-
+.modal-container {
+  overflow-y: scroll;
+  height: 27.5vh;
+}
 .overwrite-modal {
   border: none;
 }
