@@ -43,7 +43,7 @@ const WorkshopModal = (props) => {
     });
     const closeBtn = (
       <button
-        className="close overwrite-btn-2 pos-fixed"
+        className="close overwrite-btn-2 pos-fixed2"
         onClick={props.toggle}
       >
         &times;
@@ -51,7 +51,7 @@ const WorkshopModal = (props) => {
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-top-256 padding-bottom-64 padding-x-64 custom-scrollbar"
+        contentClassName="speaker-modal padding-top-128 padding-bottom-64 padding-x-64"
         isOpen={props.modal}
         toggle={props.toggle}
         external={closeBtn}
@@ -89,7 +89,7 @@ const WorkshopModal = (props) => {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="modal-container custom-scrollbar">
             <Col md={8} xs={12}>
               <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
               {abstract}
@@ -101,6 +101,7 @@ const WorkshopModal = (props) => {
             </Col>
           </Row>
         </Container>
+        <div className="workshop-modal"></div>
       </Modal>
     );
   }
