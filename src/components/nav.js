@@ -67,39 +67,57 @@ const Nav = ({ activeUrl = "/", theme }) => {
         {activeUrl === "/" ? (
           <div className="wrapper">
             {theme === "light" ? (
-              <a
-                href="/"
-                onClick={(e) => {
-                  setShowMobileNav(true);
-                  e.preventDefault();
-                }}
-                id="menu-options"
-              >
-                <img
-                  src={`/images/icons/menu_options.svg`}
-                  alt="menu options"
-                  style={{
-                    height: "30px",
+              <>
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    setShowMobileNav(true);
+                    e.preventDefault();
                   }}
-                />
-              </a>
+                  id="menu-options"
+                >
+                  <img
+                    src={`/images/icons/menu_options.svg`}
+                    alt="menu options"
+                    style={{
+                      height: "30px",
+                    }}
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    src={"/images/logos/uxph_conf_logo_banner.svg"}
+                    className={`width-96 mobile-logo-banner`}
+                    alt="UXPH Conference 2020"
+                  />
+                </a>
+              </>
             ) : (
-              <a
-                href="/"
-                onClick={(e) => {
-                  setShowMobileNav(true);
-                  e.preventDefault();
-                }}
-                id="menu-options"
-              >
-                <img
-                  src={`/images/icons/menu_options_white.svg`}
-                  alt="menu options"
-                  style={{
-                    height: "30px",
+              <>
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    setShowMobileNav(true);
+                    e.preventDefault();
                   }}
-                />
-              </a>
+                  id="menu-options"
+                >
+                  <img
+                    src={`/images/icons/menu_options_white.svg`}
+                    alt="menu options"
+                    style={{
+                      height: "30px",
+                    }}
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    src={"/images/logos/uxph_conf_logo_banner.svg"}
+                    className={`width-96 mobile-logo-banner`}
+                    alt="UXPH Conference 2020"
+                  />
+                </a>
+              </>
             )}
             <div
               className={`d-flex align-items-center ${
@@ -135,39 +153,57 @@ const Nav = ({ activeUrl = "/", theme }) => {
         ) : (
           <div className="wrapper">
             {theme === "light" ? (
-              <a
-                href="/"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setShowMobileNav(true);
-                }}
-                id="menu-options"
-              >
-                <img
-                  src={`/images/icons/menu_options.svg`}
-                  alt="menu options"
-                  style={{
-                    height: "30px",
+              <>
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowMobileNav(true);
                   }}
-                />
-              </a>
+                  id="menu-options"
+                >
+                  <img
+                    src={`/images/icons/menu_options.svg`}
+                    alt="menu options"
+                    style={{
+                      height: "30px",
+                    }}
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    src={"/images/logos/uxph_conf_logo_banner.svg"}
+                    className={`width-96 mobile-logo-banner`}
+                    alt="UXPH Conference 2020"
+                  />
+                </a>
+              </>
             ) : (
-              <a
-                href="/"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setShowMobileNav(true);
-                }}
-                id="menu-options"
-              >
-                <img
-                  src={`/images/icons/menu_options_white.svg`}
-                  alt="menu options"
-                  style={{
-                    height: "30px",
+              <>
+                <a
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowMobileNav(true);
                   }}
-                />
-              </a>
+                  id="menu-options"
+                >
+                  <img
+                    src={`/images/icons/menu_options_white.svg`}
+                    alt="menu options"
+                    style={{
+                      height: "30px",
+                    }}
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    src={"/images/logos/uxph_conf_logo_banner.svg"}
+                    className={`width-96 mobile-logo-banner`}
+                    alt="UXPH Conference 2020"
+                  />
+                </a>
+              </>
             )}
             <div
               className={`d-flex align-items-center justify-content-between`}

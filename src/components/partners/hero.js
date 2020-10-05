@@ -40,7 +40,7 @@ const Hero = () => {
           </a>
         </p>
         <div className="text-center">
-          <Button className="mr-3" href="mailto:partnerships@uxph.org">
+          <Button href="mailto:partnerships@uxph.org">
             Inquire for sponsorship
           </Button>
         </div>

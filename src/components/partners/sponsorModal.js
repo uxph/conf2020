@@ -12,7 +12,7 @@ const SponsorModal = (props) => {
 
     const par = sponsorKey.description.map((item, index) => {
       return (
-        <p className="margin-x-96 gray" key={index}>
+        <p className="margin-x-96 gray sponsor-description" key={index}>
           {item}
         </p>
       );

@@ -192,10 +192,46 @@ section {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 414px) {
   .partners-list .sponsor-img img {
     width: 100px;
     height: 100px;
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-header {
+    font-size: 10px !important;
+    padding: 96px 16px !important;
+
+    .width-512 {
+      width: 380px;
+    }
+  }
+  section {
+    position: relative;
+    padding: 48px 32px;
+  }
+  .about-conf-text p {
+    font-size: 16px !important;
+  }
+  .partners-section h2 {
+    font-size: 24px !important;
+  }
+  .testimonials-section h2 {
+    font-size: 24px !important;
+  }
+  .aboutconf-section {
+    h2 {
+      font-size: 24px !important;
+    }
+    h3 {
+      font-size: 24px !important;
+    }
+  }
+  .speakers-section h2 {
+    font-size: 24px !important;
   }
 }

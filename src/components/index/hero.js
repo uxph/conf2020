@@ -63,11 +63,11 @@ const Hero = () => {
         NOVEMBER 14 - 15, 2020
       </h2>
       <div className="text-center">
-        <Button className="mr-3" href="/tickets">
+        <Button className="mr-3 mb-3 main-btn" href="/tickets">
           Get Tickets
         </Button>
         <Button variant="outline" bgColor="#000000">
-          Full program (Coming soon)
+          Full program (Soon)
         </Button>
       </div>
       <div className="wrapper">
