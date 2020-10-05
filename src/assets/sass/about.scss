@@ -2,7 +2,6 @@
 
 .about-hero {
   @include hero;
-
   p {
     color: rgba($primary-white, 0.8);
     line-height: 33px;
@@ -73,5 +72,32 @@
 .team-section {
   h3 {
     color: $primary-gray;
+  }
+}
+@media only screen and (max-width: 550px) {
+  section {
+    position: relative;
+    padding: 48px 32px;
+  }
+  .info {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .info-text {
+    margin: 0px 32px;
+  }
+  .info-btn {
+    position: static;
+    transform: translate(50%, 0%);
+    margin-bottom: 64px;
+  }
+  .about-hero {
+    .margin-x-64 {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .width-512 {
+      width: 380px;
+    }
   }
 }

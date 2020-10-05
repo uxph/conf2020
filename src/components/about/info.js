@@ -4,10 +4,15 @@ import { Row, Col } from "reactstrap";
 
 const Intro = () => {
   return (
-    <section className="padding-y-96">
+    <section className="padding-y-96 info">
       <div className="wrapper">
         <Row data-aos="fade-up" data-aos-offset={500} data-aos-once={true}>
-          <Col md={6} xs={12} className="margin-bottom-24">
+          <Col
+            sm={{ order: 2 }}
+            md={{ size: 6, order: 1 }}
+            xs={{ size: 12, order: 2 }}
+            className="margin-bottom-24 info-text"
+          >
             <p
               className="line-height-32 margin-right-32 margin-bottom-32"
               style={{
@@ -23,9 +28,15 @@ const Intro = () => {
               as well as social gatherings with the Filipino UX design
               community.
             </p>
-            <Button variant="outline">Get Tickets</Button>
+            <Button className="info-btn" variant="outline">
+              Get Tickets
+            </Button>
           </Col>
-          <Col md={6} xs={12} className="text-center">
+          <Col
+            md={{ size: 6, order: 2 }}
+            xs={{ size: 12, order: 1 }}
+            className="text-center margin-bottom-24"
+          >
             <img
               src={"/images/undraw_group_video_el8e 1.svg"}
               alt="Placeholder"

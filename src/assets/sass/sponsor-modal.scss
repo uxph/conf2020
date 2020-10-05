@@ -18,6 +18,9 @@
 //   height: 360px;
 //   overflow-y: hidden;
 // }
+.modal-body {
+  overflow: hidden;
+}
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px;
@@ -97,5 +100,11 @@
       opacity: 1;
       color: inherit !important;
     }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .sponsor-description {
+    padding: 0 16px !important;
   }
 }
