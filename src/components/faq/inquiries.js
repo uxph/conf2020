@@ -151,7 +151,7 @@ const Inquiries = () => {
           >
             Can’t find an answer? Send us a message at{" "}
             <strong>
-              <span className="red">partnerships@uxph.org</span>
+              <span className="red">conference@uxph.org</span>
             </strong>
           </p>
         </div>

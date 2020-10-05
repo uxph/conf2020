@@ -11,6 +11,7 @@ const Intro = () => {
           data-aos-offset={500}
           data-aos-once={true}
           id="about-info"
+          className="align-items-center"
         >
           <Col md={6} xs={12} className="margin-bottom-24">
             <p
@@ -19,24 +20,17 @@ const Intro = () => {
                 fontSize: "1.125rem",
               }}
             >
-              This year we invite you to{" "}
-              <strong>The UXPH 2020 Conference: Growth Beyond Borders</strong>,
-              a fully online conference made to bring together hundreds of
-              experience designers, enthusiasts, and problem-solvers of all
-              levels, from all over the map. This 2-day event features keynotes,
-              panels, and workshops from local and international design leaders,
-              as well as social gatherings with the Filipino UX design
-              community.
+              UXPH has become the country’s hub for sharing information,
+              resources, and building networks in the design community. As of
+              2020, the UXPH community has over 4,000 local and international
+              members from a wide range of industries related to technology and
+              even traditional businesses.
             </p>
             <Button href="/tickets" variant="outline">
               Get Tickets
             </Button>
           </Col>
-          <Col
-            md={6}
-            xs={12}
-            className="text-center margin-bottom-24"
-          >
+          <Col md={6} xs={12} className="text-center margin-bottom-24">
             <img
               src={"/images/visuals/collage-6.png"}
               alt="Placeholder"

@@ -62,7 +62,9 @@ const Speakers = () => {
                 src={speaker.company_logo}
                 alt={speaker.company}
                 style={{
-                  width: "96px",
+                  width: `${
+                    speaker.company_logo_type === "square" ? "64px" : "96px"
+                  }`,
                   filter: "grayscale(100%)",
                 }}
               />

@@ -1,0 +1,67 @@
+{
+  "id": 2,
+  "name": "Anflo Management & Investment Corp.",
+  "description": [
+    "Established in 1977, the Anflo Management and Investment Corporation (ANFLOCOR) is the management and investment company of the ANFLO Group of Companies, founded by the Floirendo family’s patriarch, Don Antonio O. Floirendo, Sr.",
+    "The Mindanao-based business conglomerate is engaged in a diverse range of industries, including agriculture (production and export of Cavendish bananas, livestock operations), industrial (container port terminal, storage facilities, manufacturing of packaging materials and labels, trucking services, aerial spray and helicopter charter services), real estate (residential and commercial developments) and tourism (resort and franchise hotels operations). The ANFLO Group also has companies that are into construction, retail, consumer financing, radio broadcasting, and security agency.",
+    "The ANFLO Group continues to grow and expand while remaining true to its commitment to the development and upliftment of the people of Mindanao."
+  ],
+  "image_url": "/images/sponsors/anflocor.png",
+  "website_url": "#",
+  "social_media": [
+    {
+      "url": "https://www.facebook.com/anflocor",
+      "icon": "fa fa-facebook-square"
+    }
+  ]
+},
+{
+  "id": 2,
+  "name": "Smart Communications, Inc.",
+  "description": [
+    "Smart Communications, Inc. is a leading innovator in mobile telecommunications and digital services in the Philippines delivered through Smart LTE, the country's fast mobile network, as certified by third-party mobile analytics firms such as Ookla and Opensignal."
+  ],
+  "image_url": "/images/sponsors/smart.png",
+  "website_url": "#",
+  "social_media": [
+    {
+      "url": "https://www.smart.com.ph",
+      "icon": "fa fa-globe"
+    },
+    {
+      "url": "https://www.linkedin.com/company/smart-communications-inc.",
+      "icon": "fa fa-linkedin"
+    },
+    {
+      "url": "https://www.twitter.com/LiveSmart",
+      "icon": "fa fa-twitter"
+    },
+    {
+      "url": "https://www.instagram.com/livesmart",
+      "icon": "fa fa-instagram"
+    },
+    {
+      "url": "https://www.facebook.com/SmartCommunications",
+      "icon": "fa fa-facebook-square"
+    }
+  ]
+},
+{
+  "id": 0,
+  "name": "Make Technology",
+  "description": [
+    "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+  ],
+  "image_url": "/images/sponsors/make.png",
+  "website_url": "#",
+  "social_media": [
+    {
+      "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+      "icon": "fa fa-linkedin"
+    },
+    {
+      "url": "https://www.facebook.com/make.technology",
+      "icon": "fa fa-facebook-square"
+    }
+  ]
+})

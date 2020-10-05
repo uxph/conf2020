@@ -42,7 +42,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
           {item.name}
           {item.comingSoon && (
             <Badge color="secondary" className="ml-2">
-              Coming soon
+              Soon
             </Badge>
           )}
         </a>

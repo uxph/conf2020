@@ -5,6 +5,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
+  CarouselControl,
 } from "reactstrap";
 import testimonies from "../../data/testimonies.json";
 
@@ -12,7 +13,13 @@ const testimonials = [[], [], [], []];
 
 testimonies.forEach((test, index) => {
   testimonials[index % 4].push(
-    <Card className="border-0 shadow margin-bottom-32 mx-auto card" key={index}>
+    <Card
+      className="border-0 shadow margin-bottom-32 mx-auto card"
+      key={index}
+      style={{
+        alignSelf: "flex-start",
+      }}
+    >
       <CardBody>
         <p className="testimonial margin-bottom-16">
           <em>"{test.body}"</em>
@@ -54,9 +61,9 @@ const Testimonials = () => {
       >
         <div
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `center`,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           {item}
@@ -82,7 +89,7 @@ const Testimonials = () => {
             onClickHandler={goToIndex}
           />
           {items}
-          {/* <CarouselControl
+          <CarouselControl
             direction="prev"
             directionText="Previous"
             onClickHandler={previous}
@@ -95,18 +102,10 @@ const Testimonials = () => {
             direction="next"
             directionText="Next"
             onClickHandler={next}
-          /> */}
+          />
         </Carousel>
-        {/* {testimonials[0]} */}
-
-        {/* <Row>
-          <Col>{testimonials[0]}</Col>
-          <Col>{testimonials[1]}</Col>
-          <Col>{testimonials[2]}</Col>
-        </Row> */}
       </div>
     </section>
   );
 };
-
 export default Testimonials;
