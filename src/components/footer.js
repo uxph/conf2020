@@ -10,6 +10,7 @@ const Footer = () => {
           src={"/images/logos/uxph_conf_logo.png"}
           className="width-128 d-block mx-auto margin-top-96 margin-bottom-24"
           alt="UXPH Conference 2020"
+          id="footer-logo"
         />
         <div className="margin-bottom-24 d-flex justify-content-center">
           <a href={info.facebook_page} target="blank">

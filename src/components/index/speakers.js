@@ -88,8 +88,14 @@ const Speakers = () => {
         </h2>
         <div className="margin-bottom-32 speakers-list">{list_speakers}</div>
         <div className="btn-container">
-          <Button className="mx-auto" href="/schedule">
-            See Full Program
+          <Button
+            className="mx-auto"
+            href="/schedule"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
+            Full Program (Coming Soon)
           </Button>
         </div>
         <SpeakerModal val={speakerVal} modal={modal} toggle={toggle} />

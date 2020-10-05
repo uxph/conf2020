@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../components/atoms/button";
+import { Badge } from "reactstrap";
 
 const Nav = ({ activeUrl = "/", theme }) => {
   // let navClass = props.isHomePage ? "home-nav" : "";
@@ -11,6 +12,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
     {
       name: "Schedule",
       url: "/schedule",
+      comingSoon: true,
     },
     {
       name: "Sponsors",
@@ -28,8 +30,21 @@ const Nav = ({ activeUrl = "/", theme }) => {
   const navItems = nav_items.map((item, key) => {
     return (
       <li key={key} className="nav-item">
-        <a href={item.url} className={activeUrl === item.url ? "active" : null}>
+        <a
+          href={item.url}
+          className={`${activeUrl === item.url ? "active" : null}`}
+          onClick={(e) => {
+            if (item.comingSoon) {
+              e.preventDefault();
+            }
+          }}
+        >
           {item.name}
+          {item.comingSoon && (
+            <Badge color="secondary" className="ml-2">
+              Coming soon
+            </Badge>
+          )}
         </a>
       </li>
     );

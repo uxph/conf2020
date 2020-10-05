@@ -1,7 +1,7 @@
 footer {
   background: url(/images/section-transition.svg),
     url(/images/backgrounds/dark-background.svg), var(--black);
-  background-size: 100%;
+  background-size: 100%, cover;
   background-position: top, top, bottom;
   background-repeat: no-repeat;
 
@@ -32,6 +32,14 @@ footer {
       span {
         padding-bottom: var(--value-8) !important;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  footer {
+    #footer-logo {
+      margin-top: 0 !important;
     }
   }
 }

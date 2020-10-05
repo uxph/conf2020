@@ -67,7 +67,7 @@ const Hero = () => {
           Get Tickets
         </Button>
         <Button variant="outline" bgColor="#000000">
-          See full program
+          Full program (Coming soon)
         </Button>
       </div>
       <div className="wrapper">
