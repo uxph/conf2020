@@ -32,7 +32,11 @@ const Intro = () => {
               Get Tickets
             </Button>
           </Col>
-          <Col md={6} xs={12} className="text-center">
+          <Col
+            md={6}
+            xs={12}
+            className="text-center margin-bottom-24"
+          >
             <img
               src={"/images/visuals/collage-6.png"}
               alt="Placeholder"

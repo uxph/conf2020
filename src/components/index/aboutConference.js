@@ -3,8 +3,8 @@ import { Row, Col } from "reactstrap";
 
 const AboutConference = () => {
   return (
-    <section>
-      <div className="wrapper mb-5">
+    <section className="aboutconf-section">
+      <div className="wrapper mb-5 about-conf-text">
         <h2 className="text-center margin-bottom-32">What is UXPH CONF?</h2>
         <p className="text-center">
           <strong>The UXPH CONF</strong>, now in its 5th year, is a 2-day online
@@ -29,12 +29,14 @@ const AboutConference = () => {
         </p>
       </div>
       <div className="wrapper">
-        <p className="text-center margin-bottom-48 font-weight-bold">
+        <p className="text-center margin-bottom-24 font-weight-bold">
           Check out our past conferences:
         </p>
         <Row>
           <Col md={6} sm={12}>
-            <h3 className="text-center margin-bottom-24">UXPH CONF 2019</h3>
+            <h3 className="text-center margin-bottom-24 margin-top-24">
+              UXPH CONF 2019
+            </h3>
             <div className="video-container">
               <iframe
                 src="https://www.youtube.com/embed/EWZ5HRa2qf8?rel=0&modestbranding=1&autohide=1&showinfo=0"
@@ -47,7 +49,9 @@ const AboutConference = () => {
             </div>
           </Col>
           <Col md={6} sm={12}>
-            <h3 className="text-center margin-bottom-24">UXPH CONF 2018</h3>
+            <h3 className="text-center margin-bottom-24 margin-top-24">
+              UXPH CONF 2018
+            </h3>
             <div className="video-container">
               <iframe
                 src="https://www.youtube.com/embed/m4qL22eR0ok?rel=0&modestbranding=1&autohide=1&showinfo=0"

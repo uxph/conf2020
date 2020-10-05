@@ -2,7 +2,6 @@
 
 .about-hero {
   @include hero;
-
   p {
     color: rgba($primary-white, 0.8);
     line-height: 33px;
