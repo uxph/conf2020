@@ -1,5 +1,5 @@
 .sponsor-modal {
-  width: 80vw !important;
+  width: 60vw !important;
   height: 80vh !important;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -106,5 +106,14 @@
 @media only screen and (max-width: 550px) {
   .sponsor-description {
     padding: 0 16px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal-body {
+    padding: 0 !important;
+  }
+
+  .sponsor-modal {
+    width: 90vw !important;
   }
 }

@@ -129,7 +129,7 @@ section {
 }
 
 .speaker-modal {
-  width: 80vw;
+  width: 70vw;
   height: 80vh;
   // position: fixed;
   left: 50%;
@@ -140,6 +140,8 @@ section {
   // background-repeat: no-repeat;
   top: 0;
   overflow-y: scroll;
+  overflow-x: hidden !important;
+
   z-index: 9999 !important;
   h3 {
     color: $primary-gray;
@@ -147,6 +149,7 @@ section {
 }
 .modal-container {
   overflow-y: scroll;
+
   // height: 27.5vh;
 }
 .overwrite-modal {
@@ -192,7 +195,11 @@ section {
   height: 90px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
+  .speaker-modal {
+    width: 90vw;
+    height: 90vh;
+  }
   .card {
     width: 90%;
   }

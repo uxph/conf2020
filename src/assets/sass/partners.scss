@@ -33,6 +33,7 @@
       width: 180.4px;
       margin-left: 12px;
       margin-right: 12px;
+
       .img-container {
         width: 100%;
         height: 100%;
@@ -43,10 +44,22 @@
   }
 }
 
+.gen-sponsor {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.comm-sponsor {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 .silver-sponsor {
   @include section-white;
 }
-
 @media only screen and (max-width: 550px) {
   .sponsor-section {
     position: relative;
