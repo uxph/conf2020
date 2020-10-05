@@ -343,11 +343,11 @@ const Programme = ({
                 </p>
               )}
 
-              {target_speaker.id !== 0 && (
+              {/* {target_speaker.id !== 0 && (
                 <p className="gray workshop-description">
                   {workshop.description}
                 </p>
-              )}
+              )} */}
               {workshop.description.join("") !== "TBD" && (
                 <Button
                   variant="outline"
