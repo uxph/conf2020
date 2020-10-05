@@ -95,7 +95,7 @@ const Speakers = () => {
               e.preventDefault();
             }}
           >
-            Full Program (Coming Soon)
+            Full Program (Soon)
           </Button>
         </div>
         <SpeakerModal val={speakerVal} modal={modal} toggle={toggle} />

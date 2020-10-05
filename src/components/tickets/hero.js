@@ -9,7 +9,7 @@ const Hero = () => {
       data-aos-once={true}
     >
       <h2 className="text-white margin-bottom-24 text-uppercase">
-        Buy tickets
+        Get tickets
       </h2>
     </section>
   );

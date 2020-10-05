@@ -75,3 +75,38 @@
     color: $primary-gray;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  section.about-intro-section {
+    padding-top: 8rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  section.about-info-section {
+    padding-top: 2rem !important;
+    padding-bottom: 8rem !important;
+  }
+
+  #about-intro {
+    text-align: center !important;
+    .img-resizer {
+      margin-bottom: 2rem !important;
+      width: 100% !important;
+    }
+  }
+
+  #about-info {
+    flex-direction: column-reverse;
+    text-align: center !important;
+
+    .img-resizer {
+      margin-bottom: 2rem !important;
+      width: 100% !important;
+    }
+
+    p {
+      text-align: center;
+      margin-right: 0 !important;
+    }
+  }
+}
