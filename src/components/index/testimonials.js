@@ -5,7 +5,7 @@ import testimonies from "../../data/testimonies.json";
 const testimonials = [[], [], []];
 testimonies.forEach((test, index) => {
   testimonials[index % 3].push(
-    <Card className="border-0 shadow margin-bottom-32">
+    <Card className="border-0 shadow margin-bottom-32" key={index}>
       <CardBody>
         <p className="testimonial margin-bottom-16">
           <em>"{test.body}"</em>

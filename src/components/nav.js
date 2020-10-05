@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/atoms/button";
 
 const Nav = ({ activeUrl = "/", theme }) => {
@@ -35,51 +35,178 @@ const Nav = ({ activeUrl = "/", theme }) => {
     );
   });
 
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
   return (
-    <nav
-      className={`shadow-sm ${theme}`}
-      id="main-nav"
-      style={{
-        position: "fixed",
-        top: "0",
-        left: "0",
-        zIndex: 9000,
-      }}
-    >
-      {activeUrl === "/" ? (
-        <div className="wrapper">
-          <div
-            className={`d-flex align-items-center ${
-              theme === "light"
-                ? "justify-content-between"
-                : "justify-content-center"
-            }`}
-          >
-            <a href="/">
-              <img
-                src={"/images/logos/uxph_conf_logo_banner.svg"}
-                className={`width-96 ${theme === "light" ? "" : "d-none"}`}
-                alt="UXPH Conference 2020"
-              />
-            </a>
-            <ul>
-              {navItems}
-              <li className="margin-left-16">
-                <Button
-                  href="/tickets"
+    <>
+      <nav
+        className={`shadow-sm ${theme}`}
+        id="main-nav"
+        style={{
+          position: "fixed",
+          top: "0",
+          left: "0",
+          zIndex: 9000,
+        }}
+      >
+        {activeUrl === "/" ? (
+          <div className="wrapper">
+            {theme === "light" ? (
+              <a
+                href="/"
+                onClick={(e) => {
+                  setShowMobileNav(true);
+                  e.preventDefault();
+                }}
+                id="menu-options"
+              >
+                <img
+                  src={`/images/icons/menu_options.svg`}
+                  alt="menu options"
                   style={{
-                    padding: "0.75rem 1.2rem",
+                    height: "30px",
                   }}
-                >
-                  Get Tickets
-                </Button>
-              </li>
-            </ul>
+                />
+              </a>
+            ) : (
+              <a
+                href="/"
+                onClick={(e) => {
+                  setShowMobileNav(true);
+                  e.preventDefault();
+                }}
+                id="menu-options"
+              >
+                <img
+                  src={`/images/icons/menu_options_white.svg`}
+                  alt="menu options"
+                  style={{
+                    height: "30px",
+                  }}
+                />
+              </a>
+            )}
+            <div
+              className={`d-flex align-items-center ${
+                theme === "light"
+                  ? "justify-content-between"
+                  : "justify-content-center"
+              }`}
+            >
+              <a href="/">
+                <img
+                  src={"/images/logos/uxph_conf_logo_banner.svg"}
+                  className={`width-96 logo-banner ${
+                    theme === "light" ? "" : "d-none"
+                  }`}
+                  alt="UXPH Conference 2020"
+                />
+              </a>
+              <ul>
+                {navItems}
+                <li className="margin-left-16">
+                  <Button
+                    href="/tickets"
+                    style={{
+                      padding: "0.75rem 1.2rem",
+                    }}
+                  >
+                    Get Tickets
+                  </Button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      ) : (
+        ) : (
+          <div className="wrapper">
+            {theme === "light" ? (
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowMobileNav(true);
+                }}
+                id="menu-options"
+              >
+                <img
+                  src={`/images/icons/menu_options.svg`}
+                  alt="menu options"
+                  style={{
+                    height: "30px",
+                  }}
+                />
+              </a>
+            ) : (
+              <a
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowMobileNav(true);
+                }}
+                id="menu-options"
+              >
+                <img
+                  src={`/images/icons/menu_options_white.svg`}
+                  alt="menu options"
+                  style={{
+                    height: "30px",
+                  }}
+                />
+              </a>
+            )}
+            <div
+              className={`d-flex align-items-center justify-content-between`}
+            >
+              <a href="/">
+                <img
+                  src={"/images/logos/uxph_conf_logo_banner.svg"}
+                  className={`width-96 logo-banner`}
+                  alt="UXPH Conference 2020"
+                />
+              </a>
+              <ul>
+                {navItems}
+                <li className="margin-left-16">
+                  <Button
+                    href="/tickets"
+                    style={{
+                      padding: "0.75rem 1.2rem",
+                    }}
+                  >
+                    Get Tickets
+                  </Button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
+      </nav>
+
+      {/* Mobile navigation */}
+      <nav
+        className={`shadow-sm ${theme} ${showMobileNav ? "show" : ""}`}
+        id="mobile-nav"
+      >
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            setShowMobileNav(false);
+          }}
+        >
+          <img
+            src={`/images/icons/close.svg`}
+            alt="Close navigation"
+            style={{
+              position: "fixed",
+              width: "24px",
+              top: "32px",
+              right: "32px",
+            }}
+          />
+        </a>
         <div className="wrapper">
-          <div className={`d-flex align-items-center justify-content-between`}>
+          <div>
             <a href="/">
               <img
                 src={"/images/logos/uxph_conf_logo_banner.svg"}
@@ -89,7 +216,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
             </a>
             <ul>
               {navItems}
-              <li className="margin-left-16">
+              <li className="margin-top-32">
                 <Button
                   href="/tickets"
                   style={{
@@ -102,8 +229,8 @@ const Nav = ({ activeUrl = "/", theme }) => {
             </ul>
           </div>
         </div>
-      )}
-    </nav>
+      </nav>
+    </>
   );
 };
 

@@ -37,9 +37,9 @@ const AboutConference = () => {
             <div className="video-container">
               <iframe
                 src="https://www.youtube.com/embed/EWZ5HRa2qf8"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 title="Last year's UXPH conference video"
                 className="border-radius-8"
               ></iframe>
@@ -49,9 +49,9 @@ const AboutConference = () => {
             <div className="video-container">
               <iframe
                 src="https://www.youtube.com/embed/m4qL22eR0ok"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 title="Last year's UXPH conference video"
                 className="border-radius-8"
               ></iframe>
