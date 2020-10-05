@@ -46,6 +46,7 @@ const SponsorModal = (props) => {
       >
         <ModalHeader className="overwrite-modal" close={closeBtn}></ModalHeader>
         <ModalBody
+          className="custom-scrollbar"
           style={{
             overflowY: "scroll",
           }}
