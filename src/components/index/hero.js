@@ -51,6 +51,7 @@ const Hero = () => {
           src={"./images/logos/headline.svg"}
           className="width-512"
           alt="Designers as navigators of change"
+          id="headline"
         />
       </div>
       <h2

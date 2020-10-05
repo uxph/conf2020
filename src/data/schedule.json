@@ -354,8 +354,8 @@
       "id": 12,
       "time": "5:00PM",
       "type": "Concert",
-      "title": "Any Name's Okay",
-      "description": ["Special Closing Performance"],
+      "title": "Special Closing Performance",
+      "description": ["Any Name's Okay"],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3ePC8OybeBWWSYGA--QkwR2VxuEl2siii__S0GCw2jepGf1byQ4wthrz-Bsos42CYW8F3gxHVb5kmfT2eL_RLVcdCZUP5Dtn9m0LArD86DcqeOMBC7VmMVjJdVQkOV8rmCRZZ8dM0wlGcibfYJGnVug=s637-no?authuser=1"
       ],

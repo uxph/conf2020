@@ -257,27 +257,8 @@ const Programme = ({
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
               >
-                <div className="speaker-photos margin-bottom-16">
-                  {workshop.speakers_img.map((img, index) => (
-                    <div className="mx-1">
-                      <img
-                        src={img}
-                        className="d-block margin-right-24 bg-white"
-                        style={{
-                          width: "8rem",
-                          height: "8rem",
-                          objectFit: "cover",
-                          borderRadius: "100%",
-                        }}
-                        key={index}
-                        alt={workshop.speakers_names}
-                      />
-                    </div>
-                  ))}
-                </div>
                 <div>
                   <h2 className="m-0">{workshop.title}</h2>
-                  <p className="mb-0 gray">{workshop.description}</p>
                 </div>
               </div>
             );

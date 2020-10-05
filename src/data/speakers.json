@@ -59,7 +59,7 @@
       },
       {
         "url": "https://www.figma.com/@anjocerdena",
-        "icon": "fa-icon"
+        "icon": "fa fa-globe"
       }
     ],
     "position": "Product Designer, Consultant",
@@ -70,7 +70,13 @@
     "id": 3,
     "name": "Christine Wang",
     "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eGSZRx2T8MkvGD_bo0H3FCH7zHWvLBQrtasYV9r69FHNNyHZLAUwGidFPnxT-AFLu1vvbwBiytJMkzzxtdmAUtcPph4z84xHTbQE28by-FeoyR9OyLCzc1t7R8cdZ8i5BV8uN28kVM0gfSxNjdJGtY=w757-h969-no?authuser=2",
-    "bio": ["TBD"],
+    "bio": [
+      "Christine has 15+ years of cross-functional project management and 6+ years of team management experience within Innovation & Corporate Transformation and Digital solutions. She founded the first food and Ag.-tech accelerator in Taiwan. Her expertise is to build new businesses with qualitative and quantitative insights, architect venture business, and help clients to adapt human-centered innovation. She has done innovation projects in digital music, health, automobile, consumer electronics, hotel, FMCG, food, agri-tech, and gaming in locations such as Taiwan, Indonesia, Sweden, Singapore, China, USA, UK, and Italy. The client includes Danone, P&G, Master Kong, Nokia, Lining, Asus, GM, Toyota, and TCL. Her new passion is remote design research and human-centered AI design.",
+      "She is the founder of the first food and agri-tech accelerator in Taiwan. The program had helped eighteen startup teams transform into profitable companies. 40 % of the alumni had raised seed-stage funds after graduation.",
+      "She is passionate about activating organizational change. Through working with stakeholders in Asus, she successfully put customers’ voices into the innovation process and started design thinking projects. She led researchers, designers, and marketers to redesign the Asus gaming experience. In Haoshi accelerator, she designed a methodology to help startup founders to use design thinking and lean startup to transform their early-stage business.",
+
+      "She is very experienced in leading the talents of different nations and backgrounds to deliver innovative solutions. She had led design teams in three countries to work on a big scale service design project. In Asus, she coordinated design research teams in Shanghai, China, and Singapore. Her project locations include Taipei, Shanghai, Palo Alto, London, and Chicago."
+    ],
     "social_media": [
       {
         "url": "https://www.linkedin.com/in/christine-wang-1016",
@@ -138,28 +144,24 @@
   },
   {
     "id": 7,
-    "name": "Francis Alturas",
-    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dqAZldDrtMd3zvabmFi0PMtro-OCuAr3WB5gy2SwXp6FYCuutDSvyiLUA-vsgp9LXOj3CZoZX61siI0YVZ4-ku4aIWCrBFGZipyAks9IzUkH2tuWH7DSm_74_JXZMS8k-fZpP5sQ6uCxQgea5j-7LU=w938-h969-no?authuser=2",
+    "name": "Aldrich Huang",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cNSy-uBuTlCHrpz3kwVKxaL1h5nsdzdUgMPiKCMj4pcf5qZ8mg_SOqMXF_mBWsDaKxPT6GV5_WNt2av7Eu3aUpMVfybqW55CgPdhWI4d5MW6jnAAktITH4IOcMjrMBotyDnKJtxDPIanj-Hh4nY07-=w1020-h918-no?authuser=1",
     "bio": [
-      "Francis is the co-founder and Chief Design Officer of Abstract Digital - a digital product design agency in the sunny hills of Cebu City. Also, a certified AJ&Smart Design Sprint Facilitator.",
-
-      "He designs interfaces and experiences that are usable and delightful for human beings. He facilitates design sprints, writes frontend markup, and co-organizes local design events like the UXPH Roadshow, Visual 4, Sketch and Dribbble Meetups.",
-
-      "He also has worked with people from brands like 500 Startups, Rocket Internet, The World Bank and The Presidential Communications Office. Previously, Francis was also a design director at Symph - a startup foundry where he built & led the design team."
+      "Bianca Aguilar is a designer passionate about bringing tech to others.She is dedicated to empowering student communities as Chief Design Officer at Developh (where she crafts experiences & artifacts for creators) and AVP for Design Training at User Experience Society (where she facilitates & hosts events for the members' design education). Currently, she is an Interdisciplinary Studies student at Ateneo de Manila University, majoring in Information Design and Programming.  She is also interning for Fluidstack Solutions, where she is leading design for the Insureplus.ph platform."
     ],
     "social_media": [
       {
-        "url": "https://www.linkedin.com/in/francisalturas/",
+        "url": "https://www.linkedin.com/in/aldrichhuang",
         "icon": "fa fa-linkedin"
       },
       {
-        "url": "www.abstract.ph",
+        "url": "https://www.aldrichhuang.com",
         "icon": "fa fa-globe"
       }
     ],
-    "position": "Chief Design Officer",
-    "company": "Abstract Digital",
-    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c1N7Ws_0O0ud1xinIxUrzZP2Bhf-9msYRf2HFHCd7SR9POknZEA9Eosb7KSH54zEX7Rmet7cWj74BU55BVZrUzS1seSOBxE36ztPTA3g21u4Ah8iRDUf6KUD8c4ddfe-dSICD91twc21lv6dIUFSnH=w594-h166-no?authuser=0"
+    "position": "CEO and Co-founder",
+    "company": "UXTesting Inc.",
+    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3dTWNc4Pfp545L7mifo-3nbRmxT5mcaoF2_4Bjd1OHSPYOK0RAw2Ta75BFwTxxp5WeNJeH_J5V5PLlpDJsX2Wg-ahCVAm-_7ij_PBI9nA90TNbu6-vbr4W6c9qleNBITvxGIVQ642dHeKwJunROeAB0=w526-h177-no?authuser=1"
   },
   {
     "id": 8,
@@ -525,5 +527,76 @@
     "company": "",
     "company_logo": "",
     "disabled": true
+  },
+  {
+    "id": 26,
+    "name": "Bianca Mikaila V. Aguilar",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3c0usVdmfE4VAuXCGQ4MvDp8UPsIFcqw0UCary-QnQ2CRJ0qCO_y8LS4ZXSHPrke2ldzoEm1OqFPw6TYUnmbeEs0GKdGCEYzPYmVSbqLLwL6LLfYbNotDRvgDEEw9J3WY9OZImnuu9C_SKUPGOU1cnE=w764-h920-no?authuser=2",
+    "bio": [
+      "Bianca Aguilar is a designer passionate about bringing tech to others.She is dedicated to empowering student communities as Chief Design Officer at Developh (where she crafts experiences & artifacts for creators) and AVP for Design Training at User Experience Society (where she facilitates & hosts events for the members' design education). Currently, she is an Interdisciplinary Studies student at Ateneo de Manila University, majoring in Information Design and Programming.  She is also interning for Fluidstack Solutions, where she is leading design for the Insureplus.ph platform."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/biancamikaila/",
+        "icon": "fa fa-linkedin"
+      },
+      {
+        "url": "https://bianca.digital",
+        "icon": "fa fa-globe"
+      }
+    ],
+    "position": "Design Intern",
+    "company": "Ateneo De Manila University",
+    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3di4r720LRO4HGF5LzEf7vtEXdQv6Z_W5I4GHZ7rx-KzFgOQOhducYH_H23DjzbY_2gB9_ocWkwIW_WgiIx1XRFl6oq184L-kg7iUwHyImAEcLKtNhV0w9_QVULsf9mDT1MpFrAcaQydLd9XjhYPtw_=w1145-h260-no?authuser=0"
+  },
+  {
+    "id": 27,
+    "name": "Grace Ling",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3f0PG--Z7CfB-U_-XVO5ABoWYlvH3nkdaN0Uoae4tVN9UAKLamenVk5lG1EAhN8K2ZlbvHMYHFSDCqZQfQTMxtqiIzNj_NoLrHp6Eu8z-v9v-sU1eBNt5R_EAUn2kIu3ngqCcCpJT__dJPyi4HRKwTF=w749-h920-no?authuser=1",
+    "bio": [
+      "Bianca Aguilar is a designer passionate about bringing tech to others.She is dedicated to empowering student communities as Chief Design Officer at Developh (where she crafts experiences & artifacts for creators) and AVP for Design Training at User Experience Society (where she facilitates & hosts events for the members' design education). Currently, she is an Interdisciplinary Studies student at Ateneo de Manila University, majoring in Information Design and Programming.  She is also interning for Fluidstack Solutions, where she is leading design for the Insureplus.ph platform."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/graceling/",
+        "icon": "fa fa-linkedin"
+      },
+      {
+        "url": "https://grace-ling.com/",
+        "icon": "fa fa-globe"
+      },
+      {
+        "url": "https://twitter.com/candyleaf_",
+        "icon": "fa fa-twitter"
+      },
+      {
+        "url": "https://www.instagram.com/candyleaf_/",
+        "icon": "fa fa-instagram"
+      }
+    ],
+    "position": "Founder & Design Lead",
+    "company": "Design Buddies & Electronic Arts",
+    "company_logo": "../images/sponsors/design-buddies.png"
+  },
+  {
+    "id": 28,
+    "name": "Justine Win Canete",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3d3funG9RCtPVBT73ywQMV7awcqTT_tAXAHKFAVHfbaVoes6aXLuuVG5IVwnw6L8XC8PvwGFzYK8oLzf_VmaGnIYj2iK6AwbgYIx6lK8AHPuNjSIT0e7eRL917kqd-bW8R1hkHahJq4Q4eMEkh7vTfO=w850-h787-no?authuser=2",
+    "bio": [
+      "Academic researcher turned UX researcher. Lead and collaborated in various qualitative, multi-method and mixed-methods study focused on health, education and more recently technology. Author or co-author of 2 book chapters, 6 peer-reviewed publications, and a number of reports, editorial pieces and blog posts. Experienced facilitator and public speaker, counting  more than 20 conference presentations, 15 workshops, and several guest lectures, interviews, panels and media appearances."
+    ],
+    "social_media": [
+      {
+        "url": "https://www.linkedin.com/in/justinewin/",
+        "icon": "fa fa-linkedin"
+      },
+      {
+        "url": "https://justinewin.com/",
+        "icon": "fa fa-globe"
+      }
+    ],
+    "position": "Senior UX Researcher",
+    "company": "Shopify",
+    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c06zwJkvrZtj3DFv76duWq6Ov6UWDqgzuB8I8q5MnQTCBcyy8CtXfXDMFGYR_YF564ahade-3E_NkX8KFQJ5FIgx2mGz-wBuOYhG06VfH6j88n-rQRV4vwDTR6HaOvYTNNAYN8qebfV9KDRRRyacTN=w1317-h429-no?authuser=0"
   }
 ]

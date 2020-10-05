@@ -1,6 +1,8 @@
 @import "./mixins.scss";
 
 .partner-hero {
+  padding: 96px 16px !important;
+
   @include hero;
 
   p {

@@ -41,10 +41,10 @@ const SpeakerModal = (props) => {
     );
     return (
       <Modal
-        contentClassName="speaker-modal padding-top-96 padding-bottom-64 padding-x-64  custom-scrollbar"
+        contentClassName="speaker-modal padding-top-96 padding-bottom-64 padding-x-64 custom-scrollbar"
         isOpen={props.modal}
         toggle={props.toggle}
-        external={closeBtn}
+        zIndex={9999}
       >
         <ModalHeader
           className="overwrite-modal"
@@ -65,13 +65,13 @@ const SpeakerModal = (props) => {
           />
         </ModalHeader>
         <Container>
-          <Row>
+          <Row className="speaker-content">
             <Col md={8} xs={12}>
-              <h2 className="workshop-title">{speakerKey.name}</h2>
-              <p className="font-size-24 red">
+              <h2 className="speaker-name">{speakerKey.name}</h2>
+              <p className="font-size-24 speaker-position">
                 {speakerKey.position} at {speakerKey.company}
               </p>
-              <h3 className="font-size-24  margin-top-64 margin-bottom-24">
+              <h3 className="font-size-24 margin-top-64 margin-bottom-24">
                 Speaker Bio
               </h3>
               {bio}

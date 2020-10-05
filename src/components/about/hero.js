@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Card from "../atoms/card";
 import Button from "../atoms/button";
 import { Container } from "reactstrap";
 
-const useMediaQuery = (query) => {
-  const mediaMatch = window.matchMedia(query);
-  const [matches, setMatches] = useState(mediaMatch.matches);
+// const useMediaQuery = (query) => {
+//   const mediaMatch = window.matchMedia(query);
+//   const [matches, setMatches] = useState(mediaMatch.matches);
 
-  useEffect(() => setMatches(mediaMatch.matches), [mediaMatch.matches]);
+//   useEffect(() => setMatches(mediaMatch.matches), [mediaMatch.matches]);
 
-  return matches;
-};
+//   return matches;
+// };
 
 const Hero = () => {
-  const isDesktop = useMediaQuery("(min-width: 551px)");
-  const styles = {
-    container: (isMobile) => ({
-      width: isMobile ? "575px" : "90%",
-      marginBottom: "-300px",
-    }),
-  };
+  // const isDesktop = useMediaQuery("(min-width: 551px)");
+  // const styles = {
+  //   container: (isMobile) => ({
+  //     width: isMobile ? "575px" : "90%",
+  //     marginBottom: "-300px",
+  //   }),
+  // };
 
   return (
     <section
@@ -46,7 +46,7 @@ const Hero = () => {
           and inciting positive change that lasts
         </p>
       </Container>
-      <Card id="about-cta" style={styles.container(isDesktop)}>
+      <Card id="about-cta">
         <p className="margin-bottom-24">
           Join UXPH as we grow beyond our borders in a weekend packed with
           learning, inspiration, and collaboration–all within the comfort of

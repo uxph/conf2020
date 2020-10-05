@@ -185,23 +185,31 @@ section {
     font-size: 10px !important;
     padding: 96px 16px !important;
 
-    .width-512 {
-      width: 380px;
+    #headline {
+      width: 100% !important;
+    }
+
+    .main-btn {
+      margin-right: 0 !important;
     }
   }
   section {
     position: relative;
     padding: 48px 32px;
   }
+
   .about-conf-text p {
     font-size: 16px !important;
   }
+
   .partners-section h2 {
     font-size: 24px !important;
   }
+
   .testimonials-section h2 {
     font-size: 24px !important;
   }
+
   .aboutconf-section {
     h2 {
       font-size: 24px !important;
@@ -210,7 +218,19 @@ section {
       font-size: 24px !important;
     }
   }
-  .speakers-section h2 {
-    font-size: 24px !important;
+
+  .speakers-section {
+    h2 {
+      font-size: 24px !important;
+    }
+
+    .speakers-list {
+      .speakers-thumbnail {
+        width: 166px !important;
+        .speakers-avatar {
+          margin-left: 0 !important;
+        }
+      }
+    }
   }
 }
