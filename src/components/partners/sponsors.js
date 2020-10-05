@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import sponsors from "../../data/sponsors.json";
-import { Container } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import SponsorModal from "./sponsorModal";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -23,7 +23,7 @@ const ListSponsors = ({
 }) => {
   const listTier = list.map((item, index) => {
     return (
-      <div className="sponsor-item margin-bottom-32" key={index}>
+      <Col md={4} xs={6} className="margin-bottom-32" key={index}>
         <a
           href="/"
           onClick={(e) => {
@@ -33,7 +33,7 @@ const ListSponsors = ({
             e.preventDefault();
           }}
         >
-          <div className="img-container">
+          <div className="img-container text-center">
             <img
               src={item.image_url}
               alt={item.name}
@@ -41,11 +41,12 @@ const ListSponsors = ({
                 width: "150px",
                 height: "150px",
                 objectFit: "contain",
+                margin: "0 auto",
               }}
             />
           </div>
         </a>
-      </div>
+      </Col>
     );
   });
 
@@ -58,7 +59,7 @@ const ListSponsors = ({
     >
       <Container>
         <h3 className="margin-bottom-32 font-size-32 text-center">{heading}</h3>
-        <div className={contentClassName}>{listTier}</div>
+        <Row className={contentClassName}>{listTier}</Row>
       </Container>
     </div>
   );
@@ -79,22 +80,26 @@ const Sponsors = () => {
         list={premium}
         tier={"Premium Sponsors"}
         className={"padding-y-64"}
-        contentClassName={"sponsor"}
+        contentClassName={""}
         heading={"Premium Sponsors"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}
         setSponsorTier={setSponsorTier}
+        style={{
+          margin: "0 auto",
+        }}
       />
 
       <ListSponsors
         list={general}
         tier={"General Sponsors"}
         className={"silver-sponsor padding-y-192"}
-        contentClassName={"sponsor"}
+        contentClassName={""}
         heading={"General Sponsors"}
         style={{
           backgroundColor: "#F6F6F6",
+          margin: "0 auto",
         }}
         setModal={setModal}
         modal={modal}
@@ -106,12 +111,15 @@ const Sponsors = () => {
         list={community}
         tier={"Community Partners"}
         className={"padding-y-64"}
-        contentClassName={"sponsor"}
+        contentClassName={""}
         heading={"Media & Community Sponsors"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}
         setSponsorTier={setSponsorTier}
+        style={{
+          margin: "0 auto",
+        }}
       />
       <SponsorModal
         val={sponsorVal}

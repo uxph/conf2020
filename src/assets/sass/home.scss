@@ -187,21 +187,16 @@ section {
   width: 150px;
 }
 
+.community-partner img {
+  width: 90px;
+  height: 90px;
+}
+
 @media only screen and (max-width: 550px) {
   .card {
     width: 90%;
   }
-}
 
-@media only screen and (max-width: 414px) {
-  .partners-list .sponsor-img img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
   .main-header {
     font-size: 10px !important;
     padding: 96px 16px !important;
@@ -223,12 +218,18 @@ section {
     font-size: 16px !important;
   }
 
-  .partners-section h2 {
-    font-size: 24px !important;
+  .partners-section {
+    padding-top: 128px !important;
+    h2 {
+      font-size: 24px !important;
+    }
   }
 
-  .testimonials-section h2 {
-    font-size: 24px !important;
+  .testimonials-section {
+    padding-top: 128px !important;
+    h2 {
+      font-size: 24px !important;
+    }
   }
 
   .aboutconf-section {
@@ -250,6 +251,35 @@ section {
         width: 166px !important;
         .speakers-avatar {
           margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .partners-list .sponsor-img img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .speakers-section {
+    .speakers-list {
+      .speakers-thumbnail {
+        width: 140px !important;
+
+        .speakers-avatar {
+          margin: 0 auto !important;
+          margin-bottom: 1rem !important;
+          width: 100px !important;
+
+          img {
+            width: 100px !important;
+            height: 100px !important;
+          }
         }
       }
     }

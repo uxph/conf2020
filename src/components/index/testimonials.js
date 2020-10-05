@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import {
   Card,
   CardBody,
-  Row,
-  Col,
   Carousel,
   CarouselItem,
-  CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
 } from "reactstrap";
 import testimonies from "../../data/testimonies.json";
 
@@ -54,7 +50,7 @@ const Testimonials = () => {
       <CarouselItem
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        // key={item.src}
+        key={index}
       >
         <div
           style={{
@@ -80,13 +76,13 @@ const Testimonials = () => {
       </h2>
       <div className="wrapper">
         <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-          {/* <CarouselIndicators
-            items={testimonials}
+          <CarouselIndicators
+            items={items}
             activeIndex={activeIndex}
             onClickHandler={goToIndex}
-          /> */}
+          />
           {items}
-          <CarouselControl
+          {/* <CarouselControl
             direction="prev"
             directionText="Previous"
             onClickHandler={previous}
@@ -99,7 +95,7 @@ const Testimonials = () => {
             direction="next"
             directionText="Next"
             onClickHandler={next}
-          />
+          /> */}
         </Carousel>
         {/* {testimonials[0]} */}
 

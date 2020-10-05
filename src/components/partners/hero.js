@@ -13,6 +13,7 @@ const Hero = () => {
         className="wrapper"
         style={{
           width: "600px",
+          paddingBottom: "128px",
         }}
       >
         <h2 className="text-white margin-bottom-24">Our Partners & Sponsors</h2>

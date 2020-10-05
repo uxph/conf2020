@@ -12,7 +12,7 @@ const SpeakerModal = (props) => {
     const socmeds = speakerKey.social_media.map((item, index) => {
       return (
         <a href={item.url} className="gray" target="blank" key={index}>
-          <i class={item.icon} aria-hidden="true"></i>
+          <i className={item.icon} aria-hidden="true"></i>
         </a>
       );
     });
@@ -68,7 +68,7 @@ const SpeakerModal = (props) => {
           <Row className="speaker-content">
             <Col md={8} xs={12}>
               <h2 className="speaker-name">{speakerKey.name}</h2>
-              <p className="font-size-24 speaker-position">
+              <p className="font-size-24 speaker-position red">
                 {speakerKey.position} at {speakerKey.company}
               </p>
               <h3 className="font-size-24 margin-top-64 margin-bottom-24">

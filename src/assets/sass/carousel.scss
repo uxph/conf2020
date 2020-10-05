@@ -1,0 +1,16 @@
+.carousel {
+  height: 600px;
+}
+
+.carousel-indicators li {
+  background-color: var(--purple) !important;
+}
+
+@media only screen and (max-width: 550px) {
+  .carousel {
+    height: 1100px;
+  }
+  .carousel-indicators li {
+    display: none !important;
+  }
+}
