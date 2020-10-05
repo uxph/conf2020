@@ -5,13 +5,13 @@ import Button from "../../components/atoms/button";
 
 const premium_sponsors = sponsors["Premium Sponsors"].map((sponsor) => {
   return (
-    <div key={sponsor.id} className="mx-3">
+    <div key={sponsor.id} className="sponsor-img mx-3">
       <img
         src={sponsor["image_url"]}
         alt={sponsor.name}
         style={{
-          width: "180px",
-          height: "180px",
+          // width: "180px",
+          // height: "180px",
           objectFit: "contain",
         }}
       />
@@ -21,13 +21,13 @@ const premium_sponsors = sponsors["Premium Sponsors"].map((sponsor) => {
 
 const general_sponsors = sponsors["General Sponsors"].map((sponsor) => {
   return (
-    <div key={sponsor.id} className="mx-3">
+    <div key={sponsor.id} className="sponsor-img mx-3">
       <img
         src={sponsor["image_url"]}
         alt={sponsor.name}
         style={{
-          width: "150px",
-          height: "150px",
+          // width: "150px",
+          // height: "150px",
           objectFit: "contain",
         }}
       />
@@ -37,13 +37,13 @@ const general_sponsors = sponsors["General Sponsors"].map((sponsor) => {
 
 const community_partners = sponsors["Community Partners"].map((sponsor) => {
   return (
-    <div key={sponsor.id} className="mx-3">
+    <div key={sponsor.id} className="sponsor-img mx-3">
       <img
         src={sponsor["image_url"]}
         alt={sponsor.name}
         style={{
-          width: "96px",
-          height: "96px",
+          // width: "96px",
+          // height: "96px",
           objectFit: "contain",
         }}
       />
