@@ -125,6 +125,8 @@ nav#mobile-nav {
   transform: translateX(-100%);
 
   ul {
+    margin-top: var(--value-24);
+
     li {
       display: block;
       position: relative;
@@ -138,7 +140,7 @@ nav#mobile-nav {
       }
 
       a {
-        padding: var(--value-24) 0;
+        padding: var(--value-16) 0;
       }
 
       a:hover {
@@ -168,10 +170,18 @@ nav#mobile-nav {
   transform: translateY(0) !important;
 }
 
+.mobile-logo-banner {
+  display: none;
+}
+
 @media only screen and (max-width: 550px) {
   #main-nav {
     .logo-banner {
       display: none !important;
+    }
+
+    .mobile-logo-banner {
+      display: inline-block !important;
     }
 
     ul {

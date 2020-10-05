@@ -66,8 +66,8 @@ const Hero = () => {
         <Button className="mr-3 mb-3 main-btn" href="/tickets">
           Get Tickets
         </Button>
-        <Button className="mr-3" variant="outline" bgColor="#000000">
-          Full program (Coming soon)
+        <Button variant="outline" bgColor="#000000">
+          Full program (Soon)
         </Button>
       </div>
       <div className="wrapper">

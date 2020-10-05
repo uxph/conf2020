@@ -4,19 +4,22 @@ import { Row, Col } from "reactstrap";
 const Intro = () => {
   return (
     <section
-      className="padding-y-128 padding-top-192"
+      className="padding-y-128 padding-top-192 about-intro-section"
       data-aos="fade-up"
       data-aos-offset={500}
       data-aos-delay={300}
       data-aos-once={true}
     >
       <div className="wrapper">
-        <Row>
+        <Row id="about-intro">
           <Col md={6} xs={12} className="margin-bottom-8 text-center">
             <img
-              src={"/images/undraw_Group_chat_unwm 1.svg"}
+              src={"/images/visuals/collage-5.png"}
               alt="Placeholder"
               className="img-resizer"
+              style={{
+                borderRadius: "1rem",
+              }}
             />
           </Col>
           <Col md={6} xs={12}>

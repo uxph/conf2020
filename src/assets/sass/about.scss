@@ -74,30 +74,38 @@
     color: $primary-gray;
   }
 }
+
 @media only screen and (max-width: 550px) {
-  section {
-    position: relative;
-    padding: 48px 32px;
+  section.about-intro-section {
+    padding-top: 8rem !important;
+    padding-bottom: 2rem !important;
   }
-  .info {
-    margin: 0 !important;
-    padding: 0 !important;
+
+  section.about-info-section {
+    padding-top: 2rem !important;
+    padding-bottom: 8rem !important;
   }
-  .info-text {
-    margin: 0px 32px;
-  }
-  .info-btn {
-    position: static;
-    transform: translate(50%, 0%);
-    margin-bottom: 64px;
-  }
-  .about-hero {
-    .margin-x-64 {
-      margin: 0 !important;
-      padding: 0 !important;
+
+  #about-intro {
+    text-align: center !important;
+    .img-resizer {
+      margin-bottom: 2rem !important;
+      width: 100% !important;
     }
-    .width-512 {
-      width: 380px;
+  }
+
+  #about-info {
+    flex-direction: column-reverse;
+    text-align: center !important;
+
+    .img-resizer {
+      margin-bottom: 2rem !important;
+      width: 100% !important;
+    }
+
+    p {
+      text-align: center;
+      margin-right: 0 !important;
     }
   }
 }
