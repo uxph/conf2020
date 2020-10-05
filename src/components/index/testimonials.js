@@ -1,11 +1,22 @@
-import React from "react";
-import { Card, CardBody, Row, Col } from "reactstrap";
+import React, { useState } from "react";
+import {
+  Card,
+  CardBody,
+  Row,
+  Col,
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+} from "reactstrap";
 import testimonies from "../../data/testimonies.json";
 
-const testimonials = [[], [], []];
+const testimonials = [[], [], [], []];
+
 testimonies.forEach((test, index) => {
-  testimonials[index % 3].push(
-    <Card className="border-0 shadow margin-bottom-32" key={index}>
+  testimonials[index % 4].push(
+    <Card className="border-0 shadow margin-bottom-32 mx-auto card" key={index}>
       <CardBody>
         <p className="testimonial margin-bottom-16">
           <em>"{test.body}"</em>
@@ -16,6 +27,47 @@ testimonies.forEach((test, index) => {
 });
 
 const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === 0 ? testimonials.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  const items = testimonials.map((item, index) => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        // key={item.src}
+      >
+        <div
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `center`,
+          }}
+        >
+          {item}
+        </div>
+      </CarouselItem>
+    );
+  });
   return (
     <section
       className="testimonials-section padding-top-192 padding-bottom-128"
@@ -27,11 +79,35 @@ const Testimonials = () => {
         Why do people love UXPH Conf?
       </h2>
       <div className="wrapper">
-        <Row>
+        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+          {/* <CarouselIndicators
+            items={testimonials}
+            activeIndex={activeIndex}
+            onClickHandler={goToIndex}
+          /> */}
+          {items}
+          <CarouselControl
+            direction="prev"
+            directionText="Previous"
+            onClickHandler={previous}
+            style={{
+              backgroundColor: `red`,
+              color: `red`,
+            }}
+          />
+          <CarouselControl
+            direction="next"
+            directionText="Next"
+            onClickHandler={next}
+          />
+        </Carousel>
+        {/* {testimonials[0]} */}
+
+        {/* <Row>
           <Col>{testimonials[0]}</Col>
           <Col>{testimonials[1]}</Col>
           <Col>{testimonials[2]}</Col>
-        </Row>
+        </Row> */}
       </div>
     </section>
   );
