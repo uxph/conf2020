@@ -34,9 +34,10 @@ const AboutConference = () => {
         </p>
         <Row>
           <Col md={6} sm={12}>
+            <h3 className="text-center margin-bottom-24">UXPH CONF 2019</h3>
             <div className="video-container">
               <iframe
-                src="https://www.youtube.com/embed/EWZ5HRa2qf8"
+                src="https://www.youtube.com/embed/EWZ5HRa2qf8?rel=0&modestbranding=1&autohide=1&showinfo=0"
                 frameBorder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -46,9 +47,10 @@ const AboutConference = () => {
             </div>
           </Col>
           <Col md={6} sm={12}>
+            <h3 className="text-center margin-bottom-24">UXPH CONF 2018</h3>
             <div className="video-container">
               <iframe
-                src="https://www.youtube.com/embed/m4qL22eR0ok"
+                src="https://www.youtube.com/embed/m4qL22eR0ok?rel=0&modestbranding=1&autohide=1&showinfo=0"
                 frameBorder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -217,11 +217,11 @@ const Programme = ({
                 <h2 className="align-top m-0">{workshop.title}</h2>
               </div>
             );
-          } else if (type === "socials" || type === "concert") {
+          } else if (type === "socials") {
             return (
               <div
                 key={index}
-                className="padding-y-64 padding-right-64 special-item"
+                className="padding-y-64 padding-right-64"
                 data-aos="fade-right"
                 data-aos-delay={aos_time}
                 data-aos-offset={100}
@@ -244,12 +244,41 @@ const Programme = ({
                     </div>
                   ))}
                 </div>
-                <h2 className="text-center text-white align-top m-0">
-                  {workshop.title}
-                </h2>
-                <p className="text-center text-white mb-0">
-                  {workshop.description}
-                </p>
+                <h2 className="m-0">{workshop.title}</h2>
+                <p className="mb-0 gray">{workshop.description}</p>
+              </div>
+            );
+          } else if (type === "concert") {
+            return (
+              <div
+                key={index}
+                className="padding-y-64 padding-right-64 d-flex align-items-center"
+                data-aos="fade-right"
+                data-aos-delay={aos_time}
+                data-aos-offset={100}
+              >
+                <div className="speaker-photos margin-bottom-16">
+                  {workshop.speakers_img.map((img, index) => (
+                    <div className="mx-1">
+                      <img
+                        src={img}
+                        className="d-block margin-right-24 bg-white"
+                        style={{
+                          width: "8rem",
+                          height: "8rem",
+                          objectFit: "cover",
+                          borderRadius: "100%",
+                        }}
+                        key={index}
+                        alt={workshop.speakers_names}
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <h2 className="m-0">{workshop.title}</h2>
+                  <p className="mb-0 gray">{workshop.description}</p>
+                </div>
               </div>
             );
           }
@@ -308,12 +337,17 @@ const Programme = ({
               <p className="red mb-0">
                 <strong>by {target_speaker.name}</strong>
               </p>
-              <p className="red">
-                {target_speaker.position} at {target_speaker.company}
-              </p>
-              <p className="gray workshop-description">
-                {workshop.description}
-              </p>
+              {!target_speaker.disabled && (
+                <p className="red">
+                  {target_speaker.position} at {target_speaker.company}
+                </p>
+              )}
+
+              {target_speaker.id !== 0 && (
+                <p className="gray workshop-description">
+                  {workshop.description}
+                </p>
+              )}
               {workshop.description.join("") !== "TBD" && (
                 <Button
                   variant="outline"

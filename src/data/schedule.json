@@ -211,7 +211,10 @@
       "title": "UXPH x Design Buddies",
       "description": ["Socials with Design Buddies"],
       "speaker_id": 0,
-      "speakers_img": ["/images/logos/uxph_icon.png"],
+      "speakers_img": [
+        "/images/logos/uxph_icon.png",
+        "https://lh3.googleusercontent.com/pw/ACtC-3eqyqRolvbTAChibtbtDkPv_ar_E-2kIA__pNqvRtOyWn1Mlx6l6ew-can36IcQ85TrLQegrj9ZumyQeW6ydcwjNw_LRHadVZSkAqNAbFFlaV9cv84ZI7dyIrOw74HWv4ZhzovvdvQS7sFKebaEFzgr=s720-no?authuser=1"
+      ],
       "workshop": []
     }
   ],
@@ -281,7 +284,7 @@
       "type": "Workshop",
       "title": "Basic Data Analytics",
       "description": ["TBD"],
-      "speaker_id": 0,
+      "speaker_id": 25,
       "workshop": []
     },
     {
