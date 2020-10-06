@@ -292,3 +292,30 @@ section {
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .speakers-section {
+    .speakers-list {
+      .speakers-thumbnail {
+        width: 110px !important;
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+
+        .speakers-avatar {
+          margin: 0 auto !important;
+          margin-bottom: 1rem !important;
+          width: 80px !important;
+
+          img {
+            width: 80px !important;
+            height: 80px !important;
+          }
+        }
+      }
+
+      .company-img {
+        width: 64px !important;
+      }
+    }
+  }
+}

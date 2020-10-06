@@ -23,19 +23,22 @@ const Intro = () => {
             />
           </Col>
           <Col md={6} xs={12}>
+            <h2 className="margin-bottom-32">About UXPH</h2>
             <p
               className="line-height-32"
               style={{
                 fontSize: "1.125rem",
               }}
             >
-              UXPH (User Experience Philippines) is a Filipino non-profit
-              organization that hosts the largest network of design
-              professionals, enthusiasts, and students in the Philippines. Since
-              2012, we have been building towards a more mature, collaborative,
-              and design-driven country through hosting online and offline
-              community initiatives, conferences, and programs within local
-              design and technology communities.
+              <a href="https://www.uxph.org/" className="red" target="blank">
+                UXPH (User Experience Philippines)
+              </a>{" "}
+              is a Filipino non-profit organization that hosts the largest
+              network of design professionals, enthusiasts, and students in the
+              Philippines. Since 2012, we have been building towards a more
+              mature, collaborative, and design-driven country through hosting
+              online and offline community initiatives, conferences, and
+              programs within local design and technology communities.
             </p>
           </Col>
         </Row>

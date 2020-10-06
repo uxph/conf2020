@@ -22,7 +22,7 @@ const Intro = () => {
             >
               UXPH has become the country’s hub for sharing information,
               resources, and building networks in the design community. As of
-              2020, the UXPH community has over 4,000 local and international
+              2020, the UXPH community has over 5,000+ local and international
               members from a wide range of industries related to technology and
               even traditional businesses.
             </p>

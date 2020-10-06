@@ -94,7 +94,7 @@ const TicketForm = () => {
   const [clientKey, setClientKey] = useState(null);
 
   // Other tracking values
-  const [subscribed, setSubscribed] = useState(false);
+  const [subscribed, setSubscribed] = useState(true);
 
   const monthOptions = new Array(12).fill(0).map((x, index) => (
     <option value={index + 1} key={index}>
@@ -1112,12 +1112,11 @@ const TicketForm = () => {
               <FormGroup check inline className="px-2">
                 <Label check>
                   <Input
+                    checked={subscribed}
                     type="checkbox"
                     onChange={() => setSubscribed(!subscribed)}
                   />
-                  <span>
-                    It's okay to send me emails about UXPH events and activities
-                  </span>
+                  <span>Send me emails about UXPH events and activities</span>
                 </Label>
               </FormGroup>
             </Form>

@@ -132,7 +132,7 @@ const Inquiries = () => {
         data-aos-once={true}
       >
         <div className="margin-bottom-64">
-          <h3 className="font-size-24">{item.question}</h3>
+          <h3 className="font-size-24 margin-bottom-16">{item.question}</h3>
           {answers}
         </div>
       </Col>

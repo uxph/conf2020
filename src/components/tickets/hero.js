@@ -8,7 +8,7 @@ const Hero = () => {
       data-aos-duration={500}
       data-aos-once={true}
     >
-      <h2 className="text-white margin-bottom-24 text-uppercase">
+      <h2 className="text-white margin-bottom-192 text-uppercase">
         Get tickets
       </h2>
     </section>

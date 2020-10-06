@@ -43,7 +43,7 @@ const Hero = () => {
         </h1>
         <p className="margin-bottom-64">
           We designers are at the forefront of digital transformation <br />
-          and inciting positive change that lasts
+          and inciting positive change that lasts.
         </p>
       </Container>
       <Card id="about-cta">

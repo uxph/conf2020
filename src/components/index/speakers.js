@@ -67,6 +67,7 @@ const Speakers = () => {
                   }`,
                   filter: "grayscale(100%)",
                 }}
+                className="company-img"
               />
             </div>
           </div>

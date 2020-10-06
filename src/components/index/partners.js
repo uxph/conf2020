@@ -29,8 +29,8 @@ const general_sponsors = sponsors["General Sponsors"].map((sponsor) => {
           src={sponsor["image_url"]}
           alt={sponsor.name}
           style={{
-            width: "128px",
-            height: "128px",
+            width: "100px",
+            height: "100px",
             objectFit: "contain",
           }}
         />
