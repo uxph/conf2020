@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 h1,
@@ -21,13 +20,13 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
   font-weight: bold !important;
 }
 
 p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
 }
 
 h1 {

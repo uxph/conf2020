@@ -2,6 +2,18 @@
 
 .faq-hero {
   @include hero;
+  p {
+    color: $primary-gray;
+    line-height: 33px;
+    font-weight: lighter;
+    font-style: normal;
+    font-weight: normal;
+
+    span {
+      color: $secondary-blue;
+      font-weight: bold;
+    }
+  }
 }
 
 .query-question {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card as ReactStrapCard } from "reactstrap";
 
-const Card = ({ children, className = "", style = "" }) => {
+const Card = ({ children, className = "", style = null }) => {
   return (
     <ReactStrapCard
       className={`card-outer-layer hero-card shadow border-0 ${className}`}

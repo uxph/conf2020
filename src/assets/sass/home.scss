@@ -53,6 +53,7 @@ section {
   &-thumbnail {
     position: relative;
     transition: ease all 0.3s;
+    max-width: 200px;
   }
 
   &-thumbnail:hover {
@@ -63,9 +64,14 @@ section {
   &-section {
     width: 100%;
 
+    h3 {
+      max-width: 100%;
+    }
+
     p {
       font-size: 12px;
       color: rgba(0, 0, 0, 0.6);
+      max-width: 100%;
 
       span {
         font-weight: bold;
@@ -76,17 +82,18 @@ section {
   &-avatar {
     border-radius: 100%;
     width: 166px;
-    height: 166px;
     background-color: $primary-white;
     margin: 0 auto 8px;
   }
   &-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     div div {
       margin: 0px 16px 8px;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -109,21 +116,6 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
-    &__item {
-      width: 180px;
-      height: 180px;
-      line-height: 180px;
-      margin: 12px 18px;
-      text-align: center;
-
-      img {
-        width: 90%;
-        vertical-align: middle;
-        display: inline-block;
-        height: auto;
-      }
-    }
   }
 }
 
@@ -137,23 +129,29 @@ section {
 }
 
 .speaker-modal {
-  width: 100%;
-  height: 100%;
-  left: 0;
+  width: 70vw;
+  height: 80vh;
+  // position: fixed;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  // background: url(/images/section-transition.svg), #fff;
+  // background-attachment: scroll !important;
+  // background-size: 100%;
+  // background-repeat: no-repeat;
   top: 0;
-  background: url(/images/section-transition.svg), #fff;
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  position: fixed;
   overflow-y: scroll;
-  z-index: 999;
+  overflow-x: hidden !important;
 
+  z-index: 9999 !important;
   h3 {
     color: $primary-gray;
   }
 }
+.modal-container {
+  overflow-y: scroll;
 
+  // height: 27.5vh;
+}
 .overwrite-modal {
   border: none;
 }
@@ -182,5 +180,115 @@ section {
   iframe {
     width: 100%;
     height: 100%;
+  }
+}
+
+.card {
+  width: 45%;
+}
+.sponsor-img img {
+  width: 150px;
+}
+
+.community-partner img {
+  width: 90px;
+  height: 90px;
+}
+
+@media only screen and (max-width: 800px) {
+  .speaker-modal {
+    width: 90vw;
+    height: 90vh;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .main-header {
+    font-size: 10px !important;
+    padding: 96px 16px !important;
+
+    #headline {
+      width: 100% !important;
+    }
+
+    .main-btn {
+      margin-right: 0 !important;
+    }
+  }
+  section {
+    position: relative;
+    padding: 48px 32px;
+  }
+
+  .about-conf-text p {
+    font-size: 16px !important;
+  }
+
+  .partners-section {
+    padding-top: 128px !important;
+    h2 {
+      font-size: 24px !important;
+    }
+  }
+
+  .testimonials-section {
+    padding-top: 128px !important;
+    h2 {
+      font-size: 24px !important;
+    }
+  }
+
+  .aboutconf-section {
+    h2 {
+      font-size: 24px !important;
+    }
+    h3 {
+      font-size: 24px !important;
+    }
+  }
+
+  .speakers-section {
+    h2 {
+      font-size: 24px !important;
+    }
+
+    .speakers-list {
+      .speakers-thumbnail {
+        width: 166px !important;
+        .speakers-avatar {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .partners-list .sponsor-img img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .speakers-section {
+    .speakers-list {
+      .speakers-thumbnail {
+        width: 140px !important;
+
+        .speakers-avatar {
+          margin: 0 auto !important;
+          margin-bottom: 1rem !important;
+          width: 100px !important;
+
+          img {
+            width: 100px !important;
+            height: 100px !important;
+          }
+        }
+      }
+    }
   }
 }

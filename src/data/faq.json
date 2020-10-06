@@ -1,42 +1,90 @@
 [
   {
-    "question": "Do participants need to bring anything for the workshop?",
-    "answer": "Always bring a pen or pencil and paper to take notes. Specific requirements for each workshop will be announced to email attendees and on the website. Internet will be provided in the venue.",
-    "category": "Ticketing System"
+    "question": "What is the UXPH Conference 2020?",
+    "answer": [
+      "The **UXPH CONF 2020**, now in its 5th year, is a **2-day virtual conference** filled with talks and workshops for Experience Designers, enthusiasts, and problem solvers happening on **November 14-15, 2020. This is a paid online event.**",
+      "Join us as we learn from and connect with leaders of the local and international UX Community to cover **research methodologies, design management and methods, applications**, and many other topics to help your team grow as professionals."
+    ]
   },
   {
-    "question": "Are tickets refundable or transferrable?",
-    "answer": "Tickets are non-refundable, but are transferable. Please send us an email to info@uxph.org and cc the details of the attending participants.",
-    "category": "Ticketing System"
+    "question": "Who can attend the conference?",
+    "answer": [
+      "The event is open to UX practitioners and enthusiasts new and seasoned, and all over the world! If you love design or are curious about it, this event would be a great place to start and get inspired."
+    ]
   },
   {
-    "question": "Will lunch be served during the event?",
-    "answer": "No, lunch is not provided as part of the event. Our tickets are affordably priced to provide access to speakers, workshops, basic workshop materials, and some awesome UXPH swag. You may bring food and drinks inside the venue. Just remember to practice Clean As You Go (CLAYGO)!",
-    "category": "Ticketing System"
+    "question": "How do I buy tickets?",
+    "answer": [
+      "We accept online credit card payments and bank transfers (for banks in the Philippines only). Click here to buy tickets and follow the instructions provided. [LINK]"
+    ]
   },
   {
-    "question": "Will you provide certificates?",
-    "answer": "Yes! We have an awesome certificate to give to each attendee at the event. To avail of it, you’ll need to fill up a feedback form at the event before we present you with the digital copy.",
-    "category": "Ticketing System"
+    "question": "Do you have bulk discounts?",
+    "answer": [
+      "After the Super Early Bird sales, we offer bulk prices to groups of 10 or more (the price will equate to the Super Early Bird tickets). Purchase must be made at the same time. Stay tuned for more details."
+    ]
   },
   {
-    "question": "How can I get a ticket? How much are they?",
-    "answer": "Tickets are available online via Eventbrite using PayPal. Prices vary according per event and are announced online. A voucher will be sent to your email - please present a printed or digital copy on the event day.",
-    "category": "Ticketing System"
+    "question": "What do I need to access the virtual conference?",
+    "answer": [
+      "All you need is a screen (laptop, desktop, or smartphone) and stable internet connection to access the virtual conference! The event will be hosted on a platform where you can also interact with other members, as well as a conference Slack channel."
+    ]
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Onlinehustle"
+    "question": "Will the conference be in English?",
+    "answer": ["Yes. The entire program is in English."]
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Initiation Rights"
+    "question": "When will the schedule be posted?",
+    "answer": [
+      "The team is currently working on bringing the best roster of speakers in the next few weeks. Stay tuned! We'll be following **Southeast Asia GMT+8** timezone."
+    ]
   },
   {
-    "question": "How can I get a ticket?",
-    "answer": "No",
-    "category": "Hooking Into Wifi"
+    "question": "What does a conference ticket include?",
+    "answer": [
+      "Your conference ticket includes access to:",
+      "- All talks, workshops, panels, resources, and social sessions on Nov 14-15. Recordings of all talks will be made accessible even after the conference until December 2020.",
+      "- The **UXPH Conf 2020 Slack group** where you can engage with the speakers and connect with fellow attendees.",
+      "- **A very special segment at the end of the conference**. You're going to want to have good audio for this! 🎧",
+      "- **E-certificate of attendance** to UXPH Conf 2020.",
+      "- **Digital Swagbag** filled with exclusive discounts and promos from our partners."
+    ]
+  },
+  {
+    "question": "Will the talks be recorded / slides shared?",
+    "answer": [
+      "Yes, all conference talks will be recorded and made accessible once the conference ends. We will also share the respective speakers' slides if they allow it. Please do not ask the speakers directly for any of these resources."
+    ]
+  },
+  {
+    "question": "What's the cancellation / refund policy?",
+    "answer": [
+      "We don’t offer refunds but you can transfer the ticket to a colleague or friend. Please email us about your ticket transfer request at **conference@uxph.org**. Any ticket transfers must be made at least **48 hours before the event starts**."
+    ]
+  },
+  {
+    "question": "Can I still purchase tickets on the same day of the event?",
+    "answer": [
+      "Tickets can be purchased up until **November 12th**, but you're going to want to prepare for it and get familiar with the platform ahead of time. Don't leave this till the last minute!"
+    ]
+  },
+  {
+    "question": "Will you provide a certificate of attendance?",
+    "answer": [
+      "Yes. Stay tuned for more details on how to receive one after the conference."
+    ]
+  },
+  {
+    "question": "Are there any rules?",
+    "answer": [
+      "UXPH enforces a strict code of conduct at all of our events. Please view it [here](https://www.uxph.org/code-of-conduct/)."
+    ]
+  },
+  {
+    "question": "I have a question that wasn’t answered here.",
+    "answer": [
+      "You can shoot us an email at **conference@uxph.org** or send us a message in the chat window."
+    ]
   }
 ]

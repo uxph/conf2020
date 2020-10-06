@@ -1,0 +1,40 @@
+@media only screen and (max-width: 550px) {
+  .speaker-modal {
+    padding-left: var(--value-16) !important;
+    padding-right: var(--value-16) !important;
+
+    .speaker-content {
+      flex-direction: column-reverse !important;
+
+      * {
+        text-align: center !important;
+      }
+
+      .socmedList-speaker {
+        a {
+          margin: 0 var(--value-16) !important;
+        }
+      }
+    }
+
+    .modal-avatar {
+      width: 100% !important;
+      height: 100% !important;
+
+      img {
+        width: 166px !important;
+        height: 166px !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+
+    .speaker-name {
+      font-size: 32px !important;
+    }
+
+    .speaker-position {
+      font-size: 18px !important;
+      color: var(--red) !important;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "./mixins.scss";
+
+.faq-hero {
+  @include hero;
+}
+
+.day-button {
+  font-size: 0.875rem !important;
+  letter-spacing: 0.1rem;
+  padding: 0.875rem 0.5rem !important;
+}
+
+.pre-conf-button {
+  font-size: var(--value-12) !important;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem !important;
+  text-align: center !important;
+
+  span {
+    display: block;
+  }
+}
+
+.strip {
+  border-color: #f4f4f4 !important;
+}
+
+.lunch-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.workshop-item {
+  .workshop-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: var(--value-32);
+  }
+}
+
+h2,
+h3,
+h4,
+h6 {
+  text-transform: unset;
+}

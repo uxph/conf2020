@@ -2,7 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <header className="padding-top-96 padding-bottom-256 text-center partner-hero">
+    <header
+      className="padding-top-96 padding-bottom-256 text-center partner-hero"
+      data-aos="fade"
+      data-aos-duration={500}
+      data-aos-once={true}
+    >
       <div className="wrapper" id="call-for-speakers-header">
         <a href="/">
           <img

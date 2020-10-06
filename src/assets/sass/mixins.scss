@@ -11,7 +11,7 @@ $primary-white: #fff;
   background-size: 100%, cover;
   background-position: bottom, top;
   background-repeat: no-repeat;
-  background-attachment: scroll, fixed;
+  background-attachment: scroll, scroll;
   width: 100%;
   height: 100%;
   position: relative;
@@ -20,9 +20,11 @@ $primary-white: #fff;
 @mixin section-blue {
   color: $primary-white;
   background: url(/images/section-transition.svg),
-    url(/images/section-transition--main.svg), $secondary-blue;
+    url(/images/section-transition--main.svg),
+    url(/images/backgrounds/dark-background.svg);
   background-size: 100%;
-  background-position: top, bottom;
+  background-position: top, bottom, top;
+  background-attachment: scroll, scroll, local;
   background-repeat: no-repeat;
 }
 
@@ -31,8 +33,9 @@ $primary-white: #fff;
   font-family: "Work Sans";
   font-size: 16px;
   background: url(/images/section-transition.svg),
-    url(/images/section-transition--main.svg), $primary-white;
-  background-size: 100%;
-  background-position: top, bottom;
+    url(/images/section-transition--main.svg),
+    url(/images/backgrounds/light-background.svg), $primary-white;
+  background-size: 100%, 100%, cover;
+  background-position: top, bottom, top;
   background-repeat: no-repeat;
 }
