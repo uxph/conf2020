@@ -93,6 +93,10 @@ function SEO({ description, lang, meta, title }) {
           },
           {
             name: `twitter:card`,
+            content: `summary_large_image`,
+          },
+          {
+            name: `twitter:image`,
             content: `https://uxph.org/assets/images/og_cover_conf2020.jpg`,
           },
           {

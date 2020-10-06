@@ -18,7 +18,12 @@
     "percent": 0.1,
     "solid": null
   },
-
+  
+  "uxph2020invision": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
   "uxph2020adp": {
     "percent": 0.1,
     "solid": null
