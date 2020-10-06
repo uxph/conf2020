@@ -54,7 +54,7 @@ const ListSponsors = ({
     >
       <Container>
         <h3 className="margin-bottom-32 font-size-32 text-center">{heading}</h3>
-        <Row>{listTier}</Row>
+        <Row className="justify-content-center">{listTier}</Row>
       </Container>
     </div>
   );

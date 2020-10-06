@@ -195,7 +195,7 @@
         },
         {
           "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
-          "icon": "fa fa-youtube"
+          "icon": "fa fa-youtube-play"
         }
       ]
     },
@@ -325,21 +325,6 @@
     },
     {
       "id": 2,
-      "name": "Eskwelabs",
-      "description": [
-        "Eskwelabs is an online data upskilling school in the Philippines. Our mission is to drive social mobility in the future of work through data skills education. And we do that through bringing together the best of online & community-based learning to achieve affordability for in-demand digital and data skills, job outcomes at different skills levels, and a peer community to promote lifelong learning."
-      ],
-      "image_url": "/images/sponsors/eskwelabs.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://www.facebook.com/Eskwelabs",
-          "icon": "fa fa-facebook-square"
-        }
-      ]
-    },
-    {
-      "id": 3,
       "name": "Icebreaker",
       "description": [
         "Icebreaker is an online event platform that connects everyone at your company, university, or community — even while working remotely. Build community, culture, and connection today."
@@ -354,7 +339,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "PayMongo",
       "description": [
         "PayMongo is a payment platform for the modern business that allows anyone to easily accept online payments from their customers online via credit cards, e-wallets and over-the-counter."
@@ -369,7 +354,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "UXR Collective",
       "description": [
         "UXR Collective is the best place to learn about UX research. Sign up today for new research talks, case studies, and shows published every week for just $12/month."
@@ -388,6 +373,34 @@
         {
           "url": "https://www.linkedin.com/company/11234935",
           "icon": "fa fa-linkedin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Design Center of the Philippines",
+      "description": [
+        "The Design Center of the Philippines is the country’s leading agency committed to cultivating a culture that thrives on creativity, value creation, and innovation.",
+        "Design Center’s efforts go beyond promoting the value of good design and onto inspiring creative industries to create human-centered products, services, and spaces that make an impact in the Philippines and in the world. From enhancing human experiences to enabling inclusive and sustainable economic growth, we ensure that design plays its role as a creative, strategic, and innovative tool for positive development."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fWZzFYAjA7KcIhIlyh8rJpx0gn7oxcPKfXt2mSLZl6oxqKAnXSBq2-nsWzXYDmTysPnoajOJBwTem-9C8j6iP5_5T5BNxXgXsdKGjlohHyamr5ZK63c_BM09-pwFiuJNB-hHoYLA0uxbr7cO_u-YoT=s240-no?authuser=1",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/DTI.DesignCenterPH/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/DTIDesignCenter",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/dti.designcenterph/",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCpjn_P9AD5W5q-9lzP5RtxQ/videos",
+          "icon": "fa fa-youtube-play"
         }
       ]
     }
