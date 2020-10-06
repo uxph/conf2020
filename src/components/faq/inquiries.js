@@ -131,7 +131,7 @@ const Inquiries = () => {
         data-aos-offset={200}
         data-aos-once={true}
       >
-        <div className="margin-bottom-64">
+        <div className="margin-bottom-64 inquiries">
           <h3 className="font-size-24 margin-bottom-16">{item.question}</h3>
           {answers}
         </div>
@@ -151,7 +151,11 @@ const Inquiries = () => {
           >
             Can’t find an answer? Send us a message at{" "}
             <strong>
-              <span className="red">conference@uxph.org</span>
+              <span>
+                <a className="red" href="mailto:conference@uxph.org">
+                  conference@uxph.org
+                </a>
+              </span>
             </strong>
           </p>
         </div>

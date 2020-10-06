@@ -41,7 +41,7 @@ const Hero = () => {
         <h1 className="font-size-32 text-white margin-bottom-24">
           About the Conference
         </h1>
-        <p className="margin-bottom-64">
+        <p className="margin-bottom-64 text-white">
           We designers are at the forefront of digital transformation <br />
           and inciting positive change that lasts.
         </p>

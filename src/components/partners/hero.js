@@ -18,7 +18,7 @@ const Hero = () => {
       >
         <h2 className="text-white margin-bottom-24">Our Partners & Sponsors</h2>
         <p
-          className="margin-bottom-48"
+          className="margin-bottom-48 text-white"
           style={{
             fontSize: "1rem",
           }}
@@ -29,7 +29,7 @@ const Hero = () => {
           borders. <br />
         </p>
         <p
-          className="margin-bottom-48"
+          className="margin-bottom-48 text-white"
           style={{
             fontSize: "1rem",
           }}
