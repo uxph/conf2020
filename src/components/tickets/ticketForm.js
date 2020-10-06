@@ -729,9 +729,13 @@ const TicketForm = () => {
                         <br />
                         <strong>Bank:</strong> Unionbank of the Philippines
                         <br />
-                        <strong>Account Name:</strong> Janyl Tamayo
+                        <strong>Account Name:</strong> UXPH Design Society Inc.
                         <br />
-                        <strong>Account number:</strong> 1094 2245 4557
+                        <strong>Account number:</strong> 0014-9000-6014
+                        <br />
+                        <strong>Email:</strong> conference@uxph.org
+                        <br />
+                        <strong>Contact:</strong> +63 967 301 6561
                       </li>
                       <li>
                         Take a screenshot of the transfer and click CHECKOUT.
