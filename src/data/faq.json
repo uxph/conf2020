@@ -18,7 +18,7 @@
   {
     "question": "How do I buy tickets?",
     "answer": [
-      "We accept online credit card payments and bank transfers (for banks in the Philippines only). Click here to buy tickets and follow the instructions provided. [LINK]"
+      "We accept online credit card payments and bank transfers (for banks in the Philippines only). [Click here](https://2020.uxph.org/tickets) to buy tickets and follow the instructions provided."
     ]
   },
   {
@@ -82,12 +82,6 @@
     "question": "Are there any rules?",
     "answer": [
       "UXPH enforces a strict code of conduct at all of our events. Please view it [here](https://www.uxph.org/code-of-conduct/)."
-    ]
-  },
-  {
-    "question": "I have a question that wasn’t answered here.",
-    "answer": [
-      "You can shoot us an email at **conference@uxph.org** or send us a message in the chat window."
     ]
   }
 ]
