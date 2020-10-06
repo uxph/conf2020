@@ -160,7 +160,9 @@
     "id": 4,
     "name": "Dae Lee",
     "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cKmVORPVyUnrUA49jOVtT1gk1JphavZCVWp1De0M0dsi0YCI3--H8IoE1pTgeO08ebN1b12IeM0uX7dVwVB5s2F0TESZ79_7k2Se6L7hcLkJi0nUsjsKrmUtgA9ckl1jEJUFQJDL7LAtW7ArAAwJzv=s580-no?authuser=2",
-    "bio": ["Coming Soon!"],
+    "bio": [
+      "Dae is currently the Managing Partner of Fourth Wall that specializes in Company Culture Design. He focuses on behavior and information to build shared cultures for organizations to reach and sustain their peak potential. He has the goal of making each member of an organization stay because they want to and not because they have to. His human-centered approach emanates from deep-seated empathy and disciplined structure from his design background, further cemented through an understanding of the human psyche through intensive practice of military psychology under the United Nations Armistice Commission. He is certified in the LEGO® Serious Play® Method and is currently facilitating lectures and workshops internationally. "
+    ],
     "social_media": [
       {
         "url": "https://www.linkedin.com/in/daehyuklee/",
@@ -316,7 +318,7 @@
     "position": "Experience Design Director",
     "company": "McKinsey Design",
     "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3dljmSeD3eGy8kdkVyjoyaZn-tjcywsX7wyB1X9DkpS1C7sCDG9GW2Ng-2fSSwQd3VXc5dyAQh34ZQxuktuIGnW_2LLtqTY5uSikfQMAp9fOUpzk0r2_Tm2jhUTOpHsL8BrWb2owfqQm411BsJ4zfxH=w1978-h690-no?authuser=1",
-    "disabled": false
+    "disabled": true
   },
   {
     "id": 15,
@@ -344,9 +346,7 @@
     "name": "Markus Hofmann",
     "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fo_RyXUddlfd3FywZu1gJsHzlarzRgr7X_GJlDV3Vn3FOUnemsCpkSUqrwQCc4-p0RONZT0bHZwWDdcThMoDugFYslqLKLvM_qhLD78K8x4tUZVNmnPMsUdPYUmIzJ2s-URtKEARgEdCrKTN6Thrz0=s657-no?authuser=0",
     "bio": [
-      "Markus is currently focusing on the fascinating possibilities of AR/VR and is slowly shifting towards consulting. In the recent years, he built up diverse UX design and research teams, hired a dozen UXers internationally, performed research from Africa to China, and shaped product vision & strategy for products with millions of users.",
-
-      "He started his first web design company while still in school. Since then, he got to experience everything from development to more product-focused roles across industries, from startups to multi-national corporations."
+      "Markus started his first web design company in 2001 while still in school. Since then, he got to experience everything from development to more product-focussed roles across industries from startups to multinational corporations. In recent years, he built up diverse UX design and research teams hiring a dozen UXers internationally, performed research from Africa to China, and shaped product vision and strategy for products with millions of users. Recently, he has been focusing more on the fascinating possibilities of AR/VR and slowly shifting towards consulting."
     ],
     "social_media": [
       {
@@ -474,7 +474,8 @@
     ],
     "position": "Senior UX Researcher",
     "company": "Shopify",
-    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c06zwJkvrZtj3DFv76duWq6Ov6UWDqgzuB8I8q5MnQTCBcyy8CtXfXDMFGYR_YF564ahade-3E_NkX8KFQJ5FIgx2mGz-wBuOYhG06VfH6j88n-rQRV4vwDTR6HaOvYTNNAYN8qebfV9KDRRRyacTN=w1317-h429-no?authuser=0"
+    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c06zwJkvrZtj3DFv76duWq6Ov6UWDqgzuB8I8q5MnQTCBcyy8CtXfXDMFGYR_YF564ahade-3E_NkX8KFQJ5FIgx2mGz-wBuOYhG06VfH6j88n-rQRV4vwDTR6HaOvYTNNAYN8qebfV9KDRRRyacTN=w1317-h429-no?authuser=0",
+    "disabled": true
   },
   {
     "id": 28,
@@ -497,7 +498,8 @@
     ],
     "position": "Senior UX Researcher",
     "company": "Shopify",
-    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c06zwJkvrZtj3DFv76duWq6Ov6UWDqgzuB8I8q5MnQTCBcyy8CtXfXDMFGYR_YF564ahade-3E_NkX8KFQJ5FIgx2mGz-wBuOYhG06VfH6j88n-rQRV4vwDTR6HaOvYTNNAYN8qebfV9KDRRRyacTN=w1317-h429-no?authuser=0"
+    "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3c06zwJkvrZtj3DFv76duWq6Ov6UWDqgzuB8I8q5MnQTCBcyy8CtXfXDMFGYR_YF564ahade-3E_NkX8KFQJ5FIgx2mGz-wBuOYhG06VfH6j88n-rQRV4vwDTR6HaOvYTNNAYN8qebfV9KDRRRyacTN=w1317-h429-no?authuser=0",
+    "disabled": true
   },
   {
     "id": 29,
