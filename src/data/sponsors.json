@@ -406,13 +406,13 @@
     },
     {
       "id": 6,
-      "name": "Invisio",
+      "name": "InVision",
       "description": ["Coming Soon!"],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cmsdQt7v2GrBxyqykPY7hytpdcXI4cl2KoWHt2lXrPxZoNEozcPeGk_Q8XVVtAuwGV0OQYbBz67Z5-trq6QEeYjPlwtUszTSrhVghfLsv1uCozif36DgLNFPEJaj7jfccIIXC-g42CiQFxkc9c5ESf=w1000-h335-no?authuser=2",
       "website_url": "#",
       "social_media": [
         {
-          "url": "https://invisio.com/",
+          "url": "https://www.invisionapp.com/",
           "icon": "fa fa-globe"
         }
       ]
