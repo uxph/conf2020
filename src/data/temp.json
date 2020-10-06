@@ -14,7 +14,23 @@
       "icon": "fa fa-facebook-square"
     }
   ]
+},    
+{
+  "id": 2,
+  "name": "Eskwelabs",
+  "description": [
+    "Eskwelabs is an online data upskilling school in the Philippines. Our mission is to drive social mobility in the future of work through data skills education. And we do that through bringing together the best of online & community-based learning to achieve affordability for in-demand digital and data skills, job outcomes at different skills levels, and a peer community to promote lifelong learning."
+  ],
+  "image_url": "/images/sponsors/eskwelabs.png",
+  "website_url": "#",
+  "social_media": [
+    {
+      "url": "https://www.facebook.com/Eskwelabs",
+      "icon": "fa fa-facebook-square"
+    }
+  ]
 },
+
 {
   "id": 2,
   "name": "Smart Communications, Inc.",
