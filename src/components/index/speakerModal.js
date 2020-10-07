@@ -19,7 +19,7 @@ const SpeakerModal = (props) => {
     const bio = speakerKey.bio.map((item, index) => {
       return (
         <p
-          className="font-size-16 margin-bottom-16"
+          className="font-size-16 margin-bottom-16 text-block"
           style={{ lineHeight: "30px" }}
           key={index}
         >

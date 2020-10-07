@@ -6,20 +6,20 @@ const AboutConference = () => {
     <section className="aboutconf-section">
       <div className="wrapper mb-5 about-conf-text">
         <h2 className="text-center margin-bottom-32">What is UXPH CONF?</h2>
-        <p className="text-center">
+        <p className="text-center text-block">
           <strong>The UXPH CONF</strong>, now in its 5th year, is a 2-day online
           event filled with talks and workshops for{" "}
           <strong>Experience Designers</strong>, <strong>enthusiasts</strong>,
           and <strong>problem-solvers</strong>.
         </p>
-        <p className="text-center">
+        <p className="text-center text-block">
           This year, we look back at how designers adapted and thrived when the
           way we work and go about life was transformed. Looking to the future,
           what can we learn from their experience? How can we help our teams
           navigate the constant change in the world as we design products and
           services that have a lasting impact?
         </p>
-        <p className="text-center">
+        <p className="text-center text-block">
           We invite you to join us this <strong>November 14</strong> and{" "}
           <strong>15, 2020</strong> in learning from and connecting with leaders
           in the local and international UX community, as we cover{" "}
@@ -29,7 +29,7 @@ const AboutConference = () => {
         </p>
       </div>
       <div className="wrapper">
-        <p className="text-center margin-bottom-24 font-weight-bold">
+        <p className="text-center margin-bottom-24 font-weight-bold text-block">
           Check out our past conferences:
         </p>
         <Row>

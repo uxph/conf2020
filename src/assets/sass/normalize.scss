@@ -52,8 +52,6 @@ div.wrapper {
 
 p {
   word-break: break-word;
-  font-size: 1.3rem !important;
-  line-height: 2rem !important;
 }
 
 a {
@@ -83,4 +81,9 @@ ul {
 
 .red {
   color: var(--red) !important;
+}
+
+.text-block {
+  font-size: 1.3rem !important;
+  line-height: 2rem !important;
 }

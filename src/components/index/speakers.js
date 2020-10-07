@@ -51,7 +51,7 @@ const Speakers = () => {
             <p
               className="text-center font-size-16"
               style={{
-                fontSize: "0.875rem",
+                fontSize: "1rem",
               }}
             >
               {speaker.position} <br />

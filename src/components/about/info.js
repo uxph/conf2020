@@ -15,7 +15,7 @@ const Intro = () => {
         >
           <Col md={6} xs={12} className="margin-bottom-24">
             <p
-              className="line-height-32 margin-right-32 margin-bottom-32"
+              className="line-height-32 margin-right-32 margin-bottom-32 text-block"
               style={{
                 fontSize: "1.125rem",
               }}

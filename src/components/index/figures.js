@@ -10,7 +10,9 @@ const Figures = () => {
     return (
       <Col xs={12} md={3} key={index} data-aos="fade-in" data-aos-delay={time}>
         <h1 className="text-center text-white">{figure.header}</h1>
-        <p className="text-center margin-x-16 text-white">{figure.body}</p>
+        <p className="text-center margin-x-16 gray font-weight-bold text-uppercase text-block">
+          {figure.body}
+        </p>
       </Col>
     );
   });
