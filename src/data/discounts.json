@@ -3,6 +3,31 @@
     "percent": 0.1,
     "solid": null
   },
+  
+  "uxph2020quadx": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020uxtio": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020make": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020qbo": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020smart": {
+    "percent": 0.1,
+    "solid": null
+  },
 
   "uxph2020comet": {
     "percent": 0.1,
@@ -19,11 +44,6 @@
     "solid": null
   },
   
-  "uxph2020invision": {
-    "percent": 0.1,
-    "solid": null
-  },
-  
   "uxph2020adp": {
     "percent": 0.1,
     "solid": null
@@ -35,6 +55,21 @@
   },
 
   "uxph2020spnsr": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020anyok": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020paymongo": {
+    "percent": 0.1,
+    "solid": null
+  },
+  
+  "uxph2020grocerg": {
     "percent": 0.1,
     "solid": null
   },
