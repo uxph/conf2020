@@ -1,0 +1,40 @@
+div#back-to-top {
+  position: fixed;
+  padding: 1em 1.1em;
+  z-index: 999;
+  bottom: 19pt;
+  right: 72pt;
+  cursor: pointer;
+  color: white;
+  border: 2px solid var(--red);
+  border-radius: 100%;
+  background-color: var(--red);
+  transition: ease all 0.5s;
+}
+
+div#back-to-top.hide {
+  right: -8em;
+}
+
+div#back-to-top:hover {
+  background-color: var(--dark-red);
+  border-color: var(--dark-red);
+}
+
+div#back-to-top i {
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  #back-to-top {
+    bottom: 75pt !important;
+    right: 20pt !important;
+  }
+
+  #back-to-top.hide {
+    right: -8em !important;
+  }
+}

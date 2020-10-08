@@ -12,12 +12,14 @@ import Footer from "./footer";
 import "../assets/sass/main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import InnerHTML from "dangerously-set-html-content";
+import $ from "jquery";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Layout = (props) => {
   const [navTheme, setNavTheme] = useState("dark");
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     Aos.init({
@@ -27,14 +29,27 @@ const Layout = (props) => {
       "scroll",
       () => {
         const pageOffset = window.pageYOffset;
+
+        // Navigation theme toggle
         if (pageOffset > 300) {
           setNavTheme("light");
         } else {
           setNavTheme("dark");
         }
+
+        // back-to-top show toggle
+        if (pageOffset > 700) {
+          setShowBackToTop(true);
+        } else {
+          setShowBackToTop(false);
+        }
       },
       300
     ); //ms
+
+    $("#back-to-top").on("click", function () {
+      $("html, body").animate({ scrollTop: 0 }, 400);
+    });
   }, []);
 
   const messengerEmbed = `
@@ -78,6 +93,9 @@ const Layout = (props) => {
       <main>{props.children}</main>
       <Footer />
       <InnerHTML html={messengerEmbed} />
+      <div id="back-to-top" class={`${showBackToTop ? "" : "hide"}`}>
+        <i class="fa fa-arrow-up"></i>
+      </div>
     </div>
   );
 };
