@@ -119,7 +119,7 @@ const Inquiries = () => {
   const faq_items = faq.map((item, index) => {
     const answers = item.answer.map((a) => (
       <p className="gray text-block">
-        <Markdown>{a}</Markdown>
+        <Markdown className="text-block">{a}</Markdown>
       </p>
     ));
     return (
