@@ -91,7 +91,7 @@ const Sponsors = () => {
         tier={"General Sponsors"}
         className={"silver-sponsor padding-y-192"}
         contentClassName={"gen-sponsor"}
-        heading={"General Sponsors"}
+        heading={"Major Sponsors"}
         style={{
           backgroundColor: "#F6F6F6",
           margin: "0 auto",
