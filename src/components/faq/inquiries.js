@@ -118,7 +118,7 @@ import Markdown from "markdown-to-jsx";
 const Inquiries = () => {
   const faq_items = faq.map((item, index) => {
     const answers = item.answer.map((a) => (
-      <p>
+      <p className="gray text-block">
         <Markdown className="text-block gray">{a}</Markdown>
       </p>
     ));
