@@ -158,6 +158,16 @@ const TicketForm = () => {
       setSubtotal(earlyBirdPrice * earlyBirdQuantity);
       setDiscount(0);
     }
+
+    if (earlyBirdQuantity >= 5 && earlyBirdQuantity < 10) {
+      setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.1);
+      setDiscountCode("Group of 5");
+    } else if (earlyBirdQuantity >= 10) {
+      setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.15);
+      setDiscountCode("Group of 10");
+    } else if (earlyBirdQuantity < 5 && discountCode.includes("Group of")) {
+      setDiscountCode("");
+    }
   }, [discountCode, subtotal, earlyBirdPrice, earlyBirdQuantity, setSubtotal]);
 
   // useEffect for checkout URL
