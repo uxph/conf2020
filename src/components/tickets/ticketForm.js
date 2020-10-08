@@ -401,7 +401,7 @@ const TicketForm = () => {
             currency: "PHP",
             description: `{discount_code: ${
               discount > 0 ? discountCode : "none"
-            }, subscribed: ${subscribed}, company: ${company}, ${tickets}}`,
+            }, subscribed: ${subscribed}, ${tickets}}`,
           },
         },
       });
