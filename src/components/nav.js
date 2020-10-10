@@ -12,7 +12,6 @@ const Nav = ({ activeUrl = "/", theme }) => {
     {
       name: "Schedule",
       url: "/schedule",
-      comingSoon: true,
     },
     {
       name: "Sponsors",

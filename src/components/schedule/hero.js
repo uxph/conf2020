@@ -1,11 +1,9 @@
 import React from "react";
-import { Card, CardBody } from "reactstrap";
-import Button from "../atoms/button";
 
 const Hero = ({ day, setDay }) => {
   return (
     <section
-      className="padding-top-128 padding-bottom-256 text-center faq-hero"
+      className="padding-top-128 padding-bottom-192 text-center faq-hero"
       data-aos="fade"
       data-aos-duration={500}
       data-aos-once={true}
@@ -20,77 +18,6 @@ const Hero = ({ day, setDay }) => {
             Get your tickets now!
           </a>
         </p>
-        <div
-          style={{
-            marginBottom: "-230px",
-          }}
-        >
-          <Card className="border-0 shadow d-inline-block day-cards">
-            <CardBody className="card-container">
-              <div className="margin-bottom-8">
-                <Button
-                  className="margin-right-8"
-                  innerClassName="pre-conf-button"
-                  style={{
-                    width: "120px",
-                  }}
-                  variant={day === 3 ? null : "outline"}
-                  onClick={() => setDay(3)}
-                >
-                  Pre-conf
-                  <br /> <small>(Sat, Oct 24)</small>
-                </Button>
-                <Button
-                  className="margin-right-8"
-                  innerClassName="pre-conf-button text-center"
-                  style={{
-                    width: "120px",
-                  }}
-                  variant={day === 4 ? null : "outline"}
-                  onClick={() => setDay(4)}
-                >
-                  Pre-conf <br />
-                  <small>(Sat, Oct 31)</small>
-                </Button>
-                <Button
-                  className="margin-right-8"
-                  innerClassName="pre-conf-button"
-                  style={{
-                    width: "120px",
-                  }}
-                  variant={day === 5 ? null : "outline"}
-                  onClick={() => setDay(5)}
-                >
-                  Pre-conf <br />
-                  <small>(Sat, Nov 7)</small>
-                </Button>
-                <Button
-                  className="margin-right-8"
-                  innerClassName="pre-conf-button"
-                  style={{
-                    width: "120px",
-                  }}
-                  variant={day === 1 ? null : "outline"}
-                  onClick={() => setDay(1)}
-                >
-                  Day 1 <br />
-                  <small>(Sat, Nov 14)</small>
-                </Button>
-                <Button
-                  innerClassName="pre-conf-button"
-                  style={{
-                    width: "120px",
-                  }}
-                  variant={day === 2 ? null : "outline"}
-                  onClick={() => setDay(2)}
-                >
-                  Day 2 <br />
-                  <small>(Sun, Nov 15)</small>
-                </Button>
-              </div>
-            </CardBody>
-          </Card>
-        </div>
       </div>
     </section>
   );
