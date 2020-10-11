@@ -285,6 +285,48 @@
           "icon": "fa fa-facebook-square"
         }
       ]
+    },
+    {
+      "id": 13,
+      "name": "Slash Ignite",
+      "description": [
+        "SlashIgnite is a social innovation studio based in Iloilo City. We help innovators build impactful & profitable social ventures, through social innovation training, ecosystem & venture building."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eQsbNqCwklvahz9UckaaUaPbDuumuzKGNiBH6AF84VyehMkv0QuAqyJH891-Osnp1TX7Spd0tJhe2BGFEwjexhggd0loOFP6vjA3puxyc3O5j0ANaeCQ_8Z37plM2IjfYZ1gkkES1yqYVj57j7JdM=s800-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.slashignite.com/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https//www.facebook.com/slashignite",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.linkedin.com/company/slashignite",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "http://instagram.com/slashignite",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "re:MAKE",
+      "description": [
+        "re:MAKE is a community platform designed to amplify, connect and empower innovators and change-makers in South East Asia. It provides a way for members to collaborate, share knowledge, inspire each other and build capability in leading practices."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cFc7q4Ef4BgPZ8VgcWH6P5fIxqe2g2iOI8E6_7cqdj69obLRLwbpdg3XHZMeZ9NMB0wS4s7upAlF_a6xlmoMMA8excDWse7CHVT31xf7QZexgzghEQYfgSU3aN45P-Z3J_IOzIfU70wKdjs0GCZrc=w1488-h912-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.re-make.asia/",
+          "icon": "fa fa-globe"
+        }
+      ]
     }
   ],
 
@@ -378,12 +420,12 @@
     },
     {
       "id": 5,
-      "name": "Design Center of the Philippines",
+      "name": "DTI - Design Center of the Philippines",
       "description": [
         "The Design Center of the Philippines is the country’s leading agency committed to cultivating a culture that thrives on creativity, value creation, and innovation.",
         "Design Center’s efforts go beyond promoting the value of good design and onto inspiring creative industries to create human-centered products, services, and spaces that make an impact in the Philippines and in the world. From enhancing human experiences to enabling inclusive and sustainable economic growth, we ensure that design plays its role as a creative, strategic, and innovative tool for positive development."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fWZzFYAjA7KcIhIlyh8rJpx0gn7oxcPKfXt2mSLZl6oxqKAnXSBq2-nsWzXYDmTysPnoajOJBwTem-9C8j6iP5_5T5BNxXgXsdKGjlohHyamr5ZK63c_BM09-pwFiuJNB-hHoYLA0uxbr7cO_u-YoT=s240-no?authuser=1",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cZTT5KuK9DhN206Wz6PLlAD0oYgs2K3oOQdtQHNfxIzElffR1IFkt5p5gYVKKBYWavoLE1nCWYKwuQv1rNrOtlFS9Y7eGeQAQLZIt_T-721EIo9yqIjzM4IvG7HFJN2tE2FLFGmMomsLb4ajMqoCE=w1921-h627-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {

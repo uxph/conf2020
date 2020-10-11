@@ -71,6 +71,15 @@
   right: 18.5%;
 }
 
+.segment-item {
+  position: relative;
+  transition: ease all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
 .socmedList {
   display: inline-block;
   font-size: 32px;

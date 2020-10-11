@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import _ from "lodash";
 import { Row, Col } from "reactstrap";
 import schedule from "../../data/schedule.json";
 import speakers from "../../data/speakers.json";
-// import Button from "../atoms/button";
+import Button from "../atoms/button";
 import { Chip } from "@material-ui/core";
+import WorkshopModal from "../schedule/workshopModal";
 
-const DaySegment = ({ segment }) => {
+const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
   const currSegment = schedule[segment].map((event, index) => {
     const currWorkshops = event.workshop.map((item, index) => {
       return (
@@ -23,15 +24,18 @@ const DaySegment = ({ segment }) => {
       );
     });
 
-    const facilitators = event.speaker_id.map((speaker_id) => {
+    const facilitators = event.speaker_id.map((speaker_id, index) => {
       const currFacilitator = _.find(
         speakers,
         (speaker) => speaker.id === speaker_id
       );
 
       return (
-        <div className="d-flex align-items-center margin-bottom-32">
-          <div className="margin-right-16">
+        <div
+          key={index}
+          className="d-flex align-items-center margin-bottom-32 speaker-container"
+        >
+          <div className="margin-right-16 speaker-photo">
             <img
               src={currFacilitator.image_url}
               style={{
@@ -46,7 +50,9 @@ const DaySegment = ({ segment }) => {
           <div>
             <h5 className="mb-0 font-size-16">{currFacilitator.name}</h5>
             <p className="red mb-0">
-              {currFacilitator.position} at {currFacilitator.company}
+              {currFacilitator.position !== ""
+                ? `${currFacilitator.position} at ${currFacilitator.company}`
+                : null}
             </p>
           </div>
         </div>
@@ -71,68 +77,88 @@ const DaySegment = ({ segment }) => {
         style={{
           borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
         }}
+        key={event.id}
       >
         {/* {!isSpecialSegment && (
           <h6 className="gray mx-4 margin-bottom-32">
             <strong>{event.time}</strong>
           </h6>
         )} */}
-        <Row key={index} className={`mx-3`}>
-          {isSameTime ? (
-            <Col md={2}></Col>
-          ) : (
-            <Col md={2}>
-              {!isSpecialSegment && (
+        <a
+          href="/"
+          className={`${
+            isSpecialSegment ? "" : "segment-item"
+          } bg-white d-block`}
+          style={{
+            textDecoration: "none",
+            cursor: isSpecialSegment ? "default" : "pointer",
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            if (!isSpecialSegment) {
+              setSegmentName(segment);
+              setWorkshopId(event.id);
+              toggle();
+              // console.log(segment + " " + event.id);
+            }
+          }}
+        >
+          <Row key={index} className={`mx-3 segment-container`}>
+            {isSameTime ? (
+              <Col md={2} sm={12}></Col>
+            ) : (
+              <Col md={2} sm={12}>
                 <h6 className="gray">
                   <strong>{event.time}</strong>
                 </h6>
-              )}
-            </Col>
-          )}
-
-          <Col md={4}>
-            <h5
-              className={`margin-bottom-12 ${isSpecialSegment ? "mb-0" : ""}`}
-              style={{
-                lineHeight: "1.5rem",
-                fontSize: "1rem",
-              }}
-            >
-              {event.title}
-            </h5>
-            {!isSpecialSegment && (
-              <div className="mb-1">
-                <Chip
-                  variant="outlined"
-                  label={event.type}
-                  className="margin-bottom-8"
-                  style={{
-                    // color: "#ffffff",
-                    // backgroundColor: "#e8006f",
-                    borderColor: "#e8006f",
-                    color: "#e8006f",
-                    fontFamily: "Karla",
-                    fontSize: "0.7rem",
-                  }}
-                />
-                {currWorkshops}
-              </div>
+              </Col>
             )}
-            {/* {!isSpecialSegment && (
-              <Button
-                variant="outline"
+
+            <Col md={4} sm={12}>
+              <h5
+                className={`margin-bottom-12 ${isSpecialSegment ? "mb-0" : ""}`}
                 style={{
-                  padding: "0.7rem 0.7rem",
+                  lineHeight: "1.5rem",
+                  fontSize: "1rem",
                 }}
               >
-                Read more
-              </Button>
-            )} */}
-          </Col>
-          <Col md={6} className="pl-4">
-            {facilitators}
-          </Col>
-        </Row>
+                {event.title}
+              </h5>
+              {!isSpecialSegment && (
+                <div className="mb-1">
+                  <Chip
+                    variant="outlined"
+                    label={event.type}
+                    className="margin-bottom-8"
+                    style={{
+                      // color: "#ffffff",
+                      // backgroundColor: "#e8006f",
+                      borderColor: "#e8006f",
+                      color: "#e8006f",
+                      fontFamily: "Karla",
+                      fontSize: "0.7rem",
+                    }}
+                  />
+                  {currWorkshops}
+                </div>
+              )}
+            </Col>
+            <Col md={6} sm={12} className="pl-4 speaker-list">
+              <div>{facilitators}</div>
+              {!isSpecialSegment && (
+                <Button
+                  variant="outline"
+                  className="d-none event-read-more"
+                  style={{
+                    padding: "0.7rem 0.7rem",
+                  }}
+                >
+                  Read more
+                </Button>
+              )}
+            </Col>
+          </Row>
+        </a>
       </div>
     );
   });
@@ -141,8 +167,21 @@ const DaySegment = ({ segment }) => {
 };
 
 const Programme = () => {
+  const [modal, setModal] = useState(false);
+  const [workshopId, setWorkshopId] = useState(0);
+  const [segmentName, setSegmentName] = useState("pre_event_1");
+  const toggle = () => {
+    setModal(!modal);
+  };
+
   return (
     <section>
+      <WorkshopModal
+        segmentName={segmentName}
+        modal={modal}
+        toggle={toggle}
+        workshopId={workshopId}
+      />
       <div className="wrapper">
         <div
           className="border p-4 bg-white shadow-sm margin-bottom-48"
@@ -167,7 +206,7 @@ const Programme = () => {
             <h3 className="text-center">
               <span className="red text-uppercase">Pre-event</span>{" "}
               <small
-                className="gray font-size-16"
+                className="gray font-size-16 segment-date"
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -176,7 +215,14 @@ const Programme = () => {
               </small>
             </h3>
           </div>
-          <DaySegment segment="pre_event_1" />
+          <DaySegment
+            segment="pre_event_1"
+            workshopId={workshopId}
+            segmentName={segmentName}
+            toggle={toggle}
+            setSegmentName={setSegmentName}
+            setWorkshopId={setWorkshopId}
+          />
         </div>
         <div
           className="border p-4 bg-white shadow-sm margin-bottom-48"
@@ -201,7 +247,7 @@ const Programme = () => {
             <h3 className="text-center">
               <span className="red text-uppercase">Pre-event</span>{" "}
               <small
-                className="gray font-size-16"
+                className="gray font-size-16 segment-date"
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -210,7 +256,14 @@ const Programme = () => {
               </small>
             </h3>
           </div>
-          <DaySegment segment="pre_event_2" />
+          <DaySegment
+            segment="pre_event_2"
+            workshopId={workshopId}
+            segmentName={segmentName}
+            toggle={toggle}
+            setSegmentName={setSegmentName}
+            setWorkshopId={setWorkshopId}
+          />
         </div>
         <div
           className="border p-4 bg-white shadow-sm margin-bottom-48"
@@ -235,7 +288,7 @@ const Programme = () => {
             <h3 className="text-center">
               <span className="red text-uppercase">Pre-event</span>{" "}
               <small
-                className="gray font-size-16"
+                className="gray font-size-16 segment-date"
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -244,7 +297,14 @@ const Programme = () => {
               </small>
             </h3>
           </div>
-          <DaySegment segment="pre_event_3" />
+          <DaySegment
+            segment="pre_event_3"
+            workshopId={workshopId}
+            segmentName={segmentName}
+            toggle={toggle}
+            setSegmentName={setSegmentName}
+            setWorkshopId={setWorkshopId}
+          />
         </div>
         <div
           className="border p-4 bg-white shadow-sm margin-bottom-48"
@@ -269,7 +329,7 @@ const Programme = () => {
             <h3 className="text-center">
               <span className="red text-uppercase">Day 1</span>{" "}
               <small
-                className="gray font-size-16"
+                className="gray font-size-16 segment-date"
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -278,7 +338,14 @@ const Programme = () => {
               </small>
             </h3>
           </div>
-          <DaySegment segment="day_1" />
+          <DaySegment
+            segment="day_1"
+            workshopId={workshopId}
+            segmentName={segmentName}
+            toggle={toggle}
+            setSegmentName={setSegmentName}
+            setWorkshopId={setWorkshopId}
+          />
         </div>
         <div
           className="border p-4 bg-white shadow-sm margin-bottom-48"
@@ -303,7 +370,7 @@ const Programme = () => {
             <h3 className="text-center text-uppercase">
               <span className="red">Day 2</span>{" "}
               <small
-                className="gray font-size-16"
+                className="gray font-size-16 segment-date"
                 style={{
                   verticalAlign: "middle",
                 }}
@@ -312,7 +379,14 @@ const Programme = () => {
               </small>
             </h3>
           </div>
-          <DaySegment segment="day_2" />
+          <DaySegment
+            segment="day_2"
+            workshopId={workshopId}
+            segmentName={segmentName}
+            toggle={toggle}
+            setSegmentName={setSegmentName}
+            setWorkshopId={setWorkshopId}
+          />
         </div>
       </div>
     </section>

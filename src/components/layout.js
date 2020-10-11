@@ -93,8 +93,8 @@ const Layout = (props) => {
       <main>{props.children}</main>
       <Footer />
       <InnerHTML html={messengerEmbed} />
-      <div id="back-to-top" class={`${showBackToTop ? "" : "hide"}`}>
-        <i class="fa fa-arrow-up"></i>
+      <div id="back-to-top" className={`${showBackToTop ? "" : "hide"}`}>
+        <i className="fa fa-arrow-up"></i>
       </div>
     </div>
   );

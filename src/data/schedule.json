@@ -12,12 +12,12 @@
       ],
       "speakers_names": "Reine Bantang & Stella Pangilinan",
       "speaker_id": [],
-      "workshop": ["Software Design"]
+      "workshop": []
     },
     {
       "id": 1,
       "time": "2:45PM",
-      "type": "Special Workshop",
+      "type": "Workshop",
       "title": "Basics of Figma",
       "description": ["Hosted by Friends of Figma Philippines"],
       "speakers_img": [
@@ -36,7 +36,7 @@
       "time": "10:10AM",
       "type": "Workshop",
       "title": "UX Research Interactive Workshop",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [6, 28],
       "workshop": []
     }
@@ -48,7 +48,7 @@
       "time": "2:05PM",
       "type": "Keynote Speaker",
       "title": "Intro to UX Research",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [11],
       "workshop": []
     },
@@ -57,7 +57,7 @@
       "time": "2:50PM",
       "type": "Keynote Speaker",
       "title": "Remote Design Research",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [3],
       "workshop": []
     }
@@ -69,7 +69,7 @@
       "time": "9:30AM",
       "type": "Team",
       "title": "Open House",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
     },
@@ -77,8 +77,8 @@
       "id": 1,
       "time": "10:05AM",
       "type": "Lightning Talk",
-      "title": "Welcome!",
-      "description": ["TBD"],
+      "title": "The Power of Community",
+      "description": ["Coming Soon!"],
       "speaker_id": [0],
       "workshop": []
     },
@@ -155,7 +155,7 @@
       "time": "2:20PM",
       "type": "Lightning Talk",
       "title": "Lessons in Digital Transformation in a Corporate Setting",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [13],
       "workshop": []
     },
@@ -175,7 +175,7 @@
       "time": "3:15PM",
       "type": "Break",
       "title": "Break time",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
     },
@@ -183,9 +183,9 @@
       "id": 11,
       "time": "3:40PM",
       "type": "Lightning Talk",
-      "title": "UX Growth (Tentative)",
-      "description": ["TBD"],
-      "speaker_id": [],
+      "title": "Learn UX Growth",
+      "description": ["Coming Soon!"],
+      "speaker_id": [9],
       "workshop": []
     },
     {
@@ -225,7 +225,7 @@
       "time": "9:30AM",
       "type": "Team",
       "title": "Open House",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
     },
@@ -244,7 +244,7 @@
       "id": 2,
       "time": "10:50AM",
       "type": "Lightning Talk",
-      "title": "Accessibility",
+      "title": "3 Keystones of Accessible Web Content",
       "description": [
         "In this powerful and engaging talk, Julius will present the 3 most important keystones possessed by web content that is accessible to everyone including people with disabilities. He will discuss the tools and techniques you can use right now to test your content's accessibility. Julius will also provide clear examples of web pages that demonstrate the 3 keystones."
       ],
@@ -260,7 +260,7 @@
         "\"UX Research: The Guiding Light for Design Decisions.\" ",
         "What is UX Research, why is it important, and how to get started in UX Research"
       ],
-      "speaker_id": [11, 8, 15],
+      "speaker_id": [11, 14, 15, 22],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3es63mcZOd5QJ9iMrMsvMXuCI3gJhj1leA_ZS3EkIK58V1ZWRz7maOgoIW2c8nINvJavanacNDtP2s_5Jt5D1GKKUY_Vu2OG_d-f-zVHE4M7tHvWrVlsd0jvkzvxJkzF3fsiCvmNPJim8FB5eTFlL3m=w834-h920-no?authuser=2",
         "https://lh3.googleusercontent.com/pw/ACtC-3cCqvn8fzfdjJ5XawA18lUq3OK7RNUzup9kPMGyzxPOxWAyRF659CSy13rPgLVCNWYmbAvS-Ypa5PHjH3pxDYsXEZk_-nqrAoz2Pbm2yhTxmpGAGlN2UTE6oR1r1HVVYq3-Xefs_lRysUNzLyXjoLjG=s800-no?authuser=2",
@@ -274,7 +274,7 @@
       "time": "12:05PM",
       "type": "Break",
       "title": "Lunch Break",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
     },
@@ -283,7 +283,7 @@
       "time": "1:10PM",
       "type": "Workshop",
       "title": "Basic Data Analytics",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [25],
       "workshop": []
     },
@@ -300,7 +300,7 @@
       "id": 7,
       "time": "1:55PM",
       "type": "Workshop",
-      "title": "Product and Service Pricing Strategy / Using Customer Value Proposition as Revenue Model",
+      "title": "Using Customer Value Propositions as Revenue Model",
       "description": [
         "1. Product and Service Pricing Strategy  - In this talk i would like to talk about the learnings i got from a book called Pricing of Product and Service - Service Pricing Book, by masking them into some of the case study i have done in my experience and how this product and service influence their buyer through this effective ways.",
         "2. Using Customer Value Proposition as Revenue Model - In This talk i would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
@@ -313,7 +313,7 @@
       "time": "2:40PM",
       "type": "Break",
       "title": "Break time",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
     },
@@ -322,7 +322,7 @@
       "time": "3:20PM",
       "type": "Panel Discussion",
       "title": "Leading by Design",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3drmgy61F4PeasIOyeoGduzdyVM1kQaB93OafkPYXgZ9fzmIbsLNIfEZE-a5fxVM7Dyp0k_FyFQ40c39ijKlfB2fOUVlEiYBT_ZtmywtT5v0KBJUMbF3ih4sBQ50MQujoOxB7gadgChBwOObb1qx4rf=s500-no?authuser=1",
         "https://lh3.googleusercontent.com/pw/ACtC-3eqvM4zEFA1KPH52e_EGN1fbesdfC7Fi2qbm9XuKjpzahb-x6PyGfPFf4R3R3QUiS3qWcuLEKEhO_B91MIhO5s8e6FjThgNDV5JyNoQTET1FV2GIgO0axLcEduJviNS3X_349968GpK4Y3jpJ8UBMf_=s407-no?authuser=1"
@@ -336,7 +336,7 @@
       "time": "4:00PM",
       "type": "Keynote Speaker",
       "title": "Speculative Design",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [24],
       "workshop": []
     },
@@ -345,7 +345,7 @@
       "time": "4:40PM",
       "type": "Remarks",
       "title": "Closing Remarks and Announcement",
-      "description": ["TBD"],
+      "description": ["Coming Soon!"],
       "speaker_id": [],
       "speakers_names": "UXPH",
       "workshop": []
