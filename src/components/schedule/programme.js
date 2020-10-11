@@ -44,7 +44,7 @@ const DaySegment = ({ segment }) => {
             />
           </div>
           <div>
-            <h5 className="mb-0">{currFacilitator.name}</h5>
+            <h5 className="mb-0 font-size-16">{currFacilitator.name}</h5>
             <p className="red mb-0">
               {currFacilitator.position} at {currFacilitator.company}
             </p>
@@ -53,23 +53,49 @@ const DaySegment = ({ segment }) => {
       );
     });
 
-    const isSpecialSegment = ["Socials", "Break", "Team", "Remarks"].includes(
-      event.type
-    );
+    const isSpecialSegment = [
+      "Socials",
+      "Break",
+      "Team",
+      "Remarks",
+      "Concert",
+    ].includes(event.type);
 
+    const isSameTime =
+      index - 1 >= 0
+        ? schedule[segment][index].time === schedule[segment][index - 1].time
+        : false;
     return (
-      <div className={`padding-y-32 border-top`}>
-        {!isSpecialSegment && (
+      <div
+        className={`padding-y-32`}
+        style={{
+          borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
+        }}
+      >
+        {/* {!isSpecialSegment && (
           <h6 className="gray mx-4 margin-bottom-32">
             <strong>{event.time}</strong>
           </h6>
-        )}
+        )} */}
         <Row key={index} className={`mx-3`}>
-          <Col md={5}>
+          {isSameTime ? (
+            <Col md={2}></Col>
+          ) : (
+            <Col md={2}>
+              {!isSpecialSegment && (
+                <h6 className="gray">
+                  <strong>{event.time}</strong>
+                </h6>
+              )}
+            </Col>
+          )}
+
+          <Col md={4}>
             <h5
               className={`margin-bottom-12 ${isSpecialSegment ? "mb-0" : ""}`}
               style={{
-                lineHeight: "2rem",
+                lineHeight: "1.5rem",
+                fontSize: "1rem",
               }}
             >
               {event.title}
@@ -77,12 +103,16 @@ const DaySegment = ({ segment }) => {
             {!isSpecialSegment && (
               <div className="mb-1">
                 <Chip
+                  variant="outlined"
                   label={event.type}
                   className="margin-bottom-8"
                   style={{
-                    color: "#ffffff",
-                    backgroundColor: "#e8006f",
+                    // color: "#ffffff",
+                    // backgroundColor: "#e8006f",
+                    borderColor: "#e8006f",
+                    color: "#e8006f",
                     fontFamily: "Karla",
+                    fontSize: "0.7rem",
                   }}
                 />
                 {currWorkshops}
@@ -251,7 +281,7 @@ const Programme = () => {
           <DaySegment segment="day_1" />
         </div>
         <div
-          className="border p-4 bg-white shadow-sm"
+          className="border p-4 bg-white shadow-sm margin-bottom-48"
           style={{
             borderRadius: "1rem",
           }}
