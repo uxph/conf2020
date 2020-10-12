@@ -20,7 +20,7 @@ import discount_codes from "../../data/discounts.json";
 const auth_pk = "Basic cGtfbGl2ZV9CZ3dxUGZHQ1hiZFRZVW5TSlp3RkdETE46";
 const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
-const bankTransferUrl = "https://airtable.com/shrcKP2TQ6xjrYnHx";
+const bankTransferUrl = "https://airtable.com/shryfMZM6wO4NKFDh";
 
 const env = "production"; // TODO DO NOT FORGET TO CHANGE THIS
 let url = null;
