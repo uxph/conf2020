@@ -285,6 +285,63 @@
           "icon": "fa fa-facebook-square"
         }
       ]
+    },
+    {
+      "id": 13,
+      "name": "Slash Ignite",
+      "description": [
+        "SlashIgnite is a social innovation studio based in Iloilo City. We help innovators build impactful & profitable social ventures, through social innovation training, ecosystem & venture building."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eQsbNqCwklvahz9UckaaUaPbDuumuzKGNiBH6AF84VyehMkv0QuAqyJH891-Osnp1TX7Spd0tJhe2BGFEwjexhggd0loOFP6vjA3puxyc3O5j0ANaeCQ_8Z37plM2IjfYZ1gkkES1yqYVj57j7JdM=s800-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.slashignite.com/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https//www.facebook.com/slashignite",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.linkedin.com/company/slashignite",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "http://instagram.com/slashignite",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "re:MAKE",
+      "description": [
+        "re:MAKE is a community platform designed to amplify, connect and empower innovators and change-makers in South East Asia. It provides a way for members to collaborate, share knowledge, inspire each other and build capability in leading practices."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cFc7q4Ef4BgPZ8VgcWH6P5fIxqe2g2iOI8E6_7cqdj69obLRLwbpdg3XHZMeZ9NMB0wS4s7upAlF_a6xlmoMMA8excDWse7CHVT31xf7QZexgzghEQYfgSU3aN45P-Z3J_IOzIfU70wKdjs0GCZrc=w1488-h912-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.re-make.asia/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "UX+",
+      "description": [
+        "UX+ produces events for aspiring & seasoned User Experience professionals. We invite speakers & instructors that are the most renowned UX designers and researchers from Southeast Asia all the way to Silicon Valley."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fkIwmrU6E5bdR3CPSicB-gnHLrP79G-iuTzjhx7a1Y0o5cvhxJ-UbeE-Ur_Srxq1V1Z_xfKbRlgARADp2qxFemtTnm6PqREXDVUrcSsV8iJzflxg_k4AFlyONP7MetspEWGTj1bkcYhHfxqsYYSOg=s225-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://about.uxpl.us/",
+          "icon": "fa fa-globe"
+        }
+      ]
     }
   ],
 
@@ -378,12 +435,12 @@
     },
     {
       "id": 5,
-      "name": "Design Center of the Philippines",
+      "name": "DTI - Design Center of the Philippines",
       "description": [
         "The Design Center of the Philippines is the country’s leading agency committed to cultivating a culture that thrives on creativity, value creation, and innovation.",
         "Design Center’s efforts go beyond promoting the value of good design and onto inspiring creative industries to create human-centered products, services, and spaces that make an impact in the Philippines and in the world. From enhancing human experiences to enabling inclusive and sustainable economic growth, we ensure that design plays its role as a creative, strategic, and innovative tool for positive development."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fWZzFYAjA7KcIhIlyh8rJpx0gn7oxcPKfXt2mSLZl6oxqKAnXSBq2-nsWzXYDmTysPnoajOJBwTem-9C8j6iP5_5T5BNxXgXsdKGjlohHyamr5ZK63c_BM09-pwFiuJNB-hHoYLA0uxbr7cO_u-YoT=s240-no?authuser=1",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cZTT5KuK9DhN206Wz6PLlAD0oYgs2K3oOQdtQHNfxIzElffR1IFkt5p5gYVKKBYWavoLE1nCWYKwuQv1rNrOtlFS9Y7eGeQAQLZIt_T-721EIo9yqIjzM4IvG7HFJN2tE2FLFGmMomsLb4ajMqoCE=w1921-h627-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -413,6 +470,38 @@
       "social_media": [
         {
           "url": "https://www.invisionapp.com/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Anflo Management & Investment Corp.",
+      "description": [
+        "Established in 1977, the Anflo Management and Investment Corporation (ANFLOCOR) is the management and investment company of the ANFLO Group of Companies, founded by the Floirendo family’s patriarch, Don Antonio O. Floirendo, Sr.",
+        "The Mindanao-based business conglomerate is engaged in a diverse range of industries, including agriculture (production and export of Cavendish bananas, livestock operations), industrial (container port terminal, storage facilities, manufacturing of packaging materials and labels, trucking services, aerial spray and helicopter charter services), real estate (residential and commercial developments) and tourism (resort and franchise hotels operations). The ANFLO Group also has companies that are into construction, retail, consumer financing, radio broadcasting, and security agency.",
+        "The ANFLO Group continues to grow and expand while remaining true to its commitment to the development and upliftment of the people of Mindanao."
+      ],
+      "image_url": "/images/sponsors/anflocor.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/anflocor",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "UXTesting",
+      "description": [
+        "UXTesting Inc. is the leading user experience (UX) data and insight company, devoted to the optimization of User Experience. We firmly believe that Business Intelligence (BI) provides corporates with unfair market insights and better UX to gain a competitive advantage. With UXTesting’s innovative BI solutions, it is much more efficient and effective to uncover actionable data in the fast-changing industry. To learn more visit www.uxtesting.io, or contact UXTesting at social@uxtesting.io."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fMw1VElB8-dr7NjLWWAvGXreW1T3OxY0jwghgwR__4M6QZtIUUjt7DXEIRiDgzL6NS_V1UOufSy4MJzHnfB-XvFil-ojeYOzFFis0j_OaDz3tFjy4Wb54Ux9hi8aWY0tnNuorc4CKmqzIFaI1srlkZ=w526-h177-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.uxtesting.io/",
           "icon": "fa fa-globe"
         }
       ]
@@ -447,6 +536,25 @@
         },
         {
           "url": "https://www.facebook.com/figmadesign",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Make Technology",
+      "description": [
+        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+      ],
+      "image_url": "/images/sponsors/make.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/make.technology",
           "icon": "fa fa-facebook-square"
         }
       ]
