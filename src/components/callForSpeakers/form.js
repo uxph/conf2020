@@ -2,12 +2,14 @@ import React from "react";
 
 const Form = () => {
   return (
-    <section
-      style={{
-        marginTop: "-250px",
-      }}
-    >
-      <div className="wrapper" id="form-wrapper">
+    <section>
+      <div
+        className="wrapper"
+        id="form-wrapper"
+        style={{
+          marginTop: "-250px",
+        }}
+      >
         <div className="shadow rounded">
           <iframe
             className="airtable-embed border-radius-8"
