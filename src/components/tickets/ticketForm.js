@@ -73,6 +73,7 @@ const TicketForm = () => {
   const [subtotal, setSubtotal] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [discountCode, setDiscountCode] = useState("");
+  const [discountMessage, setDiscountMessage] = useState("You saved");
   let total = subtotal - discount >= 0 ? subtotal - discount : 0;
 
   // Basic info
@@ -141,6 +142,7 @@ const TicketForm = () => {
     // secret code
     if (lowerCasedCode === "uxcult100") {
       setDiscount(subtotal - 100);
+      setDiscountMessage("HOW DID YOU???");
     }
 
     // matched code
@@ -148,8 +150,16 @@ const TicketForm = () => {
       setSubtotal(earlyBirdPrice * earlyBirdQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+        setDiscountMessage(
+          `Discount (${parseInt(
+            discount_codes[lowerCasedCode].percent * 100
+          )}% off)`
+        );
       } else {
         setDiscount(discount_codes[lowerCasedCode].solid);
+        setDiscountMessage(
+          `PHP ${discount_codes[lowerCasedCode].solid}.00 off discount`
+        );
       }
     }
 
@@ -162,9 +172,11 @@ const TicketForm = () => {
     if (earlyBirdQuantity >= 5 && earlyBirdQuantity < 10) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.1);
       setDiscountCode("Group of 5");
+      setDiscountMessage("GROUP OF 5 (10% off) discount");
     } else if (earlyBirdQuantity >= 10) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.15);
       setDiscountCode("Group of 10");
+      setDiscountMessage("GROUP OF 10 (15% off) discount");
     } else if (earlyBirdQuantity < 5 && discountCode.includes("Group of")) {
       setDiscountCode("");
     }
@@ -1102,7 +1114,7 @@ const TicketForm = () => {
               {discount > 0 && (
                 <Row className={`px-2 margin-bottom-12`}>
                   <Col>
-                    <p className="font-size-26 mb-0 gray">You saved</p>
+                    <p className="font-size-26 mb-0 gray">{discountMessage}</p>
                   </Col>
                   <Col>
                     <p className="font-size-26 mb-0 text-right">
