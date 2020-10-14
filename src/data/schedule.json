@@ -82,15 +82,7 @@
       "speaker_id": [0],
       "workshop": []
     },
-    {
-      "id": 2,
-      "time": "10:20AM",
-      "type": "Lightning Talk",
-      "title": "DCP Talk",
-      "description": [""],
-      "speaker_id": [],
-      "workshop": []
-    },
+
     {
       "id": 3,
       "time": "10:35AM",

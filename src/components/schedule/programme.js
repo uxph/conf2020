@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import _ from "lodash";
 import { Row, Col } from "reactstrap";
 import schedule from "../../data/schedule.json";
@@ -6,6 +6,7 @@ import speakers from "../../data/speakers.json";
 import Button from "../atoms/button";
 import { Chip } from "@material-ui/core";
 import WorkshopModal from "../schedule/workshopModal";
+import $ from "jquery";
 
 const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
   const currSegment = schedule[segment].map((event, index) => {
@@ -170,12 +171,55 @@ const Programme = () => {
   const [modal, setModal] = useState(false);
   const [workshopId, setWorkshopId] = useState(0);
   const [segmentName, setSegmentName] = useState("pre_event_1");
+
   const toggle = () => {
     setModal(!modal);
   };
 
+  useEffect(() => {
+    $("#pre_event_1-button").on("click", function () {
+      let scrollAmount = $("#pre_event_1").offset().top - 170;
+      $([document.documentElement, document.body]).animate(
+        { scrollTop: scrollAmount },
+        400
+      );
+    });
+
+    $("#pre_event_2-button").on("click", function () {
+      let scrollAmount = $("#pre_event_2").offset().top - 170;
+      $([document.documentElement, document.body]).animate(
+        { scrollTop: scrollAmount },
+        400
+      );
+    });
+
+    $("#pre_event_3-button").on("click", function () {
+      let scrollAmount = $("#pre_event_3").offset().top - 170;
+      $([document.documentElement, document.body]).animate(
+        { scrollTop: scrollAmount },
+        400
+      );
+    });
+
+    $("#day_1-button").on("click", function () {
+      let scrollAmount = $("#day_1").offset().top - 170;
+      $([document.documentElement, document.body]).animate(
+        { scrollTop: scrollAmount },
+        400
+      );
+    });
+
+    $("#day_2-button").on("click", function () {
+      let scrollAmount = $("#day_2").offset().top - 170;
+      $([document.documentElement, document.body]).animate(
+        { scrollTop: scrollAmount },
+        400
+      );
+    });
+  }, []);
+
   return (
-    <section>
+    <section id="top">
       <WorkshopModal
         segmentName={segmentName}
         modal={modal}
@@ -183,211 +227,269 @@ const Programme = () => {
         workshopId={workshopId}
       />
       <div className="wrapper">
-        <div
-          className="border p-4 bg-white shadow-sm margin-bottom-48"
-          style={{
-            borderRadius: "1rem",
-          }}
-          data-aos="fade"
-          data-aos-offset={50}
-          data-aos-duration={600}
-          data-aos-once={true}
-        >
-          <div
-            className="margin-y-16"
-            style={{
-              position: "sticky",
-              top: "71px",
-              zIndex: 1000,
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <h3 className="text-center">
-              <span className="red text-uppercase">Pre-event</span>{" "}
-              <small
-                className="gray font-size-16 segment-date"
+        <Row>
+          <Col md={2} className="programme-nav margin-bottom-32">
+            <div
+              style={{
+                position: "sticky",
+                top: "100px",
+              }}
+            >
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12 d-block"
+                innerClassName="font-size-8 w-100"
+                id="pre_event_1-button"
+              >
+                Pre-Event 1
+              </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="pre_event_2-button"
+              >
+                Pre-Event 2
+              </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="pre_event_3-button"
+              >
+                Pre-Event 3
+              </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="day_1-button"
+              >
+                Day 1
+              </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="day_2-button"
+              >
+                Day 2
+              </Button>
+            </div>
+          </Col>
+          <Col md={10} className="p-0 pl-3">
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              id="pre_event_1"
+              data-aos="fade"
+              data-aos-offset={50}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="margin-y-16"
                 style={{
-                  verticalAlign: "middle",
+                  position: "sticky",
+                  top: "71px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                (October 24, Saturday)
-              </small>
-            </h3>
-          </div>
-          <DaySegment
-            segment="pre_event_1"
-            workshopId={workshopId}
-            segmentName={segmentName}
-            toggle={toggle}
-            setSegmentName={setSegmentName}
-            setWorkshopId={setWorkshopId}
-          />
-        </div>
-        <div
-          className="border p-4 bg-white shadow-sm margin-bottom-48"
-          style={{
-            borderRadius: "1rem",
-          }}
-          data-aos="fade"
-          data-aos-offset={50}
-          data-aos-duration={600}
-          data-aos-once={true}
-        >
-          <div
-            className="padding-y-16"
-            style={{
-              position: "sticky",
-              top: "70px",
-              zIndex: 1000,
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <h3 className="text-center">
-              <span className="red text-uppercase">Pre-event</span>{" "}
-              <small
-                className="gray font-size-16 segment-date"
+                <h3 className="text-center">
+                  <span className="red text-uppercase">Pre-event</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (October 24, Saturday)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="pre_event_1"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              id="pre_event_2"
+              style={{
+                borderRadius: "1rem",
+              }}
+              data-aos="fade"
+              data-aos-offset={50}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="padding-y-16"
                 style={{
-                  verticalAlign: "middle",
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                (October 31, Saturday)
-              </small>
-            </h3>
-          </div>
-          <DaySegment
-            segment="pre_event_2"
-            workshopId={workshopId}
-            segmentName={segmentName}
-            toggle={toggle}
-            setSegmentName={setSegmentName}
-            setWorkshopId={setWorkshopId}
-          />
-        </div>
-        <div
-          className="border p-4 bg-white shadow-sm margin-bottom-48"
-          style={{
-            borderRadius: "1rem",
-          }}
-          data-aos="fade"
-          data-aos-offset={50}
-          data-aos-duration={600}
-          data-aos-once={true}
-        >
-          <div
-            className="padding-y-16"
-            style={{
-              position: "sticky",
-              top: "70px",
-              zIndex: 1000,
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <h3 className="text-center">
-              <span className="red text-uppercase">Pre-event</span>{" "}
-              <small
-                className="gray font-size-16 segment-date"
+                <h3 className="text-center">
+                  <span className="red text-uppercase">Pre-event</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (October 31, Saturday)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="pre_event_2"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              data-aos="fade"
+              data-aos-offset={50}
+              data-aos-duration={600}
+              data-aos-once={true}
+              id="pre_event_3"
+            >
+              <div
+                className="padding-y-16"
                 style={{
-                  verticalAlign: "middle",
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                (November 7, Saturday)
-              </small>
-            </h3>
-          </div>
-          <DaySegment
-            segment="pre_event_3"
-            workshopId={workshopId}
-            segmentName={segmentName}
-            toggle={toggle}
-            setSegmentName={setSegmentName}
-            setWorkshopId={setWorkshopId}
-          />
-        </div>
-        <div
-          className="border p-4 bg-white shadow-sm margin-bottom-48"
-          style={{
-            borderRadius: "1rem",
-          }}
-          data-aos="fade"
-          data-aos-offset={50}
-          data-aos-duration={600}
-          data-aos-once={true}
-        >
-          <div
-            className="padding-y-16"
-            style={{
-              position: "sticky",
-              top: "70px",
-              zIndex: 1000,
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <h3 className="text-center">
-              <span className="red text-uppercase">Day 1</span>{" "}
-              <small
-                className="gray font-size-16 segment-date"
+                <h3 className="text-center">
+                  <span className="red text-uppercase">Pre-event</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (November 7, Saturday)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="pre_event_3"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              id="day_1"
+              data-aos="fade"
+              data-aos-offset={50}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="padding-y-16"
                 style={{
-                  verticalAlign: "middle",
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                (November 14, Saturday)
-              </small>
-            </h3>
-          </div>
-          <DaySegment
-            segment="day_1"
-            workshopId={workshopId}
-            segmentName={segmentName}
-            toggle={toggle}
-            setSegmentName={setSegmentName}
-            setWorkshopId={setWorkshopId}
-          />
-        </div>
-        <div
-          className="border p-4 bg-white shadow-sm margin-bottom-48"
-          style={{
-            borderRadius: "1rem",
-          }}
-          data-aos="fade"
-          data-aos-offset={50}
-          data-aos-duration={600}
-          data-aos-once={true}
-        >
-          <div
-            className="padding-y-16"
-            style={{
-              position: "sticky",
-              top: "70px",
-              zIndex: 1000,
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            <h3 className="text-center text-uppercase">
-              <span className="red">Day 2</span>{" "}
-              <small
-                className="gray font-size-16 segment-date"
+                <h3 className="text-center">
+                  <span className="red text-uppercase">Day 1</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (November 14, Saturday)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="day_1"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              id="day_2"
+              data-aos="fade"
+              data-aos-offset={50}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="padding-y-16"
                 style={{
-                  verticalAlign: "middle",
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                (November 15, Sunday)
-              </small>
-            </h3>
-          </div>
-          <DaySegment
-            segment="day_2"
-            workshopId={workshopId}
-            segmentName={segmentName}
-            toggle={toggle}
-            setSegmentName={setSegmentName}
-            setWorkshopId={setWorkshopId}
-          />
-        </div>
+                <h3 className="text-center text-uppercase">
+                  <span className="red">Day 2</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (November 15, Sunday)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="day_2"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );
