@@ -116,6 +116,11 @@ const TicketForm = () => {
         UXPH’s Code of Conduct
       </a>
       .
+      <br />
+      <span className="margin-top-16 d-block">
+        Please note that tickets are <strong>non-refundable</strong> and are
+        only transferrable.
+      </span>
     </small>
   );
 
@@ -370,7 +375,7 @@ const TicketForm = () => {
 
       xhr.send(data);
 
-      console.log("GCash link", caseUrl);
+      // console.log("GCash link", caseUrl);
     }
   };
 
