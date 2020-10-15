@@ -47,7 +47,7 @@ const Footer = () => {
               <span>●</span>
             </li>
             <li>
-              <a href="https://www.uxph.org/code-of-conduct/" target="blank">
+              <a href="http://bit.ly/UXPHCodeOfConduct" target="blank">
                 Code of Conduct
               </a>
             </li>
