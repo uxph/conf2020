@@ -106,9 +106,15 @@ const Certificate = () => {
                 <Col md={9} sm={12}>
                   <Input
                     type="text"
+                    id="order-no-field"
                     className="w-100 my-2"
                     placeholder="Order No."
                     onChange={(event) => setOrderNo(event.target.value)}
+                    onKeyPress={(event) => {
+                      if (event.key === "Enter") {
+                        verify();
+                      }
+                    }}
                     style={{
                       height: "44px",
                     }}
