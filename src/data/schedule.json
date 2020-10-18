@@ -19,7 +19,9 @@
       "time": "2:45PM",
       "type": "Workshop",
       "title": "Getting Started with UX and Figma!",
-      "description": ["Hosted by Friends of Figma Philippines"],
+      "description": [
+        "A workshop on using Figma for beginners. Topics include managing files, collaborating with teammates, and using the Figma workspace to create simple UI designs and basic prototypes."
+      ],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3d-8jREpIt905iVjGimLcvRnyeV1NFUz9j4YCUkkVKYBmbD7BQYPbVMzpPd0zpCTFvjYMk9SNy0PlCqr47HVqSbYffChjfwffMgmaDLunrmftaK50Fa1RohvJyP3cONcLMwaOvcG_VQbDKewrWeXzCy=s969-no?authuser=0",
         "https://lh3.googleusercontent.com/pw/ACtC-3ffW6H0I6Ao8mJ7sggGzbVtkgq_cJzp0VV2YfBKtE2ychLu_qfYUTKfwb9ZwQAHMgViIsWp9IEnSvRbuW32Q0JWPWAQV1WJFaZXhe4RNERfnUXefqw54J6tgPegl4d1egE6D41KCEDRVhh7WmNkkRDE=w972-h920-no?authuser=2"
@@ -36,7 +38,9 @@
       "time": "10:10AM",
       "type": "Workshop",
       "title": "UX Research Interactive Workshop",
-      "description": ["Coming Soon!"],
+      "description": [
+        "An introductory interactive workshop about UX Research; how to implement UX research at different stages of UX development, how to scope a problem, formulate research questions, and ask good questions during interviews."
+      ],
       "speaker_id": [6, 28],
       "workshop": []
     }
@@ -48,7 +52,10 @@
       "time": "2:05PM",
       "type": "Keynote Speaker",
       "title": "Intro to UX Research",
-      "description": ["Coming Soon!"],
+      "description": [
+        "\"UX Research: The Guiding Light for Design Decisions.\" ",
+        "What is UX Research, why is it important, and how to get started in UX Research."
+      ],
       "speaker_id": [11],
       "workshop": []
     },
@@ -57,8 +64,21 @@
       "time": "2:50PM",
       "type": "Keynote Speaker",
       "title": "Remote Design Research",
-      "description": ["Coming Soon!"],
+      "description": [
+        "Remote design research: A step by step guide to help you and your team start a strategic design research tomorrow."
+      ],
       "speaker_id": [3],
+      "workshop": []
+    },
+    {
+      "id": 2,
+      "time": "3:35PM",
+      "type": "Keynote Speaker",
+      "title": "Design for Multi-verse Futures",
+      "description": [
+        "No science fiction writers could have predicted our year 2020, possibly the most pivotal time in history that shape our future experiences. As one could almost touch the uncertainty in the air, designers have the power to define these multiple possible futures. In this keynote talk, Michael will share his design stories at IBM and take you on a ride to the 'edge case' futures - where technologies augment the human experiences; enterprises operate in new dynamic and complex forms; the role of a Designer becomes transcending."
+      ],
+      "speaker_id": [16],
       "workshop": []
     }
   ],
@@ -78,7 +98,9 @@
       "time": "10:05AM",
       "type": "Lightning Talk",
       "title": "The Power of Community",
-      "description": ["Coming Soon!"],
+      "description": [
+        "An opening talk about the UXPH organization, UX in the Philippines, and where we're going. Included is a thank you to all the speakers, sponsors, attendees, and more information on the rest of the program."
+      ],
       "speaker_id": [0],
       "workshop": []
     },
@@ -190,7 +212,7 @@
         "https://lh3.googleusercontent.com/pw/ACtC-3dL-7ki4zICSrpJ_7XgSJweezeajYMu6PF8ra71KSIXlBVletPAJVhqpXoxhj-DSbNtFysvBTR1gUtxd6vA808EEForjsjj8SsB2c3HT29LfLQCpFEBU3x7rwP5WyrX1tIgqP188URs-Ujl2YTaH0Sx=s920-no?authuser=2",
         "https://lh3.googleusercontent.com/pw/ACtC-3dtLgf1TIAXz89_vKUnFobXhnYttMLiuGBQCIBylXZwnMh1l_qnKm1gVmW_TASQTxT-8mcQDF8Io1UlIG789VTpbpbvJ70gJ_QkSwQs90ixRLAbmsW0adtqLfnTp_KZPmgejJK91J-xaqXL9PA9Q7FR=s800-no?authuser=1",
         "https://lh3.googleusercontent.com/pw/ACtC-3drt4JKa5nRIzhp2g31WMltYeOq_-4Gp32QOAVGxFynk0-9-N8NoAadObiSVujJ8Ht1tsZEBd4CH_JKZZ6l-H0ft_2G6y9RFqgkkJs1EZlamm1Uj9qAF5COHgxLPd2sfU8rIgZFkRMw4FRuLRc0zEbm=s500-no?authuser=1",
-        "https://lh3.googleusercontent.com/pw/ACtC-3e9OhNVo7BNmTbgfS5zuMo5wpwEZx9wNuG643XYXlOO8V_wad_oklx2BFqAihmQSVNbw6PnUx1oTlRK6KO8xUO0N04mEIFEk4KxGj8gAsi1kuyqlo7Iu5Vw0NPlyWBBGVJ9Xyd26yLARxToB7X6vES6=w646-h969-no?authuser=1"
+        "https://lh3.googleusercontent.com/pw/ACtCC-3e9OhNVo7BNmTbgfS5zuMo5wpwEZx9wNuG643XYXlOO8V_wad_oklx2BFqAihmQSVNbw6PnUx1oTlRK6KO8xUO0N04mEIFEk4KxGj8gAsi1kuyqlo7Iu5Vw0NPlyWBBGVJ9Xyd26yLARxToB7X6vES6=w646-h969-no?authuser=1"
       ],
       "speakers_names": "Felix Lee (ADP List), Grace Ling (Design Buddies), Chia Amisola (Developh), Aldrich Tan (UXPH)",
       "speaker_id": [23, 27, 26, 0],
@@ -250,7 +272,7 @@
       "title": "Shaping your UX Career",
       "description": [
         "\"UX Research: The Guiding Light for Design Decisions.\" ",
-        "What is UX Research, why is it important, and how to get started in UX Research"
+        "What is UX Research, why is it important, and how to get started in UX Research."
       ],
       "speaker_id": [11, 14, 15, 22],
       "speakers_img": [
@@ -275,8 +297,11 @@
       "time": "1:10PM",
       "type": "Workshop",
       "title": "Basic Data Analytics",
-      "description": ["Coming Soon!"],
-      "speaker_id": [25],
+      "description": [
+        "Data journalism has revolutionised digital storytelling, with trailblazers like the New York Times and FiveThirtyEight pioneering interactive web visualisation technologies for narrative storytelling.",
+        "This workshop will walk through the end-to-end process of building a D3.js visualisation - starting with exploratory data analysis, journalistic data investigation, visual experimentation and rounding off with (as Alberto Cairo says) of communicating truthful art."
+      ],
+      "speaker_id": [29],
       "workshop": []
     },
     {
@@ -294,8 +319,7 @@
       "type": "Workshop",
       "title": "Using Customer Value Propositions as Revenue Model",
       "description": [
-        "1. Product and Service Pricing Strategy  - In this talk i would like to talk about the learnings i got from a book called Pricing of Product and Service - Service Pricing Book, by masking them into some of the case study i have done in my experience and how this product and service influence their buyer through this effective ways.",
-        "2. Using Customer Value Proposition as Revenue Model - In This talk i would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
+        "In this talk, I would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
       ],
       "speaker_id": [18],
       "workshop": []
@@ -320,7 +344,7 @@
         "https://lh3.googleusercontent.com/pw/ACtC-3eqvM4zEFA1KPH52e_EGN1fbesdfC7Fi2qbm9XuKjpzahb-x6PyGfPFf4R3R3QUiS3qWcuLEKEhO_B91MIhO5s8e6FjThgNDV5JyNoQTET1FV2GIgO0axLcEduJviNS3X_349968GpK4Y3jpJ8UBMf_=s407-no?authuser=1"
       ],
       "speakers_names": "Aldrich Huang (uxtesting) & Michael Tam (IBM iX, ADP List)",
-      "speaker_id": [16, 7],
+      "speaker_id": [16, 7, 8, 3],
       "workshop": []
     },
     {
