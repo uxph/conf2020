@@ -144,6 +144,8 @@ const TicketForm = () => {
   // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
+    let matchedCodeDiscount = 0;
+
     // secret code
     if (lowerCasedCode === "uxcult100") {
       setDiscount(subtotal - 100);
@@ -160,11 +162,13 @@ const TicketForm = () => {
             discount_codes[lowerCasedCode].percent * 100
           )}% off)`
         );
+        matchedCodeDiscount = discount_codes[lowerCasedCode].percent;
       } else {
         setDiscount(discount_codes[lowerCasedCode].solid);
         setDiscountMessage(
           `PHP ${discount_codes[lowerCasedCode].solid}.00 off discount`
         );
+        matchedCodeDiscount = discount_codes[lowerCasedCode].solid;
       }
     }
 
@@ -174,11 +178,15 @@ const TicketForm = () => {
       setDiscount(0);
     }
 
-    if (earlyBirdQuantity >= 5 && earlyBirdQuantity < 10) {
+    if (
+      earlyBirdQuantity >= 5 &&
+      earlyBirdQuantity < 10 &&
+      matchedCodeDiscount <= 0.1
+    ) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.1);
       setDiscountCode("Group of 5");
       setDiscountMessage("GROUP OF 5 (10% off) discount");
-    } else if (earlyBirdQuantity >= 10) {
+    } else if (earlyBirdQuantity >= 10 && matchedCodeDiscount <= 0.15) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.15);
       setDiscountCode("Group of 10");
       setDiscountMessage("GROUP OF 10 (15% off) discount");
