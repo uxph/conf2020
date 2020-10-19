@@ -649,5 +649,49 @@
     "company": "",
     "company_logo": "",
     "disabled": true
+  },
+  {
+    "id": 31,
+    "name": "Mars Quinay",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fe8GLA_1_pMnG3kfoZ5szMu9VckABqkcEDAOEHggqFfClmkiwtrFsDWqOogQoXBfD5Ywc4TF6ybIOnPhVCwIrRlnAuwP7Vw5-a8i1IuefIz3jPteLIoUPoAyGpPxET7nAptUFI1KrKjLqq94mv-_J9=w493-h657-no?authuser=0",
+    "bio": [],
+    "social_media": [],
+    "position": "UX/UI Designer",
+    "company": "Rebar Solutions",
+    "company_logo": "",
+    "disabled": true
+  },
+  {
+    "id": 32,
+    "name": "Pia Zulueta",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cWy25ilqgWNzZhF-VE9kXDgRRlS768KuVkXa3UW0WUhh4WvGTbpVjqaZP8vYpsrIu2rKWKRjv_k7vNQ4Ffge82xpEWPwm2udJxfMPlTYwraBjA7AQKvEIeC29MyNcEgF6lk-SHlOmek8QXf8KgT__3=w679-h657-no?authuser=0",
+    "bio": [],
+    "social_media": [],
+    "position": "UX Researcher",
+    "company": "Globe Telecom",
+    "company_logo": "",
+    "disabled": true
+  },
+  {
+    "id": 33,
+    "name": "Kenneth Ruelan",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3f7JePqDCbEDfBvNzpBhTzm_Lad5I6uj06anOjLjfhYUmuVsj-CYU5UTaXrsAbaxhjQ8cekRtsPzcXkS5mDT0458gP9d2Y_Q27f5XsgXv287f83aIPj4S2ozfFjsEOgzpamwsZYsHvS7Ys5mRQL2ulr=s657-no?authuser=0",
+    "bio": [],
+    "social_media": [],
+    "position": "Senior UX Designer",
+    "company": "Arcanys",
+    "company_logo": "",
+    "disabled": true
+  },
+  {
+    "id": 34,
+    "name": "Shannen Sapar",
+    "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cddTvmo4SMfw9f66ltfcX9EP-Q0PhuHz78aAVs9YibLFnsmAjkNLWZ8xPnGuIpuTGtq1w3cU4v8zQ5g5zTlbihSpBUKsDaerPa-xNPgyFf5NgdxAsbkWPbdxsnzx_esMOpQFPxpduirfDHTHSWcTdb=w656-h657-no?authuser=0",
+    "bio": [],
+    "social_media": [],
+    "position": "Experience Designer",
+    "company": "360Pixels / UXDVO",
+    "company_logo": "",
+    "disabled": true
   }
 ]
