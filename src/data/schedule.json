@@ -4,8 +4,8 @@
       "id": 0,
       "time": "2:00PM",
       "type": "Screenside Chat",
-      "title": "Welcome to the World of UX",
-      "description": ["Hosted by Reine and Stella"],
+      "title": "Screenside Chat: UX Basics",
+      "description": ["Whether you're a beginner in UX, a practitioner who just wants to brush up on your UX knowledge, or someone who wants to share what they've learned, join us in this panel discussion. We’ll cover some fundamentals, tools, and how to jumpstart your career in UX."],
       "speakers_img": [
         "https://www.uxph.org/assets/team/reine.jpg",
         "https://ca.slack-edge.com/TK85EQGCX-U01AMSLBT4H-074bde69344b-512"
@@ -18,7 +18,7 @@
       "id": 1,
       "time": "2:45PM",
       "type": "Workshop",
-      "title": "Getting Started with UX and Figma!",
+      "title": "Workshop: Getting Started with Figma",
       "description": [
         "A workshop on using Figma for beginners. Topics include managing files, collaborating with teammates, and using the Figma workspace to create simple UI designs and basic prototypes."
       ],
@@ -33,20 +33,6 @@
   ],
 
   "pre_event_2": [
-    {
-      "id": 0,
-      "time": "10:10AM",
-      "type": "Workshop",
-      "title": "UX Research Interactive Workshop",
-      "description": [
-        "An introductory interactive workshop about UX Research; how to implement UX research at different stages of UX development, how to scope a problem, formulate research questions, and ask good questions during interviews."
-      ],
-      "speaker_id": [6, 28],
-      "workshop": []
-    }
-  ],
-
-  "pre_event_3": [
     {
       "id": 0,
       "time": "2:05PM",
@@ -309,7 +295,11 @@
       "time": "1:10PM",
       "type": "Workshop",
       "title": "Culture and Psychology of Teams",
-      "description": ["Adjusting teams to be more focused and collaborative."],
+      "description": [
+        "We are all under one crisis, but our situations are all different. There is indeed no one-size-fits-all solution because our control over things varies.",
+        "But there is one factor that we all have control over - ourselves, humans.",
+        "Join Dae for a session that focuses on developing the mindset and behavior of people within teams and companies. Tools and methods will be discussed to create an organization that would be inspired to work together to move forward efficiently and effectively, despite new working arrangements and the uncertainty that lies ahead of us."
+      ],
       "speaker_id": [4],
       "workshop": []
     },

@@ -200,13 +200,13 @@ const Programme = () => {
       );
     });
 
-    $("#pre_event_3-button").on("click", function () {
-      let scrollAmount = $("#pre_event_3").offset().top - 170;
-      $([document.documentElement, document.body]).animate(
-        { scrollTop: scrollAmount },
-        400
-      );
-    });
+    // $("#pre_event_3-button").on("click", function () {
+    //   let scrollAmount = $("#pre_event_3").offset().top - 170;
+    //   $([document.documentElement, document.body]).animate(
+    //     { scrollTop: scrollAmount },
+    //     400
+    //   );
+    // });
 
     $("#day_1-button").on("click", function () {
       let scrollAmount = $("#day_1").offset().top - 170;
@@ -257,14 +257,6 @@ const Programme = () => {
                 id="pre_event_2-button"
               >
                 Pre-Event 2
-              </Button>
-              <Button
-                variant="outline"
-                className="w-100 margin-bottom-12"
-                innerClassName="w-100"
-                id="pre_event_3-button"
-              >
-                Pre-Event 3
               </Button>
               <Button
                 variant="outline"
@@ -356,54 +348,12 @@ const Programme = () => {
                       verticalAlign: "middle",
                     }}
                   >
-                    (October 31, Saturday)
-                  </small>
-                </h3>
-              </div>
-              <DaySegment
-                segment="pre_event_2"
-                workshopId={workshopId}
-                segmentName={segmentName}
-                toggle={toggle}
-                setSegmentName={setSegmentName}
-                setWorkshopId={setWorkshopId}
-              />
-            </div>
-            <div
-              className="border p-4 bg-white shadow-sm margin-bottom-48"
-              style={{
-                borderRadius: "1rem",
-              }}
-              data-aos="fade"
-              data-aos-offset={50}
-              data-aos-duration={600}
-              data-aos-once={true}
-              id="pre_event_3"
-            >
-              <div
-                className="padding-y-16"
-                style={{
-                  position: "sticky",
-                  top: "70px",
-                  zIndex: 1000,
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                <h3 className="text-center">
-                  <span className="red text-uppercase">Pre-event</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
                     (November 7, Saturday)
                   </small>
                 </h3>
               </div>
               <DaySegment
-                segment="pre_event_3"
+                segment="pre_event_2"
                 workshopId={workshopId}
                 segmentName={segmentName}
                 toggle={toggle}
