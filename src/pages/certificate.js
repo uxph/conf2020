@@ -35,11 +35,12 @@ const Certificate = () => {
   // useEffect to generate the certificate
   useEffect(() => {
     if (generate) {
-      const doc = new jsPDF("landscape");
+      const doc = new jsPDF("landscape"); // todo compress PDF specs
 
       // doc.addImage("/images/logos/uxph_conf_logo.png", "PNG", 15, 40, 180, 180);
+      // TODO add proper font
       // TODO add the certificate visuals to the export
-      doc.text(certName, 10, 10);
+      doc.text(certName, 10, 10); // todo position the name properly
       doc.save(`UXPH Conf 2020 Certificate of Attendance - ${certName}.pdf`);
     }
 
