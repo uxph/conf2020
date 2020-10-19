@@ -143,6 +143,7 @@ const TicketForm = () => {
   // useEffect for discount codes
   useEffect(() => {
     const lowerCasedCode = discountCode.toLowerCase();
+    let matchedCodeDiscount = 0;
     // secret code
     if (lowerCasedCode === "uxcult100") {
       setDiscount(subtotal - 100);
@@ -153,6 +154,7 @@ const TicketForm = () => {
       setSubtotal(earlyBirdPrice * earlyBirdQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
+        matchedCodeDiscount = discount_codes[lowerCasedCode].percent;
       } else {
         setDiscount(discount_codes[lowerCasedCode].solid);
       }
@@ -164,10 +166,14 @@ const TicketForm = () => {
       setDiscount(0);
     }
 
-    if (earlyBirdQuantity >= 5 && earlyBirdQuantity < 10) {
+    if (
+      earlyBirdQuantity >= 5 &&
+      earlyBirdQuantity < 10 &&
+      matchedCodeDiscount <= 0.1
+    ) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.1);
       setDiscountCode("Group of 5");
-    } else if (earlyBirdQuantity >= 10) {
+    } else if (earlyBirdQuantity >= 10 && matchedCodeDiscount <= 0.15) {
       setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.15);
       setDiscountCode("Group of 10");
     } else if (earlyBirdQuantity < 5 && discountCode.includes("Group of")) {
