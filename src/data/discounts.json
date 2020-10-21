@@ -1,126 +1,146 @@
 {
   "uxph2020speakers": {
-    "percent": 0.1,
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020psite": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020uxth": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020slash": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020rappler": {
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020ux+": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020anflo": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020uxid": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020dscl": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020fgd": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020quadx": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020uxtio": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020acct": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020make": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020qbo": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020smart": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020comet": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020dsc": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020invision": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020adp": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020ambi": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020spnsr": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020anyok": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020paymongo": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020grocerg": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020brains": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020cebuxd": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020fluffle": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020developh": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
@@ -130,67 +150,67 @@
   },
 
   "uxph2020figmaph": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020igniteph": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020pwa": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020pwdo": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020ptlc": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020roots": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020summit": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020uxdvo": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020uxrc": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020uxsea": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020dlsu": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020icebreaker": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   },
 
   "uxph2020s2s": {
-    "percent": 0.1,
+    "percent": 0.15,
     "solid": null
   }
 }
