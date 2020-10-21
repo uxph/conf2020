@@ -4,7 +4,7 @@
       "id": 0,
       "time": "2:00PM",
       "type": "Screenside Chat",
-      "title": "Getting Started with UX",
+      "title": "Getting Started in UX",
       "description": [
         "Whether you're a beginner in UX, a practitioner who just wants to brush up on your UX knowledge, or someone who wants to share what they've learned, join us in this panel discussion. We’ll cover some fundamentals, tools, and how to jumpstart your career in UX."
       ],
@@ -39,7 +39,7 @@
       "id": 0,
       "time": "2:00PM",
       "type": "Keynote Speaker",
-      "title": "Intro to UX Research",
+      "title": "UX Research: The Guiding Light for Design Decisions",
       "description": [
         "\"UX Research: The Guiding Light for Design Decisions.\" What is UX Research, why is it important, and how to get started in UX Research."
       ],
@@ -271,7 +271,7 @@
       "id": 5,
       "time": "1:05PM",
       "type": "Workshop",
-      "title": "Basic Data Analytics",
+      "title": "Data Driven Storytelling",
       "description": [
         "Data journalism has revolutionised digital storytelling, with trailblazers like the New York Times and FiveThirtyEight pioneering interactive web visualisation technologies for narrative storytelling.",
         "This workshop will walk through the end-to-end process of building a D3.js visualisation - starting with exploratory data analysis, journalistic data investigation, visual experimentation and rounding off with (as Alberto Cairo says) of communicating truthful art."
