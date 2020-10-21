@@ -73,102 +73,100 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
         ? schedule[segment][index].time === schedule[segment][index - 1].time
         : false;
 
-    if (!isSpecialSegment && event.description[0] === "Coming Soon!") {
-      return null;
-    } else {
-      return (
-        <div
-          className={`padding-y-32`}
-          style={{
-            borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
-          }}
-          key={event.id}
-        >
-          {/* {!isSpecialSegment && (
+    // if (!isSpecialSegment && event.description[0] === "Coming Soon!") {
+    //   return null;
+    // } else {
+    return (
+      <div
+        className={`padding-y-32`}
+        style={{
+          borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
+        }}
+        key={event.id}
+      >
+        {/* {!isSpecialSegment && (
           <h6 className="gray mx-4 margin-bottom-32">
             <strong>{event.time}</strong>
           </h6>
         )} */}
-          <a
-            href="/"
-            className={`${
-              isSpecialSegment ? "" : "segment-item"
-            } bg-white d-block`}
-            style={{
-              textDecoration: "none",
-              cursor: isSpecialSegment ? "default" : "pointer",
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              if (!isSpecialSegment) {
-                setSegmentName(segment);
-                setWorkshopId(event.id);
-                toggle();
-                // console.log(segment + " " + event.id);
-              }
-            }}
-          >
-            <Row key={index} className={`mx-3 segment-container`}>
-              {isSameTime ? (
-                <Col md={2} sm={12}></Col>
-              ) : (
-                <Col md={2} sm={12}>
-                  <h6 className="gray">
-                    <strong>{event.time}</strong>
-                  </h6>
-                </Col>
-              )}
+        <a
+          href="/"
+          className={`${
+            isSpecialSegment ? "" : "segment-item"
+          } bg-white d-block pt-3`}
+          style={{
+            textDecoration: "none",
+            cursor: isSpecialSegment ? "default" : "pointer",
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            if (!isSpecialSegment) {
+              setSegmentName(segment);
+              setWorkshopId(event.id);
+              toggle();
+              // console.log(segment + " " + event.id);
+            }
+          }}
+        >
+          <Row key={index} className={`mx-3 segment-container`}>
+            {isSameTime ? (
+              <Col md={2} sm={12}></Col>
+            ) : (
+              <Col md={2} sm={12}>
+                <h6 className="gray">
+                  <strong>{event.time}</strong>
+                </h6>
+              </Col>
+            )}
 
-              <Col md={4} sm={12}>
-                <h5
-                  className={`margin-bottom-12 ${
-                    isSpecialSegment ? "mb-0" : ""
-                  }`}
+            <Col md={4} sm={12}>
+              <h5
+                className={`margin-bottom-12 ${isSpecialSegment ? "mb-0" : ""}`}
+                style={{
+                  lineHeight: "1.5rem",
+                  fontSize: "1rem",
+                }}
+              >
+                {event.title}
+              </h5>
+              {!isSpecialSegment && (
+                <div className="mb-1">
+                  <Chip
+                    variant="outlined"
+                    label={event.type}
+                    className="margin-bottom-8"
+                    style={{
+                      // color: "#ffffff",
+                      // backgroundColor: "#e8006f",
+                      borderColor: "#e8006f",
+                      color: "#e8006f",
+                      fontFamily: "Karla",
+                      fontSize: "0.7rem",
+                    }}
+                  />
+                  {currWorkshops}
+                </div>
+              )}
+            </Col>
+            <Col md={6} sm={12} className="pl-4 speaker-list">
+              <div>{facilitators}</div>
+              {!isSpecialSegment && (
+                <Button
+                  variant="outline"
+                  className="d-none event-read-more"
                   style={{
-                    lineHeight: "1.5rem",
-                    fontSize: "1rem",
+                    padding: "0.7rem 0.7rem",
                   }}
                 >
-                  {event.title}
-                </h5>
-                {!isSpecialSegment && (
-                  <div className="mb-1">
-                    <Chip
-                      variant="outlined"
-                      label={event.type}
-                      className="margin-bottom-8"
-                      style={{
-                        // color: "#ffffff",
-                        // backgroundColor: "#e8006f",
-                        borderColor: "#e8006f",
-                        color: "#e8006f",
-                        fontFamily: "Karla",
-                        fontSize: "0.7rem",
-                      }}
-                    />
-                    {currWorkshops}
-                  </div>
-                )}
-              </Col>
-              <Col md={6} sm={12} className="pl-4 speaker-list">
-                <div>{facilitators}</div>
-                {!isSpecialSegment && (
-                  <Button
-                    variant="outline"
-                    className="d-none event-read-more"
-                    style={{
-                      padding: "0.7rem 0.7rem",
-                    }}
-                  >
-                    Read more
-                  </Button>
-                )}
-              </Col>
-            </Row>
-          </a>
-        </div>
-      );
-    }
+                  Read more
+                </Button>
+              )}
+            </Col>
+          </Row>
+        </a>
+      </div>
+    );
+    // }
   });
 
   return <>{currSegment}</>;
@@ -284,7 +282,7 @@ const Programme = () => {
               }}
               id="pre_event_1"
               data-aos="fade"
-              data-aos-offset={50}
+              data-aos-offset={100}
               data-aos-duration={600}
               data-aos-once={true}
             >
@@ -326,7 +324,7 @@ const Programme = () => {
                 borderRadius: "1rem",
               }}
               data-aos="fade"
-              data-aos-offset={50}
+              data-aos-offset={150}
               data-aos-duration={600}
               data-aos-once={true}
             >
@@ -368,7 +366,7 @@ const Programme = () => {
               }}
               id="day_1"
               data-aos="fade"
-              data-aos-offset={50}
+              data-aos-offset={150}
               data-aos-duration={600}
               data-aos-once={true}
             >
@@ -410,7 +408,7 @@ const Programme = () => {
               }}
               id="day_2"
               data-aos="fade"
-              data-aos-offset={50}
+              data-aos-offset={150}
               data-aos-duration={600}
               data-aos-once={true}
             >

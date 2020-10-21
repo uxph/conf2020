@@ -76,7 +76,9 @@
   transition: ease all 0.3s;
 
   &:hover {
+    background-color: #f8f8f8 !important;
     transform: scale(1.05);
+    border-radius: 0.75rem;
   }
 }
 

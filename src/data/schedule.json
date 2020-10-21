@@ -4,8 +4,10 @@
       "id": 0,
       "time": "2:00PM",
       "type": "Screenside Chat",
-      "title": "Screenside Chat: UX Basics",
-      "description": ["Whether you're a beginner in UX, a practitioner who just wants to brush up on your UX knowledge, or someone who wants to share what they've learned, join us in this panel discussion. We’ll cover some fundamentals, tools, and how to jumpstart your career in UX."],
+      "title": "Getting Started with UX",
+      "description": [
+        "Whether you're a beginner in UX, a practitioner who just wants to brush up on your UX knowledge, or someone who wants to share what they've learned, join us in this panel discussion. We’ll cover some fundamentals, tools, and how to jumpstart your career in UX."
+      ],
       "speakers_img": [
         "https://www.uxph.org/assets/team/reine.jpg",
         "https://ca.slack-edge.com/TK85EQGCX-U01AMSLBT4H-074bde69344b-512"
@@ -16,9 +18,9 @@
     },
     {
       "id": 1,
-      "time": "2:45PM",
+      "time": "2:50PM",
       "type": "Workshop",
-      "title": "Workshop: Getting Started with Figma",
+      "title": "Getting Started with Figma",
       "description": [
         "A workshop on using Figma for beginners. Topics include managing files, collaborating with teammates, and using the Figma workspace to create simple UI designs and basic prototypes."
       ],
@@ -35,7 +37,7 @@
   "pre_event_2": [
     {
       "id": 0,
-      "time": "2:05PM",
+      "time": "2:00PM",
       "type": "Keynote Speaker",
       "title": "Intro to UX Research",
       "description": [
@@ -47,24 +49,13 @@
     },
     {
       "id": 1,
-      "time": "2:50PM",
+      "time": "2:45PM",
       "type": "Keynote Speaker",
       "title": "Remote Design Research",
       "description": [
         "Remote design research: A step by step guide to help you and your team start a strategic design research tomorrow."
       ],
       "speaker_id": [3],
-      "workshop": []
-    },
-    {
-      "id": 2,
-      "time": "3:35PM",
-      "type": "Keynote Speaker",
-      "title": "Design for Multi-verse Futures",
-      "description": [
-        "No science fiction writers could have predicted our year 2020, possibly the most pivotal time in history that shape our future experiences. As one could almost touch the uncertainty in the air, designers have the power to define these multiple possible futures. In this keynote talk, Michael will share his design stories at IBM and take you on a ride to the 'edge case' futures - where technologies augment the human experiences; enterprises operate in new dynamic and complex forms; the role of a Designer becomes transcending."
-      ],
-      "speaker_id": [16],
       "workshop": []
     }
   ],
@@ -81,7 +72,7 @@
     },
     {
       "id": 1,
-      "time": "10:05AM",
+      "time": "10:00AM",
       "type": "Lightning Talk",
       "title": "The Power of Community",
       "description": [
@@ -93,7 +84,7 @@
 
     {
       "id": 3,
-      "time": "10:35AM",
+      "time": "10:30AM",
       "type": "Keynote Speaker",
       "title": "Designers as Enablers of Change",
       "description": [
@@ -104,7 +95,7 @@
     },
     {
       "id": 4,
-      "time": "11:25AM",
+      "time": "11:15AM",
       "type": "Keynote Speaker",
       "title": "Permission to Speak",
       "description": [
@@ -117,7 +108,7 @@
     },
     {
       "id": 5,
-      "time": "12:10PM",
+      "time": "12:00NN",
       "type": "Break",
       "title": "Lunch Break",
       "description": ["Lunch Break"],
@@ -152,7 +143,7 @@
     },
     {
       "id": 8,
-      "time": "2:20PM",
+      "time": "2:15PM",
       "type": "Lightning Talk",
       "title": "Lessons in Digital Transformation in a Corporate Setting",
       "description": ["Coming Soon!"],
@@ -161,7 +152,7 @@
     },
     {
       "id": 9,
-      "time": "2:50PM",
+      "time": "2:45PM",
       "type": "Lightning Talk",
       "title": "Stories from government: shifting mindsets from logic to empathy",
       "description": [
@@ -181,16 +172,18 @@
     },
     {
       "id": 11,
-      "time": "3:40PM",
-      "type": "Lightning Talk",
-      "title": "Learn UX Growth",
-      "description": ["Coming Soon!"],
-      "speaker_id": [9],
+      "time": "3:35PM",
+      "type": "Keynote Speaker",
+      "title": "Design for Multi-verse Futures",
+      "description": [
+        "No science fiction writers could have predicted our year 2020, possibly the most pivotal time in history that shape our future experiences. As one could almost touch the uncertainty in the air, designers have the power to define these multiple possible futures. In this keynote talk, Michael will share his design stories at IBM and take you on a ride to the 'edge case' futures - where technologies augment the human experiences; enterprises operate in new dynamic and complex forms; the role of a Designer becomes transcending."
+      ],
+      "speaker_id": [16],
       "workshop": []
     },
     {
       "id": 12,
-      "time": "4:25PM",
+      "time": "4:20PM",
       "type": "Panel Discussion",
       "title": "Building a Design-Driven Community",
       "description": ["A panel discussion on community panel - ADPList"],
@@ -206,9 +199,9 @@
     },
     {
       "id": 13,
-      "time": "5:15PM",
+      "time": "5:05PM",
       "type": "Socials",
-      "title": "UXPH x Design Buddies",
+      "title": "Socials: UXPH x Design Buddies",
       "description": ["Socials with Design Buddies"],
       "speaker_id": [],
       "speakers_img": [
@@ -231,7 +224,7 @@
     },
     {
       "id": 1,
-      "time": "10:05AM",
+      "time": "10:00AM",
       "type": "Keynote Speaker",
       "title": "The Winds of Change in UX Research",
       "description": [
@@ -242,7 +235,7 @@
     },
     {
       "id": 2,
-      "time": "10:50AM",
+      "time": "10:45AM",
       "type": "Lightning Talk",
       "title": "3 Keystones of Accessible Web Content",
       "description": [
@@ -253,7 +246,7 @@
     },
     {
       "id": 3,
-      "time": "11:20AM",
+      "time": "11:15AM",
       "type": "Panel Discussion",
       "title": "Shaping your UX Career",
       "description": [
@@ -271,7 +264,7 @@
     },
     {
       "id": 4,
-      "time": "12:05PM",
+      "time": "12:00NN",
       "type": "Break",
       "title": "Lunch Break",
       "description": ["Coming Soon!"],
@@ -280,7 +273,7 @@
     },
     {
       "id": 5,
-      "time": "1:10PM",
+      "time": "1:05PM",
       "type": "Workshop",
       "title": "Basic Data Analytics",
       "description": [
@@ -292,8 +285,8 @@
     },
     {
       "id": 6,
-      "time": "1:10PM",
-      "type": "Workshop",
+      "time": "1:05PM",
+      "type": "Keynote Speaker",
       "title": "Culture and Psychology of Teams",
       "description": [
         "We are all under one crisis, but our situations are all different. There is indeed no one-size-fits-all solution because our control over things varies.",
@@ -305,8 +298,8 @@
     },
     {
       "id": 7,
-      "time": "1:55PM",
-      "type": "Workshop",
+      "time": "1:50PM",
+      "type": "Keynote Speaker",
       "title": "Using Customer Value Propositions as Revenue Model",
       "description": [
         "In this talk, I would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
@@ -325,7 +318,7 @@
     },
     {
       "id": 9,
-      "time": "3:20PM",
+      "time": "3:10PM",
       "type": "Panel Discussion",
       "title": "Leading by Design",
       "description": ["Coming Soon!"],
@@ -334,15 +327,17 @@
         "https://lh3.googleusercontent.com/pw/ACtC-3eqvM4zEFA1KPH52e_EGN1fbesdfC7Fi2qbm9XuKjpzahb-x6PyGfPFf4R3R3QUiS3qWcuLEKEhO_B91MIhO5s8e6FjThgNDV5JyNoQTET1FV2GIgO0axLcEduJviNS3X_349968GpK4Y3jpJ8UBMf_=s407-no?authuser=1"
       ],
       "speakers_names": "Aldrich Huang (uxtesting) & Michael Tam (IBM iX, ADP List)",
-      "speaker_id": [16, 7, 8, 3],
+      "speaker_id": [16, 7, 8, 3, 6],
       "workshop": []
     },
     {
       "id": 10,
-      "time": "4:00PM",
+      "time": "3:55PM",
       "type": "Keynote Speaker",
       "title": "Speculative Design",
-      "description": ["Coming Soon!"],
+      "description": [
+        "As the craft of Design continues to evolve and require more strategic thinking, we need new tools to address today’s greatest political, social, environmental, and cultural challenges. Speculative Designers and Strategic Foresight practitioners are banding together to bring these tools into the ever-changing landscape of Design so that we can better assess the challenges of emerging technologies, climate change, and the implications we face with dynamically shifting political structures. As a 2nd generation Filipino-American, Phil will discuss the challenges and struggle growing up as a minority in the US, finding his identity as a designer, building a nonprofit and conference, and organizing a community of practice with chapters in over 50 cities worldwide. He will walk through a number of examples spanning the history of Critical Design, Design Fiction, and trend analysis tools providing a platform for us to begin shaping these conversations for the businesses and governments that are ultimately defining our future. "
+      ],
       "speaker_id": [24],
       "workshop": []
     },

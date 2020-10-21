@@ -37,7 +37,7 @@ const ListSponsors = ({
             <img
               src={item.image_url}
               alt={item.name}
-              className={contentClassName}
+              className={`${contentClassName} sponsor-page-img`}
             />
           </div>
         </a>
