@@ -169,37 +169,6 @@
       ]
     },
     {
-      "id": 7,
-      "name": "Ambidextr",
-      "description": [
-        "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
-      ],
-      "image_url": "/images/sponsors/ambidextr.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "http://ambidextr.media/",
-          "icon": "fa fa-globe"
-        },
-        {
-          "url": "https://www.linkedin.com/company/ambidextr-media-corporation/?viewAsMember=true",
-          "icon": "fa fa-linkedin"
-        },
-        {
-          "url": "https://www.facebook.com/ambidextrPH/?ref=aymt_homepage_panel&eid=ARC5i4ldoCcllTUCnfBlOI0oOKovnEDgMnW-FmG80qyxLeb8VBe0lRGV4DEDyLOOHbim0j_0LGv1gKbu",
-          "icon": "fa fa-facebook-square"
-        },
-        {
-          "url": "https://twitter.com/ambidextrPH",
-          "icon": "fa fa-twitter"
-        },
-        {
-          "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
-          "icon": "fa fa-youtube-play"
-        }
-      ]
-    },
-    {
       "id": 8,
       "name": "Roots",
       "description": [
@@ -344,21 +313,6 @@
       ]
     },
     {
-      "id": 16,
-      "name": "Rappler",
-      "description": [
-        "A social news network where stories inspire community engagement and digitally fuelled actions for social change."
-      ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fLaTnvVCKeLXRr4KsErU4ZJG-LN_qON9LBTEb1hDZCUAXDWd-iJNRM_Vbg59I39au5eO_uW2kIl8GtLY49cYkWVAkLrR0u_1VvuAv2a4ObMDTRJdk1VgfAyuK0rq5pjj5SFqBWlvsH8hLbC3zBV5o=w814-h912-no?authuser=0",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://www.rappler.com/",
-          "icon": "fa fa-globe"
-        }
-      ]
-    },
-    {
       "id": 17,
       "name": "Developer Student Club Loyola",
       "description": [
@@ -373,45 +327,6 @@
         },
         {
           "url": "https://www.facebook.com/dscloyola/",
-          "icon": "fa fa-facebook-square"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Summit Media",
-      "description": [
-        "Summit Media is a digital lifestyle network in the Philippines, with 14 media brands attracting around 31 million monthly unique visitors and approximately 33 million social media followers. "
-      ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dJTpOB7xXpu-WMKI_DhCMoUfKZQ1EGZ9ucmmNkzIGTevUPentFv8rmTUeFvDkfw-CAsPIcoPuc-6KCo0V_OFuIWx982RTNk42wgXqhJk3Iul_4BCdnemrN1506wNKCBLb3lQlimnXykaq9VL9hq6U=w658-h657-no",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://www.summitmedia.com.ph/",
-          "icon": "fa fa-globe"
-        },
-        {
-          "url": "https://www.facebook.com/SummitMediaPH/",
-          "icon": "fa fa-facebook-square"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Esquire",
-      "description": [
-        "Esquire Philippines is a thought-leading network for well-connected men and women who are ambitious in their lives and are determined to shape the world.",
-        "We are their essential manual on how to lead a richer, better, fuller, and more meaningful life. Our goal is to help them know what to do in every situation in life, as well as to enlighten and educate them so they have an opinion about all aspects of the culture in which they live."
-      ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3e-ioDpFDjhPwCDyN3YhE3QeQGLmyBe1_KOLB-Rrs5hi1nSOulveGRWKhhHmROOKc1SX1QQmwtvDcu3n7sPtEGBAwy3UBZqEuZz-zhCvbxQbRrb7hGvT1MhM_C7hYGWJGT0k2VEPME2SYgmSzG9ak0=w575-h123-no",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://esquiremag.ph",
-          "icon": "fa fa-globe"
-        },
-        {
-          "url": "https://www.facebook.com/EsquirePH/",
           "icon": "fa fa-facebook-square"
         }
       ]
@@ -437,6 +352,91 @@
     },
     {
       "id": 21,
+      "name": "Brainsparks",
+      "description": [
+        "Brainsparks is the first and only founder-focused incubator in the Philippines that wants to turn dreamers into founders.",
+
+        "Brainsparks has supported countless startups develop their ideas, accelerate their growth, and raise funding from investors globally. Brainsparks is happy to have successfully helped several PH Startups grow their company, and scale up their business."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cNG0Eole7zfOBGvNpmmPPz7w8cl6GRXZBKNZbMO8XZSAI_hlJjUQRfFXIgTeoXLrNDb4tUBJdjCpHfzZ5yMj9038cTTKVutytGuoSButQg6iGWl1tagZ70Iwn6H9uPfe9LDRJ_dQXeoBMmyG8m0PhH=w439-h93-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.brainsparks.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/BrainsparksIncubator",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/brainsparksph",
+          "icon": "fa fa-twitter"
+        }
+      ],
+      "featured": true
+    }
+  ],
+
+  "Media Partners": [
+    {
+      "id": 16,
+      "name": "Rappler",
+      "description": [
+        "A social news network where stories inspire community engagement and digitally fuelled actions for social change."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fLaTnvVCKeLXRr4KsErU4ZJG-LN_qON9LBTEb1hDZCUAXDWd-iJNRM_Vbg59I39au5eO_uW2kIl8GtLY49cYkWVAkLrR0u_1VvuAv2a4ObMDTRJdk1VgfAyuK0rq5pjj5SFqBWlvsH8hLbC3zBV5o=w814-h912-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.rappler.com/",
+          "icon": "fa fa-globe"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "Summit Media",
+      "description": [
+        "Summit Media is a digital lifestyle network in the Philippines, with 14 media brands attracting around 31 million monthly unique visitors and approximately 33 million social media followers. "
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fEkOLxQoyaotZALkLpGLYe7D6ofNtUI8teHZPGKFt8J-0H68vsmB5ExA0KUTkQrVLTeGsaMSQzfBtfqMwllz-2OyOfZvTqw3AJB0ThK-VIX-id5WGIO2VYM3n3_lPzz1HJm6u6TL8QcPvUX3rAzZX5=w1200-h1373-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.summitmedia.com.ph/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/SummitMediaPH/",
+          "icon": "fa fa-facebook-square"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 19,
+      "name": "Esquire",
+      "description": [
+        "Esquire Philippines is a thought-leading network for well-connected men and women who are ambitious in their lives and are determined to shape the world.",
+        "We are their essential manual on how to lead a richer, better, fuller, and more meaningful life. Our goal is to help them know what to do in every situation in life, as well as to enlighten and educate them so they have an opinion about all aspects of the culture in which they live."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3e-ioDpFDjhPwCDyN3YhE3QeQGLmyBe1_KOLB-Rrs5hi1nSOulveGRWKhhHmROOKc1SX1QQmwtvDcu3n7sPtEGBAwy3UBZqEuZz-zhCvbxQbRrb7hGvT1MhM_C7hYGWJGT0k2VEPME2SYgmSzG9ak0=w575-h123-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://esquiremag.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/EsquirePH/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 21,
       "name": "Cosmopolitan - Summit Media",
       "description": [
         "Cosmopolitan Philippines is the top-of-mind digital brand of every Pinay claiming her defining decade—her twenties. Cosmopolitan serves to inspire, encourage, and empower her to go after her dreams, live her best life, and be in control of her body through informative, entertaining, and relatable content."
@@ -449,10 +449,42 @@
           "icon": "fa fa-facebook-square"
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "Ambidextr",
+      "description": [
+        "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
+      ],
+      "image_url": "/images/sponsors/ambidextr.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "http://ambidextr.media/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/ambidextr-media-corporation/?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/ambidextrPH/?ref=aymt_homepage_panel&eid=ARC5i4ldoCcllTUCnfBlOI0oOKovnEDgMnW-FmG80qyxLeb8VBe0lRGV4DEDyLOOHbim0j_0LGv1gKbu",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/ambidextrPH",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
+          "icon": "fa fa-youtube-play"
+        }
+      ],
+      "featured": true
     }
   ],
 
-  "General Sponsors": [
+  "Major Sponsors": [
     {
       "id": 0,
       "name": "Toasty",
@@ -485,7 +517,8 @@
           "url": "https://www.linkedin.com/company/adplist-org/",
           "icon": "fa fa-linkedin"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 2,
@@ -515,7 +548,8 @@
           "url": "https://www.facebook.com/paymongo",
           "icon": "fa fa-facebook-square"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 4,
@@ -538,7 +572,8 @@
           "url": "https://www.linkedin.com/company/11234935",
           "icon": "fa fa-linkedin"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 5,
@@ -566,7 +601,8 @@
           "url": "https://www.youtube.com/channel/UCpjn_P9AD5W5q-9lzP5RtxQ/videos",
           "icon": "fa fa-youtube-play"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 6,
@@ -585,11 +621,12 @@
           "url": "https://www.invisionapp.com/",
           "icon": "fa fa-globe"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 7,
-      "name": "Anflo Management & Investment Corp.",
+      "name": "Anflocor",
       "description": [
         "Established in 1977, the Anflo Management and Investment Corporation (ANFLOCOR) is the management and investment company of the ANFLO Group of Companies, founded by the Floirendo family’s patriarch, Don Antonio O. Floirendo, Sr.",
         "The Mindanao-based business conglomerate is engaged in a diverse range of industries, including agriculture (production and export of Cavendish bananas, livestock operations), industrial (container port terminal, storage facilities, manufacturing of packaging materials and labels, trucking services, aerial spray and helicopter charter services), real estate (residential and commercial developments) and tourism (resort and franchise hotels operations). The ANFLO Group also has companies that are into construction, retail, consumer financing, radio broadcasting, and security agency.",
@@ -624,6 +661,30 @@
   "Premium Sponsors": [
     {
       "id": 0,
+      "name": "Make Technology",
+      "description": [
+        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+      ],
+      "image_url": "/images/sponsors/make.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://make.technology/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/make.technology",
+          "icon": "fa fa-facebook-square"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 1,
       "name": "Figma",
       "description": [
         "Figma is a design platform for teams who build products together. Born on the Web, Figma helps the entire product team create, test, and ship better designs, faster."
@@ -651,32 +712,14 @@
           "url": "https://www.facebook.com/figmadesign",
           "icon": "fa fa-facebook-square"
         }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Make Technology",
-      "description": [
-        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
       ],
-      "image_url": "/images/sponsors/make.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
-          "icon": "fa fa-linkedin"
-        },
-        {
-          "url": "https://www.facebook.com/make.technology",
-          "icon": "fa fa-facebook-square"
-        }
-      ]
+      "featured": true
     },
     {
       "id": 2,
-      "name": "Accenture Public Limited Company",
+      "name": "Accenture Philippines",
       "description": [
-        "Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Interactive, Technology and Operations services—all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers. Our 506,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and communities. Visit us at www.accenture.com."
+        "Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Interactive, Technology and Operations services—all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers. Our 506,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and communities."
       ],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fjCHFPehF01-jj6fhYoXrfUzf2dx52qKmhUKKkv_jHxk08KPPxE-TMl6eIt07V5wju1KIm7Wddj8It9EgkhVcaD7MuGxmyfQRPE7EA2ZqXbTjl7Suz9j_13FcD3252xM_J3sVTCkJ2fNHW-ZS5Kmw=w1920-h507-no?authuser=0",
       "website_url": "#",
@@ -697,7 +740,40 @@
           "url": "https://twitter.com/AccentureJobsPH",
           "icon": "fa fa-twitter"
         }
-      ]
+      ],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Smart Communications, Inc.",
+      "description": [
+        "Smart Communications, Inc. is a leading innovator in mobile telecommunications and digital services in the Philippines delivered through Smart LTE, the country's fast mobile network, as certified by third-party mobile analytics firms such as Ookla and Opensignal."
+      ],
+      "image_url": "/images/sponsors/smart.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.smart.com.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/smart-communications-inc.",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.twitter.com/LiveSmart",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/livesmart",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.facebook.com/SmartCommunications",
+          "icon": "fa fa-facebook-square"
+        }
+      ],
+      "featured": true
     }
   ]
 }

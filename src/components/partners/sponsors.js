@@ -7,8 +7,9 @@ import "font-awesome/css/font-awesome.min.css";
 //import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const premium = sponsors["Premium Sponsors"];
-const general = sponsors["General Sponsors"];
+const general = sponsors["Major Sponsors"];
 const community = sponsors["Community Partners"];
+const media = sponsors["Media Partners"];
 
 const ListSponsors = ({
   list,
@@ -88,7 +89,7 @@ const Sponsors = () => {
 
       <ListSponsors
         list={general}
-        tier={"General Sponsors"}
+        tier={"Major Sponsors"}
         className={"silver-sponsor padding-y-192"}
         contentClassName={"gen-sponsor"}
         heading={"Major Sponsors"}
@@ -103,11 +104,26 @@ const Sponsors = () => {
       />
 
       <ListSponsors
+        list={media}
+        tier={"Media Partners"}
+        className={"padding-y-64"}
+        contentClassName={"comm-sponsor"}
+        heading={"Media Partners"}
+        setModal={setModal}
+        modal={modal}
+        setSponsorVal={setSponsorVal}
+        setSponsorTier={setSponsorTier}
+        style={{
+          margin: "0 auto",
+        }}
+      />
+
+      <ListSponsors
         list={community}
         tier={"Community Partners"}
         className={"padding-y-64"}
         contentClassName={"comm-sponsor"}
-        heading={"Media & Community Sponsors"}
+        heading={"Community Partners"}
         setModal={setModal}
         modal={modal}
         setSponsorVal={setSponsorVal}

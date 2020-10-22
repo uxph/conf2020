@@ -1,0 +1,45 @@
+{
+  "ux-basics": [
+    {
+      "id": 0,
+      "name": "#",
+      "position": "#",
+      "company": "#",
+      "company_logo": "#",
+      "image_url": "#"
+    }
+  ],
+
+  "design-driven-community": [
+    {
+      "id": 0,
+      "name": "#",
+      "position": "#",
+      "company": "#",
+      "company_logo": "#",
+      "image_url": "#"
+    }
+  ],
+
+  "ux-career": [
+    {
+      "id": 0,
+      "name": "#",
+      "position": "#",
+      "company": "#",
+      "company_logo": "#",
+      "image_url": "#"
+    }
+  ],
+
+  "leading-by-design": [
+    {
+      "id": 0,
+      "name": "#",
+      "position": "#",
+      "company": "#",
+      "company_logo": "#",
+      "image_url": "#"
+    }
+  ]
+}

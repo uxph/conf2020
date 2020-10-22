@@ -14,7 +14,8 @@
       ],
       "speakers_names": "Reine Bantang & Stella Pangilinan",
       "speaker_id": [31, 32, 33, 34],
-      "workshop": []
+      "workshop": [],
+      "moderators": "ux-basics"
     },
     {
       "id": 1,
@@ -64,7 +65,7 @@
       "id": 0,
       "time": "9:30AM",
       "type": "Team",
-      "title": "Open House",
+      "title": "Open house: Mingle, set up your profiles, and get ready!",
       "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
@@ -75,7 +76,7 @@
       "type": "Lightning Talk",
       "title": "The Power of Community",
       "description": [
-        "An opening talk about the UXPH organization, UX in the Philippines, and where we're going. Included is a thank you to all the speakers, sponsors, attendees, and more information on the rest of the program."
+        "A welcoming talk about the conference, UXPH, where we're going as a community, and valuable lessons learned for designers and community builders."
       ],
       "speaker_id": [0],
       "workshop": []
@@ -194,7 +195,8 @@
       ],
       "speakers_names": "Felix Lee (ADP List), Grace Ling (Design Buddies), Chia Amisola (Developh), Aldrich Tan (UXPH)",
       "speaker_id": [23, 27, 26, 0],
-      "workshop": []
+      "workshop": [],
+      "moderators": "design-driven-community"
     },
     {
       "id": 13,
@@ -216,7 +218,7 @@
       "id": 0,
       "time": "9:30AM",
       "type": "Team",
-      "title": "Open House",
+      "title": "Open house: Mingle more, free office yoga classes, and get ready!",
       "description": ["Coming Soon!"],
       "speaker_id": [],
       "workshop": []
@@ -256,7 +258,8 @@
         "https://lh3.googleusercontent.com/pw/ACtC-3dIG-UAGbmbmqHmvqy43BNRvcqojvQVumVncCBZ5uyK15bCtv4FUZsXr28ENz_DeuDNw84Ja-2Ilokh1JXHklaUBeOP1Dwrg4OCiTy2pgL_3IdV_0CFOknDfz9b4b4ibQ3xQ1qIrWk7JbfETzE5bdcM=w587-h715-no?authuser=2"
       ],
       "speakers_names": "Kevin Liang, Jill Quek (ADP Mentor), Marcus (ADP), Merdy Adrian (ADP)",
-      "workshop": []
+      "workshop": [],
+      "moderators": "ux-career"
     },
     {
       "id": 4,
@@ -283,7 +286,7 @@
       "id": 6,
       "time": "1:05PM",
       "type": "Keynote Speaker",
-      "title": "Culture and Psychology of Teams",
+      "title": "The Culture and Psychology of Teams",
       "description": [
         "We are all under one crisis, but our situations are all different. There is indeed no one-size-fits-all solution because our control over things varies.",
         "But there is one factor that we all have control over - ourselves, humans.",
@@ -324,7 +327,8 @@
       ],
       "speakers_names": "Aldrich Huang (uxtesting) & Michael Tam (IBM iX, ADP List)",
       "speaker_id": [16, 7, 8, 3, 6],
-      "workshop": []
+      "workshop": [],
+      "moderators": "leading-by-design"
     },
     {
       "id": 10,
@@ -341,7 +345,7 @@
       "id": 11,
       "time": "4:40PM",
       "type": "Remarks",
-      "title": "Closing Remarks and Announcement",
+      "title": "Closing Program",
       "description": ["Coming Soon!"],
       "speaker_id": [],
       "speakers_names": "UXPH",
@@ -351,7 +355,7 @@
       "id": 12,
       "time": "5:00PM",
       "type": "Concert",
-      "title": "Special Closing Performance",
+      "title": "Special Closing Performance (You won't want to miss this!)",
       "description": ["Any Name's Okay"],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3ePC8OybeBWWSYGA--QkwR2VxuEl2siii__S0GCw2jepGf1byQ4wthrz-Bsos42CYW8F3gxHVb5kmfT2eL_RLVcdCZUP5Dtn9m0LArD86DcqeOMBC7VmMVjJdVQkOV8rmCRZZ8dM0wlGcibfYJGnVug=s637-no?authuser=1"

@@ -32,10 +32,7 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
       );
 
       return (
-        <div
-          key={index}
-          className="d-flex align-items-center margin-bottom-32 speaker-container"
-        >
+        <div key={index} className="d-flex margin-bottom-32 speaker-container">
           <div className="margin-right-16 speaker-photo">
             <img
               src={currFacilitator.image_url}
@@ -55,6 +52,21 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                 ? `${currFacilitator.position} at ${currFacilitator.company}`
                 : null}
             </p>
+            <div className="margin-bottom-16 margin-top-8">
+              <img
+                src={currFacilitator.company_logo}
+                alt={currFacilitator.company}
+                style={{
+                  width: `${
+                    currFacilitator.company_logo_type === "square"
+                      ? "64px"
+                      : "96px"
+                  }`,
+                  filter: "grayscale(100%)",
+                }}
+                className="company-img"
+              />
+            </div>
           </div>
         </div>
       );
