@@ -16,7 +16,7 @@ const ConfirmationPage = () => {
     <p
       style={{
         fontWeight: `light`,
-        fontFamily: "Work sans",
+        fontFamily: "Karla, sans-serif",
       }}
       className="text-center text-white"
     >
@@ -34,7 +34,7 @@ const ConfirmationPage = () => {
     <p
       style={{
         fontWeight: `light`,
-        fontFamily: "Work sans",
+        fontFamily: "Karla, sans-serif",
       }}
       className="text-center text-white"
     >
