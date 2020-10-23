@@ -14,8 +14,9 @@ const Hero = () => {
         md={4}
         key={index}
         data-aos="fade-in"
+        data-aos-duration={600}
         data-aos-delay={time}
-        data-aos-offset={100}
+        data-aos-offset={300}
         data-aos-once={true}
       >
         <h3 className="text-center text-white font-size-64">{figure.header}</h3>
@@ -67,8 +68,8 @@ const Hero = () => {
         <Button className="mr-3 mb-3 main-btn" href="/tickets">
           Get Tickets
         </Button>
-        <Button variant="outline" bgColor="#000000">
-          Full program (Soon)
+        <Button variant="outline" bgColor="#000000" href="/schedule">
+          See Full program
         </Button>
       </div>
       <div className="wrapper">

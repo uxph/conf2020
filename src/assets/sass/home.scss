@@ -170,8 +170,12 @@ section {
 }
 .workshop-title {
   color: $secondary-blue;
-  font-size: 42px;
+  font-size: 32px;
   text-transform: unset;
+}
+
+.workshop-type {
+  font-size: 20px !important;
 }
 
 .video-container {

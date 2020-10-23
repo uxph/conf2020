@@ -3,12 +3,12 @@ import "../assets/sass/schedule.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Hero from "../components/schedule/hero";
-import Schedule from "../components/schedule/schedule";
+import Programme from "../components/schedule/programme";
 import SoonPage from "../components/soonPage";
 
 const SchedulePage = () => {
   const [day, setDay] = useState(3);
-  const isComingSoon = true;
+  const isComingSoon = false;
 
   if (isComingSoon) {
     return (
@@ -23,7 +23,7 @@ const SchedulePage = () => {
     <Layout activeUrl="/schedule">
       <SEO title="Schedule" />
       <Hero setDay={setDay} day={day} />
-      <Schedule day={day} />
+      <Programme />
     </Layout>
   );
 };

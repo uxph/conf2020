@@ -47,3 +47,79 @@ h4,
 h6 {
   text-transform: unset;
 }
+.programme-nav {
+  button,
+  .button {
+    padding: 0.75rem 0.5rem;
+  }
+  button span,
+  .button span {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .speaker-body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .modal-speaker {
+    margin-top: 64px !important;
+  }
+  .faq-hero {
+    padding-bottom: 64px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .speaker-modal {
+    width: 95vw;
+    height: 87.5vh;
+  }
+
+  .workshop-title {
+    font-size: 24px !important;
+  }
+
+  .segment-date {
+    display: block;
+  }
+
+  .segment-container {
+    * {
+      text-align: center !important;
+    }
+  }
+
+  .speaker-list {
+    // padding-left: 0 !important;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .speaker-container {
+      margin-bottom: 0 !important;
+
+      h5,
+      p {
+        display: none;
+      }
+
+      .speaker-photo {
+        margin: 0 0.25rem !important;
+        margin-bottom: 8px;
+        display: inline-block !important;
+        img {
+          width: 3rem !important;
+          height: 3rem !important;
+        }
+      }
+    }
+    .event-read-more {
+      display: inline-block !important;
+      margin: 1.5rem 0 !important;
+    }
+  }
+}

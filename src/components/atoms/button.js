@@ -10,11 +10,12 @@ const Button = ({
   style = "",
   target = null,
   onClick = null,
+  id = "",
   value = null,
 }) => {
   if (href === null) {
     return (
-      <div className={`button-outer-layer ${className}`}>
+      <div className={`button-outer-layer ${className}`} id={id}>
         <button
           className={`button ${variant} ${innerClassName}`}
           style={{

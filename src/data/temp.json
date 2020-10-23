@@ -81,3 +81,13 @@
     }
   ]
 })
+
+{
+  "id": 11,
+  "time": "3:40PM",
+  "type": "Lightning Talk",
+  "title": "Learn UX Growth",
+  "description": ["Coming Soon!"],
+  "speaker_id": [9],
+  "workshop": []
+}
