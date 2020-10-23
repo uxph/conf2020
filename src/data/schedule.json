@@ -251,7 +251,7 @@
       "type": "Panel Discussion",
       "title": "Shaping your UX Career",
       "description": ["Coming Soon!"],
-      "speaker_id": [11, 14, 15, 22],
+      "speaker_id": [11, 14, 15, 22, 6, 35],
       "speakers_img": [
         "https://lh3.googleusercontent.com/pw/ACtC-3es63mcZOd5QJ9iMrMsvMXuCI3gJhj1leA_ZS3EkIK58V1ZWRz7maOgoIW2c8nINvJavanacNDtP2s_5Jt5D1GKKUY_Vu2OG_d-f-zVHE4M7tHvWrVlsd0jvkzvxJkzF3fsiCvmNPJim8FB5eTFlL3m=w834-h920-no?authuser=2",
         "https://lh3.googleusercontent.com/pw/ACtC-3cCqvn8fzfdjJ5XawA18lUq3OK7RNUzup9kPMGyzxPOxWAyRF659CSy13rPgLVCNWYmbAvS-Ypa5PHjH3pxDYsXEZk_-nqrAoz2Pbm2yhTxmpGAGlN2UTE6oR1r1HVVYq3-Xefs_lRysUNzLyXjoLjG=s800-no?authuser=2",
@@ -326,7 +326,7 @@
         "https://lh3.googleusercontent.com/pw/ACtC-3eqvM4zEFA1KPH52e_EGN1fbesdfC7Fi2qbm9XuKjpzahb-x6PyGfPFf4R3R3QUiS3qWcuLEKEhO_B91MIhO5s8e6FjThgNDV5JyNoQTET1FV2GIgO0axLcEduJviNS3X_349968GpK4Y3jpJ8UBMf_=s407-no?authuser=1"
       ],
       "speakers_names": "Aldrich Huang (uxtesting) & Michael Tam (IBM iX, ADP List)",
-      "speaker_id": [16, 7, 8, 3, 6],
+      "speaker_id": [16, 7, 8, 3, 36],
       "workshop": [],
       "moderators": "leading-by-design"
     },

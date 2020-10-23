@@ -171,10 +171,10 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                   </Row>
                 </div>
               )}
-              {currentWorkshop.moderators && (
+              {/* uncomment this when ilalagay na yung facilitators */}
+              {/* {currentWorkshop.moderators && (
                 <div className="margin-top-32">
                   <h3 className="font-size-24 margin-bottom-24">
-                    {/* I know, it's confusing. Just go with it XD */}
                     {pluralize("Facilitator", facilitators.length)}
                   </h3>
                   <Row>
@@ -183,7 +183,7 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                     </Col>
                   </Row>
                 </div>
-              )}
+              )} */}
             </Col>
           </Row>
         </div>

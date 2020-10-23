@@ -62,7 +62,7 @@
       "description": [
         "Design Buddies is an inclusive community for designers from all backgrounds to connect, share resources, and participate in virtual events. We have mentorship programs, workshops, AMAs, portfolio reviews, and more. All for free."
       ],
-      "image_url": "/images/sponsors/design-buddies.png",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dLVKedGubK67HLE97U8oaUG1TdmNZ5b1x6RqFwwL46BuYnUE24BpndEbysdDYGv5RlJMLuTfYE6vDYfpYa_Op9dz6KJ_4ZQmn28hehHyKhPq6BKClyAXcMAFDLVVqGUq1ZBqOHMgCednKlrbGOkttp=s720-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -318,7 +318,7 @@
       "description": [
         "DSC Loyola is a part of the Developer Student Clubs Philippines which are independent university-based groups. In DSCs, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. We believe student clubs are essential in the collective learning and development process that will have a larger and sustainable effect in our future. The DSC Loyola community at the Ateneo de Manila University has shown great interest in this vision which now has over 350+ student members in its campus, making it one of the biggest DSC chapters in Southeast Asia!"
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dlNENlq6rNSf9OaXu_CCGKOnlFTAofXxmzew2gG-jeVEwf8vZVpRLdcblt1bTPzGzlO7qn9rTw36oaZrZON0fUkKCF7bNg1cCDc-EeJmM_wlRwpTIs2ZwQ86Fc-qcY0Cg4MuVJlt5slHyhxfeL6NM=w1920-h723-no?authuser=0",
+      "image_url": "/images/sponsors/sponsor_08.png",
       "website_url": "#",
       "social_media": [
         {
@@ -352,6 +352,21 @@
     },
     {
       "id": 21,
+      "name": "UX Indonesia",
+      "description": [
+        "UXiD (UX Indonesia) is an open community that was formed to provide a conducive and fun platform for anyone to share, learn, and develop themselves in the world of user experience."
+      ],
+      "image_url": "/images/sponsors/uxindo.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.instagram.com/ux_indonesia/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 22,
       "name": "Brainsparks",
       "description": [
         "Brainsparks is the first and only founder-focused incubator in the Philippines that wants to turn dreamers into founders.",
@@ -372,6 +387,66 @@
         {
           "url": "https://twitter.com/brainsparksph",
           "icon": "fa fa-twitter"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 23,
+      "name": "User Experience Society - ADMU",
+      "description": [
+        "User Experience Society is a student-run organization that advocates and practices human-centered design.",
+
+        "We combine this with a growth mindset, to create a strong mentorship culture that raises design leaders who are capable of creating positive change in the community."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cFWDMzxBoqrQuYKoP_uQ3ort-D3tWoYjR_f8JZVF1qAdo3PhKCYaNBTZdU9tojvjsjpB8TNG58TV9cMw8Pb0LcjfVmBW88kz5QCax1tGiA5pr9IdXRn-QOgTRgQuWJV6fKox0_2SJqVmoCXPe4AnID=s720-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://uxsociety.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/UXSoc/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/uxsocietyph",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxsocietyph/",
+          "icon": "fa fa-instagram"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 24,
+      "name": "User Experience Society - DLSU",
+      "description": [
+        "The UX Society - DLSU Chapter is one of the many recognized UX Societies in the same network. There's UX Society ADMU, Davao, Orange County and the latest, UX Society AIM-Chapter.",
+
+        "UX Society - DLSU aids various organizations by creating quality products and services by applying principles, concepts and methodologies in such strategies. We hold workshops, seminars and conferences to train members about the essentials skills of proper UX discipline and methodologies."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fdA9N3kWhoBZiMK4ywldwkS4_Xm185Q_seo76bH-wZaczJTcc4W6t7qb9C37vcgVPGYG1JRcfW9kn74mSbUf5YAz1J1xLRW7rbkiKc_PwsyfVPwtIjglHaNjGjR6exT3yqLBL0pvFQ6Y__eCXR76d6=s720-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://dlsu.uxsociety.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/uxsocietydlsu/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/uxsocietydlsu/",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxsocietydlsu/",
+          "icon": "fa fa-instagram"
         }
       ],
       "featured": true
@@ -478,6 +553,30 @@
         {
           "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
           "icon": "fa fa-youtube-play"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 22,
+      "name": "Center for Complexity and Emerging Technologies (COMET)",
+      "description": [
+        "The Center for Complexity and Emerging Technologies (COMET) is an interdisciplinary research laboratory under the Advanced Research Institute for Informatics, Computing, and Networking (AdRIC) at De La Salle University. Our mission is to enhance our understanding of emergent phenomena in real-life systems (i.e. cities, mobility), sociotechnical systems (i.e. social networking sites, Wikipedia), and human-computer interactions. We develop computational models which are then used in the design of interactive tools, information systems, and interaction techniques."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fzq-9XKP4L8hApGaW59N8Gdbn2KV_UGPmojKp7pocC2i8OO4VGsB0HPMaSyI895hhY5o0ezKdIR02j6hvBSBUNrMzQX3IXZs7GaOxwQEj3mA0DAxCSJ2NBHs0Xq7T7H7Bm9e-7svh_jMHdA8MAwY66=s200-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://comet.dlsu.edu.ph/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/dlsucomet/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/dlsu_comet",
+          "icon": "fa fa-twitter"
         }
       ],
       "featured": true
