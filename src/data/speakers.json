@@ -154,7 +154,8 @@
     ],
     "position": "Global Associate Design Director",
     "company": "IBM",
-    "company_logo": "/images/companies/IBM_logo.svg"
+    "company_logo": "/images/companies/IBM_logo.svg",
+    "company_logo_type": "square"
   },
   {
     "id": 4,
@@ -622,9 +623,9 @@
         "icon": "fa fa-linkedin"
       }
     ],
-    "position": "CXO/Co-Founder",
-    "company": "NextPay.ph",
-    "company_logo": "/images/companies/nextpay.svg"
+    "position": "Managing Director",
+    "company": "UXPH",
+    "company_logo": "/images/logos/uxph_logo.svg"
   },
   {
     "id": 25,

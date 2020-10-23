@@ -5,6 +5,7 @@ import Button from "../../components/atoms/button";
 
 const all_sponsors = sponsors["Premium Sponsors"]
   .concat(sponsors["Major Sponsors"])
+  .concat(sponsors["Media Partners"])
   .concat(sponsors["Community Partners"])
   .filter((sponsor) => sponsor.featured)
   .map((sponsor, index) => {
@@ -14,7 +15,7 @@ const all_sponsors = sponsors["Premium Sponsors"]
         sm={6}
         xs={6}
         key={index}
-        className="community-partner sponsor-img"
+        className="community-partner sponsor-img my-2"
       >
         <center>
           <img
