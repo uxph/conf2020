@@ -434,7 +434,7 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center text-uppercase">
+                <h3 className="text-center">
                   <span className="red">Day 2</span>{" "}
                   <small
                     className="gray font-size-16 segment-date"
