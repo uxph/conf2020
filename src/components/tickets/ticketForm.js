@@ -58,8 +58,8 @@ const TicketForm = () => {
 
   // tickets
   // const regularPrice = 2770; // TODO for discount calculations
-  const earlyBirdPrice = 2500;
-  const [earlyBirdQuantity, setEarlyBirdQuantity] = useState(1);
+  const regularTicketPrice = 2770;
+  const [regularTicketQuantity, setRegularTicketQuantity] = useState(1);
 
   // payment method
   const [paymentMethod, setPaymentMethod] = useState("gcash");
@@ -132,14 +132,14 @@ const TicketForm = () => {
 
   // useEffect for ticket pricing calculations
   useEffect(() => {
-    let earlyBirdTotal = earlyBirdQuantity * earlyBirdPrice;
-    setSubtotal(earlyBirdTotal);
+    let regularTicketTotal = regularTicketQuantity * regularTicketPrice;
+    setSubtotal(regularTicketTotal);
 
     if (!subtotal) {
       setDiscountCode("");
       setDiscount(0);
     }
-  }, [earlyBirdQuantity, setEarlyBirdQuantity, subtotal]);
+  }, [regularTicketQuantity, setRegularTicketQuantity, subtotal]);
 
   // useEffect for discount codes
   useEffect(() => {
@@ -154,7 +154,7 @@ const TicketForm = () => {
 
     // matched code
     else if (discount_codes[lowerCasedCode]) {
-      setSubtotal(earlyBirdPrice * earlyBirdQuantity); // TODO verify
+      setSubtotal(regularTicketPrice * regularTicketQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
         setDiscountMessage(
@@ -174,26 +174,32 @@ const TicketForm = () => {
 
     // invalid code
     else {
-      setSubtotal(earlyBirdPrice * earlyBirdQuantity);
+      setSubtotal(regularTicketPrice * regularTicketQuantity);
       setDiscount(0);
     }
 
     if (
-      earlyBirdQuantity >= 5 &&
-      earlyBirdQuantity < 10 &&
+      regularTicketQuantity >= 5 &&
+      regularTicketQuantity < 10 &&
       matchedCodeDiscount <= 0.1
     ) {
-      setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.1);
+      setDiscount(regularTicketPrice * regularTicketQuantity * 0.1);
       setDiscountCode("Group of 5");
       setDiscountMessage("GROUP OF 5 (10% off) discount");
-    } else if (earlyBirdQuantity >= 10 && matchedCodeDiscount <= 0.15) {
-      setDiscount(earlyBirdPrice * earlyBirdQuantity * 0.15);
+    } else if (regularTicketQuantity >= 10 && matchedCodeDiscount <= 0.15) {
+      setDiscount(regularTicketPrice * regularTicketQuantity * 0.15);
       setDiscountCode("Group of 10");
       setDiscountMessage("GROUP OF 10 (15% off) discount");
-    } else if (earlyBirdQuantity < 5 && discountCode.includes("Group of")) {
+    } else if (regularTicketQuantity < 5 && discountCode.includes("Group of")) {
       setDiscountCode("");
     }
-  }, [discountCode, subtotal, earlyBirdPrice, earlyBirdQuantity, setSubtotal]);
+  }, [
+    discountCode,
+    subtotal,
+    regularTicketPrice,
+    regularTicketQuantity,
+    setSubtotal,
+  ]);
 
   // useEffect for checkout URL
   useEffect(() => {
@@ -352,7 +358,7 @@ const TicketForm = () => {
         details.company
       }&discount_code=${
         discount > 0 ? details.discountCode : "none"
-      }&early_bird=${details.earlyBird}&subscribed=${subscribed}`;
+      }&regular_ticket=${details.regularTicket}&subscribed=${subscribed}`;
 
       const data = JSON.stringify({
         data: {
@@ -405,8 +411,8 @@ const TicketForm = () => {
     const createPaymentIntent = () => {
       const tickets = [
         {
-          name: "early_bird",
-          quantity: details.earlyBird,
+          name: "regular_ticket",
+          quantity: details.regularTicket,
         },
       ]
         .filter((x) => x.quantity)
@@ -574,9 +580,9 @@ const TicketForm = () => {
               <tbody>
                 <tr>
                   <td>
-                    <small className="gray">Early bird</small> <br />
+                    <small className="gray">Regular Ticket</small> <br />
                   </td>
-                  <td className="text-right">x {earlyBirdQuantity}</td>
+                  <td className="text-right">x {regularTicketQuantity}</td>
                 </tr>
               </tbody>
             </Table>
@@ -683,9 +689,9 @@ const TicketForm = () => {
               <tbody>
                 <tr>
                   <td>
-                    <small className="gray">Early bird</small> <br />
+                    <small className="gray">Regular Ticket</small> <br />
                   </td>
-                  <td className="text-right">x {earlyBirdQuantity}</td>
+                  <td className="text-right">x {regularTicketQuantity}</td>
                 </tr>
               </tbody>
             </Table>
@@ -1049,7 +1055,7 @@ const TicketForm = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <small className="gray">Early Bird</small> <br />
+                      <small className="gray">Regular Ticket</small> <br />
                       <div>
                         <strong
                           style={{
@@ -1057,11 +1063,11 @@ const TicketForm = () => {
                           }}
                           className="ticket-price"
                         >
-                          PHP {numeral(earlyBirdPrice).format("0,0.00")}
+                          PHP {numeral(regularTicketPrice).format("0,0.00")}
                         </strong>{" "}
-                        <small className="gray">/ USD $45 (18% off)</small>
+                        <small className="gray">/ USD $55</small>
                       </div>
-                      <span
+                      {/* <span
                         className="font-weight-normal d-block"
                         style={{
                           fontSize: "0.75rem",
@@ -1069,7 +1075,7 @@ const TicketForm = () => {
                       >
                         Regular Price:{" "}
                         <strike>PHP {numeral(2770).format("0,0.00")}</strike>
-                      </span>
+                      </span> */}
                     </td>
                     <td>
                       <Input
@@ -1079,9 +1085,9 @@ const TicketForm = () => {
                         }}
                         className="ml-auto"
                         min="0"
-                        value={earlyBirdQuantity}
+                        value={regularTicketQuantity}
                         onChange={(event) =>
-                          setEarlyBirdQuantity(event.target.value)
+                          setRegularTicketQuantity(event.target.value)
                         }
                       />
                     </td>
@@ -1189,7 +1195,7 @@ const TicketForm = () => {
                     email: email,
                     phone: mobileNumber,
                     amount: total,
-                    earlyBird: earlyBirdQuantity,
+                    regularTicket: regularTicketQuantity,
                     discountCode: discountCode,
                     paymentMethod: paymentMethod,
                     id: confirmNumber,
@@ -1215,7 +1221,7 @@ const TicketForm = () => {
                     expiryYear: expiryYear,
                     cvc: cvc,
                     amount: total,
-                    earlyBird: earlyBirdQuantity,
+                    regularTicket: regularTicketQuantity,
                     discountCode: discountCode,
                   })
                 }
