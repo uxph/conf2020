@@ -254,14 +254,6 @@ const Programme = () => {
             >
               <Button
                 variant="outline"
-                className="w-100 margin-bottom-12 d-block"
-                innerClassName="font-size-8 w-100"
-                id="pre_event_1-button"
-              >
-                Pre-Event 1
-              </Button>
-              <Button
-                variant="outline"
                 className="w-100 margin-bottom-12"
                 innerClassName="w-100"
                 id="pre_event_2-button"
@@ -284,51 +276,17 @@ const Programme = () => {
               >
                 Day 2
               </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12 d-block"
+                innerClassName="font-size-8 w-100"
+                id="pre_event_1-button"
+              >
+                Pre-Event 1 <br /> (Completed)
+              </Button>
             </div>
           </Col>
           <Col md={10} className="p-0 pl-3">
-            <div
-              className="border p-4 bg-white shadow-sm margin-bottom-48"
-              style={{
-                borderRadius: "1rem",
-              }}
-              id="pre_event_1"
-              data-aos="fade"
-              data-aos-offset={100}
-              data-aos-duration={600}
-              data-aos-once={true}
-            >
-              <div
-                className="margin-y-16"
-                style={{
-                  position: "sticky",
-                  top: "71px",
-                  zIndex: 1000,
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                <h3 className="text-center">
-                  <span className="red text-uppercase">Pre-event</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
-                    (October 24, Saturday)
-                  </small>
-                </h3>
-              </div>
-              <DaySegment
-                segment="pre_event_1"
-                workshopId={workshopId}
-                segmentName={segmentName}
-                toggle={toggle}
-                setSegmentName={setSegmentName}
-                setWorkshopId={setWorkshopId}
-              />
-            </div>
             <div
               className="border p-4 bg-white shadow-sm margin-bottom-48"
               id="pre_event_2"
@@ -448,6 +406,48 @@ const Programme = () => {
               </div>
               <DaySegment
                 segment="day_2"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              id="pre_event_1"
+              data-aos="fade"
+              data-aos-offset={100}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="margin-y-16"
+                style={{
+                  position: "sticky",
+                  top: "71px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
+                }}
+              >
+                <h3 className="text-center">
+                  <span className="red text-uppercase">Pre-event</span>{" "}
+                  <small
+                    className="gray font-size-16 segment-date"
+                    style={{
+                      verticalAlign: "middle",
+                    }}
+                  >
+                    (Completed)
+                  </small>
+                </h3>
+              </div>
+              <DaySegment
+                segment="pre_event_1"
                 workshopId={workshopId}
                 segmentName={segmentName}
                 toggle={toggle}
