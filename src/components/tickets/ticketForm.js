@@ -22,7 +22,7 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shryfMZM6wO4NKFDh";
 
-const env = "production"; // TODO DO NOT FORGET TO CHANGE THIS
+const env = "local"; // TODO DO NOT FORGET TO CHANGE THIS
 let url = null;
 if (env === "test") {
   url = "https://loving-volhard-7197c7.netlify.app";
@@ -351,10 +351,10 @@ const TicketForm = () => {
   const payWithGcash = (details) => {
     let errorFound = errorChecking();
     if (!errorFound) {
-      // parseInt(details.amount) * 100
+      // parseFloat(details.amount) * 100
       const caseUrl = `${url}/confirmation/?method=${
         details.paymentMethod
-      }&amount=${parseInt(details.amount) * 100}&company=${
+      }&amount=${parseFloat(details.amount) * 100}&company=${
         details.company
       }&discount_code=${
         discount > 0 ? details.discountCode : "none"
@@ -363,7 +363,7 @@ const TicketForm = () => {
       const data = JSON.stringify({
         data: {
           attributes: {
-            amount: parseInt(details.amount) * 100, // parseInt(details.amount) * 100
+            amount: parseInt(parseFloat(details.amount) * 100), // parseFloat(details.amount) * 100
             redirect: {
               success: caseUrl,
               failed: caseUrl,
@@ -422,7 +422,7 @@ const TicketForm = () => {
       const data = JSON.stringify({
         data: {
           attributes: {
-            amount: parseInt(details.amount) * 100, // parseInt(details.amount) * 100
+            amount: parseInt(parseFloat(details.amount) * 100), // parseFloat(details.amount) * 100
             payment_method_allowed: ["card"],
             payment_method_options: {
               card: {
