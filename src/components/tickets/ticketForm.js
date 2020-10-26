@@ -22,7 +22,7 @@ const auth_sk = "Basic c2tfbGl2ZV9SdjdIeW5nZ0xNUlQ0TFQ2UndGZ1BEd3c6";
 
 const bankTransferUrl = "https://airtable.com/shryfMZM6wO4NKFDh";
 
-const env = "local"; // TODO DO NOT FORGET TO CHANGE THIS
+const env = "production"; // TODO DO NOT FORGET TO CHANGE THIS
 let url = null;
 if (env === "test") {
   url = "https://loving-volhard-7197c7.netlify.app";
