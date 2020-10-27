@@ -126,9 +126,16 @@ h6 {
       width: 3rem !important;
       // height: 3rem !important;
     }
+
     .event-read-more {
       display: inline-block !important;
       margin: 1.5rem 0 !important;
+    }
+
+    .event-read-more.parallel {
+      display: inline-block !important;
+      margin: 0.5rem 0 !important;
+      margin-bottom: 3.5rem !important;
     }
   }
 }

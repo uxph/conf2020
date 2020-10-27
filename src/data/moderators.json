@@ -9,12 +9,13 @@
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cPybiYtSSHd6lGxdUWOAnozqa_Xx1t9XY4BI6ViLAo7r2Khfo7TsNk4YQjOjycLcrUgo8m9XMxyI_1SW1fjVQoxzuEWp78sCIBSsY9KOJxBnkQGqdayY-fOwtj_rGb2ZSSo8jXiVMMszYE8vcYEoBh=w1365-h912-no?authuser=0"
     },
     {
-      "id": 0,
+      "id": 1,
       "name": "Stella Pangilinan",
       "position": "User Experience Intern",
       "company": "Quiddity Usability Labs",
       "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3ev0_OGjQqUFMydqWZSIiygewaADONgRge6nT1otJmLnNgy2tTjXOdiR_ddZZAckdMdUKdZzbLU295EBY41ORxMY-xOMQcJ8eA7A18qowg16CeH2lsASkhtrmC7n6p74ztLKfm1YoEWbGiuoEFQwxA3=s200-no?authuser=0",
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dTUxb_8m31Y_VgqsO09_9j0ttpKcluVDqApewiYCIInuGwdI5KRJOnbnNiqPwFrpFPXe39XvV7E_pb6XrAetH_cQls4Uo7Cgmw2gUKP1j03_rAKe4_NQvERRDepYCn1WWOAFG0pgdM_s5akkHfEO9H=s912-no?authuser=0"
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dTUxb_8m31Y_VgqsO09_9j0ttpKcluVDqApewiYCIInuGwdI5KRJOnbnNiqPwFrpFPXe39XvV7E_pb6XrAetH_cQls4Uo7Cgmw2gUKP1j03_rAKe4_NQvERRDepYCn1WWOAFG0pgdM_s5akkHfEO9H=s912-no?authuser=0",
+      "company_logo_type": "square"
     }
   ],
 
@@ -26,28 +27,12 @@
       "company": "Computer Professionals Inc.",
       "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3fTpPNVGLZLgCXrZvVedxc5F7WQXLB-oDz68lcV2q8X8T4F5w7S_Z13eIaOYfYDffDvRhao2uXS4f-gBdOHMZ6WHF6rQaIz6OpCoDVX6iOpKQpEeDBwhgaQ4bAznCPhYfyA_EX99acwacCrKI5fRnYe=w900-h400-no?authuser=0",
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dCd_0bncZrYKFTuda6uR0c9hoSi5IcvCv76UYRkQcCtXXbedY3xaAMyrFBG77AEZ_lJ7Fp5UWcl2AYu3IrTwc-80ekzupIDaapb7A-EGPVQ5tB-VicvaqQ1-kk6uBb83NVjhdoTiltLQFeeuB3YPoF=s912-no?authuser=0"
-    },
-    {
-      "id": 1,
-      "name": "Michelle Obligacion",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
     }
   ],
 
   "ux-career": [
     {
       "id": 0,
-      "name": "Fish Ibasco",
-      "position": "Experience Design Lead",
-      "company": "Accenture",
-      "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3fjCHFPehF01-jj6fhYoXrfUzf2dx52qKmhUKKkv_jHxk08KPPxE-TMl6eIt07V5wju1KIm7Wddj8It9EgkhVcaD7MuGxmyfQRPE7EA2ZqXbTjl7Suz9j_13FcD3252xM_J3sVTCkJ2fNHW-ZS5Kmw=w1366-h361-no?authuser=0",
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3czgvrTX0aIXklcjpL24ni0G_u6npVJjyuBb4AWnl7AN8MUf9D18r4TB3FHSuczTXJ8-xE0UhFdJVdQyXGRlZZch2HmBfM-HhVFqKQ4dmLiG-Irjdubm-OZV_UtNk9x9pB73B4fk8n7_r9JzrulcCSF=w677-h609-no?authuser=0"
-    },
-    {
-      "id": 1,
       "name": "Kringle Garcia",
       "position": "UX Architect",
       "company": "Globe Telecom",
@@ -56,14 +41,5 @@
     }
   ],
 
-  "leading-by-design": [
-    {
-      "id": 0,
-      "name": "#",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
-    }
-  ]
+  "leading-by-design": []
 }
