@@ -612,7 +612,6 @@ const TicketForm = () => {
             </Button>
             <Button
               href={checkoutUrl}
-              target="blank"
               style={{
                 padding: "8px 16px",
               }}
