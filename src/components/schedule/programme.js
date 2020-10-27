@@ -193,6 +193,26 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               >
                 <Parallel event={schedule[segment][index + 1]} />
               </a>
+              <a
+                href="/"
+                className={`${
+                  isSpecialSegment ? "" : "segment-item"
+                } bg-white d-block`}
+                style={{
+                  textDecoration: "none",
+                  cursor: isSpecialSegment ? "default" : "pointer",
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (!isSpecialSegment) {
+                    setSegmentName(segment);
+                    setWorkshopId(schedule[segment][index + 2].id);
+                    toggle();
+                  }
+                }}
+              >
+                <Parallel event={schedule[segment][index + 2]} />
+              </a>
             </Col>
           </Row>
         </div>
@@ -403,16 +423,19 @@ const Programme = () => {
                 }}
               >
                 <h3 className="text-center">
-                  <span className="red text-uppercase">Pre-event</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
-                    (November 7, Saturday)
-                  </small>
+                  <span className="red text-uppercase">
+                    Pre-event (Nov. 7, Sat)
+                  </span>{" "}
                 </h3>
+                <small
+                  className="gray font-size-16 segment-date text-center d-block"
+                  style={{
+                    verticalAlign: "middle",
+                    fontFamily: "Montserrat, sans-serif",
+                  }}
+                >
+                  Available to ticket holders only
+                </small>
               </div>
               <DaySegment
                 segment="pre_event_2"
@@ -445,15 +468,9 @@ const Programme = () => {
                 }}
               >
                 <h3 className="text-center">
-                  <span className="red text-uppercase">Day 1</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
-                    (November 14, Saturday)
-                  </small>
+                  <span className="red text-uppercase">
+                    Day 1 (Nov. 14, Sat)
+                  </span>{" "}
                 </h3>
               </div>
               <DaySegment
@@ -486,16 +503,8 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center">
-                  <span className="red">Day 2</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
-                    (November 15, Sunday)
-                  </small>
+                <h3 className="text-center text-uppercase">
+                  <span className="red">Day 2 (Nov. 15, Sun)</span>{" "}
                 </h3>
               </div>
               <DaySegment
@@ -529,16 +538,19 @@ const Programme = () => {
                 }}
               >
                 <h3 className="text-center">
-                  <span className="red text-uppercase">Pre-event</span>{" "}
-                  <small
-                    className="gray font-size-16 segment-date"
-                    style={{
-                      verticalAlign: "middle",
-                    }}
-                  >
-                    (Completed)
-                  </small>
+                  <span className="red text-uppercase">
+                    Pre-event (Oct. 24, Sat)
+                  </span>{" "}
                 </h3>
+                <small
+                  className="gray font-size-16 segment-date text-center d-block"
+                  style={{
+                    verticalAlign: "middle",
+                    fontFamily: "Montserrat, sans-serif",
+                  }}
+                >
+                  Completed • Free for the community
+                </small>
               </div>
               <DaySegment
                 segment="pre_event_1"
