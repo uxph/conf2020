@@ -91,3 +91,13 @@
   "speaker_id": [9],
   "workshop": []
 }
+
+
+{
+  "id": 0,
+  "name": "VJ Francisco",
+  "position": "Head of Experience Design",
+  "company": "NuWorks Interactive Labs",
+  "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3f1Ow5ctx2rvnEbugui5RRRRhF-H40sQ8edBEArZmRKWvtfqaRjnTiU4roiZtE-DSo_WMK2c0dFWaWxzY2sA4zY9Hw7SLtAjEQfOP8rMuVEnGR8P-vxUUqxZN5k-Noyo27j-0eZiq1iccBdv92ejkP1=s912-no?authuser=0",
+  "image_url": "#"
+}
