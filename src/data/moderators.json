@@ -2,44 +2,44 @@
   "ux-basics": [
     {
       "id": 0,
-      "name": "#",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
+      "name": "Reine Bantang",
+      "position": "Creative Lead",
+      "company": "UXPH",
+      "company_logo": "/images/logos/uxph_logo.svg",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cPybiYtSSHd6lGxdUWOAnozqa_Xx1t9XY4BI6ViLAo7r2Khfo7TsNk4YQjOjycLcrUgo8m9XMxyI_1SW1fjVQoxzuEWp78sCIBSsY9KOJxBnkQGqdayY-fOwtj_rGb2ZSSo8jXiVMMszYE8vcYEoBh=w1365-h912-no?authuser=0"
+    },
+    {
+      "id": 1,
+      "name": "Stella Pangilinan",
+      "position": "User Experience Intern",
+      "company": "Quiddity Usability Labs",
+      "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3ev0_OGjQqUFMydqWZSIiygewaADONgRge6nT1otJmLnNgy2tTjXOdiR_ddZZAckdMdUKdZzbLU295EBY41ORxMY-xOMQcJ8eA7A18qowg16CeH2lsASkhtrmC7n6p74ztLKfm1YoEWbGiuoEFQwxA3=s200-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dTUxb_8m31Y_VgqsO09_9j0ttpKcluVDqApewiYCIInuGwdI5KRJOnbnNiqPwFrpFPXe39XvV7E_pb6XrAetH_cQls4Uo7Cgmw2gUKP1j03_rAKe4_NQvERRDepYCn1WWOAFG0pgdM_s5akkHfEO9H=s912-no?authuser=0",
+      "company_logo_type": "square"
     }
   ],
 
   "design-driven-community": [
     {
       "id": 0,
-      "name": "#",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
+      "name": "Chelle Gray",
+      "position": "Head of Business Development and Partnerships",
+      "company": "Computer Professionals Inc.",
+      "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3fTpPNVGLZLgCXrZvVedxc5F7WQXLB-oDz68lcV2q8X8T4F5w7S_Z13eIaOYfYDffDvRhao2uXS4f-gBdOHMZ6WHF6rQaIz6OpCoDVX6iOpKQpEeDBwhgaQ4bAznCPhYfyA_EX99acwacCrKI5fRnYe=w900-h400-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dCd_0bncZrYKFTuda6uR0c9hoSi5IcvCv76UYRkQcCtXXbedY3xaAMyrFBG77AEZ_lJ7Fp5UWcl2AYu3IrTwc-80ekzupIDaapb7A-EGPVQ5tB-VicvaqQ1-kk6uBb83NVjhdoTiltLQFeeuB3YPoF=s912-no?authuser=0"
     }
   ],
 
   "ux-career": [
     {
       "id": 0,
-      "name": "#",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
+      "name": "Kringle Garcia",
+      "position": "UX Architect",
+      "company": "Globe Telecom",
+      "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3cn6EJtXSJPheKPOnRR9KfOgNeRHDuC7mg75Txr5XW6AAU0IzSZYtDvWavvOJwQ3mbja1IjDoN1qhrg3C8grSYE8Lxmden1X7iMSGTrdGh7BB6DN-uC1TVKH0MUsfjIWsvr8BKxXj2-DLdOH71oJ0Wp=w1000-h373-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fiXtE635p8WCMkH7L-bSXw4_hep5q8PS0TGF8DUWz3OinyiviPRoWNg0arjkCjEBUDTBNQzYYDsBMkVUtCVz4s_Y2QmPlSmM-juzxG-6JoAShU9CVGAUePJ60YsmHY8b9bbP7aSbx8E8LQ_VSuQkJN=s912-no?authuser=0"
     }
   ],
 
-  "leading-by-design": [
-    {
-      "id": 0,
-      "name": "#",
-      "position": "#",
-      "company": "#",
-      "company_logo": "#",
-      "image_url": "#"
-    }
-  ]
+  "leading-by-design": []
 }

@@ -284,7 +284,8 @@
         "This workshop will walk through the end-to-end process of building a D3.js visualisation - starting with exploratory data analysis, journalistic data investigation, visual experimentation and rounding off with (as Alberto Cairo says) of communicating truthful art."
       ],
       "speaker_id": [29],
-      "workshop": []
+      "workshop": [],
+      "parallel": true
     },
     {
       "id": 6,
@@ -297,7 +298,8 @@
         "Join Dae for a session that focuses on developing the mindset and behavior of people within teams and companies. Tools and methods will be discussed to create an organization that would be inspired to work together to move forward efficiently and effectively, despite new working arrangements and the uncertainty that lies ahead of us."
       ],
       "speaker_id": [4],
-      "workshop": []
+      "workshop": [],
+      "hidden": true
     },
     {
       "id": 7,

@@ -7,6 +7,7 @@ import Button from "../atoms/button";
 import { Chip } from "@material-ui/core";
 import WorkshopModal from "../schedule/workshopModal";
 import $ from "jquery";
+import Parallel from "./parallel";
 
 const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
   const currSegment = schedule[segment].map((event, index) => {
@@ -85,9 +86,119 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
         ? schedule[segment][index].time === schedule[segment][index - 1].time
         : false;
 
-    // if (!isSpecialSegment && event.description[0] === "Coming Soon!") {
-    //   return null;
-    // } else {
+    if (event.hidden) {
+      return null;
+    } else if (event.parallel) {
+      // TODO also get the event after it
+      // className="segment-item"
+      return (
+        <div
+          className={`padding-y-32`}
+          style={{
+            borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
+          }}
+          key={event.id}
+        >
+          <Row key={index} className={`mx-3 segment-container`}>
+            {isSameTime ? (
+              <Col md={2} sm={12}></Col>
+            ) : (
+              <Col md={2} sm={12}>
+                <h6 className="gray">
+                  <strong>{event.time}</strong>
+                </h6>
+              </Col>
+            )}
+
+            <Col md={5} sm={12}>
+              <a
+                href="/"
+                className={`${
+                  isSpecialSegment ? "" : "segment-item"
+                } bg-white d-block`}
+                style={{
+                  textDecoration: "none",
+                  cursor: isSpecialSegment ? "default" : "pointer",
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (!isSpecialSegment) {
+                    setSegmentName(segment);
+                    setWorkshopId(event.id);
+                    toggle();
+                  }
+                }}
+              >
+                <h5
+                  className={`margin-bottom-12 ${
+                    isSpecialSegment ? "mb-0" : ""
+                  }`}
+                  style={{
+                    lineHeight: "1.5rem",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {event.title}
+                </h5>
+                {!isSpecialSegment && (
+                  <div className="mb-1">
+                    <Chip
+                      variant="outlined"
+                      label={event.type}
+                      className="margin-bottom-8"
+                      style={{
+                        borderColor: "#e8006f",
+                        color: "#e8006f",
+                        fontFamily: "Karla",
+                        fontSize: "0.7rem",
+                      }}
+                    />
+                    {currWorkshops}
+                  </div>
+                )}
+                <div className="speaker-list">
+                  <div className="mt-4">{facilitators}</div>
+                  {!isSpecialSegment && (
+                    <Button
+                      variant="outline"
+                      className="d-none event-read-more parallel"
+                      style={{
+                        padding: "0.7rem 0.7rem",
+                      }}
+                    >
+                      Read more
+                    </Button>
+                  )}
+                </div>
+              </a>
+            </Col>
+            <Col md={5} sm={12}>
+              <a
+                href="/"
+                className={`${
+                  isSpecialSegment ? "" : "segment-item"
+                } bg-white d-block`}
+                style={{
+                  textDecoration: "none",
+                  cursor: isSpecialSegment ? "default" : "pointer",
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (!isSpecialSegment) {
+                    setSegmentName(segment);
+                    setWorkshopId(schedule[segment][index + 1].id);
+                    toggle();
+                  }
+                }}
+              >
+                <Parallel event={schedule[segment][index + 1]} />
+              </a>
+            </Col>
+          </Row>
+        </div>
+      );
+    }
+
     return (
       <div
         className={`padding-y-32`}
@@ -96,11 +207,6 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
         }}
         key={event.id}
       >
-        {/* {!isSpecialSegment && (
-          <h6 className="gray mx-4 margin-bottom-32">
-            <strong>{event.time}</strong>
-          </h6>
-        )} */}
         <a
           href="/"
           className={`${
@@ -116,7 +222,6 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               setSegmentName(segment);
               setWorkshopId(event.id);
               toggle();
-              // console.log(segment + " " + event.id);
             }
           }}
         >
@@ -148,8 +253,6 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                     label={event.type}
                     className="margin-bottom-8"
                     style={{
-                      // color: "#ffffff",
-                      // backgroundColor: "#e8006f",
                       borderColor: "#e8006f",
                       color: "#e8006f",
                       fontFamily: "Karla",
@@ -178,7 +281,6 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
         </a>
       </div>
     );
-    // }
   });
 
   return <>{currSegment}</>;
@@ -209,14 +311,6 @@ const Programme = () => {
         400
       );
     });
-
-    // $("#pre_event_3-button").on("click", function () {
-    //   let scrollAmount = $("#pre_event_3").offset().top - 170;
-    //   $([document.documentElement, document.body]).animate(
-    //     { scrollTop: scrollAmount },
-    //     400
-    //   );
-    // });
 
     $("#day_1-button").on("click", function () {
       let scrollAmount = $("#day_1").offset().top - 170;
