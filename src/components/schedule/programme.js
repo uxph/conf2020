@@ -91,7 +91,7 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
     } else if (event.parallel) {
       return (
         <div
-          className={`padding-y-32`}
+          className={`padding-top-32 padding-bottom-0`}
           style={{
             borderTop: isSameTime ? "none" : "thin solid #f3f3f3",
           }}
@@ -145,7 +145,10 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                       label={event.type}
                       className="margin-bottom-8"
                       style={{
-                        borderColor: "#e8006f",
+                        borderColor:
+                          event.type === "Workshop" ? "transparent" : "#e8006f",
+                        backgroundColor:
+                          event.type === "Workshop" ? "#ffd9eb" : "transparent",
                         color: "#e8006f",
                         fontFamily: "Karla",
                         fontSize: "0.7rem",
@@ -197,7 +200,7 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
       );
     } else if (event.parallel2) {
       return (
-        <div className={`padding-y-32`} key={event.id}>
+        <div className={`padding-bottom-32 padding-top-0`} key={event.id}>
           <Row key={index} className={`mx-3 segment-container`}>
             {isSameTime ? (
               <Col md={2} sm={12}></Col>
@@ -248,7 +251,10 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                       label={event.type}
                       className="margin-bottom-8"
                       style={{
-                        borderColor: "#e8006f",
+                        borderColor:
+                          event.type === "Workshop" ? "transparent" : "#e8006f",
+                        backgroundColor:
+                          event.type === "Workshop" ? "#ffd9eb" : "transparent",
                         color: "#e8006f",
                         fontFamily: "Karla",
                         fontSize: "0.7rem",
@@ -332,7 +338,10 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                     label={event.type}
                     className="margin-bottom-8"
                     style={{
-                      borderColor: "#e8006f",
+                      borderColor:
+                        event.type === "Workshop" ? "transparent" : "#e8006f",
+                      backgroundColor:
+                        event.type === "Workshop" ? "#ffd9eb" : "transparent",
                       color: "#e8006f",
                       fontFamily: "Karla",
                       fontSize: "0.7rem",
@@ -481,11 +490,11 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center">
+                <h4 className="text-center">
                   <span className="red text-uppercase">
                     Pre-event (Nov. 7, Sat)
                   </span>{" "}
-                </h3>
+                </h4>
                 <small
                   className="gray font-size-16 segment-date text-center d-block"
                   style={{
@@ -526,11 +535,11 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center">
+                <h4 className="text-center">
                   <span className="red text-uppercase">
                     Day 1 (Nov. 14, Sat)
                   </span>{" "}
-                </h3>
+                </h4>
               </div>
               <DaySegment
                 segment="day_1"
@@ -562,9 +571,9 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center text-uppercase">
+                <h4 className="text-center text-uppercase">
                   <span className="red">Day 2 (Nov. 15, Sun)</span>{" "}
-                </h3>
+                </h4>
               </div>
               <DaySegment
                 segment="day_2"
@@ -596,11 +605,11 @@ const Programme = () => {
                   backdropFilter: "blur(8px)",
                 }}
               >
-                <h3 className="text-center">
+                <h4 className="text-center">
                   <span className="red text-uppercase">
                     Pre-event (Oct. 24, Sat)
                   </span>{" "}
-                </h3>
+                </h4>
                 <small
                   className="gray font-size-16 segment-date text-center d-block"
                   style={{
