@@ -19,6 +19,26 @@
     "solid": null
   },
 
+  "uxph2020tomas": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020impact": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020upcapes": {
+    "percent": 0.15,
+    "solid": null
+  },
+
+  "uxph2020ideaspace": {
+    "percent": 0.15,
+    "solid": null
+  },
+
   "uxph2020collabox": {
     "percent": 0.15,
     "solid": null
@@ -45,7 +65,12 @@
   },
 
   "uxph2020education": {
-    "percent": 0.15,
+    "percent": 0.25,
+    "solid": null
+  },
+
+  "uxph2020uxbwithu": {
+    "percent": 0.25,
     "solid": null
   },
 

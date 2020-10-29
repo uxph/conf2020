@@ -89,8 +89,6 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
     if (event.hidden) {
       return null;
     } else if (event.parallel) {
-      // TODO also get the event after it
-      // className="segment-item"
       return (
         <div
           className={`padding-y-32`}
@@ -110,7 +108,7 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               </Col>
             )}
 
-            <Col md={5} sm={12}>
+            <Col md={5} sm={12} className="border-right">
               <a
                 href="/"
                 className={`${
@@ -193,6 +191,27 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               >
                 <Parallel event={schedule[segment][index + 1]} />
               </a>
+            </Col>
+          </Row>
+        </div>
+      );
+    } else if (event.parallel2) {
+      return (
+        <div className={`padding-y-32`} key={event.id}>
+          <Row key={index} className={`mx-3 segment-container`}>
+            {isSameTime ? (
+              <Col md={2} sm={12}></Col>
+            ) : (
+              <Col md={2} sm={12}>
+                <h6 className="gray">
+                  <strong>{event.time}</strong>
+                </h6>
+              </Col>
+            )}
+
+            <Col md={5} sm={12} className="border-right"></Col>
+
+            <Col md={5} sm={12}>
               <a
                 href="/"
                 className={`${
@@ -206,12 +225,52 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
                   e.preventDefault();
                   if (!isSpecialSegment) {
                     setSegmentName(segment);
-                    setWorkshopId(schedule[segment][index + 2].id);
+                    setWorkshopId(event.id);
                     toggle();
                   }
                 }}
               >
-                <Parallel event={schedule[segment][index + 2]} />
+                <h5
+                  className={`margin-bottom-12 ${
+                    isSpecialSegment ? "mb-0" : ""
+                  }`}
+                  style={{
+                    lineHeight: "1.5rem",
+                    fontSize: "1rem",
+                  }}
+                >
+                  {event.title}
+                </h5>
+                {!isSpecialSegment && (
+                  <div className="mb-1">
+                    <Chip
+                      variant="outlined"
+                      label={event.type}
+                      className="margin-bottom-8"
+                      style={{
+                        borderColor: "#e8006f",
+                        color: "#e8006f",
+                        fontFamily: "Karla",
+                        fontSize: "0.7rem",
+                      }}
+                    />
+                    {currWorkshops}
+                  </div>
+                )}
+                <div className="speaker-list">
+                  <div className="mt-4">{facilitators}</div>
+                  {!isSpecialSegment && (
+                    <Button
+                      variant="outline"
+                      className="d-none event-read-more parallel"
+                      style={{
+                        padding: "0.7rem 0.7rem",
+                      }}
+                    >
+                      Read more
+                    </Button>
+                  )}
+                </div>
               </a>
             </Col>
           </Row>
