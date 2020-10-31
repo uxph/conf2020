@@ -73,6 +73,7 @@ const TicketForm = () => {
   const [subtotal, setSubtotal] = useState(0);
   const [discount, setDiscount] = useState(0);
   const [discountCode, setDiscountCode] = useState("");
+  const [isStudentDiscount, setStudentDiscount] = useState(false);
   const [discountMessage, setDiscountMessage] = useState("You saved");
   let total = subtotal - discount >= 0 ? subtotal - discount : 0;
 
@@ -88,6 +89,9 @@ const TicketForm = () => {
   const [expiryMonth, setExpiryMonth] = useState(1);
   const [expiryYear, setExpiryYear] = useState(2020);
   const [cvc, setCvc] = useState(null);
+
+  // Student datails
+  const [studentNumber, setStudentNumber] = useState(null);
 
   // Paymongo API for card method
   const [paymentIntentId, setPaymentIntentId] = useState(null);
@@ -170,12 +174,20 @@ const TicketForm = () => {
         );
         matchedCodeDiscount = discount_codes[lowerCasedCode].solid;
       }
+
+      // check if it is a student discount
+      if (discount_codes[lowerCasedCode].student) {
+        setStudentDiscount(true);
+      } else {
+        setStudentDiscount(false);
+      }
     }
 
     // invalid code
     else {
       setSubtotal(regularTicketPrice * regularTicketQuantity);
       setDiscount(0);
+      setStudentDiscount(false);
     }
 
     if (
@@ -186,12 +198,15 @@ const TicketForm = () => {
       setDiscount(regularTicketPrice * regularTicketQuantity * 0.1);
       setDiscountCode("Group of 5");
       setDiscountMessage("GROUP OF 5 (10% off) discount");
+      setStudentDiscount(false);
     } else if (regularTicketQuantity >= 10 && matchedCodeDiscount <= 0.15) {
       setDiscount(regularTicketPrice * regularTicketQuantity * 0.15);
       setDiscountCode("Group of 10");
       setDiscountMessage("GROUP OF 10 (15% off) discount");
+      setStudentDiscount(false);
     } else if (regularTicketQuantity < 5 && discountCode.includes("Group of")) {
       setDiscountCode("");
+      setStudentDiscount(false);
     }
   }, [
     discountCode,
@@ -199,6 +214,7 @@ const TicketForm = () => {
     regularTicketPrice,
     regularTicketQuantity,
     setSubtotal,
+    setStudentDiscount,
   ]);
 
   // useEffect for checkout URL
@@ -209,10 +225,6 @@ const TicketForm = () => {
   useEffect(() => {
     if (confirmNumber) {
       localStorage.setItem("uxph_2020_confirm_number", confirmNumber);
-      // console.log(
-      //   "uxph_2020_confirm_number",
-      //   localStorage.getItem("uxph_2020_confirm_number")
-      // );
     }
   }, [confirmNumber]);
 
@@ -221,51 +233,21 @@ const TicketForm = () => {
     let errorList = [];
     setError([]);
     if (firstName === null || firstName === "") {
-      // errorList.push(
-      //   <small key="firstName" className="d-block">
-      //     <strong>First name</strong> is required.
-      //   </small>
-      // );
       errorList.push(true);
       setFirstName("");
     }
 
     if (lastName === null || lastName === "") {
-      // errorList.push(
-      //   <small key="lastName" className="d-block">
-      //     <strong>Last name</strong> is required.
-      //   </small>
-      // );
       errorList.push(true);
       setLastName("");
     }
 
-    // if (company === null || company === "") {
-    //   // errorList.push(
-    //   //   <small key="company" className="d-block">
-    //   //     <strong>Company</strong> is required.
-    //   //   </small>
-    //   // );
-    //   errorList.push(true);
-    //   setCompany("n/a");
-    // }
-
     if (email === null || email === "") {
-      // errorList.push(
-      //   <small key="email" className="d-block">
-      //     <strong>Email</strong> is required.
-      //   </small>
-      // );
       errorList.push(true);
       setEmail("");
     }
 
     if (mobileNumber === null || mobileNumber === "") {
-      // errorList.push(
-      //   <small key="mobileNumber" className="d-block">
-      //     <strong>Mobile number</strong> is required.
-      //   </small>
-      // );
       errorList.push(true);
       setMobileNumber("");
     } else if (
@@ -278,39 +260,21 @@ const TicketForm = () => {
       errorList.push(true);
     }
 
-    // else if (mobileNumber.length !== 11) {
-    //   // errorList.push(
-    //   //   <small key="mobileNumber" className="d-block">
-    //   //     <strong>Mobile number</strong> must be 11 digits.
-    //   //   </small>
-    //   // );
-    //   errorList.push(true);
-    // } else if (mobileNumber.substring(0, 2) !== "09") {
-    //   // errorList.push(
-    //   //   <small key="mobileNumber" className="d-block">
-    //   //     <strong>Mobile number</strong> must start with "09".
-    //   //   </small>
-    //   // );
-    //   errorList.push(true);
-    // }
+    if (isStudentDiscount) {
+      if (studentNumber === null || studentNumber === "") {
+        errorList.push(true);
+        setStudentNumber("");
+      }
+    }
 
+    // card fields
     if (paymentMethod === "card") {
       if (cardNumber === null || cardNumber === "") {
-        // errorList.push(
-        //   <small key="cardNumber" className="d-block">
-        //     <strong>Card number</strong> is required.
-        //   </small>
-        // );
         errorList.push(true);
         setCardNumber("");
       }
 
       if (cvc === null || cvc === "") {
-        // errorList.push(
-        //   <small key="cvc" className="d-block">
-        //     <strong>CVC</strong> is required.
-        //   </small>
-        // );
         errorList.push(true);
         setCvc("");
       }
@@ -352,13 +316,16 @@ const TicketForm = () => {
     let errorFound = errorChecking();
     if (!errorFound) {
       // parseFloat(details.amount) * 100
-      const caseUrl = `${url}/confirmation/?method=${
+      let caseUrl = `${url}/confirmation/?method=${
         details.paymentMethod
       }&amount=${parseFloat(details.amount) * 100}&company=${
         details.company
       }&discount_code=${
         discount > 0 ? details.discountCode : "none"
       }&regular_ticket=${details.regularTicket}&subscribed=${subscribed}`;
+
+      caseUrl =
+        caseUrl + (isStudentDiscount ? `&student_id=${studentNumber}` : "");
 
       const data = JSON.stringify({
         data: {
@@ -432,7 +399,9 @@ const TicketForm = () => {
             currency: "PHP",
             description: `{discount_code: ${
               discount > 0 ? discountCode : "none"
-            }, subscribed: ${subscribed}, ${tickets}}`,
+            }, subscribed: ${subscribed}, ${tickets}${
+              isStudentDiscount ? `, student_id: ${studentNumber}` : ""
+            }}`,
           },
         },
       });
@@ -723,7 +692,9 @@ const TicketForm = () => {
                 padding: "8px 16px",
               }}
               // onClick={() => attachPayWithCard()}
-              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}&client=${clientKey}&subscribed=${subscribed}`}
+              href={`${url}/confirmation/?method=${paymentMethod}&payment_intent=${paymentIntentId}&payment_method=${paymentMethodId}&client=${clientKey}&subscribed=${subscribed}${
+                isStudentDiscount ? `&student_id=${studentNumber}` : ""
+              }`}
             >
               Place Order
             </Button>
@@ -1066,15 +1037,6 @@ const TicketForm = () => {
                         </strong>{" "}
                         <small className="gray">/ USD $55</small>
                       </div>
-                      {/* <span
-                        className="font-weight-normal d-block"
-                        style={{
-                          fontSize: "0.75rem",
-                        }}
-                      >
-                        Regular Price:{" "}
-                        <strike>PHP {numeral(2770).format("0,0.00")}</strike>
-                      </span> */}
                     </td>
                     <td>
                       <Input
@@ -1113,6 +1075,29 @@ const TicketForm = () => {
                       }
                     />
                   </Col>
+                </FormGroup>
+              )}
+              {isStudentDiscount && (
+                <FormGroup>
+                  <Label for="studentNumber">
+                    Student ID <span className="red">*</span>
+                  </Label>
+                  <Input
+                    type="text"
+                    name="studentNumber"
+                    id="studentNumber"
+                    required
+                    placeholder="Student ID"
+                    value={studentNumber ? studentNumber : ""}
+                    onChange={(event) => setStudentNumber(event.target.value)}
+                    onBlur={(event) => setStudentNumber(event.target.value)}
+                    invalid={studentNumber === "" ? true : null}
+                  />
+                  {studentNumber === "" && (
+                    <small className="red font-size-12">
+                      This field is required
+                    </small>
+                  )}
                 </FormGroup>
               )}
               <Row

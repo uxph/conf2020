@@ -5,6 +5,7 @@ import ReactLoading from "react-loading";
 import { Modal, ModalBody } from "reactstrap";
 import axios from "axios";
 import InnerHTML from "dangerously-set-html-content";
+import _ from "lodash";
 
 import "../assets/sass/home.scss";
 import info from "../data/info.json";
@@ -63,6 +64,7 @@ const ConfirmationPage = () => {
       ? urlParams.get("discount_code")
       : "none";
     const subscribed = urlParams.get("subscribed");
+    const studentNumber = urlParams.get("student_id");
     const tickets = [
       {
         name: "regular_ticket",
@@ -79,7 +81,9 @@ const ConfirmationPage = () => {
           amount: parseInt(amount),
           description: `{discount_code: ${
             discountCode ? discountCode : "none"
-          }, subscribed: ${subscribed}, ${tickets}}`,
+          }, subscribed: ${subscribed}, ${tickets}${
+            !_.isEmpty(studentNumber) ? `, student_id: ${studentNumber}` : ""
+          }}`,
           source: {
             type: "source",
             id: id,
