@@ -8,7 +8,7 @@
     "percent": 0.15,
     "solid": null
   },
-  
+
   "uxph2020kla": {
     "percent": 0.15,
     "solid": null
@@ -136,8 +136,8 @@
   },
 
   "uxph2020fgd": {
-    "percent": 0.15,
-    "solid": null
+    "percent": null,
+    "solid": 520
   },
 
   "uxph2020quadx": {
