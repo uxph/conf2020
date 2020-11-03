@@ -60,6 +60,16 @@
 .silver-sponsor {
   @include section-white;
 }
+
+.sponsor-page-img {
+  position: relative;
+  transition: ease all 0.3s;
+}
+
+.sponsor-page-img:hover {
+  transform: scale(1.2);
+}
+
 @media only screen and (max-width: 550px) {
   .sponsor-section {
     position: relative;

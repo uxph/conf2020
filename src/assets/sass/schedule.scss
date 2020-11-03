@@ -57,6 +57,7 @@ h6 {
     font-size: 0.75rem !important;
   }
 }
+
 @media only screen and (max-width: 550px) {
   .speaker-body {
     padding: 0 !important;
@@ -94,12 +95,16 @@ h6 {
 
     div {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 0.25rem auto;
+      margin-bottom: 8px;
     }
 
     .speaker-container {
       margin-bottom: 0 !important;
+      flex-direction: column;
 
       h5,
       p {
@@ -107,18 +112,30 @@ h6 {
       }
 
       .speaker-photo {
-        margin: 0 0.25rem !important;
+        // margin: 0 0.25rem !important;
         margin-bottom: 8px;
-        display: inline-block !important;
+
         img {
           width: 3rem !important;
           height: 3rem !important;
         }
       }
     }
+    .company-img {
+      // margin-top: 12px;
+      width: 3rem !important;
+      // height: 3rem !important;
+    }
+
     .event-read-more {
       display: inline-block !important;
       margin: 1.5rem 0 !important;
+    }
+
+    .event-read-more.parallel {
+      display: inline-block !important;
+      margin: 0.5rem 0 !important;
+      margin-bottom: 3.5rem !important;
     }
   }
 }

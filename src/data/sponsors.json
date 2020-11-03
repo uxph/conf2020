@@ -62,7 +62,7 @@
       "description": [
         "Design Buddies is an inclusive community for designers from all backgrounds to connect, share resources, and participate in virtual events. We have mentorship programs, workshops, AMAs, portfolio reviews, and more. All for free."
       ],
-      "image_url": "/images/sponsors/design-buddies.png",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dLVKedGubK67HLE97U8oaUG1TdmNZ5b1x6RqFwwL46BuYnUE24BpndEbysdDYGv5RlJMLuTfYE6vDYfpYa_Op9dz6KJ_4ZQmn28hehHyKhPq6BKClyAXcMAFDLVVqGUq1ZBqOHMgCednKlrbGOkttp=s720-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -169,37 +169,6 @@
       ]
     },
     {
-      "id": 7,
-      "name": "Ambidextr",
-      "description": [
-        "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
-      ],
-      "image_url": "/images/sponsors/ambidextr.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "http://ambidextr.media/",
-          "icon": "fa fa-globe"
-        },
-        {
-          "url": "https://www.linkedin.com/company/ambidextr-media-corporation/?viewAsMember=true",
-          "icon": "fa fa-linkedin"
-        },
-        {
-          "url": "https://www.facebook.com/ambidextrPH/?ref=aymt_homepage_panel&eid=ARC5i4ldoCcllTUCnfBlOI0oOKovnEDgMnW-FmG80qyxLeb8VBe0lRGV4DEDyLOOHbim0j_0LGv1gKbu",
-          "icon": "fa fa-facebook-square"
-        },
-        {
-          "url": "https://twitter.com/ambidextrPH",
-          "icon": "fa fa-twitter"
-        },
-        {
-          "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
-          "icon": "fa fa-youtube-play"
-        }
-      ]
-    },
-    {
       "id": 8,
       "name": "Roots",
       "description": [
@@ -292,7 +261,7 @@
       "description": [
         "SlashIgnite is a social innovation studio based in Iloilo City. We help innovators build impactful & profitable social ventures, through social innovation training, ecosystem & venture building."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eQsbNqCwklvahz9UckaaUaPbDuumuzKGNiBH6AF84VyehMkv0QuAqyJH891-Osnp1TX7Spd0tJhe2BGFEwjexhggd0loOFP6vjA3puxyc3O5j0ANaeCQ_8Z37plM2IjfYZ1gkkES1yqYVj57j7JdM=s800-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eO0or-X3cSwqMtT9m-J9wng9j2mJb3nhYJuWl6PYWs3jfp3_KJgVCvfoUbM8MBNlpMpcMM9Y-sUPx8NCU63lRFj7Hin4PqPFbMUkYJ1rO1p7XRM9lyffqGfeLs0So5xbuTqvlGh5XMRvfD0kQqd6w=s500-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -342,10 +311,276 @@
           "icon": "fa fa-globe"
         }
       ]
+    },
+    {
+      "id": 17,
+      "name": "Developer Student Club Loyola",
+      "description": [
+        "DSC Loyola is a part of the Developer Student Clubs Philippines which are independent university-based groups. In DSCs, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. We believe student clubs are essential in the collective learning and development process that will have a larger and sustainable effect in our future. The DSC Loyola community at the Ateneo de Manila University has shown great interest in this vision which now has over 350+ student members in its campus, making it one of the biggest DSC chapters in Southeast Asia!"
+      ],
+      "image_url": "/images/sponsors/sponsor_08.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://dscadmu.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/dscloyola/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "UX Thailand",
+      "description": [
+        "UX Thailand begun as a series of monthly meet-ups, focused on empowering the local community to do great design. When we looked to push this further, The UX Thailand conference was born.",
+
+        "A non-profit, meaning the organisers are all volunteers, we don’t get paid. The money that is made is invested in further empowering the local community. We’ll use revenue to provide more regular events like our monthly meet up, training courses throughout the year and hope to build relationships across APAC.",
+
+        "With all of this, we hope for Thailand to become a globally recognised leader in design."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eSZoAXkHIPbhMYBaAgCzICPn41EobINzNTIEqdQDvSAHmvd-kmx02uAVNFQoJcWoQ3WI4pjl2hOOXnTtYNwwn4BD7m0BxLJhsqQZXVP9LNP6FgPY3h6bo23wYRxh3-3smEAjCp_cyau7HXtopz8I0=s657-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/groups/ux.in.th",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "UX Indonesia",
+      "description": [
+        "UXiD (UX Indonesia) is an open community that was formed to provide a conducive and fun platform for anyone to share, learn, and develop themselves in the world of user experience."
+      ],
+      "image_url": "/images/sponsors/uxindo.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.instagram.com/ux_indonesia/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Brainsparks",
+      "description": [
+        "Brainsparks is the first and only founder-focused incubator in the Philippines that wants to turn dreamers into founders.",
+
+        "Brainsparks has supported countless startups develop their ideas, accelerate their growth, and raise funding from investors globally. Brainsparks is happy to have successfully helped several PH Startups grow their company, and scale up their business."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3ctibWHm1bbaeWAJQNKBODU3Kt44grZ1K3cJ1XKITk2VuOMkH7uNrLSGlwU4ReuAj4tXwUmzq2vGmO3q4Rgc37gMkenJ26yhsk0o1isYixEK-VD2IcjldJZq2kkg5tOJ5V9rBznK9YC-yexzsBgLHqk=s1080-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.brainsparks.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/BrainsparksIncubator",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/brainsparksph",
+          "icon": "fa fa-twitter"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 23,
+      "name": "User Experience Society - ADMU",
+      "description": [
+        "User Experience Society is a student-run organization that advocates and practices human-centered design.",
+
+        "We combine this with a growth mindset, to create a strong mentorship culture that raises design leaders who are capable of creating positive change in the community."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cFWDMzxBoqrQuYKoP_uQ3ort-D3tWoYjR_f8JZVF1qAdo3PhKCYaNBTZdU9tojvjsjpB8TNG58TV9cMw8Pb0LcjfVmBW88kz5QCax1tGiA5pr9IdXRn-QOgTRgQuWJV6fKox0_2SJqVmoCXPe4AnID=s720-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://uxsociety.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/UXSoc/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/uxsocietyph",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxsocietyph/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "User Experience Society - DLSU",
+      "description": [
+        "The UX Society - DLSU Chapter is one of the many recognized UX Societies in the same network. There's UX Society ADMU, Davao, Orange County and the latest, UX Society AIM-Chapter.",
+
+        "UX Society - DLSU aids various organizations by creating quality products and services by applying principles, concepts and methodologies in such strategies. We hold workshops, seminars and conferences to train members about the essentials skills of proper UX discipline and methodologies."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fdA9N3kWhoBZiMK4ywldwkS4_Xm185Q_seo76bH-wZaczJTcc4W6t7qb9C37vcgVPGYG1JRcfW9kn74mSbUf5YAz1J1xLRW7rbkiKc_PwsyfVPwtIjglHaNjGjR6exT3yqLBL0pvFQ6Y__eCXR76d6=s720-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://dlsu.uxsociety.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/uxsocietydlsu/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/uxsocietydlsu/",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxsocietydlsu/",
+          "icon": "fa fa-instagram"
+        }
+      ]
     }
   ],
 
-  "General Sponsors": [
+  "Media Partners": [
+    {
+      "id": 16,
+      "name": "Rappler",
+      "description": [
+        "A social news network where stories inspire community engagement and digitally fuelled actions for social change."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fLaTnvVCKeLXRr4KsErU4ZJG-LN_qON9LBTEb1hDZCUAXDWd-iJNRM_Vbg59I39au5eO_uW2kIl8GtLY49cYkWVAkLrR0u_1VvuAv2a4ObMDTRJdk1VgfAyuK0rq5pjj5SFqBWlvsH8hLbC3zBV5o=w814-h912-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.rappler.com/",
+          "icon": "fa fa-globe"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "Summit Media",
+      "description": [
+        "Summit Media is a digital lifestyle network in the Philippines, with 14 media brands attracting around 31 million monthly unique visitors and approximately 33 million social media followers. "
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fEkOLxQoyaotZALkLpGLYe7D6ofNtUI8teHZPGKFt8J-0H68vsmB5ExA0KUTkQrVLTeGsaMSQzfBtfqMwllz-2OyOfZvTqw3AJB0ThK-VIX-id5WGIO2VYM3n3_lPzz1HJm6u6TL8QcPvUX3rAzZX5=w1200-h1373-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.summitmedia.com.ph/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/SummitMediaPH/",
+          "icon": "fa fa-facebook-square"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 19,
+      "name": "Esquire",
+      "description": [
+        "Esquire Philippines is a thought-leading network for well-connected men and women who are ambitious in their lives and are determined to shape the world.",
+        "We are their essential manual on how to lead a richer, better, fuller, and more meaningful life. Our goal is to help them know what to do in every situation in life, as well as to enlighten and educate them so they have an opinion about all aspects of the culture in which they live."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3e-ioDpFDjhPwCDyN3YhE3QeQGLmyBe1_KOLB-Rrs5hi1nSOulveGRWKhhHmROOKc1SX1QQmwtvDcu3n7sPtEGBAwy3UBZqEuZz-zhCvbxQbRrb7hGvT1MhM_C7hYGWJGT0k2VEPME2SYgmSzG9ak0=w575-h123-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://esquiremag.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/EsquirePH/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Cosmopolitan - Summit Media",
+      "description": [
+        "Cosmopolitan Philippines is the top-of-mind digital brand of every Pinay claiming her defining decade—her twenties. Cosmopolitan serves to inspire, encourage, and empower her to go after her dreams, live her best life, and be in control of her body through informative, entertaining, and relatable content."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eGL0vdysfeBm7VDWNhC0bP45HWVFV964r-Zxg1lMJe8acV9Rnl05bGrRtHc1l2ZSusE1Ku3uZkWohDPiMAveAyUNUVejfDHOfZfr59DqOTH07LxH4lS0n-oZV5dMwa5Kb57W80HYwcLT9AVbFLJHA=w950-h200-no",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/Cosmopolitan.ph/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ambidextr",
+      "description": [
+        "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
+      ],
+      "image_url": "/images/sponsors/ambidextr.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "http://ambidextr.media/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/ambidextr-media-corporation/?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/ambidextrPH/?ref=aymt_homepage_panel&eid=ARC5i4ldoCcllTUCnfBlOI0oOKovnEDgMnW-FmG80qyxLeb8VBe0lRGV4DEDyLOOHbim0j_0LGv1gKbu",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/ambidextrPH",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCAyWuLiSNlUfcqHXxi3QpMg",
+          "icon": "fa fa-youtube-play"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 22,
+      "name": "Center for Complexity and Emerging Technologies (COMET)",
+      "description": [
+        "The Center for Complexity and Emerging Technologies (COMET) is an interdisciplinary research laboratory under the Advanced Research Institute for Informatics, Computing, and Networking (AdRIC) at De La Salle University. Our mission is to enhance our understanding of emergent phenomena in real-life systems (i.e. cities, mobility), sociotechnical systems (i.e. social networking sites, Wikipedia), and human-computer interactions. We develop computational models which are then used in the design of interactive tools, information systems, and interaction techniques."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fzq-9XKP4L8hApGaW59N8Gdbn2KV_UGPmojKp7pocC2i8OO4VGsB0HPMaSyI895hhY5o0ezKdIR02j6hvBSBUNrMzQX3IXZs7GaOxwQEj3mA0DAxCSJ2NBHs0Xq7T7H7Bm9e-7svh_jMHdA8MAwY66=s200-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://comet.dlsu.edu.ph/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/dlsucomet/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/dlsu_comet",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    }
+  ],
+
+  "Major Sponsors": [
     {
       "id": 0,
       "name": "Toasty",
@@ -378,7 +613,8 @@
           "url": "https://www.linkedin.com/company/adplist-org/",
           "icon": "fa fa-linkedin"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 2,
@@ -408,7 +644,8 @@
           "url": "https://www.facebook.com/paymongo",
           "icon": "fa fa-facebook-square"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 4,
@@ -431,7 +668,8 @@
           "url": "https://www.linkedin.com/company/11234935",
           "icon": "fa fa-linkedin"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 5,
@@ -459,12 +697,19 @@
           "url": "https://www.youtube.com/channel/UCpjn_P9AD5W5q-9lzP5RtxQ/videos",
           "icon": "fa fa-youtube-play"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 6,
       "name": "InVision",
-      "description": ["Coming Soon!"],
+      "description": [
+        "InVision is the world’s most powerful design prototyping tool.",
+
+        "Quickly transform your designs into beautiful, fully interactive prototypes complete with gestures, transitions & animations for web, iOS & Android.",
+
+        "A lot of companies, big and small, that are creating digital properties (like websites or mobile apps) use InVision to communicate across their teams and get through the design process faster and more efficiently."
+      ],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cmsdQt7v2GrBxyqykPY7hytpdcXI4cl2KoWHt2lXrPxZoNEozcPeGk_Q8XVVtAuwGV0OQYbBz67Z5-trq6QEeYjPlwtUszTSrhVghfLsv1uCozif36DgLNFPEJaj7jfccIIXC-g42CiQFxkc9c5ESf=w1000-h335-no?authuser=2",
       "website_url": "#",
       "social_media": [
@@ -472,11 +717,12 @@
           "url": "https://www.invisionapp.com/",
           "icon": "fa fa-globe"
         }
-      ]
+      ],
+      "featured": true
     },
     {
       "id": 7,
-      "name": "Anflo Management & Investment Corp.",
+      "name": "Anflocor",
       "description": [
         "Established in 1977, the Anflo Management and Investment Corporation (ANFLOCOR) is the management and investment company of the ANFLO Group of Companies, founded by the Floirendo family’s patriarch, Don Antonio O. Floirendo, Sr.",
         "The Mindanao-based business conglomerate is engaged in a diverse range of industries, including agriculture (production and export of Cavendish bananas, livestock operations), industrial (container port terminal, storage facilities, manufacturing of packaging materials and labels, trucking services, aerial spray and helicopter charter services), real estate (residential and commercial developments) and tourism (resort and franchise hotels operations). The ANFLO Group also has companies that are into construction, retail, consumer financing, radio broadcasting, and security agency.",
@@ -511,6 +757,30 @@
   "Premium Sponsors": [
     {
       "id": 0,
+      "name": "Make Technology",
+      "description": [
+        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+      ],
+      "image_url": "/images/sponsors/make.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://make.technology/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.facebook.com/make.technology",
+          "icon": "fa fa-facebook-square"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 1,
       "name": "Figma",
       "description": [
         "Figma is a design platform for teams who build products together. Born on the Web, Figma helps the entire product team create, test, and ship better designs, faster."
@@ -538,26 +808,68 @@
           "url": "https://www.facebook.com/figmadesign",
           "icon": "fa fa-facebook-square"
         }
-      ]
+      ],
+      "featured": true
     },
     {
-      "id": 1,
-      "name": "Make Technology",
+      "id": 2,
+      "name": "Accenture Philippines",
       "description": [
-        "Make is a full-service, digital and innovations agency. As an Ace Saatchi & Saatchi company, we help brands drive innovation and user experience through powerful, game-changing technology. Design-led innovation drives our foundation, with user experience at our core. We develop products and services that are inclusive and accessible to everyone, everywhere. This, together with a deep understanding of our client’s business and goals, helps us create beautiful, functional, human-centered designs. With offices in the Philippines and Hong Kong, and with continued global expansion, our goal is to provide the resources and technology, no matter how big or small, to help our clients Make The Future Now."
+        "Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Interactive, Technology and Operations services—all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers. Our 506,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and communities."
       ],
-      "image_url": "/images/sponsors/make.png",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fjCHFPehF01-jj6fhYoXrfUzf2dx52qKmhUKKkv_jHxk08KPPxE-TMl6eIt07V5wju1KIm7Wddj8It9EgkhVcaD7MuGxmyfQRPE7EA2ZqXbTjl7Suz9j_13FcD3252xM_J3sVTCkJ2fNHW-ZS5Kmw=w1920-h507-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
-          "url": "https://www.linkedin.com/company/make-technology-inc./?viewAsMember=true",
+          "url": "https://www.accenture.com",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https//www.linkedin.com/showcase/accenture_in_the_philippines/",
           "icon": "fa fa-linkedin"
         },
         {
-          "url": "https://www.facebook.com/make.technology",
+          "url": "https://www.facebook.com/accenturejobsph",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/AccentureJobsPH",
+          "icon": "fa fa-twitter"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Smart Communications, Inc.",
+      "description": [
+        "Smart Communications, Inc. is a leading innovator in mobile telecommunications and digital services in the Philippines delivered through Smart LTE, the country's fast mobile network, as certified by third-party mobile analytics firms such as Ookla and Opensignal."
+      ],
+      "image_url": "/images/sponsors/smart.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.smart.com.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/smart-communications-inc.",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.twitter.com/LiveSmart",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/livesmart",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.facebook.com/SmartCommunications",
           "icon": "fa fa-facebook-square"
         }
-      ]
+      ],
+      "featured": true
     }
   ]
 }

@@ -5,6 +5,7 @@ import ReactLoading from "react-loading";
 import { Modal, ModalBody } from "reactstrap";
 import axios from "axios";
 import InnerHTML from "dangerously-set-html-content";
+import _ from "lodash";
 
 import "../assets/sass/home.scss";
 import info from "../data/info.json";
@@ -16,7 +17,7 @@ const ConfirmationPage = () => {
     <p
       style={{
         fontWeight: `light`,
-        fontFamily: "Work sans",
+        fontFamily: "Karla, sans-serif",
       }}
       className="text-center text-white"
     >
@@ -34,7 +35,7 @@ const ConfirmationPage = () => {
     <p
       style={{
         fontWeight: `light`,
-        fontFamily: "Work sans",
+        fontFamily: "Karla, sans-serif",
       }}
       className="text-center text-white"
     >
@@ -63,10 +64,11 @@ const ConfirmationPage = () => {
       ? urlParams.get("discount_code")
       : "none";
     const subscribed = urlParams.get("subscribed");
+    const studentNumber = urlParams.get("student_id");
     const tickets = [
       {
-        name: "early_bird",
-        quantity: parseInt(urlParams.get("early_bird")),
+        name: "regular_ticket",
+        quantity: parseInt(urlParams.get("regular_ticket")),
       },
     ]
       .filter((x) => x.quantity)
@@ -79,7 +81,9 @@ const ConfirmationPage = () => {
           amount: parseInt(amount),
           description: `{discount_code: ${
             discountCode ? discountCode : "none"
-          }, subscribed: ${subscribed}, ${tickets}}`,
+          }, subscribed: ${subscribed}, ${tickets}${
+            !_.isEmpty(studentNumber) ? `, student_id: ${studentNumber}` : ""
+          }}`,
           source: {
             type: "source",
             id: id,

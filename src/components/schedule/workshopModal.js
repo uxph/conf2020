@@ -1,8 +1,9 @@
 import React from "react";
-import speakers from "../../data/speakers.json";
 import _ from "lodash";
 import pluralize from "pluralize";
 import schedule from "../../data/schedule.json";
+import speakers from "../../data/speakers.json";
+import moderators from "../../data/moderators.json";
 import { Container, Modal, ModalHeader, Row, Col } from "reactstrap";
 
 const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
@@ -55,7 +56,7 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
             ))}
           </div>
         )}
-        <div key={index} className="d-flex align-items-center margin-bottom-32">
+        <div key={index} className="d-flex margin-bottom-32">
           <div className="margin-right-16">
             <img
               src={currFacilitator.image_url}
@@ -75,11 +76,72 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                 ? `${currFacilitator.position} at ${currFacilitator.company}`
                 : null}
             </p>
+            <div className="margin-bottom-16 margin-top-8">
+              <img
+                src={currFacilitator.company_logo}
+                alt={currFacilitator.company}
+                style={{
+                  width: `${
+                    currFacilitator.company_logo_type === "square"
+                      ? "64px"
+                      : "96px"
+                  }`,
+                  filter: "grayscale(100%)",
+                }}
+                className="company-img"
+              />
+            </div>
           </div>
         </div>
       </div>
     );
   });
+
+  const mods = currentWorkshop.moderators
+    ? moderators[currentWorkshop.moderators].map((currModerator, index) => {
+        return (
+          <div>
+            <div key={index} className="d-flex margin-bottom-32">
+              <div className="margin-right-16">
+                <img
+                  src={currModerator.image_url}
+                  style={{
+                    width: "72px",
+                    height: "72px",
+                    objectFit: "cover",
+                    borderRadius: "100%",
+                  }}
+                  alt={currModerator.name}
+                />
+              </div>
+              <div>
+                <h5 className="mb-0 font-size-16">{currModerator.name}</h5>
+                <p className="red mb-0">
+                  {currModerator.position !== ""
+                    ? `${currModerator.position} at ${currModerator.company}`
+                    : null}
+                </p>
+                <div className="margin-bottom-16 margin-top-8">
+                  <img
+                    src={currModerator.company_logo}
+                    alt={currModerator.company}
+                    style={{
+                      width: `${
+                        currModerator.company_logo_type === "square"
+                          ? "64px"
+                          : "96px"
+                      }`,
+                      filter: "grayscale(100%)",
+                    }}
+                    className="company-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })
+    : null;
 
   const closeBtn = (
     <button
@@ -135,7 +197,7 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                   fontSize: "1rem",
                 }}
               >{`${name} - ${currentWorkshop.time}`}</h5>
-              <h3 className="font-size-24 margin-bottom-24">Talk Abstract</h3>
+              <h3 className="font-size-24 margin-bottom-24">Topic Overview</h3>
               {abstract}
               <br />
               <br />
@@ -153,6 +215,20 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                   </Row>
                 </div>
               )}
+              {/* uncomment this when ilalagay na yung facilitators */}
+              {currentWorkshop.moderators &&
+                moderators[currentWorkshop.moderators].length > 0 && (
+                  <div className="margin-top-32">
+                    <h3 className="font-size-24 margin-bottom-24">
+                      {pluralize("Facilitator", facilitators.length)}
+                    </h3>
+                    <Row>
+                      <Col md={11} sm={12}>
+                        {mods}
+                      </Col>
+                    </Row>
+                  </div>
+                )}
             </Col>
           </Row>
         </div>
