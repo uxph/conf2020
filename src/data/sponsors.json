@@ -448,7 +448,66 @@
           "icon": "fa fa-instagram"
         }
       ]
+    },
+    {
+      "id": 25,
+      "name": "UXVN",
+      "description": [
+        "UXVN is a non-profit organization founded by a group of passionate UX Practitioners in Vietnam that aims to create inclusive spaces for the design community to meet, share, learn and grow together.",
+
+        "UXVN Festival 2020 is a one-day virtual conference to help UX Practitioners connect, be inspired and learn together in order to transform and influence UX in their career."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dMuY91YtNzMmg_xMyLLKE-HwmH3vfQt-0cpMYCVlk9-qq7UgkYjbFuiCrESUbooVCMwaaIfzqPKrni6_aAUZoVOXbkTc3-77TDEQoNZ6p9bY-GrYntRvu0v217O5rh8X1jRBBHJhM9WETN541g_V1g=s600-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.uxvn.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/UXinVietnam/",
+          "icon": "fa fa-facebook-square"
+        }
+      
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Kampala Design Community",
+      "description": [
+        "Kampala Design Community brings together designers and design enthusiasts to grow together and harness the possibility of democratising great design. We push to build a network of design thinkers through sharing resources, knowledge and opportunities."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eHoCAkYzAV-RDHgnvxbpdfwwR3JlPImfQdajsaQpFA5j7L6gVlayoXCMDu_QBZ6ao_ndz8DrKNafczfzEy9r4RAmFofouwMDoVeu4xsazlis-2dsQ5CF-TS1Y4ZMhn04UwsnJPQBX_ZpTvd7BQHVm3=s300-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://twitter.com/uxkampala/",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "UX Istanbul",
+      "description": [
+        "UXIstanbul Conference is one of the largest conferences on UX in South-East Europe and the Middle East. We have been gathering UX professionals from World’s leading companies for the past 6 years.",
+        "On UXistanbul 2021, we will meet on virtual platforms and the conference will last for 3 days. We’ll listen to sector professionals from world's leading companies and have workshops digitally."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3efjxDRx9jDfd-41YOzNrx2q5lAHPmXbjclwiN0PEe2Uon2YC2TrmQjxdsnYkZmM4k8-aSTg11yUfdGafe87A-JVz5aTgvl_B2muFtFdkLiSunRCer10VeKNfXbP8NyHM0gFRSzysC_Juxv4AHWTmFo=s225-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://uxistanbul.org/",
+          "icon": "fa fa-globe"
+        },
+
+        {
+          "url": "https://www.linkedin.com/company/uxistanbul-conference/",
+          "icon": "fa fa-linkedin"
+        }
+      ]
     }
+
   ],
 
   "Media Partners": [
