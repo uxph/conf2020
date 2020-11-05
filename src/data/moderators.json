@@ -46,8 +46,33 @@
       "company": "Globe Telecom",
       "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3cn6EJtXSJPheKPOnRR9KfOgNeRHDuC7mg75Txr5XW6AAU0IzSZYtDvWavvOJwQ3mbja1IjDoN1qhrg3C8grSYE8Lxmden1X7iMSGTrdGh7BB6DN-uC1TVKH0MUsfjIWsvr8BKxXj2-DLdOH71oJ0Wp=w1000-h373-no?authuser=0",
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fiXtE635p8WCMkH7L-bSXw4_hep5q8PS0TGF8DUWz3OinyiviPRoWNg0arjkCjEBUDTBNQzYYDsBMkVUtCVz4s_Y2QmPlSmM-juzxG-6JoAShU9CVGAUePJ60YsmHY8b9bbP7aSbx8E8LQ_VSuQkJN=s912-no?authuser=0"
+    },
+    {
+      "id": 1,
+      "name": "Fish Ibasco",
+      "position": "Experience Design Lead",
+      "company": "Accenture",
+      "company_logo": "https://lh3.googleusercontent.com/pw/ACtC-3fjCHFPehF01-jj6fhYoXrfUzf2dx52qKmhUKKkv_jHxk08KPPxE-TMl6eIt07V5wju1KIm7Wddj8It9EgkhVcaD7MuGxmyfQRPE7EA2ZqXbTjl7Suz9j_13FcD3252xM_J3sVTCkJ2fNHW-ZS5Kmw=w1366-h361-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3czgvrTX0aIXklcjpL24ni0G_u6npVJjyuBb4AWnl7AN8MUf9D18r4TB3FHSuczTXJ8-xE0UhFdJVdQyXGRlZZch2HmBfM-HhVFqKQ4dmLiG-Irjdubm-OZV_UtNk9x9pB73B4fk8n7_r9JzrulcCSF=w677-h609-no?authuser=0"
     }
   ],
 
-  "leading-by-design": []
+  "leading-by-design": [
+    {
+      "id": 0,
+      "name": "Aldrich Tan",
+      "position": "Managing Director",
+      "company": "UXPH",
+      "company_logo": "/images/logos/uxph_logo.svg",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fQG_2k77WyH27JYFUfdkosn-ab9strQBHJJIySLZjVM0-RYrQd7zdQf3ADm_4cb_gGqjj__-O1WOqdyzOGAvzo7pxmll2wqNQRoGRt8ufoC_svYGP05pATbqXjqcyBIq1FVmV0wgAVPx7zAp9dvJA-=w848-h920-no?authuser=1"
+    },
+    {
+      "id": 1,
+      "name": "Ely Apao",
+      "position": "Customer Experience Manager",
+      "company": "JG Summit",
+      "company_logo": "/images/companies/jg_summit.svg",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3evt9v-mAGczNXmyZWS30W0wJgaekfp_f714zmSGbS7rEizDUv1b9LGp_i7WXttfRy2Hcb_vvQ4OeIwTNExXn5vwyh4IBvRDRxEPG3khZA9QJXFIjSLD9u4UPhquBKljxuAd8tOwbiCtg-EnNmi_Bk6=w960-h1130-no?authuser=1"
+    }
+  ]
 }
