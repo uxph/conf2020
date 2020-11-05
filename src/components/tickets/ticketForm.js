@@ -675,7 +675,6 @@ const TicketForm = () => {
               </Col>
             </Row>
             <br />
-            {coc}
           </div>
           <div className="border-0 direction d-flex justify-content-between mt-4">
             <Button
@@ -1148,11 +1147,13 @@ const TicketForm = () => {
                   <span>Send me emails about UXPH events and activities</span>
                 </Label>
               </FormGroup>
+              <br />
+              <br />
+              {coc}
             </Form>
             {error.filter((x) => x !== true).length > 0 && (
               <Alert color="danger">{error.filter((x) => x !== true)}</Alert>
             )}
-            {paymentMethod === "bank" && coc}
           </div>
           <div className="border-0 d-flex justify-content-end mt-4">
             {paymentMethod === "bank" && (
