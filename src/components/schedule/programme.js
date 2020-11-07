@@ -104,6 +104,8 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               <Col md={2} sm={12}>
                 <h6 className="gray">
                   <strong>{event.time}</strong>
+                  <br />
+                  <small>(GMT +8)</small>
                 </h6>
               </Col>
             )}
@@ -208,6 +210,8 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               <Col md={2} sm={12}>
                 <h6 className="gray">
                   <strong>{event.time}</strong>
+                  <br />
+                  <small>(GMT +8)</small>
                 </h6>
               </Col>
             )}
@@ -317,6 +321,8 @@ const DaySegment = ({ segment, setSegmentName, setWorkshopId, toggle }) => {
               <Col md={2} sm={12}>
                 <h6 className="gray">
                   <strong>{event.time}</strong>
+                  <br />
+                  <small>(GMT +8)</small>
                 </h6>
               </Col>
             )}
@@ -438,14 +444,6 @@ const Programme = () => {
                 variant="outline"
                 className="w-100 margin-bottom-12"
                 innerClassName="w-100"
-                id="pre_event_2-button"
-              >
-                Pre-Event 2
-              </Button>
-              <Button
-                variant="outline"
-                className="w-100 margin-bottom-12"
-                innerClassName="w-100"
                 id="day_1-button"
               >
                 Day 1
@@ -466,54 +464,17 @@ const Programme = () => {
               >
                 Pre-Event 1 <br /> (Completed)
               </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="pre_event_2-button"
+              >
+                Pre-Event 2 <br /> (Completed)
+              </Button>
             </div>
           </Col>
           <Col md={10} className="p-0 pl-3">
-            <div
-              className="border p-4 bg-white shadow-sm margin-bottom-48"
-              id="pre_event_2"
-              style={{
-                borderRadius: "1rem",
-              }}
-              data-aos="fade"
-              data-aos-offset={150}
-              data-aos-duration={600}
-              data-aos-once={true}
-            >
-              <div
-                className="padding-y-16"
-                style={{
-                  position: "sticky",
-                  top: "70px",
-                  zIndex: 1000,
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                <h4 className="text-center">
-                  <span className="red text-uppercase">
-                    Pre-event (Nov. 7, Sat)
-                  </span>{" "}
-                </h4>
-                <small
-                  className="gray font-size-16 segment-date text-center d-block"
-                  style={{
-                    verticalAlign: "middle",
-                    fontFamily: "Montserrat, sans-serif",
-                  }}
-                >
-                  Available to ticket holders only
-                </small>
-              </div>
-              <DaySegment
-                segment="pre_event_2"
-                workshopId={workshopId}
-                segmentName={segmentName}
-                toggle={toggle}
-                setSegmentName={setSegmentName}
-                setWorkshopId={setWorkshopId}
-              />
-            </div>
             <div
               className="border p-4 bg-white shadow-sm margin-bottom-48"
               style={{
@@ -622,6 +583,51 @@ const Programme = () => {
               </div>
               <DaySegment
                 segment="pre_event_1"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              id="pre_event_2"
+              style={{
+                borderRadius: "1rem",
+              }}
+              data-aos="fade"
+              data-aos-offset={150}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="padding-y-16"
+                style={{
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
+                }}
+              >
+                <h4 className="text-center">
+                  <span className="red text-uppercase">
+                    Pre-event (Nov. 7, Sat)
+                  </span>{" "}
+                </h4>
+                <small
+                  className="gray font-size-16 segment-date text-center d-block"
+                  style={{
+                    verticalAlign: "middle",
+                    fontFamily: "Montserrat, sans-serif",
+                  }}
+                >
+                  Available to ticket holders only
+                </small>
+              </div>
+              <DaySegment
+                segment="pre_event_2"
                 workshopId={workshopId}
                 segmentName={segmentName}
                 toggle={toggle}
