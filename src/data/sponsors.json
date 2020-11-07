@@ -373,7 +373,7 @@
 
         "Brainsparks has supported countless startups develop their ideas, accelerate their growth, and raise funding from investors globally. Brainsparks is happy to have successfully helped several PH Startups grow their company, and scale up their business."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3ctibWHm1bbaeWAJQNKBODU3Kt44grZ1K3cJ1XKITk2VuOMkH7uNrLSGlwU4ReuAj4tXwUmzq2vGmO3q4Rgc37gMkenJ26yhsk0o1isYixEK-VD2IcjldJZq2kkg5tOJ5V9rBznK9YC-yexzsBgLHqk=s1080-no",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cNG0Eole7zfOBGvNpmmPPz7w8cl6GRXZBKNZbMO8XZSAI_hlJjUQRfFXIgTeoXLrNDb4tUBJdjCpHfzZ5yMj9038cTTKVutytGuoSButQg6iGWl1tagZ70Iwn6H9uPfe9LDRJ_dQXeoBMmyG8m0PhH=w439-h93-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -448,7 +448,237 @@
           "icon": "fa fa-instagram"
         }
       ]
+    },
+    {
+      "id": 25,
+      "name": "UXVN",
+      "description": [
+        "UXVN is a non-profit organization founded by a group of passionate UX Practitioners in Vietnam that aims to create inclusive spaces for the design community to meet, share, learn and grow together.",
+
+        "UXVN Festival 2020 is a one-day virtual conference to help UX Practitioners connect, be inspired and learn together in order to transform and influence UX in their career."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dMuY91YtNzMmg_xMyLLKE-HwmH3vfQt-0cpMYCVlk9-qq7UgkYjbFuiCrESUbooVCMwaaIfzqPKrni6_aAUZoVOXbkTc3-77TDEQoNZ6p9bY-GrYntRvu0v217O5rh8X1jRBBHJhM9WETN541g_V1g=s600-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.uxvn.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/UXinVietnam/",
+          "icon": "fa fa-facebook-square"
+        }
+      
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Kampala Design Community",
+      "description": [
+        "Kampala Design Community brings together designers and design enthusiasts to grow together and harness the possibility of democratising great design. We push to build a network of design thinkers through sharing resources, knowledge and opportunities."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eHoCAkYzAV-RDHgnvxbpdfwwR3JlPImfQdajsaQpFA5j7L6gVlayoXCMDu_QBZ6ao_ndz8DrKNafczfzEy9r4RAmFofouwMDoVeu4xsazlis-2dsQ5CF-TS1Y4ZMhn04UwsnJPQBX_ZpTvd7BQHVm3=s300-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://twitter.com/uxkampala/",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "UX Istanbul",
+      "description": [
+        "UXIstanbul Conference is one of the largest conferences on UX in South-East Europe and the Middle East. We have been gathering UX professionals from World’s leading companies for the past 6 years.",
+        "On UXistanbul 2021, we will meet on virtual platforms and the conference will last for 3 days. We’ll listen to sector professionals from world's leading companies and have workshops digitally."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fcpnc73TcQXoj024OqVXIK2lhCw4vSZpL66-V03lJrjVoNbSph16u5BlnucYkv7f7AnB4USqrRLIa3Pah_Ivb_5emrAdf10C1Y5CfGpO9nnBkXGgLINy7mjU9oReJJPnaMPwDlbfYRC-YiugJuhQuX=w716-h657-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://uxistanbul.org/",
+          "icon": "fa fa-globe"
+        },
+
+        {
+          "url": "https://www.linkedin.com/company/uxistanbul-conference/",
+          "icon": "fa fa-linkedin"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "UP Career Assistance Program for Engineering Students (UP CAPES)",
+      "description": [
+       "UP Career Assistance Program for Engineering Students (UP CAPES) is the country’s premier career-oriented organization dedicated to bridging the gap between engineering students and their future careers. By providing relevant campaigns and impactful initiatives focused on career development and networking, we strive to position the UP College of Engineering as a globally competitive institution geared towards nation-building."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cumQj9go5g18Q8MmnELv7x76M6QU06femTtNDgaeYEiU0plFLtOZpdCMnvd0m-jNQVy1D6C5WjyMOOMXkf4F89hH2DZPoJGgbk268M5eJ4n2ji0ER8q4CFCbw-x9H9ac75hwsW8Ua6YaIzkPcCDNHp=s609-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://upcapes.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/upcapes",
+          "icon": "fa fa-facebook-square"
+        },
+
+        {
+          "url": "https://www.linkedin.com/company/upcapes/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://twitter.com/upcapes",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/upcapes/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Impact Hub Yangon",
+      "description": [
+       "Impact Hub Yangon is an innovation lab, a business Incubator, a social enterprise community center. We offer you a unique ecosystem of resources, inspiration, and collaboration opportunities to grow your impact. Our diverse community will inspire, connect, and enable you to develop your best work every step of the way."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eb5pHWgijH9--U4WH9yQ9k-xRQYx_dbDGFvXgc2SVtsl6m3b50fXqWvkIWHwqX3k3bNoqVS1XFTW__d2k4RM7f--moeQ_5FhpWiWY8QKVRYTP5tri93hFK1My1nUjQmUp3myjCSvFAwEGrtC8Gs41z=s450-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.impacthubyangon.net",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "FEU Innovation Center",
+      "description": [
+       "FEU Innovation Center is a venue for students to turn their ideas into profitable ventures with the help and guidance of industry experts. ",
+       "Our mission is to create the next generation of nation builders by creating innovators, technologists, and entrepreneurs."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3d0Jr76nIURBK8AtYbk2a2MA7uvWoIKeXooyS2LgMNQJJHHLMzVgpY5ufHy6SaLossOeub_mMfGXVu4wdDSVjC6WdcEC36PqxhMyrtLu8E7AibfnBrNSKm3qW1VzxA3sDts-S0klkkgI_GtijnVJ9Zr=s657-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/feuinnovationcenter",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.instagram.com/feuinnovationcenter/",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.feutech.edu.ph/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "GDG Cebu",
+      "description": [
+        "Google Developer Group (GDG) Cebu is a non-profit group of amateurs and professionals (technology users, specialists, and developers) who are independent from Google but are enthusiasts and daily users of Google technologies. Members meet and socialize on a regular basis.",
+
+        "GDG Cebu is an independent group; the activities and opinions expressed by the group should in no way be linked to Google, the corporation."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cDg7hJZkGBxIfBehCG_-eL6Vbxxcu-hDd7f9SWbri9gVicyIDLg7I5ir90BRu6peLw9_LYpAQRt0cGJZFc0KpGi12CIKutOgg2Tf4CrCtE-nyTA6R906V_I6AfdcBq7cxsJdXwa-9sCqfXb7wPKddn=s383-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/gdgcebuorg/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://gdgcebu.org/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "WTM Cebu",
+      "description": [
+        "Google Developer Group (GDG) Cebu is a non-profit group of amateurs and professionals (technology users, specialists, and developers) who are independent from Google but are enthusiasts and daily users of Google technologies. Members meet and socialize on a regular basis.",
+
+        "GDG Cebu is an independent group; the activities and opinions expressed by the group should in no way be linked to Google, the corporation."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3crtg7U_0mMHzlymckoeXBEY1TKV-NzWN9_QjR90r9emtpscOCUikdAqLUXgnhtZyq-xwi4uCGnWgbVVtN0LXhDRywYSD89W4PSobjUg-lCLp3Ll6Zjei_uHQ600p0H7OAZ4BrbLza88QeJ6dg-KqZg=s304-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/wtm.cebu/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "IdeaSpace",
+      "description": [
+        "IdeaSpace is a non-profit organization running founder-focused programs for early-stage tech startup founders solving emerging market issues in the Philippines and around Southeast Asia."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eDGS9PnzICt_a-Hf9Ash997euHDlWTSgBhgF31GrKJXKtf8C16637GKnzS4WfgN_KFKu-eFP4tRmfxdo2P8X8mGGicScQEenVIbt0Hm36NBEt5vH6AKVxcff0r1vdS7u4ucwOfSvjfT9ZJz11cfPfJ=s657-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/ideaspaceph",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "http://www.ideaspacefoundation.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/ideaspace-foundation-inc-",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.instagram.com/ideaspaceph/",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCv1wPEJBTUTSI1l1yt1F_pQ",
+          "icon": "fa fa-youtube"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "UXMM",
+      "description": [
+        "UXMM is a non-profit organization building the only career growth platform focused on providing international technical knowledge, educational resources and passion for Product design, User Experience and User Interface designer across in Myanmar. We plan to host in Myanmar’s largest community of eager individuals about the area of all UX product related. The organization will host annual conferences together with other local and international community and doing monthly meetups to deliver valuable information, insight, and engagement to anyone seeking to learn and get improvement. We aims to help increase recognition and design practices all over Myanmar."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3diKScLmuf0GuebVNu3xXUwGvar_Dxu2l2P1b1iDC21npvt9cD09-K-ZWON8B2PrctuX63wPoIqD1mTNtlUAEZXvRaa3FdWflsevADyTvnweRPnazs7YcVy7zpqLV2LJlJXsXrge4xu-FwMq-dR2WAD=s657-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/uxmyanmar/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "http://uxmm.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.linkedin.com/company/uxmm/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.instagram.com/ideaspaceph/",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UClLaxKGmw5yR1w8aBtCNV_w",
+          "icon": "fa fa-youtube"
+        }
+      ]
     }
+
   ],
 
   "Media Partners": [

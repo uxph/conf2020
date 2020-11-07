@@ -196,7 +196,7 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
                   textTransform: "capitalize",
                   fontSize: "1rem",
                 }}
-              >{`${name} - ${currentWorkshop.time}`}</h5>
+              >{`${name} | ${currentWorkshop.time} (GMT +8)`}</h5>
               <h3 className="font-size-24 margin-bottom-24">Topic Overview</h3>
               {abstract}
               <br />
