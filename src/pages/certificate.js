@@ -19,9 +19,9 @@ const Certificate = () => {
   const [certName, setCertName] = useState("");
 
   const verify = () => {
-    if (!_.isNil(attendees[orderNo.toLowerCase()])) {
+    if (!_.isNil(attendees[orderNo.toUpperCase()])) {
       setIsValidOrderNo(true);
-      setCertName(attendees[orderNo.toLowerCase()].name);
+      setCertName(attendees[orderNo.toUpperCase()].name);
       setValidMessage(null);
     } else {
       setIsValidOrderNo(false);
@@ -127,7 +127,7 @@ const Certificate = () => {
                 <Input
                   type="text"
                   className="my-2 text-center font-weight-bold text-uppercase text-white"
-                  placeholder="Your name on the certificate"
+                  placeholder="Fill out your name"
                   value={certName}
                   onChange={(event) => setCertName(event.target.value)}
                   id="certificate-name-input"
