@@ -776,6 +776,29 @@
           "icon": "fa fa-twitter"
         }
       ]
+    },
+    {
+      "id": 24,
+      "name": "Cignal TV",
+      "description": [
+        "Cignal TV was launched in 2009 and is currently the country's premier DTH satellite provider. It transmits 130 channels including free-to-air, SD and HD channels to household and commercial venues nationwide. It also offers a mix of 17 audio channels and on-demand service through pay-per-view channels. Cignal is owned by Cignal TV,  a subsidiary of MediaQuest Holdings, the media partner of PLDT Group."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cWwV_H98f5Sj0zKFDrn3sRUXqf1Yjo7h5qa6dILR-Ujji23goJKxNETC8hR1vrZA2OyvarK7ZVon-kCc2UG2fxlKz7ftn5f9acynLIPM4IU5FFmYKFw7YpioMoTjbPM0ajbGqJPtpK-s0b8QI6YDxT=w300-h168-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://cignal.tv/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/cignaltv/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/cignaltv",
+          "icon": "fa fa-twitter"
+        }
+      ]
     }
   ],
 
