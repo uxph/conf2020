@@ -42,8 +42,6 @@ const Certificate = () => {
         },
         400
       );
-
-      console.log(document.getElementById("generate-certificate").offsetTop);
     }
   }, [isValidOrderNo, setIsValidOrderNo]);
 
