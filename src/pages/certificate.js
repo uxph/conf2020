@@ -9,6 +9,7 @@ import attendees from "../data/attendees.json";
 import info from "../data/info.json";
 import bebas from "../data/bebas.json";
 import $ from "jquery";
+import "../assets/sass/main.scss";
 
 const Certificate = () => {
   const [generate, setGenerate] = useState(false);
