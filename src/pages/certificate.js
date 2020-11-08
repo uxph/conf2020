@@ -7,6 +7,7 @@ import _ from "lodash";
 
 import attendees from "../data/attendees.json";
 import info from "../data/info.json";
+import bebas from "../data/bebas.json";
 import $ from "jquery";
 
 const Certificate = () => {
@@ -27,11 +28,19 @@ const Certificate = () => {
       setIsValidOrderNo(false);
       setValidMessage(
         <p className="red text-center">
-          Order No. <strong>{orderNo.toUpperCase()}</strong> is invalid.
+          Ticket No. <strong>{orderNo.toUpperCase()}</strong> is invalid.
         </p>
       );
     }
   };
+
+  useEffect(() => {
+    var callAddFont = function () {
+      this.addFileToVFS("BebasNeue-normal.ttf", bebas.font);
+      this.addFont("BebasNeue-normal.ttf", "BebasNeue", "normal");
+    };
+    jsPDF.API.events.push(["addFonts", callAddFont]);
+  }, []);
 
   // useEffect to auto scroll to the certificate preview
   useEffect(() => {
@@ -48,19 +57,22 @@ const Certificate = () => {
   // useEffect to generate the certificate
   useEffect(() => {
     if (generate) {
-      const doc = new jsPDF("landscape"); // todo compress PDF specs
+      const doc = new jsPDF("l", "mm", "a4"); // todo compress PDF specs
 
       doc.addImage(
-        "/images/certificates/cert-template.png",
+        "/images/certificates/uxph2020-certificate.jpg",
         "PNG",
         0,
         0,
-        180,
-        180
+        297,
+        210
       );
       // TODO add proper font
       // TODO add the certificate visuals to the export
-      doc.text(certName.toUpperCase(), 10, 10); // todo position the name properly
+      doc.setFontSize(45);
+      doc.setTextColor("#E8006F");
+      doc.setFont("BebasNeue", "normal");
+      doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
       doc.save(
         `UXPH Conf 2020 Certificate of Attendance - ${certName
           .split(" ")
