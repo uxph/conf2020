@@ -58,7 +58,7 @@ const TicketForm = () => {
 
   // tickets
   // const regularPrice = 2770; // TODO for discount calculations
-  const regularTicketPrice = 2770;
+  const regularTicketPrice = 2770 - 2770 * 0.11;
   const [regularTicketQuantity, setRegularTicketQuantity] = useState(1);
 
   // payment method
@@ -75,7 +75,11 @@ const TicketForm = () => {
   const [discountCode, setDiscountCode] = useState("");
   const [isStudentDiscount, setStudentDiscount] = useState(false);
   const [discountMessage, setDiscountMessage] = useState("You saved");
-  let total = subtotal - discount >= 0 ? subtotal - discount : 0;
+  // let total = subtotal - discount >= 0 ? subtotal - discount : 0;
+  let total =
+    discount <= 0
+      ? regularTicketPrice * regularTicketQuantity
+      : 2770 * regularTicketQuantity - discount;
 
   // Basic info
   const [firstName, setFirstName] = useState(null);
@@ -143,6 +147,7 @@ const TicketForm = () => {
       setDiscountCode("");
       setDiscount(0);
     }
+    // eslint-disable-next-line
   }, [regularTicketQuantity, setRegularTicketQuantity, subtotal]);
 
   // useEffect for discount codes
@@ -158,7 +163,7 @@ const TicketForm = () => {
 
     // matched code
     else if (discount_codes[lowerCasedCode]) {
-      setSubtotal(regularTicketPrice * regularTicketQuantity); // TODO verify
+      setSubtotal(2770 * regularTicketQuantity); // TODO verify
       if (discount_codes[lowerCasedCode].percent) {
         setDiscount(subtotal * discount_codes[lowerCasedCode].percent);
         setDiscountMessage(
@@ -193,16 +198,18 @@ const TicketForm = () => {
     if (
       regularTicketQuantity >= 5 &&
       regularTicketQuantity < 10 &&
-      matchedCodeDiscount <= 0.1
+      matchedCodeDiscount <= 0.2
     ) {
-      setDiscount(regularTicketPrice * regularTicketQuantity * 0.1);
+      setSubtotal(2770 * regularTicketQuantity);
+      setDiscount(2770 * regularTicketQuantity * 0.2);
       setDiscountCode("Group of 5");
-      setDiscountMessage("GROUP OF 5 (10% off) discount");
+      setDiscountMessage("GROUP OF 5 (20% off) discount");
       setStudentDiscount(false);
-    } else if (regularTicketQuantity >= 10 && matchedCodeDiscount <= 0.15) {
-      setDiscount(regularTicketPrice * regularTicketQuantity * 0.15);
+    } else if (regularTicketQuantity >= 10 && matchedCodeDiscount <= 0.25) {
+      setSubtotal(2770 * regularTicketQuantity);
+      setDiscount(2770 * regularTicketQuantity * 0.25);
       setDiscountCode("Group of 10");
-      setDiscountMessage("GROUP OF 10 (15% off) discount");
+      setDiscountMessage("GROUP OF 10 (25% off) discount");
       setStudentDiscount(false);
     } else if (regularTicketQuantity < 5 && discountCode.includes("Group of")) {
       setDiscountCode("");
@@ -1034,7 +1041,14 @@ const TicketForm = () => {
                         >
                           PHP {numeral(regularTicketPrice).format("0,0.00")}
                         </strong>{" "}
-                        <small className="gray">/ USD $55</small>
+                        {/* <small className="gray">/ USD $55</small> */}
+                        <small className="gray">
+                          <strike>/ PHP 2,770.00</strike>
+                        </small>
+                        <br />
+                        <small className="red font-weight-bold">
+                          11.11 Ticket Sale (11% off)
+                        </small>
                       </div>
                     </td>
                     <td>
