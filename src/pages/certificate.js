@@ -38,24 +38,23 @@ const Certificate = () => {
   };
 
   const generateCertificate = async () => {
-    const doc = new jsPDF("l", "mm", "a4"); // todo compress PDF specs
+    return await new Promise((resolve) => {
+      const doc = new jsPDF("l", "mm", "a4"); // todo compress PDF specs
+      doc.addImage(
+        "/images/certificates/uxph2020-certificate.jpg",
+        "PNG",
+        0,
+        0,
+        297,
+        210
+      );
+      // TODO add proper font
+      // TODO add the certificate visuals to the export
+      doc.setFontSize(45);
+      doc.setTextColor("#E8006F");
+      doc.setFont("BebasNeue", "normal");
+      doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
 
-    doc.addImage(
-      "/images/certificates/uxph2020-certificate.jpg",
-      "PNG",
-      0,
-      0,
-      297,
-      210
-    );
-    // TODO add proper font
-    // TODO add the certificate visuals to the export
-    doc.setFontSize(45);
-    doc.setTextColor("#E8006F");
-    doc.setFont("BebasNeue", "normal");
-    doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
-
-    const result = await new Promise((resolve) => {
       resolve(
         doc.save(
           `UXPH Conf 2020 Certificate of Attendance - ${certName
@@ -67,8 +66,6 @@ const Certificate = () => {
         )
       );
     });
-
-    return result;
   };
 
   useEffect(() => {
@@ -95,11 +92,13 @@ const Certificate = () => {
   useEffect(() => {
     if (generate) {
       setGenerating(true);
-      generateCertificate().then((value) => {
-        setTimeout(() => {
-          setGenerating(false);
-        }, 2000);
-      });
+      setTimeout(() => {
+        generateCertificate().then((value) => {
+          setTimeout(() => {
+            setGenerating(false);
+          }, 2000);
+        });
+      }, 2000);
     }
 
     // eslint-disable-next-line
