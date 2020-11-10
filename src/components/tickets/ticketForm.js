@@ -1047,7 +1047,7 @@ const TicketForm = () => {
                         </small>
                         <br />
                         <small className="red font-weight-bold">
-                          11.11 Ticket Sale (11% off)
+                          11.11 LAST CHANCE Sale (11% off)
                         </small>
                       </div>
                     </td>
