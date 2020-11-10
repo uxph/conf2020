@@ -88,14 +88,14 @@
       "type": "Keynote Speaker",
       "title": "Designers as Enablers of Change",
       "description": [
-        "Designers have always been gifted with the skill to navigate change. However, being a great designer alone is only the start of creating change. For designers to maximize the ability to change, we must be more than just great designers: we need to learn to be the enablers of change. We must be intentionally strategic in the way we make, and educate the wider audience about the designer's thought processes. I will be using examples from IDEO's client work and offerings to show how designers can make full use of our gift to make the world a better place."
+        "Designers have always been gifted with the skill to navigate change. However, being a great designer alone is only the start of creating change. For designers to maximize the ability to change, we must be more than just great designers: we need to learn to be the enablers of change. We must be intentionally strategic in the way we make, and educate the wider audience about the designer's thought processes. Daisuke will be using examples from IDEO's client work and offerings to show how designers can make full use of our gift to make the world a better place."
       ],
       "speaker_id": [5],
       "workshop": []
     },
     {
       "id": 4,
-      "time": "11:15AM",
+      "time": "11:25AM",
       "type": "Keynote Speaker",
       "title": "Permission to Speak",
       "description": [
@@ -108,7 +108,7 @@
     },
     {
       "id": 5,
-      "time": "12:00NN",
+      "time": "12:20PM",
       "type": "Break",
       "title": "Lunch Break",
       "description": ["Lunch Break"],
@@ -117,11 +117,11 @@
     },
     {
       "id": 6,
-      "time": "1:00PM",
+      "time": "1:05PM",
       "type": "Keynote Speaker",
       "title": "Winning with What You Have",
       "description": [
-        "I'd like to talk about problem solving in the context of Design. Oftentimes, we are faced with ill-defined problems in different scales -- the design brief, our role, or even our career paths. I plan to discuss how synthesizing the information at hand helps in propelling us forward in an agile fashion, and how it has helped me in my own journey as a designer. ",
+        "Trixie talks about problem solving in the context of Design. Oftentimes, people are faced with ill-defined problems in different scales -- the design brief, their role, or even their career paths. She plans to discuss how synthesizing the information at hand helps in propelling people forward in an agile fashion, and how it has helped her in her own journey as a designer. ",
 
         "This talk is intended for those who are thinking of getting into the industry, or junior / intermediate designers."
       ],
@@ -130,7 +130,7 @@
     },
     {
       "id": 7,
-      "time": "1:45PM",
+      "time": "2:00PM",
       "type": "Lightning Talk",
       "title": "How to Pioneer Change (& How Not To)",
       "description": [
@@ -143,7 +143,7 @@
     },
     {
       "id": 8,
-      "time": "2:15PM",
+      "time": "2:35PM",
       "type": "Lightning Talk",
       "title": "Lessons in Digital Transformation in a Corporate Setting",
       "description": ["Coming Soon!"],
@@ -152,7 +152,7 @@
     },
     {
       "id": 9,
-      "time": "2:45PM",
+      "time": "3:10PM",
       "type": "Lightning Talk",
       "title": "Stories from government: shifting mindsets from logic to empathy",
       "description": [
@@ -163,7 +163,7 @@
     },
     {
       "id": 10,
-      "time": "3:15PM",
+      "time": "3:50PM",
       "type": "Break",
       "title": "Break time",
       "description": ["Coming Soon!"],
@@ -172,7 +172,7 @@
     },
     {
       "id": 11,
-      "time": "3:35PM",
+      "time": "4:15PM",
       "type": "Keynote Speaker",
       "title": "Design for Multi-verse Futures",
       "description": [
@@ -183,7 +183,7 @@
     },
     {
       "id": 12,
-      "time": "4:20PM",
+      "time": "5:10PM",
       "type": "Panel Discussion",
       "title": "Building a Design-Driven Community",
       "description": [
@@ -202,7 +202,7 @@
     },
     {
       "id": 13,
-      "time": "5:05PM",
+      "time": "6:05PM",
       "type": "Socials",
       "title": "Socials: UXPH x Design Buddies",
       "description": ["Socials with Design Buddies"],
@@ -219,7 +219,7 @@
     {
       "id": 0,
       "time": "9:30AM",
-      "type": "Team",
+      "typ e": "Team",
       "title": "Open house: Mingle more, free office yoga classes, and get ready!",
       "description": ["Coming Soon!"],
       "speaker_id": [],
@@ -238,7 +238,7 @@
     },
     {
       "id": 2,
-      "time": "10:45AM",
+      "time": "10:55AM",
       "type": "Lightning Talk",
       "title": "3 Keystones of Accessible Web Content",
       "description": [
@@ -249,7 +249,7 @@
     },
     {
       "id": 3,
-      "time": "11:15AM",
+      "time": "11:30AM",
       "type": "Panel Discussion",
       "title": "Shaping your UX Career",
       "description": [
@@ -267,7 +267,7 @@
     },
     {
       "id": 4,
-      "time": "12:00NN",
+      "time": "12:20PM",
       "type": "Break",
       "title": "Lunch Break",
       "description": ["Coming Soon!"],
@@ -276,7 +276,7 @@
     },
     {
       "id": 5,
-      "time": "1:05PM",
+      "time": "1:10PM",
       "type": "Workshop",
       "title": "Data Driven Storytelling",
       "description": [
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "time": "1:05PM",
+      "time": "1:10PM",
       "type": "Keynote Speaker",
       "title": "The Culture and Psychology of Teams",
       "description": [
@@ -303,11 +303,11 @@
     },
     {
       "id": 7,
-      "time": "1:50PM",
+      "time": "2:00PM",
       "type": "Keynote Speaker",
       "title": "Using Customer Value Propositions as Revenue Model",
       "description": [
-        "In this talk, I would like to discuss on how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. I will also mask this inside a case study of a product that i have done before."
+        "In this talk, Sonya will discuss how to find the right customer value proposition that is being thought in IDEO toolkit in order to find the right revenue models for product and service and actually be accepted in the market. Sonya will also mask this inside a case study of a product that she has done before."
       ],
       "speaker_id": [18],
       "workshop": [],
@@ -315,7 +315,7 @@
     },
     {
       "id": 8,
-      "time": "2:40PM",
+      "time": "2:50PM",
       "type": "Break",
       "title": "Break time",
       "description": ["Coming Soon!"],
@@ -324,7 +324,7 @@
     },
     {
       "id": 9,
-      "time": "3:10PM",
+      "time": "3:05PM",
       "type": "Panel Discussion",
       "title": "Leading by Design",
       "description": [
@@ -352,7 +352,7 @@
     },
     {
       "id": 11,
-      "time": "4:40PM",
+      "time": "4:45PM",
       "type": "Remarks",
       "title": "Closing Program",
       "description": ["Coming Soon!"],
