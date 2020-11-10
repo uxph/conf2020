@@ -55,12 +55,18 @@ const Certificate = () => {
     doc.setFont("BebasNeue", "normal");
     doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
 
-    const result = await doc.save(
-      `UXPH Conf 2020 Certificate of Attendance - ${certName
-        .split(" ")
-        .map((x) => x[0].toUpperCase() + x.substring(1, x.length).toLowerCase())
-        .join(" ")}.pdf`
-    );
+    const result = await new Promise((resolve) => {
+      resolve(
+        doc.save(
+          `UXPH Conf 2020 Certificate of Attendance - ${certName
+            .split(" ")
+            .map(
+              (x) => x[0].toUpperCase() + x.substring(1, x.length).toLowerCase()
+            )
+            .join(" ")}.pdf`
+        )
+      );
+    });
 
     return result;
   };
