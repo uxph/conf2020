@@ -329,7 +329,7 @@ const TicketForm = () => {
         details.company
       }&discount_code=${
         discount > 0 ? details.discountCode : "none"
-      }&regular_ticket=${details.regularTicket}&subscribed=${subscribed}`;
+      }&ticket_sale=${details.regularTicket}&subscribed=${subscribed}`;
 
       caseUrl =
         caseUrl + (isStudentDiscount ? `&student_id=${studentNumber}` : "");
@@ -385,7 +385,7 @@ const TicketForm = () => {
     const createPaymentIntent = () => {
       const tickets = [
         {
-          name: "regular_ticket",
+          name: "ticket_sale",
           quantity: details.regularTicket,
         },
       ]

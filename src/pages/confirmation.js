@@ -67,8 +67,8 @@ const ConfirmationPage = () => {
     const studentNumber = urlParams.get("student_id");
     const tickets = [
       {
-        name: "regular_ticket",
-        quantity: parseInt(urlParams.get("regular_ticket")),
+        name: "ticket_sale",
+        quantity: parseInt(urlParams.get("ticket_sale")),
       },
     ]
       .filter((x) => x.quantity)
