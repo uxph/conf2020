@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SEO from "../components/seo";
 import Button from "../components/atoms/button";
 import { Input, Row, Col } from "reactstrap";
+import ReactLoading from "react-loading";
 import { jsPDF } from "jspdf";
 import _ from "lodash";
 
@@ -13,6 +14,7 @@ import "../assets/sass/main.scss";
 
 const Certificate = () => {
   const [generate, setGenerate] = useState(false);
+  const [generating, setGenerating] = useState(null);
   const [orderNo, setOrderNo] = useState("");
   const [isValidOrderNo, setIsValidOrderNo] = useState(null);
   const [validMessage, setValidMessage] = useState(null);
@@ -33,6 +35,34 @@ const Certificate = () => {
         </p>
       );
     }
+  };
+
+  const generateCertificate = async () => {
+    const doc = new jsPDF("l", "mm", "a4"); // todo compress PDF specs
+
+    doc.addImage(
+      "/images/certificates/uxph2020-certificate.jpg",
+      "PNG",
+      0,
+      0,
+      297,
+      210
+    );
+    // TODO add proper font
+    // TODO add the certificate visuals to the export
+    doc.setFontSize(45);
+    doc.setTextColor("#E8006F");
+    doc.setFont("BebasNeue", "normal");
+    doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
+
+    const result = await doc.save(
+      `UXPH Conf 2020 Certificate of Attendance - ${certName
+        .split(" ")
+        .map((x) => x[0].toUpperCase() + x.substring(1, x.length).toLowerCase())
+        .join(" ")}.pdf`
+    );
+
+    return result;
   };
 
   useEffect(() => {
@@ -58,33 +88,15 @@ const Certificate = () => {
   // useEffect to generate the certificate
   useEffect(() => {
     if (generate) {
-      const doc = new jsPDF("l", "mm", "a4"); // todo compress PDF specs
-
-      doc.addImage(
-        "/images/certificates/uxph2020-certificate.jpg",
-        "PNG",
-        0,
-        0,
-        297,
-        210
-      );
-      // TODO add proper font
-      // TODO add the certificate visuals to the export
-      doc.setFontSize(45);
-      doc.setTextColor("#E8006F");
-      doc.setFont("BebasNeue", "normal");
-      doc.text(certName.toUpperCase(), 297 / 2, 210 / 2 + 20, "center"); // todo position the name properly
-      doc.save(
-        `UXPH Conf 2020 Certificate of Attendance - ${certName
-          .split(" ")
-          .map(
-            (x) => x[0].toUpperCase() + x.substring(1, x.length).toLowerCase()
-          )
-          .join(" ")}.pdf`
-      );
+      setGenerating(true);
+      generateCertificate().then((value) => {
+        setTimeout(() => {
+          setGenerating(false);
+        }, 2000);
+      });
     }
 
-    setGenerate(false);
+    // eslint-disable-next-line
   }, [generate, setGenerate, certName]);
 
   return (
@@ -124,30 +136,51 @@ const Certificate = () => {
           {/* Shows up if the Order No. is valid */}
           {isValidOrderNo ? (
             <div id="generate-certificate" className="margin-top-192">
-              <center>
-                {/* This is where they'll download the certificate */}
-                {/* Add a preview certificate template with an editable name field */}
-                <small
-                  className="text-uppercase text-white"
-                  style={{
-                    letterSpacing: "1px",
-                  }}
-                >
-                  Your name on the certificate
-                </small>
-                <Input
-                  type="text"
-                  className="my-2 text-center font-weight-bold text-uppercase text-white"
-                  placeholder="Fill out your name"
-                  value={certName}
-                  onChange={(event) => setCertName(event.target.value)}
-                  id="certificate-name-input"
-                />
-                <br />
-                <Button onClick={() => setGenerate(true)}>
-                  Claim your certificate
-                </Button>
-              </center>
+              {_.isNull(generating) ? (
+                <center>
+                  {/* This is where they'll download the certificate */}
+                  {/* Add a preview certificate template with an editable name field */}
+                  <small
+                    className="text-uppercase text-white"
+                    style={{
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    Your name on the certificate
+                  </small>
+                  <Input
+                    type="text"
+                    className="my-2 text-center font-weight-bold text-uppercase text-white"
+                    placeholder="Fill out your name"
+                    value={certName}
+                    onChange={(event) => setCertName(event.target.value)}
+                    disabled={true}
+                    id="certificate-name-input"
+                  />
+                  <br />
+                  <Button onClick={() => setGenerate(true)}>
+                    Claim your certificate
+                  </Button>
+                </center>
+              ) : generating ? (
+                <center>
+                  <ReactLoading
+                    type="bubbles"
+                    color="#ffffff"
+                    height={96}
+                    width={128}
+                  />
+                  <h3 className="text-white text-center">
+                    Hold up, We're generating your awesome certificate!
+                  </h3>
+                </center>
+              ) : (
+                <center>
+                  <h3 className="text-white text-center">
+                    Done! Check your "Downloads" folder.
+                  </h3>
+                </center>
+              )}
             </div>
           ) : (
             <div id="order-number-input">
