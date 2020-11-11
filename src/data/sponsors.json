@@ -495,6 +495,35 @@
       ]
     },
     {
+      "id": 24,
+      "name": "User Experience Society - DLSU",
+      "description": [
+        "The UX Society - DLSU Chapter is one of the many recognized UX Societies in the same network. There's UX Society ADMU, Davao, Orange County and the latest, UX Society AIM-Chapter.",
+
+        "UX Society - DLSU aids various organizations by creating quality products and services by applying principles, concepts and methodologies in such strategies. We hold workshops, seminars and conferences to train members about the essentials skills of proper UX discipline and methodologies."
+      ],
+      "image_url": "/images/companies/dlsuxsoc.png",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://dlsu.uxsociety.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/uxsocietydlsu/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://twitter.com/uxsocietydlsu/",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/uxsocietydlsu/",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
       "id": 26,
       "name": "Kampala Design Community",
       "description": [
