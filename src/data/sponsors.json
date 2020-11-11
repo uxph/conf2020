@@ -1,7 +1,7 @@
 {
   "Community Partners": [
     {
-      "id": 22,
+      "id": 0,
       "name": "Brainsparks",
       "description": [
         "Brainsparks is the first and only founder-focused incubator in the Philippines that wants to turn dreamers into founders.",
@@ -57,7 +57,7 @@
     },
 
     {
-      "id": 20,
+      "id": 2,
       "name": "UX Thailand",
       "description": [
         "UX Thailand begun as a series of monthly meet-ups, focused on empowering the local community to do great design. When we looked to push this further, The UX Thailand conference was born.",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 3,
       "name": "UX Indonesia",
       "description": [
         "UXiD (UX Indonesia) is an open community that was formed to provide a conducive and fun platform for anyone to share, learn, and develop themselves in the world of user experience."
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 4,
       "name": "UXMM",
       "description": [
         "UXMM is a non-profit organization building the only career growth platform focused on providing international technical knowledge, educational resources and passion for Product design, User Experience and User Interface designer across in Myanmar. We plan to host in Myanmar’s largest community of eager individuals about the area of all UX product related. The organization will host annual conferences together with other local and international community and doing monthly meetups to deliver valuable information, insight, and engagement to anyone seeking to learn and get improvement. We aims to help increase recognition and design practices all over Myanmar."
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 5,
       "name": "UXVN",
       "description": [
         "UXVN is a non-profit organization founded by a group of passionate UX Practitioners in Vietnam that aims to create inclusive spaces for the design community to meet, share, learn and grow together.",
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 6,
       "name": "UX Istanbul",
       "description": [
         "UXIstanbul Conference is one of the largest conferences on UX in South-East Europe and the Middle East. We have been gathering UX professionals from World’s leading companies for the past 6 years.",
@@ -164,7 +164,22 @@
       ]
     },
     {
-      "id": 0,
+      "id": 7,
+      "name": "UX Malaysia",
+      "description": [
+        "UX Malaysia brings together practitioners of UX and design in Malaysia and Southeast Asia to share knowledge, experience and to create awareness."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eB9Lu_hf2rTLqxKSG_5jzQqoW62eYYI2zB0pWxZFxqoiL7tbioAcIt05s9vR4BXhbe81Ec2wzR7XeIcCOCeEa9aH78FSDXV_9giw6frNQRChZe4eeMGrYiDLvMmsKq7QWMjyK_Xvn_InjlJOqU-oXp=s620-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/uxmalaysia/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 8,
       "name": "Friends of Figma, Philippines",
       "description": [
         "Figma's vision is to make design accessible to everyone. Friends of Figma exists so users of this collaborative design tool can come together to help each other; lifting everyone up. It’s run by the community and everyone is welcome. The Philippine chapter of Friends of Figma was started in 2018 and it's the first of its kind in Asia."
@@ -191,7 +206,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 9,
       "name": "Design Buddies",
       "description": [
         "Design Buddies is an inclusive community for designers from all backgrounds to connect, share resources, and participate in virtual events. We have mentorship programs, workshops, AMAs, portfolio reviews, and more. All for free."
@@ -222,7 +237,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 10,
       "name": "UXDVO",
       "description": [
         "A non-profit community for user experience design practitioners and digital designers from Davao City and neighboring Mindanao municipalities."
@@ -245,7 +260,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 11,
       "name": "Developh",
       "description": [
         "Developh is an international student-led nonprofit accelerating technology & experiences for social good."
@@ -276,7 +291,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 12,
       "name": "PWA Pilipinas",
       "description": [
         "The community organization for Progressive Web Apps (PWA) enthusiasts, designers and developers in the Philippines."
@@ -303,7 +318,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 13,
       "name": "Roots",
       "description": [
         "Roots is a podcast about the stories of Filipino designers. It’s a safe space to be vulnerable and share about who they are. Guests talks about their career journeys, quirks, hobbies, techniques, life aspirations, and what makes them tick."
@@ -322,7 +337,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 14,
       "name": "CebUXD",
       "description": [
         "CebUXD is the first user-centered design community in Cebu where UX practitioners and enthusiasts can freely share design ideas, experiences, and techniques that helps grow and cultivate UX in the region."
@@ -337,7 +352,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 15,
       "name": "Streets to Schools",
       "description": [
         "Streets to Schools (STS) is a youth organization founded by young leaders aged 12 to 15 back in 2017. STS aims to bring quality education to impoverished students, and to provide opportunities for all children, regardless of social status. Furthermore, it aims to intersect the advocacy of both the United Nations’ Sustainable Development Goals (SDGs) and United Nations Conventions on the Rights of the Child (UNCRC) in their initiatives. By following and acting on these goals, it believes that it can make the state of Education for Sustainable Development in the Philippines more inclusive and of better quality."
@@ -356,7 +371,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 16,
       "name": "Philippine Tech Community Leads",
       "description": [
         "PH Tech Community Leads is a community of tech leaders that aims to produce and empower tech community leaders through continuous advocacy, collaboration and education to improve IT skills and culture in the Philippines."
@@ -371,7 +386,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 17,
       "name": "QBO Innovation Hub",
       "description": [
         "QBO (‘ku-bo’) is the country’s first public-private initiative for startups and it’s our mission to create a globally competitive startup ecosystem in the Philippines."
@@ -390,7 +405,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 18,
       "name": "Slash Ignite",
       "description": [
         "SlashIgnite is a social innovation studio based in Iloilo City. We help innovators build impactful & profitable social ventures, through social innovation training, ecosystem & venture building."
@@ -417,7 +432,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 19,
       "name": "re:MAKE",
       "description": [
         "re:MAKE is a community platform designed to amplify, connect and empower innovators and change-makers in South East Asia. It provides a way for members to collaborate, share knowledge, inspire each other and build capability in leading practices."
@@ -432,7 +447,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 20,
       "name": "UX+",
       "description": [
         "UX+ produces events for aspiring & seasoned User Experience professionals. We invite speakers & instructors that are the most renowned UX designers and researchers from Southeast Asia all the way to Silicon Valley."
@@ -447,7 +462,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": 21,
       "name": "Developer Student Club Loyola",
       "description": [
         "DSC Loyola is a part of the Developer Student Clubs Philippines which are independent university-based groups. In DSCs, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. We believe student clubs are essential in the collective learning and development process that will have a larger and sustainable effect in our future. The DSC Loyola community at the Ateneo de Manila University has shown great interest in this vision which now has over 350+ student members in its campus, making it one of the biggest DSC chapters in Southeast Asia!"
@@ -466,7 +481,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "User Experience Society - ADMU",
       "description": [
         "User Experience Society is a student-run organization that advocates and practices human-centered design.",
@@ -495,7 +510,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 23,
       "name": "User Experience Society - DLSU",
       "description": [
         "The UX Society - DLSU Chapter is one of the many recognized UX Societies in the same network. There's UX Society ADMU, Davao, Orange County and the latest, UX Society AIM-Chapter.",
@@ -524,7 +539,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 24,
       "name": "Kampala Design Community",
       "description": [
         "Kampala Design Community brings together designers and design enthusiasts to grow together and harness the possibility of democratising great design. We push to build a network of design thinkers through sharing resources, knowledge and opportunities."
@@ -539,7 +554,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 25,
       "name": "UP Career Assistance Program for Engineering Students (UP CAPES)",
       "description": [
         "UP Career Assistance Program for Engineering Students (UP CAPES) is the country’s premier career-oriented organization dedicated to bridging the gap between engineering students and their future careers. By providing relevant campaigns and impactful initiatives focused on career development and networking, we strive to position the UP College of Engineering as a globally competitive institution geared towards nation-building."
@@ -571,7 +586,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 26,
       "name": "Impact Hub Yangon",
       "description": [
         "Impact Hub Yangon is an innovation lab, a business Incubator, a social enterprise community center. We offer you a unique ecosystem of resources, inspiration, and collaboration opportunities to grow your impact. Our diverse community will inspire, connect, and enable you to develop your best work every step of the way."
@@ -586,7 +601,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 27,
       "name": "FEU Innovation Center",
       "description": [
         "FEU Innovation Center is a venue for students to turn their ideas into profitable ventures with the help and guidance of industry experts. ",
@@ -610,7 +625,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 28,
       "name": "GDG Cebu",
       "description": [
         "Google Developer Group (GDG) Cebu is a non-profit group of amateurs and professionals (technology users, specialists, and developers) who are independent from Google but are enthusiasts and daily users of Google technologies. Members meet and socialize on a regular basis.",
@@ -631,7 +646,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 34,
       "name": "WTM Cebu",
       "description": [
         "Google Developer Group (GDG) Cebu is a non-profit group of amateurs and professionals (technology users, specialists, and developers) who are independent from Google but are enthusiasts and daily users of Google technologies. Members meet and socialize on a regular basis.",
@@ -648,7 +663,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 35,
       "name": "IdeaSpace",
       "description": [
         "IdeaSpace is a non-profit organization running founder-focused programs for early-stage tech startup founders solving emerging market issues in the Philippines and around Southeast Asia."
@@ -682,7 +697,7 @@
 
   "Media Partners": [
     {
-      "id": 16,
+      "id": 36,
       "name": "ABS-CBN News",
       "description": [
         "ABS-CBN News is one of the most respected news organizations in the Philippines. The organization operates 24/7 with the country's most experienced journalists."
@@ -698,7 +713,7 @@
       "featured": true
     },
     {
-      "id": 17,
+      "id": 37,
       "name": "Rappler",
       "description": [
         "A social news network where stories inspire community engagement and digitally fuelled actions for social change."
@@ -714,7 +729,7 @@
       "featured": true
     },
     {
-      "id": 18,
+      "id": 38,
       "name": "Summit Media",
       "description": [
         "Summit Media is a digital lifestyle network in the Philippines, with 14 media brands attracting around 31 million monthly unique visitors and approximately 33 million social media followers. "
@@ -734,7 +749,7 @@
       "featured": true
     },
     {
-      "id": 19,
+      "id": 39,
       "name": "Esquire",
       "description": [
         "Esquire Philippines is a thought-leading network for well-connected men and women who are ambitious in their lives and are determined to shape the world.",
@@ -754,7 +769,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 40,
       "name": "Cosmopolitan - Summit Media",
       "description": [
         "Cosmopolitan Philippines is the top-of-mind digital brand of every Pinay claiming her defining decade—her twenties. Cosmopolitan serves to inspire, encourage, and empower her to go after her dreams, live her best life, and be in control of her body through informative, entertaining, and relatable content."
@@ -769,7 +784,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 41,
       "name": "Ambidextr",
       "description": [
         "Ambidextr is a full-service content marketing studio backed by Future Now Ventures. They are the communications arm of some of Asia Pacific’s leading tech companies, who they partner with to usher in the future through great content and creative. While Ambidextr works primarily with tech companies, they are open to collaborating with any individual, company, or organization that wants to prepare their brand for the new digital economy."
@@ -801,7 +816,7 @@
       "featured": true
     },
     {
-      "id": 22,
+      "id": 42,
       "name": "Center for Complexity and Emerging Technologies (COMET)",
       "description": [
         "The Center for Complexity and Emerging Technologies (COMET) is an interdisciplinary research laboratory under the Advanced Research Institute for Informatics, Computing, and Networking (AdRIC) at De La Salle University. Our mission is to enhance our understanding of emergent phenomena in real-life systems (i.e. cities, mobility), sociotechnical systems (i.e. social networking sites, Wikipedia), and human-computer interactions. We develop computational models which are then used in the design of interactive tools, information systems, and interaction techniques."
@@ -824,7 +839,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 43,
       "name": "Cignal TV",
       "description": [
         "Cignal TV was launched in 2009 and is currently the country's premier DTH satellite provider, with 2.6 million subscribers. It is the leader in Pay TV in the Philippines with its nationwide coverage and availability. It transmits 132 channels including free-to-air, SD and HD channels to household and commercial venues in the country. It also offers a mix of 17 audio channels and on-demand service through pay-per-view channels and content add-ons. Cignal is owned by Cignal TV, a subsidiary of MediaQuest Holdings, the media partner of PLDT Group."
@@ -1029,6 +1044,29 @@
         },
         {
           "url": "http://instagram.com/grocergenieph",
+          "icon": "fa fa-instagram"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Collabox",
+      "description": [
+        "Collabox is a platform for collaboration with a mission to connect people and organizations to sustainable brands and social enterprises. Through curated boxes, experiences and shared learning, we believe that everyone can help shape a better and more sustainable world. "
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3c5hEu42WOYBaF-rc1FqEW2bfjpXIPdKaPx5NkjLKF-5CV0W46Hklc1AH6cnrbh_O_WRNdAXkS8pXzbsJLzLHoqTFMo036VLV_iJz2Pn9Q8gqklLNE-osaPsyDrfS6KtdjYBa1gaxQRmoeFnwwPGtaf=s400-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "www.collabox.co",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/collaboxdotco/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.instagram.com/collabox.co/",
           "icon": "fa fa-instagram"
         }
       ]
