@@ -111,3 +111,18 @@
   "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3czgvrTX0aIXklcjpL24ni0G_u6npVJjyuBb4AWnl7AN8MUf9D18r4TB3FHSuczTXJ8-xE0UhFdJVdQyXGRlZZch2HmBfM-HhVFqKQ4dmLiG-Irjdubm-OZV_UtNk9x9pB73B4fk8n7_r9JzrulcCSF=w677-h609-no?authuser=0"
 }
 
+{
+  "id": 0,
+  "name": "Toasty",
+  "description": [
+    "Toasty is a video meeting platform that focuses on driving online collaborations in meetings and workshops. It comes with built-in activities, breakout rooms, integration with Miro and Google Doc, to empower collaborations and drive outcomes."
+  ],
+  "image_url": "/images/sponsors/toasty.png",
+  "website_url": "#",
+  "social_media": [
+    {
+      "url": "https://toasty.ai/",
+      "icon": "fa fa-globe"
+    }
+  ]
+}

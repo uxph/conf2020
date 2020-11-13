@@ -777,7 +777,6 @@
         }
       ]
     }
-
   ],
 
   "Media Partners": [
@@ -968,21 +967,6 @@
   ],
 
   "Major Sponsors": [
-    {
-      "id": 0,
-      "name": "Toasty",
-      "description": [
-        "Toasty is a video meeting platform that focuses on driving online collaborations in meetings and workshops. It comes with built-in activities, breakout rooms, integration with Miro and Google Doc, to empower collaborations and drive outcomes."
-      ],
-      "image_url": "/images/sponsors/toasty.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://toasty.ai/",
-          "icon": "fa fa-globe"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Amazing Design People List",
@@ -1193,7 +1177,7 @@
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cT_5mh9WMum49P6M54hEYrkNIPWGVZCouENlYrdcpvC76KE889uoZ84uR03b2k6fqJueAM9zHXPTXvaus7AeJSlFm33NSwL4wjYL02A34JHjhs_po39wDwwfTZxnIR8qzKqJeJLkh4ebgjOmJ-sUV5=w709-h236-no?authuser=0",
       "website_url": "#",
       "social_media": [
-        { 
+        {
           "url": "https://www.quadx.xyz/",
           "icon": "fa fa-globe"
         },
@@ -1207,7 +1191,6 @@
         }
       ]
     }
-
   ],
 
   "Premium Sponsors": [
