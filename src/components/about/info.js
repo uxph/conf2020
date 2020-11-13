@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../atoms/button";
 import { Row, Col } from "reactstrap";
 
 const Intro = () => {
