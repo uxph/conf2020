@@ -211,7 +211,7 @@
       "description": [
         "Design Buddies is an inclusive community for designers from all backgrounds to connect, share resources, and participate in virtual events. We have mentorship programs, workshops, AMAs, portfolio reviews, and more. All for free."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dLVKedGubK67HLE97U8oaUG1TdmNZ5b1x6RqFwwL46BuYnUE24BpndEbysdDYGv5RlJMLuTfYE6vDYfpYa_Op9dz6KJ_4ZQmn28hehHyKhPq6BKClyAXcMAFDLVVqGUq1ZBqOHMgCednKlrbGOkttp=s720-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3e_fxLffYJ0EtoC1B8BqO39ISD5vcyLT4NJMsvjgI_SCnrEERwt9JmhyFELvqssP1R1ITFfJNEv-otatoeQu75y5J2z4zQ_vuipA-9qDZZAv-5bJvtIpKsR-cnD1sg_YxTrOCPk0IKj5WKk44gVVMv4=w1366-h229-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -467,7 +467,7 @@
       "description": [
         "DSC Loyola is a part of the Developer Student Clubs Philippines which are independent university-based groups. In DSCs, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community. We believe student clubs are essential in the collective learning and development process that will have a larger and sustainable effect in our future. The DSC Loyola community at the Ateneo de Manila University has shown great interest in this vision which now has over 350+ student members in its campus, making it one of the biggest DSC chapters in Southeast Asia!"
       ],
-      "image_url": "/images/sponsors/sponsor_08.png",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3e779f3H9XG7m-e2rWxbrj3KwICTDqETg_RxwRflQkzKXmL03wz3RTpAnn5zNqANVybBKfioBjIhBCymDaE8Zy4wxT9iypsqs1D8wI3jCUaz2y37BRjk9OWVY5u219jkNjsY8fCdfZ5d_kJYXyBgam6=w1366-h515-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -559,7 +559,7 @@
       "description": [
         "UP Career Assistance Program for Engineering Students (UP CAPES) is the country’s premier career-oriented organization dedicated to bridging the gap between engineering students and their future careers. By providing relevant campaigns and impactful initiatives focused on career development and networking, we strive to position the UP College of Engineering as a globally competitive institution geared towards nation-building."
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cumQj9go5g18Q8MmnELv7x76M6QU06femTtNDgaeYEiU0plFLtOZpdCMnvd0m-jNQVy1D6C5WjyMOOMXkf4F89hH2DZPoJGgbk268M5eJ4n2ji0ER8q4CFCbw-x9H9ac75hwsW8Ua6YaIzkPcCDNHp=s609-no?authuser=0",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dwlnuojCBV7iwjhBD-AqXjkPZ-dV1a3H3TLVh9T_1_NBnXgy9qTkPwHtaGR5oXfC5OKh3GECRdydit8dk7269wHP9BoCv73-iTf0OgiuvBuxNsLtRMLniN6na9SU7QUoqJCHhbRCdv4Glp0kWRbpaq=s657-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -692,7 +692,92 @@
           "icon": "fa fa-youtube"
         }
       ]
+    },
+    {
+      "id": 36,
+      "name": "Philippine Web Designers Organization",
+      "description": [
+        "A not-for-profit volunteer group aiming to uplift the local web design community by championing professionalism & excellence in crafting interfaces for the Web. PWDO empowers students, professionals, & hobbyists with intiatives that provide interdisciplinary learning in design & development."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cF9rp4xV3OBtFP4O8rrKawoW2knXgci3tnhbJaglYjRmXTKh_GWcKUOmmUa1LqXDRImjzXj2tYtd_S_-lfDFHN8k9ZBUiFIJKAWdOn4bSrvFS5mmvCSV0giMwocfgkaEPox_fFugetZHQnORlZtA8N=s360-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.pwdo.org/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/webdesigners.org.ph",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://instagram.com/pwdo",
+          "icon": "fa fa-instagram"
+        },
+        {
+          "url": "https://twitter.com/pwdo",
+          "icon": "fa fa-twitter"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Journy Academy: Community About Brand, Business and Digital Transformation",
+      "description": [
+        "Brand & Business Digital Transformation Group - A social learning group for like-minded creatives, entrepreneurs, and business owners who want to learn entrepreneurship skills, business principle, innovation and creativity."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3ft6ZcZgcjNcSGoIqjdJSSM5Ed2FY19L9LYyA7CoIvOWwNG7BD-mQwaKzipLr8QTFNqwSRLGTn1bFEqOVRXXNymthYT9UuYxyyWbwfnehiRASMUJMUYhRMdWi2ujnFg_V6g7c0jlThClir65-cckXQP=w542-h78-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.facebook.com/groups/JournyAcademy/",
+          "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Interaction Design Foundation",
+      "description": [
+        "The Interaction Design Foundation is an educational organization which produces open access educational materials online with the stated goal of \"democratizing education by making world-class educational materials free for anyone, anywhere.\""
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3djqBqgozXVIEw2luXe9iDdF5VYzyCcRsB5iL-xQyHgPWYVfWp79zWLbPtY_yW2O6o4UeX03Dxl_Q6vA4nTt7MeCnGa9Jjfm1tdcNIrmm_4mnJ2lnrnXzO5d5mdv9obk-8cVYJPTXmR6Q7wruytJMOr=w1000-h325-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.interaction-design.org/",
+          "icon": "fa fa-globe"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "TOMASINNO CENTER",
+      "description": [
+        "Tomasinno Cennter is the official Technology Business Incubator of the University of Santo Tomas, under the Higher Education Institution. Readiness for Innovation and. Technopreneurship (HEIRIT) program of DOST-PCIEERD."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dRzqNI2XrHnUSZoxPmso5Rmvlkut8wrJh3O8poFSMCdAxjuME2V-A7JrjzF1IwB9Q9FUBrE90ooYLCoG5LvtLQhHDz3MfbqPmNvM8Gn3NDpVt7HrLVndT2IMy2YEQTfOP0krBb4oeHp9V5ncuTM58m=w1168-h657-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.tomasinnocenter.ust.edu.ph",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/tomasinnocenter",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.twitter.com/tomasinnocenter",
+          "icon": "fa fa-twitter"
+        },
+        {
+          "url": "https://www.instagram.com/tomasinnocenter",
+          "icon": "fa fa-instagram"
+        }
+      ]
     }
+
   ],
 
   "Media Partners": [
@@ -734,7 +819,7 @@
       "description": [
         "Summit Media is a digital lifestyle network in the Philippines, with 14 media brands attracting around 31 million monthly unique visitors and approximately 33 million social media followers. "
       ],
-      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3fEkOLxQoyaotZALkLpGLYe7D6ofNtUI8teHZPGKFt8J-0H68vsmB5ExA0KUTkQrVLTeGsaMSQzfBtfqMwllz-2OyOfZvTqw3AJB0ThK-VIX-id5WGIO2VYM3n3_lPzz1HJm6u6TL8QcPvUX3rAzZX5=w1200-h1373-no",
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3dDwuZBpm6hb9Ru4sglAaPYb2BJZWjlhyYL3uH7EWyuWbvGN_LVfDgzTwGHntbyZtrreDhuWK4LOu30QBim4_xdu00Ry-FgzaSbmWzCAcF8bsWM5i-2-K6EuRRDuM_ta0_GilisuI_QzoMmiU2jkmj1=w658-h657-no?authuser=0",
       "website_url": "#",
       "social_media": [
         {
@@ -850,6 +935,33 @@
         {
           "url": "https://www.facebook.com/cignaltv/",
           "icon": "fa fa-facebook-square"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "MARKETECH APAC",
+      "description": [
+        "MARKETECH APAC is here to create an ecosystem where brands, agencies, media and tech companies have an equal voice to share and learn from one another. They deliver the latest marketing news, trends, and best practices that serve everyone in the industry whether you’re from small or big enterprises. "
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3ee5B_ya-GcmiuEuqQTgt29izEUXh75GfrrCtCQHuFWPxO5rHZ3wkKGUZF4Evt11_S7D-ek0222BHVvycYjdIp4nn-15lQ60GTrW4yHO6QuMB9d_86zi1i-t2DOfCZd93DaVUkXLIXXXMXrWgT-2wcg=w1366-h331-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        {
+          "url": "https://www.marketech-apac.com",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/marketechapac/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.linkedin.com/company/marketech-apac/",
+          "icon": "fa fa-linkedin"
+        },
+        {
+          "url": "https://www.youtube.com/c/MARKETECHAPAC",
+          "icon": "fa fa-youtube"
         }
       ]
     }
@@ -1070,7 +1182,32 @@
           "icon": "fa fa-instagram"
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "QuadX",
+      "description": [
+        "QuadX is driven to make ecommerce and business building as simple as clicking a trackpad. To make shopping less about lines and more about enjoying. To take the anxiety out of payment and delivery and make the world both marketplace and playground. We reinvent experiences and open new doors. And we invest in the data and technology to power that vision.",
+        "Here at QuadX, we’re exposing casual sellers to bigger audiences. We’re giving tools for the Social Seller to transform her hobby into a business, his passion into enterprise. We’re giving every Filipino a chance to seize a share of the future. We are QuadX. And we’re in the business of building Futurepreneurs."
+      ],
+      "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cT_5mh9WMum49P6M54hEYrkNIPWGVZCouENlYrdcpvC76KE889uoZ84uR03b2k6fqJueAM9zHXPTXvaus7AeJSlFm33NSwL4wjYL02A34JHjhs_po39wDwwfTZxnIR8qzKqJeJLkh4ebgjOmJ-sUV5=w709-h236-no?authuser=0",
+      "website_url": "#",
+      "social_media": [
+        { 
+          "url": "https://www.quadx.xyz/",
+          "icon": "fa fa-globe"
+        },
+        {
+          "url": "https://www.facebook.com/quadx.xyz/",
+          "icon": "fa fa-facebook-square"
+        },
+        {
+          "url": "https://www.linkedin.com/company/quad-x ",
+          "icon": "fa fa-linkedin"
+        }
+      ]
     }
+
   ],
 
   "Premium Sponsors": [
