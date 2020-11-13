@@ -176,14 +176,27 @@ const Certificate = () => {
                     width={128}
                   />
                   <h3 className="text-white text-center">
-                    Hold up, We're generating your awesome certificate!
+                    Hold up, we're generating your awesome certificate!
                   </h3>
                 </center>
               ) : (
                 <center>
-                  <h3 className="text-white text-center">
-                    Done! Check your "Downloads" folder.
-                  </h3>
+                  <h1
+                    className="text-white text-center"
+                    style={{
+                      fontSize: "3rem",
+                    }}
+                  >
+                    All done!
+                  </h1>
+                  <p
+                    className="text-white text-center"
+                    style={{
+                      fontSize: "1.2rem",
+                    }}
+                  >
+                    Please check your "Downloads" folder.
+                  </p>
                 </center>
               )}
             </div>
