@@ -158,7 +158,7 @@ const Certificate = () => {
                     className="my-2 text-center font-weight-bold text-uppercase text-white"
                     placeholder="Fill out your name"
                     value={certName}
-                    onChange={(event) => setCertName(event.target.value)}
+                    // onChange={(event) => setCertName(event.target.value)}
                     disabled={true}
                     id="certificate-name-input"
                   />
