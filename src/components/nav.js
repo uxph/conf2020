@@ -136,7 +136,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
               </a>
               <ul>
                 {navItems}
-                <li className="margin-left-16">
+                {/* <li className="margin-left-16">
                   <Button
                     href="/tickets"
                     style={{
@@ -145,7 +145,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
                   >
                     Get Tickets
                   </Button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -216,7 +216,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
               </a>
               <ul>
                 {navItems}
-                <li className="margin-left-16">
+                {/* <li className="margin-left-16">
                   <Button
                     href="/tickets"
                     style={{
@@ -225,7 +225,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
                   >
                     Get Tickets
                   </Button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -266,7 +266,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
             </a>
             <ul>
               {navItems}
-              <li className="margin-top-32">
+              {/* <li className="margin-top-32">
                 <Button
                   href="/tickets"
                   style={{
@@ -275,7 +275,7 @@ const Nav = ({ activeUrl = "/", theme }) => {
                 >
                   Get Tickets
                 </Button>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
