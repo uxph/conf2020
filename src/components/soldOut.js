@@ -63,7 +63,7 @@ const SoldOut = () => {
       ></div>
       <div
         id="coming-soon-content"
-        className="margin-top-256 margin-bottom-48 mx-auto"
+        className="margin-top-192 margin-bottom-48 mx-auto"
         style={{
           position: "relative",
           zIndex: "500",
