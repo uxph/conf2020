@@ -136,16 +136,16 @@ const Nav = ({ activeUrl = "/", theme }) => {
               </a>
               <ul>
                 {navItems}
-                {/* <li className="margin-left-16">
+                <li className="margin-left-16">
                   <Button
-                    href="/tickets"
+                    className="disabled"
                     style={{
                       padding: "0.75rem 1.2rem",
                     }}
                   >
-                    Get Tickets
+                    sold out
                   </Button>
-                </li> */}
+                </li>
               </ul>
             </div>
           </div>
@@ -216,16 +216,16 @@ const Nav = ({ activeUrl = "/", theme }) => {
               </a>
               <ul>
                 {navItems}
-                {/* <li className="margin-left-16">
+                <li className="margin-left-16">
                   <Button
-                    href="/tickets"
+                    className="disabled"
                     style={{
                       padding: "0.75rem 1.2rem",
                     }}
                   >
-                    Get Tickets
+                    sold out
                   </Button>
-                </li> */}
+                </li>
               </ul>
             </div>
           </div>
@@ -266,16 +266,16 @@ const Nav = ({ activeUrl = "/", theme }) => {
             </a>
             <ul>
               {navItems}
-              {/* <li className="margin-top-32">
+              <li className="margin-top-32">
                 <Button
-                  href="/tickets"
+                  className="disabled"
                   style={{
                     padding: "0.75rem 1.2rem",
                   }}
                 >
-                  Get Tickets
+                  sold out
                 </Button>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

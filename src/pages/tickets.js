@@ -3,14 +3,14 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import TicketForm from "../components/tickets/ticketForm";
 import Hero from "../components/tickets/hero";
-import IndexPage from "./index";
+import SoldOut from "../components/soldOut";
 
 import "../assets/sass/home.scss";
 import { ticket_shutdown } from "../data/info.json";
 
 const TicketPage = () => {
   if (ticket_shutdown) {
-    return <IndexPage />;
+    return <SoldOut />;
   } else {
     return (
       <Layout isHomePage={true} activeUrl="">
