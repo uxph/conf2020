@@ -444,14 +444,6 @@ const Programme = () => {
                 variant="outline"
                 className="w-100 margin-bottom-12"
                 innerClassName="w-100"
-                id="day_1-button"
-              >
-                Day 1
-              </Button>
-              <Button
-                variant="outline"
-                className="w-100 margin-bottom-12"
-                innerClassName="w-100"
                 id="day_2-button"
               >
                 Day 2
@@ -464,6 +456,7 @@ const Programme = () => {
               >
                 Pre-Event 1 <br /> (Completed)
               </Button>
+
               <Button
                 variant="outline"
                 className="w-100 margin-bottom-12"
@@ -472,45 +465,17 @@ const Programme = () => {
               >
                 Pre-Event 2 <br /> (Completed)
               </Button>
+              <Button
+                variant="outline"
+                className="w-100 margin-bottom-12"
+                innerClassName="w-100"
+                id="day_1-button"
+              >
+                Day 1 <br /> (Completed)
+              </Button>
             </div>
           </Col>
           <Col md={10} className="p-0 pl-3">
-            <div
-              className="border p-4 bg-white shadow-sm margin-bottom-48"
-              style={{
-                borderRadius: "1rem",
-              }}
-              id="day_1"
-              data-aos="fade"
-              data-aos-offset={150}
-              data-aos-duration={600}
-              data-aos-once={true}
-            >
-              <div
-                className="padding-y-16"
-                style={{
-                  position: "sticky",
-                  top: "70px",
-                  zIndex: 1000,
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                <h4 className="text-center">
-                  <span className="red text-uppercase">
-                    Day 1 (Nov. 14, Sat)
-                  </span>{" "}
-                </h4>
-              </div>
-              <DaySegment
-                segment="day_1"
-                workshopId={workshopId}
-                segmentName={segmentName}
-                toggle={toggle}
-                setSegmentName={setSegmentName}
-                setWorkshopId={setWorkshopId}
-              />
-            </div>
             <div
               className="border p-4 bg-white shadow-sm margin-bottom-48"
               style={{
@@ -623,11 +588,56 @@ const Programme = () => {
                     fontFamily: "Montserrat, sans-serif",
                   }}
                 >
-                  Available to ticket holders only
+                  Completed • Available to ticket holders only
                 </small>
               </div>
               <DaySegment
                 segment="pre_event_2"
+                workshopId={workshopId}
+                segmentName={segmentName}
+                toggle={toggle}
+                setSegmentName={setSegmentName}
+                setWorkshopId={setWorkshopId}
+              />
+            </div>
+            <div
+              className="border p-4 bg-white shadow-sm margin-bottom-48"
+              style={{
+                borderRadius: "1rem",
+              }}
+              id="day_1"
+              data-aos="fade"
+              data-aos-offset={150}
+              data-aos-duration={600}
+              data-aos-once={true}
+            >
+              <div
+                className="padding-y-16"
+                style={{
+                  position: "sticky",
+                  top: "70px",
+                  zIndex: 1000,
+                  backgroundColor: "rgba(255, 255, 255, 0.9)",
+                  backdropFilter: "blur(8px)",
+                }}
+              >
+                <h4 className="text-center">
+                  <span className="red text-uppercase">
+                    Day 1 (Nov. 14, Sat)
+                  </span>{" "}
+                </h4>
+                <small
+                  className="gray font-size-16 segment-date text-center d-block"
+                  style={{
+                    verticalAlign: "middle",
+                    fontFamily: "Montserrat, sans-serif",
+                  }}
+                >
+                  Completed • Available to ticket holders only
+                </small>
+              </div>
+              <DaySegment
+                segment="day_1"
                 workshopId={workshopId}
                 segmentName={segmentName}
                 toggle={toggle}
