@@ -1,0 +1,17 @@
+#certificate-name-input {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid var(--gray);
+  outline: none;
+  font-size: 2rem;
+  transition: ease all 0.3s;
+
+  &:focus {
+    box-shadow: none;
+    border-bottom: 2px solid var(--red);
+  }
+}
+
