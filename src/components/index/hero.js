@@ -58,13 +58,16 @@ const Hero = () => {
       <h2
         className="text-white margin-bottom-48"
         style={{
-          fontSize: "1.25rem",
-          letterSpacing: "3px",
+          fontSize: "1.5rem",
+          letterSpacing: "1px",
+          lineHeight: "32px",
         }}
       >
-        NOVEMBER 14 - 15, 2020
-      </h2>
-      <div className="text-center">
+        Thank you for joining us <br />
+        this November 14 & 15th, 2020.
+        <br /> See you in 2021!{" "}
+      </h2>      
+    <div className="text-center">
         <Button className="mr-3 mb-3 main-btn disabled">
           Tickets sold out
         </Button>
