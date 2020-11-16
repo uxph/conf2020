@@ -206,11 +206,20 @@ const Certificate = () => {
                 className="text-white text-center"
                 style={{
                   fontSize: "3rem",
-                  marginBottom: "2rem",
                 }}
               >
                 Certificate of Attendance
               </h1>
+              {/* Will probably change this */}
+              <p
+                className="text-center light-gray"
+                style={{
+                  fontSize: "1.2rem",
+                  marginBottom: "2rem",
+                }}
+              >
+                Enter your ticket number that came with your confirmation email.
+              </p>
               <Row>
                 <Col md={9} sm={12}>
                   <Input

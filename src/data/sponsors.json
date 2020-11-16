@@ -468,7 +468,6 @@
           "url": "https://www.facebook.com/UXinVietnam/",
           "icon": "fa fa-facebook-square"
         }
-      
       ]
     },
     {
@@ -511,7 +510,7 @@
       "id": 28,
       "name": "UP Career Assistance Program for Engineering Students (UP CAPES)",
       "description": [
-       "UP Career Assistance Program for Engineering Students (UP CAPES) is the country’s premier career-oriented organization dedicated to bridging the gap between engineering students and their future careers. By providing relevant campaigns and impactful initiatives focused on career development and networking, we strive to position the UP College of Engineering as a globally competitive institution geared towards nation-building."
+        "UP Career Assistance Program for Engineering Students (UP CAPES) is the country’s premier career-oriented organization dedicated to bridging the gap between engineering students and their future careers. By providing relevant campaigns and impactful initiatives focused on career development and networking, we strive to position the UP College of Engineering as a globally competitive institution geared towards nation-building."
       ],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3cumQj9go5g18Q8MmnELv7x76M6QU06femTtNDgaeYEiU0plFLtOZpdCMnvd0m-jNQVy1D6C5WjyMOOMXkf4F89hH2DZPoJGgbk268M5eJ4n2ji0ER8q4CFCbw-x9H9ac75hwsW8Ua6YaIzkPcCDNHp=s609-no?authuser=0",
       "website_url": "#",
@@ -543,7 +542,7 @@
       "id": 29,
       "name": "Impact Hub Yangon",
       "description": [
-       "Impact Hub Yangon is an innovation lab, a business Incubator, a social enterprise community center. We offer you a unique ecosystem of resources, inspiration, and collaboration opportunities to grow your impact. Our diverse community will inspire, connect, and enable you to develop your best work every step of the way."
+        "Impact Hub Yangon is an innovation lab, a business Incubator, a social enterprise community center. We offer you a unique ecosystem of resources, inspiration, and collaboration opportunities to grow your impact. Our diverse community will inspire, connect, and enable you to develop your best work every step of the way."
       ],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3eb5pHWgijH9--U4WH9yQ9k-xRQYx_dbDGFvXgc2SVtsl6m3b50fXqWvkIWHwqX3k3bNoqVS1XFTW__d2k4RM7f--moeQ_5FhpWiWY8QKVRYTP5tri93hFK1My1nUjQmUp3myjCSvFAwEGrtC8Gs41z=s450-no?authuser=0",
       "website_url": "#",
@@ -558,8 +557,8 @@
       "id": 30,
       "name": "FEU Innovation Center",
       "description": [
-       "FEU Innovation Center is a venue for students to turn their ideas into profitable ventures with the help and guidance of industry experts. ",
-       "Our mission is to create the next generation of nation builders by creating innovators, technologists, and entrepreneurs."
+        "FEU Innovation Center is a venue for students to turn their ideas into profitable ventures with the help and guidance of industry experts. ",
+        "Our mission is to create the next generation of nation builders by creating innovators, technologists, and entrepreneurs."
       ],
       "image_url": "https://lh3.googleusercontent.com/pw/ACtC-3d0Jr76nIURBK8AtYbk2a2MA7uvWoIKeXooyS2LgMNQJJHHLMzVgpY5ufHy6SaLossOeub_mMfGXVu4wdDSVjC6WdcEC36PqxhMyrtLu8E7AibfnBrNSKm3qW1VzxA3sDts-S0klkkgI_GtijnVJ9Zr=s657-no?authuser=0",
       "website_url": "#",
@@ -678,7 +677,6 @@
         }
       ]
     }
-
   ],
 
   "Media Partners": [
@@ -811,21 +809,6 @@
   ],
 
   "Major Sponsors": [
-    {
-      "id": 0,
-      "name": "Toasty",
-      "description": [
-        "Toasty is a video meeting platform that focuses on driving online collaborations in meetings and workshops. It comes with built-in activities, breakout rooms, integration with Miro and Google Doc, to empower collaborations and drive outcomes."
-      ],
-      "image_url": "/images/sponsors/toasty.png",
-      "website_url": "#",
-      "social_media": [
-        {
-          "url": "https://toasty.ai/",
-          "icon": "fa fa-globe"
-        }
-      ]
-    },
     {
       "id": 1,
       "name": "Amazing Design People List",
