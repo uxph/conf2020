@@ -1,21 +1,16 @@
 import React from "react";
-import ComingSoon from "../components/comingSoon";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import TicketForm from "../components/tickets/ticketForm";
 import Hero from "../components/tickets/hero";
+import SoldOut from "../components/soldOut";
 
 import "../assets/sass/home.scss";
-import { coming_soon } from "../data/info.json";
+import { ticket_shutdown } from "../data/info.json";
 
-const IndexPage = () => {
-  if (coming_soon) {
-    return (
-      <>
-        <SEO title="Coming Nov. 14-15" />
-        <ComingSoon />
-      </>
-    );
+const TicketPage = () => {
+  if (ticket_shutdown) {
+    return <SoldOut />;
   } else {
     return (
       <Layout isHomePage={true} activeUrl="">
@@ -29,4 +24,4 @@ const IndexPage = () => {
   }
 };
 
-export default IndexPage;
+export default TicketPage;

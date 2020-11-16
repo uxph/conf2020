@@ -3,7 +3,7 @@
     "percent": 0.15,
     "solid": null
   },
-  
+
   "uxph2020remake": {
     "percent": 0.15,
     "solid": null
@@ -314,6 +314,10 @@
   },
 
   "uxph2020s2s": {
+    "percent": 0.15,
+    "solid": null
+  },
+  "uxph2020anc": {
     "percent": 0.15,
     "solid": null
   }

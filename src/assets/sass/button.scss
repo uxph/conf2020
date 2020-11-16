@@ -62,3 +62,7 @@ button.outline > span,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn-disabled {
+  opacity: 0.5;
+}

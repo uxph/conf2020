@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../atoms/button";
 import { Row, Col } from "reactstrap";
 
 const Intro = () => {
@@ -26,9 +25,9 @@ const Intro = () => {
               members from a wide range of industries related to technology and
               even traditional businesses.
             </p>
-            <Button href="/tickets" variant="outline">
+            {/* <Button href="/tickets" variant="outline">
               Get Tickets
-            </Button>
+            </Button> */}
           </Col>
           <Col md={6} xs={12} className="text-center margin-bottom-24">
             <img
