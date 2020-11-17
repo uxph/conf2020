@@ -158,13 +158,12 @@ const Certificate = () => {
                     className="my-2 text-center font-weight-bold text-uppercase text-white"
                     placeholder="Fill out your name"
                     value={certName}
-                    // onChange={(event) => setCertName(event.target.value)}
-                    disabled={true}
+                    onChange={(event) => setCertName(event.target.value)}
                     id="certificate-name-input"
                   />
                   <br />
                   <Button onClick={() => setGenerate(true)}>
-                    Claim your certificate
+                    Generate Certificate
                   </Button>
                 </center>
               ) : generating ? (
