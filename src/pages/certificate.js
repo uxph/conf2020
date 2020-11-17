@@ -158,13 +158,36 @@ const Certificate = () => {
                     className="my-2 text-center font-weight-bold text-uppercase text-white"
                     placeholder="Fill out your name"
                     value={certName}
-                    onChange={(event) => setCertName(event.target.value)}
+                    // onChange={(event) => setCertName(event.target.value)}
+                    disabled={true}
                     id="certificate-name-input"
                   />
                   <br />
                   <Button onClick={() => setGenerate(true)}>
                     Generate Certificate
                   </Button>
+                  <br />
+                  <p
+                    className="text-white"
+                    style={{
+                      marginTop: "48px",
+                      fontSize: "0.8rem",
+                      fontStyle: "italic",
+                    }}
+                  >
+                    Want to make changes to the name shown in your certificate?
+                    <br />
+                    Kindly email{" "}
+                    <a
+                      className="red"
+                      href="mailto:conference@uxph.org?Subject=UXPH%20CONF%202020%20Request%20to%20update%20ticket%20details"
+                    >
+                      conference@uxph.org
+                    </a>{" "}
+                    or message us on Facebook. <br />
+                    Please provide your ticket number for easier processing.
+                    Thank you!
+                  </p>
                 </center>
               ) : generating ? (
                 <center>
