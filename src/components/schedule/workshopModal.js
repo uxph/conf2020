@@ -14,7 +14,7 @@ const WorkshopModal = ({ workshopId, segmentName, toggle, modal }) => {
 
   const dates = {
     pre_event_1: "Oct. 24",
-    pre_event_2: "Oct. 31",
+    pre_event_2: "Nov. 7",
     pre_event_3: "Nov. 7",
     day_1: "Nov. 14",
     day_2: "Nov. 15",
